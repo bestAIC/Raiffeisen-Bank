@@ -1,0 +1,24 @@
+{
+  "name": "www",
+  "version": "1.0.0",
+  "description": "base-layout\r ===========",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-less": "^3.0.5",
+    "gulp-postcss": "^6.0.1",
+    "gulp-autoprefixer": "^3.1.0"
+  },
+  "devDependencies": {
+    "gulp-watch": "^4.3.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.gegele.ru:danila/base-layout.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
