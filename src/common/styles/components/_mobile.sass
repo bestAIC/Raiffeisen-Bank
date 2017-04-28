@@ -292,6 +292,7 @@
       width: 18px
       height: 18px
 
+
   .mortgage__block-content,
   .mortgage__block-content--small
     margin-top: 16px
@@ -304,3 +305,83 @@
     .mortgage__block-image
       height: 60vw
       width: 100%
+      position: relative
+      left: 0
+
+  .mortgage__block-content
+    transform: translateY(0)!important
+
+  .block-content__readme
+    padding: 0 15px
+
+  .mortgage-intro
+    .title-block__title,
+    .title-block__description
+      padding: 0 15px
+
+  .mortgage__block-buttons
+    padding: 0 15px
+    text-align: center
+    .button
+      margin: 28px 0
+      width: 100%
+    .find-department
+      width: 100%
+      font-size: 16px
+
+  .tab__block-icon
+    width: 100%
+    padding: 0 15px
+    .block-icon__content
+      p
+        font-size: 24px
+
+  .block-icon__image
+    width: 20%
+    float: left
+    margin-right: 31px
+    img
+      width: 100%
+
+  .block-icon__content
+    float: left
+    width: calc(80% - 31px)
+    p
+      margin: 0
+      padding: 0
+
+  .tab__block-icon
+    &:after
+      content: ""
+      display: table
+      clear: both
+
+  .tabs
+    overflow-x: scroll
+    overflow-y: hidden
+    white-space: nowrap
+    li
+      float: none
+      white-space: normal
+      display: inline-block
+      font-size: 22px!important
+      &:first-child
+       margin-left: 1.5rem
+      &:last-child
+        margin-right: 1.5rem
+
+  .mortgage-tabs
+    margin: 0 0 48px 0
+
+  .tab__block-icon
+    margin: 0 0 31px 0
+
+  .care,
+  .tab__block-accordion,
+  .accordion
+    display: none
+  #tab-1
+    .more-questions
+      box-shadow: 0 -1px 0 $icons-color
+
+
