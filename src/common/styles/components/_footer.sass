@@ -1,0 +1,107 @@
+.footer
+  max-width: 100%
+  width: 100%
+  color: $text-color
+  font-size: calcRem(30px)
+  line-height: calcRem(36px)
+  font-family: 'futura-book'
+  transition: opacity 1.25s
+  transition-delay: opacity 0.2s
+
+  a
+    color: $text-color
+
+  p
+    margin: 0
+
+  &__content
+    width: calcRem(1170px)
+    margin: 0 auto
+
+  &__top
+    padding: calcRem(64px) 0
+
+  &__bottom
+    padding: calcRem(48px) 0
+    border-top: 1px solid $icons-color
+
+  &__phones-1
+    margin-bottom: calcRem(40px)
+
+  &__number-desc
+    font-size: calcRem(18px)
+    line-height: calcRem(24px)
+
+  &__links
+    ul
+      li
+        margin-bottom: calcRem(16px)
+        &:last-child
+          margin-bottom: 0
+        a
+          transition: opacity .2s
+          &:hover
+            opacity: .5
+
+  &__copyright
+    font-size: calcRem(14px)
+    line-height: calcRem(24px)
+    p
+      margin-bottom: 1rem
+
+  &__info
+    ul
+      li
+        line-height: calcRem(24px)
+        font-size: calcRem(14px)
+        margin-bottom: calcRem(12px)
+        &:last-child
+          margin-bottom: 0
+        a
+          display: inline-block
+          color: $link
+          transition: color .2s
+          &:hover
+            color: lighten($link, 20)
+
+  &__socials
+    a
+      display: inline-block
+      width: calcRem(50px)
+      height: calcRem(50px)
+      background: $black
+      margin-right: calcRem(30px)
+      color: $white
+      line-height: calcRem(50px)
+      text-align: center
+      font-size: calcRem(20px)
+      transition: color .2s, background .2s
+      &:last-child
+        margin-right: 0
+      &:hover
+        color: $black
+        background: $yellow
+
+
+.cols
+  @include clearfix
+
+  .col
+    display: inline-block
+    float: left
+    &_right
+      float: right
+    &:last-child
+      margin-right: 0
+      padding-right: 0
+
+  &3
+    .col
+      width: calcRem(370px)
+      box-sizing: border-box
+      margin-right: calcRem(30px)
+
+.phone-link
+  transition: 0.2s opacity
+  &:hover
+    opacity: 0.5

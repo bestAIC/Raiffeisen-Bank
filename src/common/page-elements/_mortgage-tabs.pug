@@ -1,0 +1,24 @@
+.mortgage-tabs.loaded-block
+    .container
+        ul.tabs(data-tabgroup='tab-container-1')
+            li.tab-link.current(data-tab='tab-1') Как получить
+            li.tab-link(data-tab='tab-2') Тарифы и условия
+            li.tab-link(data-tab='tab-3') Калькулятор
+            li.tab-brake
+                gulpspan.dot •
+            li.tab-link(data-tab='tab-4') Для клиентов
+
+.mortgage-tab-container#tab-container-1
+        #tab-1.tab-content.current
+            include _tabs_content
+            include _tabs_accordion
+            include _care-block
+            include _tips
+            include ../page-elements-1/_more-questions
+        #tab-2.tab-content
+            include ../page-elements-1/_tarif
+            include ../page-elements-1/_more-questions
+        #tab-3.tab-content
+            include ../page-elements-1/_calculator
+        #tab-4.tab-content
+            include _tips-1

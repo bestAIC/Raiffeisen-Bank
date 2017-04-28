@@ -1,0 +1,74 @@
+.span-yellow
+  position: relative
+  &:after
+    content: ''
+    background-color: $yellow
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    z-index: -1
+    transform: scaleX(0)
+    transform-origin: left
+    transition: 0.5s transform
+    transition-delay: 0.1s
+
+.show-now
+  &:after
+    content: ''
+    transform: scaleX(1)
+
+.conditions
+  padding-top: calcRem(48px)
+
+  &__svg
+    margin-left: calcRem(5px)
+    position: relative
+    top: 2px
+    transition: transform .15s
+    .load-more:hover &
+      transform: translateY(1px)
+
+  &__row
+    @include clearfix
+    margin-bottom: calcRem(48px)
+    transition: opacity 2s
+    opacity: 1
+
+    &--hide
+      display: none
+      opacity: 0
+    &--show
+      animation: show-1 .45s
+
+  &__title, &__desc
+    display: inline-block
+    float: left
+    font-size: calcRem(24px)
+    line-height: calcRem(30px)
+
+  &__title
+    width: 33%
+    font-family: 'futura-heavy', sans-serif
+    h3
+      margin: 0
+
+  &__desc
+    width: calc(100% - 100%/3)
+    padding-left: calcRem(30px)
+    p
+      &:first-child
+        margin-top: 0
+
+@keyframes show-1
+  0%
+    display: none
+    opacity: 0
+  1%
+    display: block
+    opacity: 0
+    transform: translateY(-10px)
+  100%
+    opacity: 1
+    transform: translateY(0)

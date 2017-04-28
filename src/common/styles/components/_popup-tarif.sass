@@ -1,0 +1,251 @@
+.popup-share
+  &_visible-p
+    top: 0
+    z-index: 50
+    opacity: 1
+    pointer-events: all
+    transform: translateX(calcRem(50px)) scale(1)
+    box-shadow: 0 0 calcRem(50px) rgba($black, .2)
+    .popup-share__icon
+      opacity: 1
+
+.tooltip-mail
+  top: 0
+  z-index: 50
+  pointer-events: none
+  position: absolute
+  padding: calcRem(24px) calcRem(30px)
+  width: calcRem(375px)
+  color: $black
+  background: $white
+  box-shadow: 0 0 calcRem(50px) rgba($black, 0)
+  transition: transform .2s, opacity .2s, box-shadow .2s
+  opacity: 0
+  &_visible
+    transform: translate(calcRem(50px), 0) scale(1)
+    opacity: 1
+    pointer-events: auto
+    box-shadow: 0 0 calcRem(50px) rgba($black, .2)
+
+  &__name
+    font-size: calcRem(14px)
+    text-transform: uppercase
+
+  &__input
+    border: 1px solid $icons-color
+    padding: calcRem(10px)
+    margin: calcRem(10px) 0 calcRem(15px)
+    display: block
+    width: 100%
+    outline: 0
+    font-size: calcRem(24px)
+
+  &__button
+    background-color: $yellow
+    font-size: calcRem(14px)
+    padding: calcRem(10px)
+    text-align: center
+    text-transform: uppercase
+    transition: color .15s, background-color .15s
+    cursor: pointer
+    &:hover
+      background-color: $black
+      color: $yellow
+
+.container--m
+  width: 100%
+  max-width: calcRem(970px)
+  margin: 0 auto
+
+.wrapper
+  transition: transform .3s
+  transform: scale(1)
+
+.show-popup1
+  overflow: hidden
+  .wrapper
+    transform: scale(.95)
+
+.popup-tarif
+  position: fixed
+  width: 100%
+  height: 100%
+  z-index: 9999
+  background-color: rgba($black, 0)
+  overflow: hidden
+  pointer-events: none
+  transition: background-color .2s
+
+  &__container
+    position: relative
+
+  .show-popup1 &
+    pointer-events: all
+    background-color: rgba($black, .5)
+    overflow-y: scroll
+    &__content
+      opacity: 1
+      transform: translateX(0)
+
+  &__close-svg
+    position: absolute
+    right: calcRem(45px)
+    top: calcRem(45px)
+    width: calcRem(18px)
+    height: calcRem(18px)
+    cursor: pointer
+    background-image: url(../images/close.svg)
+    background-size: cover
+    background-repeat: no-repeat
+    transform-origin: center
+    transition: transform .2s
+    &:hover
+      transform: rotate(90deg)
+
+  &__actions
+    position: absolute
+    width: calcRem(25px)
+    height: 200px
+    top: calcRem(20px)
+    left: calcRem(-100px)
+  &__action-item
+    position: relative
+    margin-bottom: calcRem(25px)
+  &__action-svg
+    background-size: 100%
+    background-repeat: no-repeat
+    background-position: center center
+    cursor: pointer
+    opacity: .3
+    transition: opacity .2s
+    &:hover
+      opacity: 1
+  .action-mail
+    margin: 0 auto
+    width: calcRem(24px)
+    height: calcRem(16px)
+    background-image: url(../images/mail-m.svg)
+  .action-print
+    margin: 0 auto
+    width: calcRem(20px)
+    height: calcRem(22px)
+    background-image: url(../images/print.svg)
+  .action-share
+    margin: 0 auto
+    width: calcRem(20px)
+    height: calcRem(20px)
+    background-image: url(../images/share.svg)
+
+  &__content
+    max-width: calcRem(1270px)
+    width: 100%
+    min-height: 100vh
+    background-color: $white
+    float: right
+    padding-top: calcRem(120px)
+    padding-bottom: calcRem(120px)
+    opacity: 0
+    transform: translateX(50vw)
+    transition: transform .5s, opacity .3s
+
+  &__body
+    max-width: calcRem(970px)
+    margin: 0 auto
+
+  &__text
+    position: relative
+    font-size: calcRem(24px)
+    line-height: calcRem(30px)
+
+    &-h2
+      font-size: calcRem(30px)
+      line-height: calcRem(36px)
+      font-family: 'futura-heavy', sans-serif
+      margin-bottom: calcRem(32px)
+      margin-top: calcRem(80px)
+      &:first-child
+        margin-top: 0
+    &-h3
+      font-size: calcRem(24px)
+      line-height: calcRem(30px)
+      font-family: 'futura-heavy', sans-serif
+    &-link
+      color: $link
+      border-bottom: 1px dotted $link
+      transition: color .15s
+      &:hover
+        color: rgba($link, .7)
+
+  &__list-item
+    position: relative
+    margin-bottom: calcRem(10px)
+    padding-left: calcRem(40px)
+
+  &__list
+    &--ul
+      li
+        &.list-style-empty
+          &:before
+            background: $white
+        &:before
+          position: absolute
+          content: ''
+          left: 3px
+          top: 9px
+          transform: rotate(45deg)
+          width: 4px
+          height: 4px
+          background: $black
+          border: 2px solid black
+    &--ol
+      counter-reset: section
+      list-style: none
+      li
+        &:before
+          font-family: 'futura-heavy', sans-serif
+          counter-increment: section
+          position: absolute
+          left: 0
+          content: counter(section)
+
+ol, ul
+  margin: 0
+  padding: 0
+
+.span-tooltip
+  position: relative
+  border-bottom: 1px dotted $black
+  cursor: pointer
+  transition: color 0.2s, border 0.2s
+  &:hover
+    color: rgba($black, .75)
+  &__inner
+    opacity: 0
+    pointer-events: none
+    transform: translateY(-10px)
+    font-size: calcRem(18px)
+    z-index: 25
+    min-width: calcRem(345px)
+    max-width: calcRem(445px)
+    padding: calcRem(16px) calcRem(30px) calcRem(24px)
+    position: absolute
+    background: $white
+    box-shadow: 0 0 30px rgba($black, 0)
+    left: calcRem(-30px)
+    top: calcRem(40px)
+    color: rgba($black, 1)
+    transition: transform .2s, opacity .2s, box-shadow .3s
+
+  .show-tooltip &
+    &__inner
+      opacity: 1
+      pointer-events: all
+      transform: translateY(0)
+      box-shadow: 0 0 30px rgba($black, .2)
+
+.show-tooltip
+  border-bottom: 1px dotted transparent
+  color: rgba($black, .75)
+
+.mortgage-tabs--m
+  margin: calcRem(60px) 0

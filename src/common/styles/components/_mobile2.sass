@@ -1,0 +1,337 @@
+#header
+  z-index: 999!important
+
+.popup-links-active
+  overflow: hidden
+  position: fixed
+  width: 100%
+  height: 100%
+  .Preloader-b
+    opacity: 1
+  .body-container
+    position: relative
+    overflow: hidden
+  .popup-links
+    opacity: 1
+    pointer-events: auto
+    .popup-links__content
+      opacity: 1
+      transform: translateY(0px)
+  .arr-icon
+    transform: translateY(-50%) rotate(-90deg)
+
+.popup-numbers-active
+  overflow: hidden
+  width: 100%
+  height: 100%
+  position: fixed
+  .Preloader-b
+    opacity: 1
+  .body-container
+    position: relative
+    overflow: hidden
+  .popup-numbers
+    opacity: 1
+    pointer-events: auto
+    .popup-numbers__content
+      opacity: 1
+      transform: translateY(0px)
+.show-menu-active
+  overflow: hidden
+  position: fixed
+  width: 100%
+  height: 100%
+  .body-container
+    position: relative
+    overflow: hidden
+  .header__menu
+    transform: translate(0, 0)!important
+    opacity: 1
+  .Preloader-b
+    opacity: 1
+  .hamburger-menu
+    background-color: rgba($black, 0)
+    &:before
+      transform: translateY(8px) rotate(-45deg)
+    &:after
+      transform: translateY(-8px) rotate(45deg)
+
+.hamburger-menu
+  transition: background-color .1s
+  &:before
+    transition: transform .3s
+  &:after
+    transition: transform .3s
+
+.popup-links, .popup-numbers
+  opacity: 0
+  pointer-events: none
+  width: 100%
+  height: 100%
+  position: fixed
+  z-index: 9999
+  top: 36px
+  box-shadow: 0 0 13px rgba($black, .12)
+  left: 0
+  opacity: 0
+  transition: opacity .2s, transform .2s
+  &__content
+    opacity: 0
+    padding: 24px 20px
+    background: $white
+    transition: opacity .5s, transform .5s
+    transition-delay: .1s
+    transform: translateY(-10px)
+
+  &__list-item
+    position: relative
+    margin-bottom: 25px
+    &:last-child
+      margin-bottom: 0
+
+  &__link
+    color: $black
+    font-size: 24px
+    line-height: 24px
+  &__link-desc
+    margin-top: 15px
+    font-size: 18px
+  &__link-icon
+    position: absolute
+    right: 0
+    top: 50%
+    transform: translateY(-50%)
+
+.popup-numbers
+  top: 95px
+
+.header__hamburger
+  left: 15px
+  top: 29px
+  // padding-top: 6px
+
+.button-with-icon.ring, .button-with-icon.close
+  font-size: 1.5rem
+  display: none
+  padding: 10px
+
+.button-with-icon.close
+  background: $white
+  &:hover
+    color: $black
+
+.button-icon-f
+  height: 19px
+  width: 19px
+  line-height: 19px
+  text-align: center
+
+.sec-menu--mobile
+  font-size: 12px
+  display: none
+  position: relative
+  color: $black
+  padding-right: 15px
+  .arr-icon
+    position: absolute
+    right: 0
+    top: 50%
+    transition: transform .2s
+    transform-origin: center
+    transform: translateY(-50%) rotate(90deg)
+    svg
+      width: 6px
+
+
+.header__popup-numbers
+  position: absolute
+  left: 0
+  bottom: -100vh
+  z-index: 200
+  background: #ccc
+  width: 100%
+  height: 100vh
+
+.header__menu_background
+  opacity: 0
+  z-index: -1
+
+@media screen and (max-width: 1000px)
+
+  .sec-menu__link
+    font-size: 12px
+
+  .button-with-icon.ring
+    display: block
+
+  .sec-menu
+    display: none
+  .sec-menu--mobile
+    display: inline
+
+  .sec-menu--right
+    position: relative
+    li
+      margin-right: 15px
+    .mobile-hide
+      display: none
+
+  .header__menu
+    transition: transform .3s, opacity .2s
+
+  .header__top
+    padding: 15px 15px 14px 15px
+  .header__bottom
+    padding: 10px 15px
+
+  .header__hamburger
+    cursor: pointer
+    pointer-events: auto
+    opacity: 1
+
+  .header__logo
+    transform: translate(40px,-4px)
+    margin-right: 0
+    margin-top: 9px
+
+  .header__menu
+    position: fixed
+    background-color: white
+    width: 100vw
+    height: 100vh
+    top: 95px
+    left: 0
+    opacity: 0
+    z-index: 12
+    transform: translate(-90vw,0)
+    box-shadow: 0 -1px 0px rgba(0,0,0,.12)
+    &:after
+      // content: ''
+      position: absolute
+      width: 100vw
+      height: 100%
+      z-index: -1
+      background: rgba($black,.25)
+      top: 0
+      left: 0
+    .main-menu
+      padding: 20px 15px
+      background-color: $white
+      height: 100%
+      position: relative
+      top: 1px
+      li
+        font-size: 24px
+        margin-bottom: 20px
+        font-family: futura-heavy, sans-serif
+
+      .link--active
+        &:after
+          content: none
+
+  .header__menu_background
+    position: fixed
+    display: block
+    width: 100vw
+    height: 100%
+    left: 0
+    z-index: 10
+    top: 99px
+    opacity: 0
+    pointer-events: none
+    transition: opacity .16s
+    background: rgba($black, .4)
+
+  .main-menu
+    li
+      display: block
+
+  .banking
+    display: none
+
+  .container
+    width: calc(100% - 30px)
+
+  .mortgage__block-image,
+  .mortgage__block-content,
+  .mortgage__block-image--small,
+  .mortgage__block-content--small
+    width: 100%
+    float: none
+  .image-bg,
+  .image-bg--small
+    width: 100%
+
+  .footer__content
+    width: 100%
+
+  .cols3
+    .col
+      width: 100%
+
+  .cols
+    .col
+      float: none
+
+  .block-content__order
+    margin-top: 0
+    .button
+      width: 100%
+      text-align: center
+
+  .block-content__description
+    box-shadow: none
+
+  .highlighted
+    box-shadow: none!important
+
+  .mortgage__block
+    &:hover
+      background-color: white
+      box-shadow: none
+
+  .mortgage__blocks_loaded
+    margin-top: 30px
+
+  .load-more__button
+    padding: 30px 0
+
+  .likes__block
+    display: block
+
+  .likes__share
+    display: block
+    text-align: center
+
+  .likes__text
+    margin: 0 0 24px 0
+    display: block
+    text-align: center
+    font-size: 24px
+
+  .likes__buttons
+    text-align: center
+    display: block
+    margin: 0
+
+  .likes__info
+    display: block
+    text-align: center
+    margin-top: 24px
+
+  .likes
+    padding: 0
+
+  .likes__wrap
+    padding: 40px 20px
+
+  .city-icon,
+  .location-icon
+    transform: translateY(-2px)
+
+  .mortgage__block-content--small
+    .property__title
+      font-size: 32px
+  .mortgage__block-content--small
+    .property__description
+      font-size: 16px

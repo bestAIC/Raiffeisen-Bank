@@ -1,0 +1,232 @@
+#header
+  background-color: $white
+  background-color: #fff
+  position: relative
+  z-index: 99999999999999
+.header
+  &__logo
+    width: calcRem(185px)
+    height: calcRem(40px)
+    background-repeat: no-repeat
+    background-size: 100%
+    display: inline-block
+    vertical-align: top
+    margin-right: calcRem(40px)
+    margin-top: calcRem(8px)
+  &__menu
+    font-size: calcRem(calcRem(22px))
+    display: inline-block
+    vertical-align: top
+    transform: translateY(calcRem(14px))
+  &__action
+    float: right
+    display: block
+    vertical-align: top
+
+.header__bottom
+  position: relative
+  font-size: 0
+  &:after
+    content: ""
+    display: table
+    clear: both
+
+.header__top
+  padding: calcRem(16px) calcRem(35px)
+  box-sizing: border-box
+  &:after
+    content: ""
+    display: table
+    clear: both
+
+.header__bottom
+  padding: calcRem(24px) calcRem(35px)
+  box-sizing: border-box
+  box-shadow: 0 -1px 0 $icons-color
+
+
+.button-invert
+  position: relative
+  font-family: futura-medium, sans-serif
+  font-size: calcRem(16px)
+  display: inline-block
+  line-height: 1
+  letter-spacing: calcRem(1.6px)
+  text-decoration: none
+  text-transform: uppercase
+  padding: calcRem(20px) calcRem(30px)
+  background-color: $yellow
+  color: $black
+  transition: 0.2s background-color, 0.2s color
+  svg
+    path
+      transition: 0.2s fill
+  &:hover
+    background-color: $black
+    color: $yellow
+    svg
+      path
+        fill: $yellow
+
+.button-with-icon
+  padding: calcRem(20px) calcRem(30px) calcRem(20px) calcRem(50px)
+
+.main-menu
+  font-size: 0
+  li
+    font-size: calcRem(22px)
+    display: inline-block
+    margin-right: calcRem(40px)
+    &:last-of-type
+      margin-right: 0
+
+.main-menu
+  &__link
+    transition: 0.2s opacity
+    opacity: 1
+    color: $text-color
+    &:hover
+      opacity: 0.5
+
+.link--active
+  color: $black!important
+  position: relative
+  &:after
+    pointer-events: none
+    content: ''
+    height: calcRem(4px)
+    width: calc(100% + 30px)
+    margin-left: -15px
+    background: $black
+    position: absolute
+    left: 0
+    bottom: calcRem(-19px)
+    transition: 0.1s transform
+    transform: scaleX(1)
+    transform-origin: center
+  &:hover
+    opacity: 1
+
+
+.sec-menu
+  float: left
+  font-size: 0
+
+.sec-menu--right
+  float: right
+  font-size: 0
+
+.sec-menu
+  transform: translate(0,5px)
+  li
+    display: inline-block
+    vertical-align: middle
+    margin-right: calcRem(30px)
+    &:last-of-type
+      margin-right: 0
+    .dot
+      font-size: calcRem(12px)
+      color: $grey
+      pointer-events: none
+
+.sec-menu--right
+  li
+    display: inline-block
+    margin-right: calcRem(30px)
+    vertical-align: middle
+    &:last-of-type
+      margin-right: 0
+
+.sec-menu__link
+  position: relative
+  font-family: futura-medium, sans-serif
+  font-size: calcRem(12px)
+  color: $grey
+  text-transform: uppercase
+  letter-spacing: calcRem(1.2px)
+
+.city-icon, .location-icon, .search-icon
+  position: absolute
+  left: 0
+
+.city-icon, .location-icon
+  transform: translateY(-4px)
+
+.search-icon
+  width: calcRem(21px)
+  height: calcRem(22px)
+
+.search-link
+  width: 21px
+  height: 22px
+  display: block
+
+.sm-i
+  padding-left: calcRem(30px)
+
+.sm-l
+  padding-left: calcRem(24px)
+
+.city-icon
+  svg
+    width: calcRem(24px)
+    height: calcRem(22px)
+
+.location-icon
+  svg
+    width: calcRem(16px)
+    height: calcRem(20px)
+
+.search-icon
+  svg
+    width: calcRem(21px)
+    height: calcRem(22px)
+
+.button-icon
+  left: calcRem(24px)
+  position: absolute
+  line-height: 0
+  top: 50%
+  transform: translateY(-50%)
+  svg
+    width: calcRem(18px)
+    height: calcRem(21px)
+
+.scroll-header
+  box-shadow: 0 1px 0 $icons-color
+  transform: translateY(calcRem(-45px))
+  .header__bottom
+    padding: calcRem(16px) calcRem(35px)
+
+.header__hamburger
+  position: absolute
+  width: 20px
+  height: 18px
+  padding: 10px 22px 10px 0
+  box-sizing: content-box
+  top: 50%
+  transform: translate(0,-50%)
+  left: 35px
+  opacity: 0
+  pointer-events: none
+
+.hamburger-menu
+  width: 20px
+  height: 2px
+  top: 50%
+  position: absolute
+  background-color: $black
+  &:before
+    content: ''
+    width: 20px
+    height: 2px
+    position: absolute
+    top: -8px
+    background-color: $black
+  &:after
+    content: ''
+    width: 20px
+    height: 2px
+    position: absolute
+    top: 8px
+    background-color: $black

@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<head>
+  <title>Ипотека</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="common/styles/normalize.css">
+  <link rel="stylesheet" href="common/styles/jquery-ui.structure.min.css">
+  <link rel="stylesheet" href="common/styles/main.css">
+  <link rel="stylesheet" href="../headsupgrid/hugrid.css">
+</head>
+<body class="loading">
+  <!--Popup-->
+  <div class="popup-links">
+    <div class="popup-links__content">
+      <ul class="popup-links__list">
+        <li class="popup-links__list-item"><a class="popup-links__link" href="">Для жизни</a><span class="popup-links__link-icon fa fa-check"></span></li>
+        <li class="popup-links__list-item"><a class="popup-links__link" href="">Для бизнеса</a></li>
+        <li class="popup-links__list-item"><a class="popup-links__link" href="">Premium<br><span class="popup-links__link-desc grey-color">Премальное обслуживание</span></a></li>
+        <li class="popup-links__list-item"><a class="popup-links__link" href="">Private<br><span class="popup-links__link-desc grey-color">Private Banking</span></a></li>
+        <li class="popup-links__list-item"><a class="popup-links__link" href="">О банке</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="popup-numbers">
+    <div class="popup-numbers__content">
+      <ul class="popup-numbers__list">
+        <li class="popup-numbers__list-item"><a class="popup-numbers__link" href="link:+74957219100">+7 495 721-91-00<br><span class="popup-numbers__link-desc grey-color">для звонков из Москвы</span></a></li>
+        <li class="popup-numbers__list-item"><a class="popup-numbers__link" href="link:88007009100">8 800 700-91-00<br><span class="popup-numbers__link-desc grey-color">для звонков из других регионов</span></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="popup-tarif">
+    <div class="popup-tarif__content"><span class="popup-tarif__close-svg"></span>
+      <div class="popup-tarif__container">
+        <div class="title-block container--m">
+          <h1 class="title-block__title">Требования к заемщику</h1>
+        </div>
+        <div class="mortgage-tabs mortgage-tabs--m">
+          <div class="container--m">
+            <ul class="tabs" data-tabgroup="tab-container-2">
+              <li class="tab-link current" data-tab="tab-1-2">Заемщики или созаемщики, участвующие доходами</li>
+              <li class="tab-link" data-tab="tab-2-2">Нифинансовый созаемщик</li>
+            </ul>
+          </div>
+        </div>
+        <div class="mortgage-tab-container" id="tab-container-2">
+          <div class="tab-content current" id="tab-1-2">
+            <div class="popup-tarif__text container--m">
+              <div class="popup-tarif__actions">
+                <div class="popup-tarif__action-item">
+                  <div class="popup-tarif__action-svg action-print"></div>
+                </div>
+                <div class="popup-tarif__action-item">
+                  <div class="popup-tarif__action-svg action-mail"></div>
+                  <div class="tooltip-mail">
+                    <div class="tooltip-mail__name grey-color">Электронная почта</div>
+                    <input class="tooltip-mail__input">
+                    <div class="tooltip-mail__button">Отправить</div>
+                  </div>
+                </div>
+                <div class="popup-tarif__action-item">
+                  <div class="popup-tarif__action-svg action-share"> </div>
+                  <div class="popup-share popup-share_p">
+                    <div class="popup-share__icons"><a class="popup-share__icon" href=""><i class="fa fa-facebook"></i></a><a class="popup-share__icon" href=""><i class="fa fa-vk"></i></a><a class="popup-share__icon" href=""><i class="fa fa-twitter"></i></a><a class="popup-share__icon" href=""><i class="fa fa-google"></i></a></div>
+                    <div class="popup-share__copy"><a href="">Копировать ссылку</a></div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="popup-tarif__text-h2">Лица</h2>
+              <p>Созаемщиком могут выступать:</p>
+              <ul class="popup-tarif__list--ul">
+                <li class="popup-tarif__list-item">официальный супруг(а),</li>
+                <li class="popup-tarif__list-item">«гражданский» супруг(а).</li>
+              </ul>
+              <p>В случае рефинансирования кредита, выданного под залог приобретаемой недвижимости:</p>
+              <ul class="popup-tarif__list--ul">
+                <li class="popup-tarif__list-item">близкие <span class="span-tooltip">родственники<span class="span-tooltip__inner">Без наделения собственностью в залоговом имуществе.</span></span> Заемщика или супруга(и), гражданского(ой) супруга(и) Заемщика (при условии что он(а) выступает Созаемщиком по кредитному договору):</li>
+                <li class="popup-tarif__list-item list-style-empty">родители,</li>
+                <li class="popup-tarif__list-item list-style-empty">дети,</li>
+                <li class="popup-tarif__list-item list-style-empty">братья или сестры.</li>
+              </ul>
+              <h2 class="popup-tarif__text-h2">Требования</h2>
+              <h3 class="popup-tarif__text-h3">Возраст</h3>
+              <p>С обязательным заключением комбинированного договора ипотечного страхования:</p>
+              <ul class="popup-tarif__list--ul">
+                <li class="popup-tarif__list-item">от 21 года на момент подачи документов на кредит и не должен превышать 65 лет на момент окончания действия кредитного договора.</li>
+              </ul>
+              <p>Без обязательного заключения комбинированного договора ипотечного страхования:</p>
+              <ul class="popup-tarif__list--ul">
+                <li class="popup-tarif__list-item">от 21 года на момент подачи документов на кредит и не должен превышать 60 лет на момент окончания действия кредитного договора.</li>
+              </ul>
+              <h3 class="popup-tarif__text-h3">Гражданство</h3>
+              <p>Любое государство</p>
+              <h3 class="popup-tarif__text-h3">Фактическое место жительства</h3>
+              <p>В пределах административных границ (республики, области, края) региона присутствия кредитующего подразделения Банка.</p>
+              <h3 class="popup-tarif__text-h3">Регистрация</h3>
+              <p>Постоянно зарегистрированы на территории Российской Федерации или временно в регионе, где представлено кредитующее подразделение банка.</p>
+              <h3 class="popup-tarif__text-h3">Минимальный стаж работы</h3>
+              <p>Физические лица, работающие по найму:</p>
+              <ul class="popup-tarif__list--ul">
+                <li class="popup-tarif__list-item">не менее 6 месяцев при общем трудовом стаже не менее 1 года.</li>
+                <li class="popup-tarif__list-item">не менее 3 месяцев при общем трудовом стаже не менее 2 лет.</li>
+                <li class="popup-tarif__list-item">не менее 1 года, если данное место работы первое для заемщика.</li>
+              </ul>
+              <p>Нотариусы, занимающиеся частной практикой, адвокаты с собственным адвокатским кабинетом: профессиональная деятельность должна вестись не менее 1 финансового года.</p>
+              <p>Владельцы, совладельцы бизнеса, индивидуальные предприниматели: деятельность компании должна вестись не менее 3 финансовых лет.</p>
+              <h3 class="popup-tarif__text-h3">Наличие телефона</h3>
+              <p>Рабочий телефон, а также домашний или мобильный обязательно.</p>
+              <h3 class="popup-tarif__text-h3">Минимальный доход заемщика</h3>
+              <ul class="popup-tarif__list--ul">
+                <li class="popup-tarif__list-item">20 000 рублей — для Москвы и МО, Санкт-Петербурга и ЛО, Екатеринбурга, Магадана, Сургута, Тюмени, по основному месту работы после налогообложения.</li>
+                <li class="popup-tarif__list-item">15 000 рублей для остальных кредитующих подразделений банка.</li>
+              </ul>
+              <h3 class="popup-tarif__text-h3">Минимальный доход созаемщика</h3>
+              <ul class="popup-tarif__list--ul">
+                <li class="popup-tarif__list-item">10 000 рублей — по основному месту работы после налогообложения.</li>
+              </ul>
+              <h2 class="popup-tarif__text-h2">Кредитная история</h2>
+              <ol class="popup-tarif__list--ol">
+                <li class="popup-tarif__list-item">Отсутствие плохой кредитной истории</li>
+                <li class="popup-tarif__list-item">Действующие кредиты</li>
+              </ol>
+              <p>Не должен иметь более 2 ипотечных кредитов АО «Райффайзенбанк» или других банков  (с учетом вновь <a class="popup-tarif__text-link" href="">одобряемого</a>).</p>
+            </div>
+          </div>
+          <div class="tab-content" id="tab-2-2">
+            <div class="popup-tarif__text container--m">
+              <div class="popup-tarif__actions">
+                <div class="popup-tarif__action-item">
+                  <div class="popup-tarif__action-svg action-print"></div>
+                </div>
+                <div class="popup-tarif__action-item">
+                  <div class="popup-tarif__action-svg action-mail"></div>
+                  <div class="tooltip-mail">
+                    <div class="tooltip-mail__name grey-color">Электронная почта</div>
+                    <input class="tooltip-mail__input">
+                    <div class="tooltip-mail__button">Отправить</div>
+                  </div>
+                </div>
+                <div class="popup-tarif__action-item">
+                  <div class="popup-tarif__action-svg action-share"> </div>
+                  <div class="popup-share popup-share_p">
+                    <div class="popup-share__icons"><a class="popup-share__icon" href=""><i class="fa fa-facebook"></i></a><a class="popup-share__icon" href=""><i class="fa fa-vk"></i></a><a class="popup-share__icon" href=""><i class="fa fa-twitter"></i></a><a class="popup-share__icon" href=""><i class="fa fa-google"></i></a></div>
+                    <div class="popup-share__copy"><a href="">Копировать ссылку</a></div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="popup-tarif__text-h2">Созаемщик</h2>
+              <p>Созаемщиком могут выступать:</p>
+              <ul class="popup-tarif__list--ul">
+                <li class="popup-tarif__list-item">официальный супруг(а)</li>
+              </ul>
+              <h2 class="popup-tarif__text-h2">Требования</h2>
+              <h3 class="popup-tarif__text-h3">Возраст</h3>
+              <p>От 18 лет на момент подачи документов на кредит и до 70 лет на момент окончания действия кредитного договора.</p>
+              <h3 class="popup-tarif__text-h3">Гражданство</h3>
+              <p>Любое государство.</p>
+              <h3 class="popup-tarif__text-h3">Кредитная история</h3>
+              <p>Отсутствие плохой кредитной истории.</p>
+              <h3 class="popup-tarif__text-h3">Дополнительно</h3>
+              <p>Согласие созаемщика на получение данных из БКИ для получения одобрения кредита.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Page-->
+  <header id="header">
+    <div class="header__top"><a class="sec-menu__link sec-menu--mobile" href="">Для жизни<span class="arr-icon">
+          <svg width="8px" height="10px" viewbox="0 0 8 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g id="Text-Styles-Copy" transform="translate(-826.000000, -402.000000)" fill="#000000">
+                <path id="Combined-Shape" d="M832.767269,407 L833.066817,406.700452 L828.566817,402.200452 L826.933183,403.834086 L830.099097,407 L826.933183,410.165914 L828.566817,411.799548 L833.066817,407.299548 L832.767269,407 Z"></path>
+              </g>
+            </g>
+          </svg></span></a>
+      <ul class="sec-menu">
+        <li><a class="sec-menu__link link--active" href="#8">Для жизни</a></li>
+        <li><a class="sec-menu__link" href="#8">Для бизнеса</a></li>
+        <li><a class="sec-menu__link" href="#8">Премиальное обслуживание</a></li>
+        <li><a class="sec-menu__link" href="#8">Private Banking</a></li>
+        <li><span class="dot">•</span></li>
+        <li><a class="sec-menu__link" href="#8">О банке</a></li>
+      </ul>
+      <ul class="sec-menu--right">
+        <li class="mobile-hide"><a class="sec-menu__link sm-i" href="#8">Москва<span class="city-icon">
+              <svg width="24px" height="22px" viewbox="0 0 24 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch-->
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="Text-Styles-Copy" transform="translate(-251.000000, -396.000000)" fill="#7D7D7D">
+                    <g id="house" transform="translate(251.000000, 396.000000)">
+                      <path id="Rectangle" d="M11.9768066,20 L22,20.0153198 L22,2 L11.9847412,2 L11.9768066,20 Z M24,0 L24,22 L10,22 L10,0 L24,0 Z" fill-rule="nonzero"></path>
+                      <path id="Rectangle-Copy" d="M1.984375,20 L10,20.0163574 L9.98638916,8 L2.02313232,8 L1.984375,20 Z M12,6 L12,22 L0,22 L0,6 L12,6 Z" fill-rule="nonzero"></path>
+                      <rect id="Rectangle-2" x="15" y="5" width="4" height="2"></rect>
+                      <rect id="Rectangle-2-Copy" x="15" y="9" width="4" height="2"></rect>
+                      <rect id="Rectangle-2-Copy-2" x="15" y="13" width="4" height="2"></rect>
+                    </g>
+                  </g>
+                </g>
+              </svg></span></a></li>
+        <li><a class="sec-menu__link sm-l" href="#8">Офисы и банкоматы<span class="location-icon">
+              <svg width="16px" height="20px" viewbox="0 0 16 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch-->
+                <defs></defs>
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="Text-Styles-Copy" transform="translate(-303.000000, -397.000000)" fill="#7A7A7A">
+                    <path id="Fill-8" d="M317.170422,409.67019 C318.15995,408.372088 318.756803,406.756713 318.781,404.99919 C318.841,400.64219 315.358,397.06019 311,397.00019 L310.998,397.00019 C306.61,396.97019 303.03,400.50319 303,404.89019 C303,407.28863 304.070653,409.439711 305.762512,410.887981 L311,417.00019 L317.282,409.67019 L317.170422,409.67019 Z M311,399.00019 C314.314,399.00019 317,401.68619 317,405.00019 C317,408.31419 314.314,411.00019 311,411.00019 C307.686,411.00019 305,408.31419 305,405.00019 C305,401.68619 307.686,399.00019 311,399.00019 L311,399.00019 Z"></path>
+                  </g>
+                </g>
+              </svg></span></a></li>
+        <li class="lang-menu"><a class="sec-menu__link" href="#8">En</a></li>
+        <li class="mobile-hide"><a class="sec-menu__link search-link" href="#8"><span class="search-icon">
+              <svg width="21px" height="22px" viewbox="0 0 21 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch-->
+                <g id="searh" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="Text-Styles-Copy" transform="translate(-351.000000, -396.000000)" fill-rule="nonzero" fill="#7F7F7F">
+                    <g id="search" transform="translate(351.000000, 396.000000)">
+                      <polygon id="Shape" points="19 21.2803688 20.5364426 20 15.5364426 14 14 15.2803688"></polygon>
+                      <path id="Oval" d="M18.156,9.078 C18.156,14.091641 14.091641,18.156 9.078,18.156 C4.06435904,18.156 0,14.091641 0,9.078 C0,4.06435904 4.06435904,0 9.078,0 C14.091641,0 18.156,4.06435904 18.156,9.078 Z M2,9.078 C2,12.9870715 5.16892854,16.156 9.078,16.156 C12.9870715,16.156 16.156,12.9870715 16.156,9.078 C16.156,5.16892854 12.9870715,2 9.078,2 C5.16892854,2 2,5.16892854 2,9.078 Z"></path>
+                    </g>
+                  </g>
+                </g>
+              </svg></span></a></li>
+      </ul>
+    </div>
+    <div class="header__bottom">
+      <div class="header__hamburger">
+        <div class="hamburger-menu"></div>
+      </div>
+      <div class="header__logo" style="background-image: url(common/images/logo-raif.svg);"></div>
+      <div class="header__menu">
+        <ul class="main-menu">
+          <li><a class="main-menu__link" href="#6">Карты</a></li>
+          <li><a class="main-menu__link" href="#6">Вклады и инвестиции</a></li>
+          <li><a class="main-menu__link" href="#6">Кредиты</a></li>
+          <li><a class="main-menu__link link--active" href="#6">Ипотека</a></li>
+          <li><a class="main-menu__link" href="#6">Пакеты услуг</a></li>
+          <li><a class="main-menu__link" href="#6">Страхование</a></li>
+          <li><a class="main-menu__link" href="#6">Сервисы</a></li>
+        </ul>
+      </div>
+      <div class="header__action"><a class="button-invert button-with-icon banking" href="#5">Интернет-Банк<span class="button-icon">
+            <svg width="18px" height="21px" viewbox="0 0 18 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch-->
+              <g id="ibank" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="ibank_21" transform="translate(-403.000000, -397.000000)" fill="#000000">
+                  <path id="ibank_22" d="M412,406.97999 C414.754592,406.97447 416.983674,404.737932 416.979996,401.983337 C416.976317,399.228741 414.741271,396.998165 411.986673,397.000001 C409.232076,397.001838 407.000006,399.235392 407,401.98999 C407.005515,404.747508 409.242477,406.979996 412,406.97999 L412,406.97999 Z M412,398.98999 C413.656854,398.98999 415,400.333136 415,401.98999 C415,403.646844 413.656854,404.98999 412,404.98999 C410.343146,404.98999 409,403.646844 409,401.98999 C409,400.333136 410.343146,398.98999 412,398.98999 L412,398.98999 Z M412,407.97999 C408.1,407.97999 403,410.43999 403,415.92999 L403,416.94999 C403,416.94999 421,417.09999 421,416.94999 C420.998681,414.566201 420.049087,412.280863 418.360681,410.598086 C416.672276,408.915308 414.38378,407.97335 412,407.97999 L412,407.97999 Z M405,415.00999 C405.5,411.48999 408.907,409.96999 412,409.96999 C415.093,409.96999 418.5,411.47999 419,415.00999 L405,415.00999 L405,415.00999 Z"></path>
+                </g>
+              </g>
+            </svg></span></a><a class="button-invert button-with-icon ring" href="#8">
+          <div class="button-icon-f"><span class="button-svg">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="20px" height="20px" viewbox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+                <defs></defs>
+                <g transform="translate(325.000000, 73.000000)">
+                  <path id="phone_1_" d="M-312-67.8c0.1,0.1,0.3,0.3,0.5,0.5l2.9-2.9l-0.6-0.6L-312-68L-312-67.8z M-322.7-57.3l0.6,0.6l2.8-2.8                            L-320-60L-322.7-57.3z M-320.2-55.4c0.5,0.1,1.1,0.3,1.8,0.3c1.8,0,4.5-0.7,7.7-3.9c4-4.1,3.8-7.4,3.3-9.1l-2.8,2.8                            c0.1,1-0.7,2-1.1,2.5c-0.9,1.2-2,2.2-3.2,3.2c-1.2,1-2,1.6-2.9,1.6c0,0-0.1,0-0.1,0L-320.2-55.4z M-318.3-53                            c-1.4,0-2.6-0.3-3.5-0.7l-1.7-1.3l-1-1c-0.3-0.3-0.5-0.7-0.5-1.2c0-0.5,0.2-0.9,0.5-1.2l3.3-3.3c0.3-0.3,0.8-0.5,1.2-0.5                            c0.5,0,0.9,0.2,1.2,0.5l1.8,1.4c0.4-0.3,0.9-0.7,1.2-0.9c1.1-0.8,2-1.8,2.9-2.9c0.3-0.4,0.5-0.7,0.6-0.8c-0.7-0.8-1.1-1.3-1.4-1.6                            l-0.1-0.1c-0.3-0.3-0.5-0.8-0.5-1.2c0-0.5,0.2-0.9,0.5-1.2l3.4-3.4c0.3-0.3,0.8-0.5,1.2-0.5c0.5,0,0.9,0.2,1.3,0.5l0.8,0.8l1.4,1.9                            c0.9,1.8,2.1,6.6-3.4,12.2C-312.8-53.8-316.2-53-318.3-53L-318.3-53z"></path>
+                </g>
+              </svg></span></div></a><a class="button-invert button-with-icon close" href="#8">
+          <div class="button-icon-f"><i class="fa fa-close"></i></div></a></div>
+    </div>
+  </header>
+  <div class="body-container">
+    <div class="wrapper">
+      <div class="morgage-wrapper">
+        <div class="mortgage__block-image">
+          <div class="video-bg">
+            <video id="bgvid" autoplay="" loop="" poster="common/images/video-poster.jpg">
+              <source type="video/webm" src="common/images/video.webm">
+              <source type="video/mp4" src="common/images/video.mp4" title="Your browser does not support the &lt;video&gt; tag">
+            </video>
+          </div>
+        </div>
+        <div class="mortgage-intro container">
+          <div class="mortgage-intro__block">
+            <div class="mortgage__block-content">
+              <h6 class="title-block__description grey-color">Для жизни</h6>
+              <h1 class="title-block__title">Рефинансирование кредитов иных банков</h1>
+              <p class="block-content__readme grey-color">Получите выгодные условия на покупку недвижимости в новостройках и вторичном рынке жилья, включая кредиты под залог квартиры в собственности.</p>
+              <div class="block-content__description">
+                <div class="property">
+                  <div class="property__block">
+                    <h3 class="property__title">8,5%</h3>
+                    <p class="property__description">ставка снижена до 23 марта</p>
+                  </div>
+                </div>
+                <div class="property">
+                  <div class="property__block">
+                    <h3 class="property__title">1–25<span class="small-text">лет</span></h3>
+                    <p class="property__description">срок кредитования</p>
+                  </div>
+                </div>
+                <div class="property">
+                  <div class="property__block">
+                    <h3 class="property__title">8,5%<span class="small-text">млн. ₽</span></h3>
+                    <p class="property__description">максимальная сумма</p>
+                  </div>
+                </div>
+              </div>
+              <div class="mortgage__block-buttons"><a class="button" href="#23">Оставить заявку</a><a class="find-department" href="#23">Найти отделение</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mortgage-tabs loaded-block">
+        <div class="container">
+          <ul class="tabs" data-tabgroup="tab-container-1">
+            <li class="tab-link current" data-tab="tab-1">Как получить</li>
+            <li class="tab-link" data-tab="tab-2">Тарифы и условия</li>
+            <li class="tab-link" data-tab="tab-3">Калькулятор</li>
+            <li class="tab-brake">
+              <gulpspan class="dot">•</gulpspan>
+            </li>
+            <li class="tab-link" data-tab="tab-4">Для клиентов</li>
+          </ul>
+        </div>
+      </div>
+      <div class="mortgage-tab-container" id="tab-container-1">
+        <div class="tab-content current" id="tab-1">
+          <div class="container tabs-content loaded-block">
+            <div class="tab__block-icon">
+              <div class="block-icon__image"><img src="common/images/bi-1.svg"></div>
+              <div class="block-icon__content">
+                <p>Без поручительств и гарантий третьих лиц</p>
+              </div>
+            </div>
+            <div class="tab__block-icon">
+              <div class="block-icon__image"><img src="common/images/bi-2.svg"></div>
+              <div class="block-icon__content">
+                <p>Рассмотрение заявки от 2 до 5 рабочих дней</p>
+              </div>
+            </div>
+            <div class="tab__block-icon">
+              <div class="block-icon__image"><img src="common/images/bi-3.svg"></div>
+              <div class="block-icon__content">
+                <p>Договор комбинированного страхования не нужен</p>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="tab__block-accordion loaded-block">
+              <div class="block-icon__accordion">
+                <h1 class="title-block__title">Как оформить рефинансирование</h1>
+              </div>
+              <div class="block-icon__accordion">
+                <p class="grey-color">5 простых шагов к собственному жилью</p>
+              </div>
+            </div>
+            <div class="accordion">
+              <div class="accordion__head active loaded-block">
+                <h2><span class="accordion__number">1</span>Консультация и подача заявки</h2>
+                <div class="accordion__head-description grey-color">1 рабочий день</div>
+                <div class="accordion__head-cross"><img src="common/images/close.svg"></div>
+              </div>
+              <div class="accordion__body loaded-block">
+                <div class="accordion__body-left">
+                  <ul class="popup-tarif__list--ul">
+                    <li class="popup-tarif__list-item">Получите консультацию по телефону или в отделении или оформите предварительную заявку на сайте</li>
+                    <li class="popup-tarif__list-item">Подготовьте<span class="span-tooltip">необходимые документы<span class="span-tooltip__inner">Без наделения собственностью в залоговом имуществе.</span></span></li>
+                    <li class="popup-tarif__list-item">Отправьте скан документов по электронной почте Вашему менеджеру или передайте в бумажном виде в любое отделение</li>
+                  </ul>
+                  <div class="accordion__body-navigation"><a class="button" href="#23">Оставить заявку</a></div>
+                </div>
+                <div class="accordion__body-sidebar">
+                  <div class="more-questions__actions-item item--number">
+                    <svg class="more-questions__svg" width="48px" height="80px" viewbox="0 0 48 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Text-Styles-Copy" transform="translate(-260.000000, -1728.000000)" fill="#E0E1E2">
+                          <path id="Combined-Shape" d="M287.280906,1758.05339 L278.34337,1766.99092 L275.514236,1764.16179 L284.45139,1755.22463 L279.156331,1755.57716 L278.891166,1751.58554 L291.07108,1751.43493 L290.919759,1763.61413 L286.927434,1763.34826 L287.280906,1758.05339 Z M260,1808 L260,1728 L308,1728 L308,1808 L260,1808 Z M266,1802 L302,1802 L302,1735 L266,1735 L266,1802 Z M288,1794 C288,1796.209 286.209,1798 284,1798 C281.791,1798 280,1796.209 280,1794 C280,1791.791 281.791,1790 284,1790 C286.209,1790 288,1791.791 288,1794 Z"></path>
+                        </g>
+                      </g>
+                    </svg><a class="more-questions__link" href="tel:+74957219100">
+                      <div class="more-questions__link-phone"><span>Телефон горячей линии</span><br>+7 495 721 91 00</div></a>
+                  </div>
+                  <div class="more-questions__actions-item item--location">
+                    <svg class="more-questions__svg" width="64px" height="80px" viewbox="0 0 64 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Text-Styles-Copy" transform="translate(-396.000000, -1728.000000)" fill="#E0E1E2">
+                          <path id="Fill-8" d="M453.465503,1778.68028 C457.47835,1773.48792 459.898776,1767.02648 459.996903,1759.99646 C460.240222,1742.56862 446.115565,1728.24076 428.442508,1728.00076 L428.434398,1728.00076 C410.639682,1727.88076 396.121659,1742.01263 396,1759.56046 C396,1769.15413 400.341833,1777.75837 407.202853,1783.5514 L428.442508,1808 L453.917988,1778.68028 L453.465503,1778.68028 Z M428.442508,1736.00068 C441.881817,1736.00068 452.77439,1746.74458 452.77439,1760.00046 C452.77439,1773.25633 441.881817,1784.00023 428.442508,1784.00023 C415.003199,1784.00023 404.110627,1773.25633 404.110627,1760.00046 C404.110627,1746.74458 415.003199,1736.00068 428.442508,1736.00068 L428.442508,1736.00068 Z"></path>
+                        </g>
+                      </g>
+                    </svg><a class="more-questions__link" href="">Найти отделение</a>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__head loaded-block">
+                <h2><span class="accordion__number">2</span>Консультация и подача заявки</h2>
+                <div class="accordion__head-description grey-color">1 рабочий день</div>
+                <div class="accordion__head-cross"><img src="common/images/close.svg"></div>
+              </div>
+              <div class="accordion__body loaded-block">
+                <div class="accordion__body-left">
+                  <ul class="popup-tarif__list--ul">
+                    <li class="popup-tarif__list-item">Получите консультацию по телефону или в отделении или оформите предварительную заявку на сайте</li>
+                    <li class="popup-tarif__list-item">Подготовьте<span class="span-tooltip">необходимые документы<span class="span-tooltip__inner">Без наделения собственностью в залоговом имуществе.</span></span></li>
+                    <li class="popup-tarif__list-item">Отправьте скан документов по электронной почте Вашему менеджеру или передайте в бумажном виде в любое отделение</li>
+                  </ul>
+                  <div class="accordion__body-navigation"><a class="button" href="#23">Оставить заявку</a></div>
+                </div>
+                <div class="accordion__body-sidebar">
+                  <div class="more-questions__actions-item item--number">
+                    <svg class="more-questions__svg" width="48px" height="80px" viewbox="0 0 48 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Text-Styles-Copy" transform="translate(-260.000000, -1728.000000)" fill="#E0E1E2">
+                          <path id="Combined-Shape" d="M287.280906,1758.05339 L278.34337,1766.99092 L275.514236,1764.16179 L284.45139,1755.22463 L279.156331,1755.57716 L278.891166,1751.58554 L291.07108,1751.43493 L290.919759,1763.61413 L286.927434,1763.34826 L287.280906,1758.05339 Z M260,1808 L260,1728 L308,1728 L308,1808 L260,1808 Z M266,1802 L302,1802 L302,1735 L266,1735 L266,1802 Z M288,1794 C288,1796.209 286.209,1798 284,1798 C281.791,1798 280,1796.209 280,1794 C280,1791.791 281.791,1790 284,1790 C286.209,1790 288,1791.791 288,1794 Z"></path>
+                        </g>
+                      </g>
+                    </svg><a class="more-questions__link" href="tel:+74957219100">
+                      <div class="more-questions__link-phone"><span>Телефон горячей линии</span><br>+7 495 721 91 00</div></a>
+                  </div>
+                  <div class="more-questions__actions-item item--location">
+                    <svg class="more-questions__svg" width="64px" height="80px" viewbox="0 0 64 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Text-Styles-Copy" transform="translate(-396.000000, -1728.000000)" fill="#E0E1E2">
+                          <path id="Fill-8" d="M453.465503,1778.68028 C457.47835,1773.48792 459.898776,1767.02648 459.996903,1759.99646 C460.240222,1742.56862 446.115565,1728.24076 428.442508,1728.00076 L428.434398,1728.00076 C410.639682,1727.88076 396.121659,1742.01263 396,1759.56046 C396,1769.15413 400.341833,1777.75837 407.202853,1783.5514 L428.442508,1808 L453.917988,1778.68028 L453.465503,1778.68028 Z M428.442508,1736.00068 C441.881817,1736.00068 452.77439,1746.74458 452.77439,1760.00046 C452.77439,1773.25633 441.881817,1784.00023 428.442508,1784.00023 C415.003199,1784.00023 404.110627,1773.25633 404.110627,1760.00046 C404.110627,1746.74458 415.003199,1736.00068 428.442508,1736.00068 L428.442508,1736.00068 Z"></path>
+                        </g>
+                      </g>
+                    </svg><a class="more-questions__link" href="">Найти отделение</a>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__head loaded-block">
+                <h2><span class="accordion__number">3</span>Консультация и подача заявки</h2>
+                <div class="accordion__head-description grey-color">1 рабочий день</div>
+                <div class="accordion__head-cross"><img src="common/images/close.svg"></div>
+              </div>
+              <div class="accordion__body loaded-block">
+                <div class="accordion__body-left">
+                  <ul class="popup-tarif__list--ul">
+                    <li class="popup-tarif__list-item">Получите консультацию по телефону или в отделении или оформите предварительную заявку на сайте</li>
+                    <li class="popup-tarif__list-item">Подготовьте<span class="span-tooltip">необходимые документы<span class="span-tooltip__inner">Без наделения собственностью в залоговом имуществе.</span></span></li>
+                    <li class="popup-tarif__list-item">Отправьте скан документов по электронной почте Вашему менеджеру или передайте в бумажном виде в любое отделение</li>
+                  </ul>
+                  <div class="accordion__body-navigation"><a class="button" href="#23">Оставить заявку</a></div>
+                </div>
+                <div class="accordion__body-sidebar">
+                  <div class="more-questions__actions-item item--number">
+                    <svg class="more-questions__svg" width="48px" height="80px" viewbox="0 0 48 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Text-Styles-Copy" transform="translate(-260.000000, -1728.000000)" fill="#E0E1E2">
+                          <path id="Combined-Shape" d="M287.280906,1758.05339 L278.34337,1766.99092 L275.514236,1764.16179 L284.45139,1755.22463 L279.156331,1755.57716 L278.891166,1751.58554 L291.07108,1751.43493 L290.919759,1763.61413 L286.927434,1763.34826 L287.280906,1758.05339 Z M260,1808 L260,1728 L308,1728 L308,1808 L260,1808 Z M266,1802 L302,1802 L302,1735 L266,1735 L266,1802 Z M288,1794 C288,1796.209 286.209,1798 284,1798 C281.791,1798 280,1796.209 280,1794 C280,1791.791 281.791,1790 284,1790 C286.209,1790 288,1791.791 288,1794 Z"></path>
+                        </g>
+                      </g>
+                    </svg><a class="more-questions__link" href="tel:+74957219100">
+                      <div class="more-questions__link-phone"><span>Телефон горячей линии</span><br>+7 495 721 91 00</div></a>
+                  </div>
+                  <div class="more-questions__actions-item item--location">
+                    <svg class="more-questions__svg" width="64px" height="80px" viewbox="0 0 64 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Text-Styles-Copy" transform="translate(-396.000000, -1728.000000)" fill="#E0E1E2">
+                          <path id="Fill-8" d="M453.465503,1778.68028 C457.47835,1773.48792 459.898776,1767.02648 459.996903,1759.99646 C460.240222,1742.56862 446.115565,1728.24076 428.442508,1728.00076 L428.434398,1728.00076 C410.639682,1727.88076 396.121659,1742.01263 396,1759.56046 C396,1769.15413 400.341833,1777.75837 407.202853,1783.5514 L428.442508,1808 L453.917988,1778.68028 L453.465503,1778.68028 Z M428.442508,1736.00068 C441.881817,1736.00068 452.77439,1746.74458 452.77439,1760.00046 C452.77439,1773.25633 441.881817,1784.00023 428.442508,1784.00023 C415.003199,1784.00023 404.110627,1773.25633 404.110627,1760.00046 C404.110627,1746.74458 415.003199,1736.00068 428.442508,1736.00068 L428.442508,1736.00068 Z"></path>
+                        </g>
+                      </g>
+                    </svg><a class="more-questions__link" href="">Найти отделение</a>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__head loaded-block">
+                <h2><span class="accordion__number">4</span>Консультация и подача заявки</h2>
+                <div class="accordion__head-description grey-color">1 рабочий день</div>
+                <div class="accordion__head-cross"><img src="common/images/close.svg"></div>
+              </div>
+              <div class="accordion__body loaded-block">
+                <div class="accordion__body-left">
+                  <ul class="popup-tarif__list--ul">
+                    <li class="popup-tarif__list-item">Получите консультацию по телефону или в отделении или оформите предварительную заявку на сайте</li>
+                    <li class="popup-tarif__list-item">Подготовьте<span class="span-tooltip">необходимые документы<span class="span-tooltip__inner">Без наделения собственностью в залоговом имуществе.</span></span></li>
+                    <li class="popup-tarif__list-item">Отправьте скан документов по электронной почте Вашему менеджеру или передайте в бумажном виде в любое отделение</li>
+                  </ul>
+                  <div class="accordion__body-navigation"><a class="button" href="#23">Оставить заявку</a></div>
+                </div>
+                <div class="accordion__body-sidebar">
+                  <div class="more-questions__actions-item item--number">
+                    <svg class="more-questions__svg" width="48px" height="80px" viewbox="0 0 48 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Text-Styles-Copy" transform="translate(-260.000000, -1728.000000)" fill="#E0E1E2">
+                          <path id="Combined-Shape" d="M287.280906,1758.05339 L278.34337,1766.99092 L275.514236,1764.16179 L284.45139,1755.22463 L279.156331,1755.57716 L278.891166,1751.58554 L291.07108,1751.43493 L290.919759,1763.61413 L286.927434,1763.34826 L287.280906,1758.05339 Z M260,1808 L260,1728 L308,1728 L308,1808 L260,1808 Z M266,1802 L302,1802 L302,1735 L266,1735 L266,1802 Z M288,1794 C288,1796.209 286.209,1798 284,1798 C281.791,1798 280,1796.209 280,1794 C280,1791.791 281.791,1790 284,1790 C286.209,1790 288,1791.791 288,1794 Z"></path>
+                        </g>
+                      </g>
+                    </svg><a class="more-questions__link" href="tel:+74957219100">
+                      <div class="more-questions__link-phone"><span>Телефон горячей линии</span><br>+7 495 721 91 00</div></a>
+                  </div>
+                  <div class="more-questions__actions-item item--location">
+                    <svg class="more-questions__svg" width="64px" height="80px" viewbox="0 0 64 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Text-Styles-Copy" transform="translate(-396.000000, -1728.000000)" fill="#E0E1E2">
+                          <path id="Fill-8" d="M453.465503,1778.68028 C457.47835,1773.48792 459.898776,1767.02648 459.996903,1759.99646 C460.240222,1742.56862 446.115565,1728.24076 428.442508,1728.00076 L428.434398,1728.00076 C410.639682,1727.88076 396.121659,1742.01263 396,1759.56046 C396,1769.15413 400.341833,1777.75837 407.202853,1783.5514 L428.442508,1808 L453.917988,1778.68028 L453.465503,1778.68028 Z M428.442508,1736.00068 C441.881817,1736.00068 452.77439,1746.74458 452.77439,1760.00046 C452.77439,1773.25633 441.881817,1784.00023 428.442508,1784.00023 C415.003199,1784.00023 404.110627,1773.25633 404.110627,1760.00046 C404.110627,1746.74458 415.003199,1736.00068 428.442508,1736.00068 L428.442508,1736.00068 Z"></path>
+                        </g>
+                      </g>
+                    </svg><a class="more-questions__link" href="">Найти отделение</a>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__head loaded-block">
+                <h2><span class="accordion__number">5</span>Консультация и подача заявки</h2>
+                <div class="accordion__head-description grey-color">1 рабочий день</div>
+                <div class="accordion__head-cross"><img src="common/images/close.svg"></div>
+              </div>
+              <div class="accordion__body loaded-block">
+                <div class="accordion__body-left">
+                  <ul class="popup-tarif__list--ul">
+                    <li class="popup-tarif__list-item">Получите консультацию по телефону или в отделении или оформите предварительную заявку на сайте</li>
+                    <li class="popup-tarif__list-item">Подготовьте<span class="span-tooltip">необходимые документы<span class="span-tooltip__inner">Без наделения собственностью в залоговом имуществе.</span></span></li>
+                    <li class="popup-tarif__list-item">Отправьте скан документов по электронной почте Вашему менеджеру или передайте в бумажном виде в любое отделение</li>
+                  </ul>
+                  <div class="accordion__body-navigation"><a class="button" href="#23">Оставить заявку</a></div>
+                </div>
+                <div class="accordion__body-sidebar">
+                  <div class="more-questions__actions-item item--number">
+                    <svg class="more-questions__svg" width="48px" height="80px" viewbox="0 0 48 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Text-Styles-Copy" transform="translate(-260.000000, -1728.000000)" fill="#E0E1E2">
+                          <path id="Combined-Shape" d="M287.280906,1758.05339 L278.34337,1766.99092 L275.514236,1764.16179 L284.45139,1755.22463 L279.156331,1755.57716 L278.891166,1751.58554 L291.07108,1751.43493 L290.919759,1763.61413 L286.927434,1763.34826 L287.280906,1758.05339 Z M260,1808 L260,1728 L308,1728 L308,1808 L260,1808 Z M266,1802 L302,1802 L302,1735 L266,1735 L266,1802 Z M288,1794 C288,1796.209 286.209,1798 284,1798 C281.791,1798 280,1796.209 280,1794 C280,1791.791 281.791,1790 284,1790 C286.209,1790 288,1791.791 288,1794 Z"></path>
+                        </g>
+                      </g>
+                    </svg><a class="more-questions__link" href="tel:+74957219100">
+                      <div class="more-questions__link-phone"><span>Телефон горячей линии</span><br>+7 495 721 91 00</div></a>
+                  </div>
+                  <div class="more-questions__actions-item item--location">
+                    <svg class="more-questions__svg" width="64px" height="80px" viewbox="0 0 64 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Text-Styles-Copy" transform="translate(-396.000000, -1728.000000)" fill="#E0E1E2">
+                          <path id="Fill-8" d="M453.465503,1778.68028 C457.47835,1773.48792 459.898776,1767.02648 459.996903,1759.99646 C460.240222,1742.56862 446.115565,1728.24076 428.442508,1728.00076 L428.434398,1728.00076 C410.639682,1727.88076 396.121659,1742.01263 396,1759.56046 C396,1769.15413 400.341833,1777.75837 407.202853,1783.5514 L428.442508,1808 L453.917988,1778.68028 L453.465503,1778.68028 Z M428.442508,1736.00068 C441.881817,1736.00068 452.77439,1746.74458 452.77439,1760.00046 C452.77439,1773.25633 441.881817,1784.00023 428.442508,1784.00023 C415.003199,1784.00023 404.110627,1773.25633 404.110627,1760.00046 C404.110627,1746.74458 415.003199,1736.00068 428.442508,1736.00068 L428.442508,1736.00068 Z"></path>
+                        </g>
+                      </g>
+                    </svg><a class="more-questions__link" href="">Найти отделение</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="care loaded-block">
+            <div class="care__wrap container" style="background-image: url(common/images/bg.jpg);">
+              <div class="care__content">
+                <h1 class="title-block__title">Мы позаботимся<br>о вашей ипотеке!</h1>
+                <div class="mortgage__block-buttons"><a class="button" href="#23">Оставить заявку</a><a class="find-department" href="#23">Найти отделение</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="tips loaded-block">
+            <div class="tips__wrap container">
+              <div class="tips__content">
+                <div class="tips__title">
+                  <h3 class="tisp__title-content">Уже есть ипотечный кредит</h3>
+                </div>
+                <div class="tips__links">
+                  <div class="tips__links-content"><a class="link tips__links-link" href="#1">Памятка по снятию обременения</a><span class="link-description grey-color">PDF, 2 Мб</span></div>
+                  <div class="tips__links-content"><a class="link tips__links-link" href="#2">Памятка по погашению ипотечного кредита</a><span class="link-description grey-color">PDF, 2 Мб</span></div>
+                  <div class="tips__links-content"><a class="link tips__links-link" href="#3">Памятка по оформлению залога квартиры после получения права собственности (первичный рынок)</a><span class="link-description grey-color">PDF, 2 Мб</span></div>
+                  <div class="tips__all"><a class="all-recomendation" href="#3">Все рекомендации</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="more-questions loaded-block">
+            <div class="more-questions__content container">
+              <div class="more-questions__title">
+                <h2 class="heading-h2">Остались вопросы?</h2>
+              </div>
+              <div class="more-questions__actions">
+                <div class="more-questions__actions-item item--number">
+                  <svg class="more-questions__svg" width="48px" height="80px" viewbox="0 0 48 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Text-Styles-Copy" transform="translate(-260.000000, -1728.000000)" fill="#E0E1E2">
+                        <path id="Combined-Shape" d="M287.280906,1758.05339 L278.34337,1766.99092 L275.514236,1764.16179 L284.45139,1755.22463 L279.156331,1755.57716 L278.891166,1751.58554 L291.07108,1751.43493 L290.919759,1763.61413 L286.927434,1763.34826 L287.280906,1758.05339 Z M260,1808 L260,1728 L308,1728 L308,1808 L260,1808 Z M266,1802 L302,1802 L302,1735 L266,1735 L266,1802 Z M288,1794 C288,1796.209 286.209,1798 284,1798 C281.791,1798 280,1796.209 280,1794 C280,1791.791 281.791,1790 284,1790 C286.209,1790 288,1791.791 288,1794 Z"></path>
+                      </g>
+                    </g>
+                  </svg><a class="more-questions__link" href="tel:+74957219100">
+                    <div class="more-questions__link-phone"><span>Телефон горячей линии</span><br>+7 495 721 91 00</div></a>
+                </div>
+                <div class="more-questions__actions-item item--fb">
+                  <svg class="more-questions__svg" width="44px" height="80px" viewbox="0 0 44 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Text-Styles-Copy" transform="translate(-560.000000, -1728.000000)" fill="#E0E1E2">
+                        <path id="Fill-1" d="M601.69953,1728.01667 L591.305688,1728 C579.629387,1728 572.084622,1735.72726 572.084622,1747.68772 L572.084622,1756.76577 L561.634116,1756.76577 C560.731644,1756.76577 560,1757.49658 560,1758.39738 L560,1771.54947 C560,1772.45111 560.732477,1773.18109 561.634116,1773.18109 L572.083789,1773.18109 L572.083789,1806.36838 C572.083789,1807.27002 572.815433,1808 573.717905,1808 L587.351645,1808 C588.25495,1808 588.985761,1807.26919 588.985761,1806.36838 L588.985761,1773.18109 L601.204546,1773.18109 C602.107017,1773.18109 602.838661,1772.45111 602.838661,1771.54947 L602.843661,1758.39738 C602.843661,1757.9649 602.671167,1757.55074 602.364509,1757.24409 C602.057852,1756.93743 601.642032,1756.76577 601.208712,1756.76577 L588.987427,1756.76577 L588.987427,1749.07017 C588.987427,1745.37196 589.8699,1743.49452 594.695582,1743.49452 L601.697864,1743.49202 C602.600335,1743.49202 603.331146,1742.76121 603.331146,1741.8604 L603.331146,1729.64828 C603.331146,1728.74831 602.601169,1728.01833 601.69953,1728.01667"></path>
+                      </g>
+                    </g>
+                  </svg><a class="more-questions__link" href="">Facebook</a>
+                </div>
+                <div class="more-questions__actions-item item--telegram">
+                  <svg class="more-questions__svg" width="80px" height="68px" viewbox="0 0 80 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Text-Styles-Copy" transform="translate(-696.000000, -1735.000000)" fill="#E0E1E2">
+                        <path id="Page-1" d="M761.452175,1748.53121 L727.34165,1779.36922 L726.01338,1793.56341 L719.300487,1772.9419 L759.137164,1747.75835 C761.125933,1746.54986 762.949355,1747.19967 761.452175,1748.53121 M770.59882,1735.44458 L699.734736,1762.83167 C694.898105,1764.77606 694.926751,1767.47906 698.853082,1768.68443 L716.526838,1774.21169 L723.289157,1794.98623 C724.111292,1797.25998 723.706087,1798.16182 726.088929,1798.16182 C727.927935,1798.16182 728.743688,1797.32172 729.767981,1796.3191 C730.419277,1795.68042 734.286385,1791.9132 738.604265,1787.70664 L756.988243,1801.31678 C760.371184,1803.1868 762.813693,1802.21802 763.656163,1798.16865 L775.723844,1741.18735 C776.959347,1736.22397 773.835411,1733.97263 770.59882,1735.44458"></path>
+                      </g>
+                    </g>
+                  </svg><a class="more-questions__link" href="">Telegram</a>
+                </div>
+                <div class="more-questions__actions-item item--email">
+                  <svg class="more-questions__svg" width="80px" height="54px" viewbox="0 0 80 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Text-Styles-Copy" transform="translate(-850.000000, -1741.000000)" fill="#E0E1E2">
+                        <path id="Page-1" d="M856.666667,1788.25 L856.666667,1751.72913 L888.233333,1774.237 C888.773333,1774.57788 889.386667,1774.75 890,1774.75 C890.613333,1774.75 891.226667,1774.57788 891.766667,1774.237 L923.333333,1751.72575 L923.336667,1788.25 L856.666667,1788.25 Z M917.043333,1747.75 L890,1767.3925 L862.956667,1747.75 L917.043333,1747.75 Z M923.333333,1741 L856.666667,1741 L850,1741 L850,1747.75 L850,1788.25 L850,1795 L856.666667,1795 L923.333333,1795 L930,1795 L930,1788.25 L930,1747.75 L930,1741 L923.333333,1741 Z"></path>
+                      </g>
+                    </g>
+                  </svg><a class="more-questions__link" href="">E-mail</a>
+                </div>
+                <div class="more-questions__actions-item item--location">
+                  <svg class="more-questions__svg" width="64px" height="80px" viewbox="0 0 64 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Text-Styles-Copy" transform="translate(-396.000000, -1728.000000)" fill="#E0E1E2">
+                        <path id="Fill-8" d="M453.465503,1778.68028 C457.47835,1773.48792 459.898776,1767.02648 459.996903,1759.99646 C460.240222,1742.56862 446.115565,1728.24076 428.442508,1728.00076 L428.434398,1728.00076 C410.639682,1727.88076 396.121659,1742.01263 396,1759.56046 C396,1769.15413 400.341833,1777.75837 407.202853,1783.5514 L428.442508,1808 L453.917988,1778.68028 L453.465503,1778.68028 Z M428.442508,1736.00068 C441.881817,1736.00068 452.77439,1746.74458 452.77439,1760.00046 C452.77439,1773.25633 441.881817,1784.00023 428.442508,1784.00023 C415.003199,1784.00023 404.110627,1773.25633 404.110627,1760.00046 C404.110627,1746.74458 415.003199,1736.00068 428.442508,1736.00068 L428.442508,1736.00068 Z"></path>
+                      </g>
+                    </g>
+                  </svg><a class="more-questions__link" href="">Отделение</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-content" id="tab-2">
+          <div class="title-block container">
+            <h1 class="title-block__title">Условия кредитования</h1>
+          </div>
+          <div class="conditions container">
+            <div class="conditions__row">
+              <div class="conditions__title">
+                <h3>Сроки ипотеки</h3>
+              </div>
+              <div class="conditions__desc">
+                <p> <span class="span-yellow">от 1 до 25 лет</span> — при рефинансировании кредита, выданного на цели приобретения недвижимости под залог приобретаемой недвижимости или недвижимости в собственности, </p>
+                <p> <span class="span-yellow">от 1 до 15 лет</span> — при рефинансировании кредита, выданного на любые цели (за исключением предпринимательских целей) под залог иной жилой недвижимости в собственности.</p>
+              </div>
+            </div>
+            <div class="conditions__row">
+              <div class="conditions__title">
+                <h3>Валюта кредита</h3>
+              </div>
+              <div class="conditions__desc">
+                <p>Рубли РФ.</p>
+              </div>
+            </div>
+            <div class="conditions__row">
+              <div class="conditions__title">
+                <h3>Комиссия</h3>
+              </div>
+              <div class="conditions__desc">
+                <p>Без комиссий за рассмотрение заявки и выдачу кредита.</p>
+              </div>
+            </div>
+            <div class="conditions__row conditions__row--hide">
+              <div class="conditions__title">
+                <h3>Способы предоставления кредита </h3>
+              </div>
+              <div class="conditions__desc">
+                <p>Кредитные средства предоставляются в безналичной форме на счет заемщика в валюте кредита, открытый в банке для этой цели при подписании кредитного договора, договора об ипотеке и закладной.</p>
+              </div>
+            </div>
+            <div class="conditions__row conditions__row--hide">
+              <div class="conditions__title">
+                <h3>Погашение ипотеки</h3>
+              </div>
+              <div class="conditions__desc">
+                <p>Ежемесячно, равными.</p>
+              </div>
+            </div>
+            <div class="conditions__row conditions__row--hide">
+              <div class="conditions__title">
+                <h3>
+                   Обеспечение<br>по кредиту </h3>
+              </div>
+              <div class="conditions__desc">
+                <p>Ипотека (залог) имеющейся в собственности недвижимости в пользу банка.</p>
+              </div>
+            </div>
+            <div class="conditions__row conditions__row--hide">
+              <div class="conditions__title">
+                <h3>Прочее </h3>
+              </div>
+              <div class="conditions__desc">
+                <p>При неоплате очередного платежа в установленное время, заемщик должен оплатить пени в размере 0,06 % от суммы платежа за каждый просроченный день.</p>
+              </div>
+            </div>
+            <div class="load-more">
+              <div class="load-more__button">Все условия
+                <svg class="conditions__svg" width="16px" height="14px" viewbox="0 0 16 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Text-Styles-Copy" transform="translate(-690.000000, -400.000000)" fill="#000000">
+                      <path id="Combined-Shape" d="M699.003052,410.753077 L699.003052,400 L697.003052,400 L697.003052,410.779547 L691.971069,404.942503 L690,406.567897 L697.035645,413.556349 L697.991089,414.043335 L698.931519,413.556349 L705.994141,406.567897 L704.0177,404.942503 L699.003052,410.753077 Z"></path>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="documents loaded-block">
+            <div class="documents__wrap">
+              <div class="documents__content container">
+                <div class="documents__title">
+                  <h2 class="heading-h2">Подробная информация и документы</h2>
+                </div>
+                <div class="documents__list"><a class="documents__item" href="">Требования к заемщику</a><a class="documents__item" href="">Требования к имуществу</a><a class="documents__item" href="">Список документов</a><a class="documents__item" href="">Готовые процентные ставки</a><a class="documents__item" href="">Полная стоимость кредита</a><a class="documents__item" href="">Тарифы</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="more-questions loaded-block">
+            <div class="more-questions__content container">
+              <div class="more-questions__title">
+                <h2 class="heading-h2">Остались вопросы?</h2>
+              </div>
+              <div class="more-questions__actions">
+                <div class="more-questions__actions-item item--number">
+                  <svg class="more-questions__svg" width="48px" height="80px" viewbox="0 0 48 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Text-Styles-Copy" transform="translate(-260.000000, -1728.000000)" fill="#E0E1E2">
+                        <path id="Combined-Shape" d="M287.280906,1758.05339 L278.34337,1766.99092 L275.514236,1764.16179 L284.45139,1755.22463 L279.156331,1755.57716 L278.891166,1751.58554 L291.07108,1751.43493 L290.919759,1763.61413 L286.927434,1763.34826 L287.280906,1758.05339 Z M260,1808 L260,1728 L308,1728 L308,1808 L260,1808 Z M266,1802 L302,1802 L302,1735 L266,1735 L266,1802 Z M288,1794 C288,1796.209 286.209,1798 284,1798 C281.791,1798 280,1796.209 280,1794 C280,1791.791 281.791,1790 284,1790 C286.209,1790 288,1791.791 288,1794 Z"></path>
+                      </g>
+                    </g>
+                  </svg><a class="more-questions__link" href="tel:+74957219100">
+                    <div class="more-questions__link-phone"><span>Телефон горячей линии</span><br>+7 495 721 91 00</div></a>
+                </div>
+                <div class="more-questions__actions-item item--fb">
+                  <svg class="more-questions__svg" width="44px" height="80px" viewbox="0 0 44 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Text-Styles-Copy" transform="translate(-560.000000, -1728.000000)" fill="#E0E1E2">
+                        <path id="Fill-1" d="M601.69953,1728.01667 L591.305688,1728 C579.629387,1728 572.084622,1735.72726 572.084622,1747.68772 L572.084622,1756.76577 L561.634116,1756.76577 C560.731644,1756.76577 560,1757.49658 560,1758.39738 L560,1771.54947 C560,1772.45111 560.732477,1773.18109 561.634116,1773.18109 L572.083789,1773.18109 L572.083789,1806.36838 C572.083789,1807.27002 572.815433,1808 573.717905,1808 L587.351645,1808 C588.25495,1808 588.985761,1807.26919 588.985761,1806.36838 L588.985761,1773.18109 L601.204546,1773.18109 C602.107017,1773.18109 602.838661,1772.45111 602.838661,1771.54947 L602.843661,1758.39738 C602.843661,1757.9649 602.671167,1757.55074 602.364509,1757.24409 C602.057852,1756.93743 601.642032,1756.76577 601.208712,1756.76577 L588.987427,1756.76577 L588.987427,1749.07017 C588.987427,1745.37196 589.8699,1743.49452 594.695582,1743.49452 L601.697864,1743.49202 C602.600335,1743.49202 603.331146,1742.76121 603.331146,1741.8604 L603.331146,1729.64828 C603.331146,1728.74831 602.601169,1728.01833 601.69953,1728.01667"></path>
+                      </g>
+                    </g>
+                  </svg><a class="more-questions__link" href="">Facebook</a>
+                </div>
+                <div class="more-questions__actions-item item--telegram">
+                  <svg class="more-questions__svg" width="80px" height="68px" viewbox="0 0 80 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Text-Styles-Copy" transform="translate(-696.000000, -1735.000000)" fill="#E0E1E2">
+                        <path id="Page-1" d="M761.452175,1748.53121 L727.34165,1779.36922 L726.01338,1793.56341 L719.300487,1772.9419 L759.137164,1747.75835 C761.125933,1746.54986 762.949355,1747.19967 761.452175,1748.53121 M770.59882,1735.44458 L699.734736,1762.83167 C694.898105,1764.77606 694.926751,1767.47906 698.853082,1768.68443 L716.526838,1774.21169 L723.289157,1794.98623 C724.111292,1797.25998 723.706087,1798.16182 726.088929,1798.16182 C727.927935,1798.16182 728.743688,1797.32172 729.767981,1796.3191 C730.419277,1795.68042 734.286385,1791.9132 738.604265,1787.70664 L756.988243,1801.31678 C760.371184,1803.1868 762.813693,1802.21802 763.656163,1798.16865 L775.723844,1741.18735 C776.959347,1736.22397 773.835411,1733.97263 770.59882,1735.44458"></path>
+                      </g>
+                    </g>
+                  </svg><a class="more-questions__link" href="">Telegram</a>
+                </div>
+                <div class="more-questions__actions-item item--email">
+                  <svg class="more-questions__svg" width="80px" height="54px" viewbox="0 0 80 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Text-Styles-Copy" transform="translate(-850.000000, -1741.000000)" fill="#E0E1E2">
+                        <path id="Page-1" d="M856.666667,1788.25 L856.666667,1751.72913 L888.233333,1774.237 C888.773333,1774.57788 889.386667,1774.75 890,1774.75 C890.613333,1774.75 891.226667,1774.57788 891.766667,1774.237 L923.333333,1751.72575 L923.336667,1788.25 L856.666667,1788.25 Z M917.043333,1747.75 L890,1767.3925 L862.956667,1747.75 L917.043333,1747.75 Z M923.333333,1741 L856.666667,1741 L850,1741 L850,1747.75 L850,1788.25 L850,1795 L856.666667,1795 L923.333333,1795 L930,1795 L930,1788.25 L930,1747.75 L930,1741 L923.333333,1741 Z"></path>
+                      </g>
+                    </g>
+                  </svg><a class="more-questions__link" href="">E-mail</a>
+                </div>
+                <div class="more-questions__actions-item item--location">
+                  <svg class="more-questions__svg" width="64px" height="80px" viewbox="0 0 64 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Text-Styles-Copy" transform="translate(-396.000000, -1728.000000)" fill="#E0E1E2">
+                        <path id="Fill-8" d="M453.465503,1778.68028 C457.47835,1773.48792 459.898776,1767.02648 459.996903,1759.99646 C460.240222,1742.56862 446.115565,1728.24076 428.442508,1728.00076 L428.434398,1728.00076 C410.639682,1727.88076 396.121659,1742.01263 396,1759.56046 C396,1769.15413 400.341833,1777.75837 407.202853,1783.5514 L428.442508,1808 L453.917988,1778.68028 L453.465503,1778.68028 Z M428.442508,1736.00068 C441.881817,1736.00068 452.77439,1746.74458 452.77439,1760.00046 C452.77439,1773.25633 441.881817,1784.00023 428.442508,1784.00023 C415.003199,1784.00023 404.110627,1773.25633 404.110627,1760.00046 C404.110627,1746.74458 415.003199,1736.00068 428.442508,1736.00068 L428.442508,1736.00068 Z"></path>
+                      </g>
+                    </g>
+                  </svg><a class="more-questions__link" href="">Отделение</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-content" id="tab-3">
+          <div class="calc-block container">
+            <div class="calc-block--left">
+              <div class="calculator">
+                <div class="calculator__row">
+                  <div class="form-block form-block--title">
+                    <div class="input-block input-ruble">
+                      <input class="input-text" type="text" value="7 900 000">
+                      <div class="form-block__text">Стоимость недвижимости</div>
+                      <div class="input-slider" data-sl-min="7000000" id="sl-price" data-f-price="true" data-sl-step="50000" data-sl-max="9000000" data-sl-value="7800000"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="calculator__row">
+                  <div class="form-block form-block--title">
+                    <div class="input-block input-ruble">
+                      <input class="input-text" type="text" value="1 185 000 (15%)">
+                      <div class="form-block__text">Первоначальный взнос</div>
+                      <div class="input-slider" data-sl-min="1000000" id="sl-deposit" data-f-price="true" data-sl-step="50000" data-sl-max="2000000" data-sl-value="1185000"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="calculator__row">
+                  <div class="form-block form-block--title">
+                    <div class="input-block">
+                      <input class="input-text" type="text" value="20 лет">
+                      <div class="form-block__text">Срок кредита</div>
+                      <div class="input-slider" data-sl-min="1" id="sl-period" data-f-year="true" data-sl-max="35" data-sl-value="20"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="calculator__row">
+                  <div class="checkbox-block">
+                    <label class="checkbox-block__label" for="check-zp">
+                      <input class="input-checkbox" type="checkbox" id="check-zp" value=""><span class="checkbox-block__span"></span>Я зарплатный или премиальный клиент Банка
+                    </label>
+                  </div>
+                </div>
+                <div class="calculator__row">
+                  <div class="form-block form-block--title">
+                    <div class="input-block input-triangle">
+                      <select class="input-select" id="select-1">
+                        <option value="">Справка 2-НДФЛ</option>
+                        <option>Справка о доходах</option>
+                      </select>
+                      <div class="form-block__text">Уровень доходов подтверждаю</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="calc-block--right">
+              <div class="calc-card">
+                <div class="calc-card__month"><span>Ежемесячный расчет</span>
+                  <div class="calc-card__month-price">от 88 185,04₽</div>
+                </div>
+                <div class="calc-card__info">
+                  <div class="calc-card__info-item">
+                    <div class="calc-card__text--left">Ставка</div>
+                    <div class="calc-card__text--right">от 11,5%</div>
+                  </div>
+                  <div class="calc-card__info-item">
+                    <div class="calc-card__text--left">Общая сумма выплат</div>
+                    <div class="calc-card__text--right">от 5 204 313,41₽</div>
+                  </div>
+                </div>
+                <div class="calc-card__detail">
+                  <div class="span-warn">!</div>
+                  <p>Результат является предварительным. Полная стоимость расчитывается индивидуально. <a class="link" href="">Подробнее</a></p>
+                </div>
+                <div class="calc-card__button button">Подать заявку</div>
+                <div class="calc-card__full-info"><a class="all-recomendation" href="">Полный расчет</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-content" id="tab-4">
+          <div class="tips tip-over">
+            <div class="tips__wrap container">
+              <div class="tips__content">
+                <div class="tips__title">
+                  <h3 class="tisp__title-content">Правила<br>обслуживания</h3>
+                </div>
+                <div class="tips__links">
+                  <div class="tips__links-content"><a class="link tips__links-link" href="#2">Памятка по погашению ипотечного кредита</a><span class="link-tip grey-color">Как правильно совершать ежемесячные платежи, как оформить досрочное погашение и многое другое!</span><span class="link-description grey-color">PDF, 2 Мб</span></div>
+                  <div class="tips__links-content"><a class="link tips__links-link" href="#1">Памятка по снятию обременения</a><span class="link-description grey-color">PDF, 2 Мб</span></div>
+                  <div class="tips__links-content"><a class="link tips__links-link" href="#2">Памятка по погашению ипотечного кредита</a><span class="link-description grey-color">PDF, 2 Мб</span></div>
+                  <div class="tips__links-content"><a class="link tips__links-link" href="#3">Памятка по оформлению залога квартиры после получения права собственности (первичный рынок)</a><span class="link-description grey-color">PDF, 2 Мб</span></div>
+                  <div class="tips__links-content"><a class="link tips__links-link" href="#2">Памятка по погашению ипотечного кредита</a><span class="link-description grey-color">PDF, 2 Мб</span></div>
+                  <div class="tips__all"><a class="all-recomendation" href="#3">Все рекомендации</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="likes loaded-block">
+        <div class="likes__wrap">
+          <div class="likes__content">
+            <div class="likes__block">
+              <div class="likes__text">
+                <p>Эта страница полезна?</p>
+              </div>
+              <div class="likes__buttons">
+                <button class="likes__button likes__button_yes"><span>Да
+                    <svg width="21px" height="18px" viewbox="0 0 21 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <g id="icon-like" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="icon-like-g" transform="translate(-644.000000, -398.000000)" fill="#000000">
+                          <path id="icon-like-path" d="M661.166,414 L654.192,414 L650,412.323 L650,407 L651,407 C651.4,407 651.762,406.762 651.919,406.394 L654.659,400 L656,400 L656,404 C656,404.552 656.447,405 657,405 L662.802,405 L661.166,414 Z M646,414 L648,414 L648,406 L646,406 L646,414 Z M665,403 L658,403 L658,398 L654,398 C653.6,398 653.238,398.239 653.08,398.606 L650.341,405 L650,405 C650,404.448 649.553,404 649,404 L644,404 L644,416 L649,416 C649.552,416 650,415.552 650,415 L650,414.478 L653.627,415.928 C653.752,415.952 653.875,415.976 654,416 L662.835,416 L664.984,404.179 L665,403 Z"></path>
+                        </g>
+                      </g>
+                    </svg></span></button>
+                <button class="likes__button likes__button_no"><span>Нет
+                    <svg width="21px" height="18px" viewbox="0 0 21 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <g id="icon-notlike" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="icon-notlike-g" transform="translate(-590.000000, -398.000000)" fill="#000000">
+                          <path id="icon-notlike-path" d="M607.166,414 L600.192,414 L596,412.323 L596,407 L597,407 C597.4,407 597.762,406.762 597.919,406.394 L600.659,400 L602,400 L602,404 C602,404.552 602.447,405 603,405 L608.802,405 L607.166,414 Z M592,414 L594,414 L594,406 L592,406 L592,414 Z M611,403 L604,403 L604,398 L600,398 C599.6,398 599.238,398.239 599.08,398.606 L596.341,405 L596,405 C596,404.448 595.553,404 595,404 L590,404 L590,416 L595,416 C595.552,416 596,415.552 596,415 L596,414.478 L599.627,415.928 C599.752,415.952 599.875,415.976 600,416 L608.835,416 L610.984,404.179 L611,403 Z" transform="translate(600.500000, 407.000000) scale(1, -1) translate(-600.500000, -407.000000) "></path>
+                        </g>
+                      </g>
+                    </svg></span></button>
+              </div>
+              <div class="likes__info grey-color">
+                <p>90% клиентов считают страницу полезной</p>
+              </div>
+            </div>
+            <div class="likes__share"><a class="likes__share-link" href=""><span>Поделиться</span></a>
+              <div class="popup-share popup-share_likes">
+                <div class="popup-share__icons"><a class="popup-share__icon" href=""><i class="fa fa-facebook"></i></a><a class="popup-share__icon" href=""><i class="fa fa-vk"></i></a><a class="popup-share__icon" href=""><i class="fa fa-twitter"></i></a><a class="popup-share__icon" href=""><i class="fa fa-google"></i></a></div>
+                <div class="popup-share__copy"><a href="">Копировать ссылку</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer loaded-block">
+        <div class="footer__content">
+          <div class="footer__top cols cols3">
+            <div class="footer__phones col">
+              <div class="footer__phones-1">
+                <div class="footer__number"><a class="phone-link" href="tel:+74957219100">+7 495 721 91 00</a></div>
+                <div class="footer__number-desc grey-color"><span>для звонков по Москве</span></div>
+              </div>
+              <div class="footer__phones-2">
+                <div class="footer__number"><a class="phone-link" href="tel:88007009100">8 800 700 91 00</a></div>
+                <div class="footer__number-desc grey-color"><span>для звонков из других регионов</span></div>
+              </div>
+            </div>
+            <div class="footer__links col">
+              <ul>
+                <li><a href="">Пресс-Центр</a></li>
+                <li><a href="">О банке</a></li>
+                <li><a href="">Аналитика</a></li>
+                <li><a href="">Инвесторам</a></li>
+              </ul>
+            </div>
+            <div class="footer__links col">
+              <ul>
+                <li><a href="">Карьера в банке</a></li>
+                <li><a href="">Контактная информация</a></li>
+                <li><a href="">Качество обслуживания</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__bottom cols cols3 grey-color">
+            <div class="footer__socials col col_right"><a href=""><i class="fa fa-facebook"></i></a><a href=""><i class="fa fa-vk"></i></a><a href=""><i class="fa fa-twitter"></i></a><a href=""><i class="fa fa-paper-plane-o"></i></a><a href=""><i class="fa fa-instagram"></i></a></div>
+            <div class="footer__copyright col">
+              <p>© 2003 – 2016 АО «Райффайзенбанк»</p>
+              <p>Генеральная лицензия Банка России № 3292<br>от 17.02.2015</p>
+            </div>
+            <div class="footer__info col">
+              <ul>
+                <li><a href="">
+                     Информация о максимальных процентных ставках<br>по вкладам физических лиц</a></li>
+                <li><a href="">Центр раскрытия корпоративной информации</a></li>
+                <li><a href="">
+                     Раскрытие информации в соответствии с Указанием<br>Банка России от 28.12.2015 года № 3921-У</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <!--Preloader-->
+  <div class="Preloader-b"></div>
+  <div class="Preloader">
+    <div class="Spinner">
+      <div class="Spinner-line Spinner-line--1">
+        <div class="Spinner-line-cog">
+          <div class="Spinner-line-cog-inner Spinner-line-cog-inner--left"></div>
+        </div>
+        <div class="Spinner-line-ticker">
+          <div class="Spinner-line-cog-inner Spinner-line-cog-inner--center"></div>
+        </div>
+        <div class="Spinner-line-cog">
+          <div class="Spinner-line-cog-inner Spinner-line-cog-inner--right"></div>
+        </div>
+      </div>
+      <div class="Spinner-line Spinner-line--2">
+        <div class="Spinner-line-cog">
+          <div class="Spinner-line-cog-inner Spinner-line-cog-inner--left"></div>
+        </div>
+        <div class="Spinner-line-ticker">
+          <div class="Spinner-line-cog-inner Spinner-line-cog-inner--center"></div>
+        </div>
+        <div class="Spinner-line-cog">
+          <div class="Spinner-line-cog-inner Spinner-line-cog-inner--right"></div>
+        </div>
+      </div>
+      <div class="Spinner-line Spinner-line--3">
+        <div class="Spinner-line-cog">
+          <div class="Spinner-line-cog-inner Spinner-line-cog-inner--left"></div>
+        </div>
+        <div class="Spinner-line-ticker">
+          <div class="Spinner-line-cog-inner Spinner-line-cog-inner--center"></div>
+        </div>
+        <div class="Spinner-line-cog">
+          <div class="Spinner-line-cog-inner Spinner-line-cog-inner--right"></div>
+        </div>
+      </div>
+      <div class="Spinner-line Spinner-line--4">
+        <div class="Spinner-line-cog">
+          <div class="Spinner-line-cog-inner Spinner-line-cog-inner--left"></div>
+        </div>
+        <div class="Spinner-line-ticker">
+          <div class="Spinner-line-cog-inner Spinner-line-cog-inner--center"></div>
+        </div>
+        <div class="Spinner-line-cog">
+          <div class="Spinner-line-cog-inner Spinner-line-cog-inner--right"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Scripts-->
+  <script src="common/scripts/jquery.min.js"></script>
+  <script src="common/scripts/jquery-ui.min.js"></script>
+  <script src="common/scripts/flowtype.min.js"></script>
+  <script src="../headsupgrid/hugrid.js"></script>
+  <script src="common/scripts/tabs.min.js"></script>
+  <script src="common/scripts/loadmore.min.js"></script>
+  <script src="common/scripts/main.min.js"></script>
+</body>

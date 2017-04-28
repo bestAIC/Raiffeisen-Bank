@@ -1,0 +1,46 @@
+.morgage-wrapper
+  position: relative
+  height: calcRem(550px)
+  margin-bottom: calcRem(40px)
+  .mortgage__block-image
+    position: absolute
+    top: 0
+    left: 35px
+    height: 100%
+    width: calc(46.75% - 35px)
+
+.mortgage-intro__block
+  &:after
+    content: ""
+    display: table
+    clear: both
+
+  .mortgage__block-content
+    transform: translate(0, 34px)
+
+  .block-content__description
+    box-shadow: none
+    padding-bottom: calcRem(48px)
+
+.block-content__readme
+  font-size: calcRem(24px)
+  font-family: futura-book, sans-serif
+  line-height: 1.35
+  margin: calcRem(32px) 0
+
+.video-bg
+  width: 100%
+  height: 100%
+  overflow: hidden
+  position: relative
+  pointer-events: none
+  video
+    position: absolute
+    right: 0
+    bottom: 0
+    left: 50%
+    transform: translateX(-50%)
+    min-width: 100%
+    min-height: 100%
+    height: 100%
+    background-size: cover

@@ -1,0 +1,190 @@
+.mortgage-tabs
+  background-color: $yellow
+  margin: 0 calcRem(35px) calcRem(120px) calcRem(35px)
+
+  padding: 0
+
+.tabs
+  font-size: 0
+  margin: 0
+  padding: 0
+  list-style: none
+
+
+ul.tabs li
+  position: relative
+  display: inline-block
+  padding: calcRem(24px) 0
+  cursor: pointer
+  font-family: futura-book, sans-serif
+  font-size: calcRem(22px)
+  line-height: 1.2
+  &:after
+    pointer-events: none
+    content: ''
+    height: calcRem(4px)
+    width: calc(100% + 40px)
+    margin-left: -20px
+    background: $black
+    position: absolute
+    left: 0
+    bottom: 0
+    transition: 0.2s transform, 0.2s opacity
+    transform: scaleX(0)
+    opacity: 0
+    transform-origin: center
+
+ul.tabs li.current
+  &:after
+    pointer-events: none
+    content: ''
+    height: calcRem(4px)
+    width: calc(100% + 40px)
+    margin-left: -20px
+    background: $black
+    position: absolute
+    left: 0
+    bottom: 0
+    opacity: 1
+    transform: scaleX(1)
+    transform-origin: center
+  &:hover
+    opacity: 1
+
+.tab-content
+  display: none
+  padding: 0
+
+.tab-content.current
+  display: inherit
+  font-size: 0
+
+.tab-link
+  margin-right: calcRem(40px)
+  &:last-of-type
+    margin-right: 0
+
+.tab-brake
+  font-size: calcRem(16px)!important
+  pointer-events: none
+  margin-right: calcRem(40px)
+
+.tab__block-icon
+  display: inline-block
+  width: calc(100% / 3)
+  box-sizing: border-box
+  padding-right: calcRem(30px)
+
+.block-icon__image
+  display: block
+
+.block-icon__content
+  display: block
+  p
+    font-size: calcRem(24px)
+    color: $text-color
+    padding: calcRem(16px) 0 0 0
+    margin: 0
+
+.block-icon__accordion
+  display: block
+  p
+    font-size: calcRem(24px)
+    padding: calcRem(16px) 0 0 0
+    margin: 0
+
+.accordion
+  font-size: 22px
+  transition: 0.2s background-color
+  > *:nth-child(odd)
+    cursor: pointer
+    padding: calcRem(50px) 7.5%
+    line-height: 1
+    box-sizing: border-box
+    border-bottom: 1px solid $white-grey
+    transition: background-color 0.2s, opacity 1.25s
+    transition-delay: opacity 0.2s
+    &:hover,
+    &.active
+      background-color: $white-grey
+    h2
+      padding: 0
+      margin: 0
+
+  > *:nth-child(even)
+    padding: 0
+
+  > *:first-child
+    border-top: 1px solid $white-grey
+
+.tab__block-accordion
+  margin: calcRem(120px) 0 calcRem(48px) 0
+
+.accordion__number
+  font-size: calcRem(48px)
+  margin-right: calcRem(24px)
+  line-height: 0
+  position: relative
+  top: 4px
+
+.accordion__head-cross
+  pointer-events: none
+
+.accordion__head
+  font-size: 0
+  position: relative
+  width: 115%
+  margin-left: -7.5%
+  h2
+    font-size: calcRem(30px)
+  .accordion__head-description
+    font-size: calcRem(24px)
+    position: absolute
+    left: 60%
+    top: 50%
+    transform: translateY(-50%)
+  .accordion__head-cross
+    position: absolute
+    right: 7.5%
+    top: 50%
+    transform: rotate(45deg) translateY(-50%)
+    transition: 0.2s transform
+    transform-origin: top center
+
+.active
+  .accordion__head-cross
+    transform: rotate(0deg) translateY(-50%)
+
+
+.accordion__body
+  font-size: 0px
+  margin-top: calcRem(48px)
+  margin-bottom: calcRem(60px)
+  transition: opacity 1.25s
+  transition-delay: opacity 0.2s
+
+.accordion__body-left
+  width: 60%
+  font-size: calcRem(24px)
+  display: inline-block
+  .button
+    font-size: calcRem(16px)
+.accordion__body-sidebar
+  width: 40%
+  display: inline-block
+  text-align: right
+  .more-questions__actions-item
+    margin: 0
+    float: none
+    width: calcRem(370px)!important
+    .more-questions__link
+      padding-left: calcRem(40px)
+      text-align: left
+    .more-questions__svg
+      left: inherit
+      right: 0
+  .item--number
+    margin-bottom: calcRem(24px)
+
+.accordion__body-navigation
+  margin-top: calcRem(48px)

@@ -1,0 +1,101 @@
+.heading-h2
+  font-size: calcRem(36px)
+  line-height: calcRem(48px)
+  font-family: 'futura-heavy', sans-serif
+  margin: 0
+
+.more-questions
+  transition: opacity 1.25s
+  transition-delay: opacity 0.2s
+  &__content
+    padding-top: calcRem(120px)
+    padding-bottom: calcRem(120px)
+
+  &__title
+    text-align: center
+
+  &__actions
+    @include clearfix
+    margin-top: calcRem(48px)
+
+  &__actions-item
+    display: inline-block
+    position: relative
+    width: calcRem(170px)
+    margin-right: calcRem(30px)
+    background-color: $white-grey
+    float: left
+    text-align: center
+    height: calcRem(150px)
+    line-height: calcRem(150px)
+    transition: 0.2s background-color
+    &:last-of-type
+      margin-right: 0
+
+    &.item--number
+      width: calcRem(370px)
+      text-align: left
+      line-height: normal
+      a
+        padding-left: calcRem(40px)
+        position: relative
+      svg
+        left: auto
+        right: 0
+        width: calcRem(48px)
+        height: calcRem(80px)
+        path
+          fill: rgba(0,0,0,0.1)
+
+    &.item--fb
+      svg
+        width: calcRem(44px)
+        height: calcRem(80px)
+        path
+          fill: rgba(0,0,0,0.1)
+
+    &.item--telegram
+      svg
+        width: calcRem(80px)
+        height: calcRem(68px)
+        path
+          fill: rgba(0,0,0,0.1)
+
+    &.item--email
+      svg
+        width: calcRem(80px)
+        height: calcRem(54px)
+        path
+          fill: rgba(0,0,0,0.1)
+
+    &.item--location
+      svg
+        width: calcRem(64px)
+        height: calcRem(80px)
+        path
+          fill: rgba(0,0,0,0.1)
+
+    &:hover
+      background-color: $yellow
+
+  &__link-phone
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    span
+      color: $text-color
+      font-size: calcRem(18px)
+
+  &__svg
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+
+  &__link
+    display: block
+    position: relative
+    width: 100%
+    height: 100%
+    color: $black
+    font-size: calcRem(30px)

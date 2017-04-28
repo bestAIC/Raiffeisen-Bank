@@ -1,0 +1,61 @@
+.calc-block.container
+  .calc-block--left
+    .calculator
+      .calculator__row
+        .form-block.form-block--title
+          .input-block.input-ruble
+            input.input-text(type='text' value='7 900 000')
+            .form-block__text Стоимость недвижимости
+            .input-slider(data-sl-min='7000000', id='sl-price' data-f-price='true', data-sl-step='50000' data-sl-max='9000000', data-sl-value='7800000')
+      .calculator__row
+        .form-block.form-block--title
+          .input-block.input-ruble
+            input.input-text(type='text', value='1 185 000 (15%)')
+            .form-block__text Первоначальный взнос
+            .input-slider(data-sl-min='1000000', id='sl-deposit', data-f-price='true', data-sl-step='50000' data-sl-max='2000000', data-sl-value='1185000')
+      .calculator__row
+        .form-block.form-block--title
+          .input-block
+            input.input-text(type='text' value='20 лет')
+            .form-block__text Срок кредита
+            .input-slider(data-sl-min='1', id='sl-period', data-f-year='true', data-sl-max='35', data-sl-value='20')
+          //- .form-block__hint.grey-color Если вы не нашли ваш город в списке, пожалуйста, выберите значение Остальные города
+      .calculator__row
+        .checkbox-block
+          label.checkbox-block__label(for='check-zp')
+            input.input-checkbox(type='checkbox' id='check-zp' value='')
+            span.checkbox-block__span
+            | Я зарплатный или премиальный клиент Банка
+      .calculator__row
+        .form-block.form-block--title
+          .input-block.input-triangle
+            select.input-select#select-1
+              option(value='') Справка 2-НДФЛ
+              option Справка о доходах
+            .form-block__text Уровень доходов подтверждаю
+
+  .calc-block--right
+    .calc-card
+      .calc-card__month
+        span Ежемесячный расчет
+        .calc-card__month-price от 88 185,04₽
+      
+      .calc-card__info
+        .calc-card__info-item
+          .calc-card__text--left Ставка
+          .calc-card__text--right от 11,5%
+        //- .calc-card__info-item
+        //-   .calc-card__text--left Сумма выплат по процентам
+        //-   .calc-card__text--right от 5 204 313,41₽
+        .calc-card__info-item
+          .calc-card__text--left Общая сумма выплат
+          .calc-card__text--right от 5 204 313,41₽
+      .calc-card__detail
+        .span-warn !
+        p
+          | Результат является предварительным. Полная стоимость расчитывается индивидуально. 
+          a.link(href='') Подробнее
+        
+      .calc-card__button.button Подать заявку
+      .calc-card__full-info
+        a.all-recomendation(href='') Полный расчет

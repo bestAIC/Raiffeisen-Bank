@@ -1,0 +1,30 @@
+doctype html
+head
+    title Ипотека
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(charset='utf-8')
+    link(rel="stylesheet" href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+    link(rel="stylesheet" href="common/styles/normalize.css")
+    link(rel="stylesheet" href="common/styles/main.css")
+    link(rel="stylesheet" href="../headsupgrid/hugrid.css")
+
+body.loading
+    //Popup
+    include common/page-elements-1/_popup-links.pug
+    include common/page-elements-1/_popup-numbers.pug
+    //Page
+    include common/page-elements/_header.pug
+    .body-container
+        include common/page-elements/_title-block.pug
+        include common/page-elements/_container.pug
+        include common/page-elements-1/_likes.pug
+        include common/page-elements-1/_footer.pug
+    //Preloader
+    include common/page-elements/_spinner.pug
+
+    //Scripts
+    script(src="common/scripts/jquery.min.js")
+    script(src="common/scripts/flowtype.min.js")
+    script(src="../headsupgrid/hugrid.js")
+    script(src="common/scripts/main.min.js")
+    script(src="common/scripts/loadmore.min.js")

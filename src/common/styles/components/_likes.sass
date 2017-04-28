@@ -1,0 +1,194 @@
+.likes
+  width: 100%
+  padding: calcRem(40px) calcRem(35px)
+  font-family: 'futura-book'
+  transition: opacity 1.25s
+  transition-delay: opacity 0.2s
+  // overflow: hidden
+
+  p
+    margin: 0
+
+  &__wrap
+    width: 100%
+    background: $white-grey
+    padding: calcRem(120px) calcRem(20px)
+
+  &__content
+    width: 100%
+    max-width: calcRem(1170px)
+    position: relative
+    margin: 0 auto
+    @include clearfix
+    display: table
+
+  &__block
+    display: table-cell
+    padding: calcRem(24px) calcRem(40px)
+    background: $white
+
+  &__text, &__buttons, &__info, &__share
+    display: inline-block
+    vertical-align: middle
+
+  &__text
+    font-size: calcRem(24px)
+    line-height: calcRem(30px)
+    margin-right: calcRem(30px)
+
+  &__info
+    font-size: calcRem(18px)
+    line-height: calcRem(24px)
+
+  &__buttons
+    font-size: 0
+    margin-right: calcRem(30px)
+  &__button
+    border: none
+    background: $yellow
+    font-family: 'futura-medium'
+    padding: calcRem(20px) calcRem(30px)
+    font-size: calcRem(16px)
+    letter-spacing: calcRem(1.6px)
+    display: inline-block
+    position: relative
+    cursor: pointer
+    transition: all .2s
+    text-transform: uppercase
+    outline: 0
+    span
+      svg
+        width: calcRem(21px)
+        height: calcRem(18px)
+    &:hover
+      background: $black
+      color: $yellow
+      span
+        svg
+          g
+            fill: $yellow
+    &:first-child
+      margin-right: calcRem(30px)
+    span
+      display: inline-block
+      float: left
+      position: relative
+      margin-right: calcRem(29px)
+    svg
+      position: absolute
+      margin-left: calcRem(8px)
+      right: calcRem(-29px)
+      top: 0
+      g
+        transition: fill .2s
+    &_yes
+      span
+        svg
+          top: calcRem(-2px)
+    &_no
+      span
+        svg
+          top: calcRem(3px)
+
+  &__share
+    font-family: 'futura-medium'
+    font-size: calcRem(16px)
+    letter-spacing: calcRem(1.6px)
+    text-align: right
+    text-transform: uppercase
+    position: relative
+    display: table-cell
+    padding: calcRem(24px) calcRem(33px)
+    background: $white
+    &::before
+      position: absolute
+      content: ''
+      background: $white-grey
+      height: 100%
+      width: calcRem(20px)
+      left: calcRem(-20px)
+      top: 0
+  &__share-link
+    color: $black
+    position: relative
+    transition: opacity .2s
+    &:hover
+      opacity: .5
+    span
+      vertical-align: middle
+      margin-right: calcRem(30px)
+    &:after
+      content: ''
+      width: calcRem(20px)
+      height: calcRem(20px)
+      right: 0
+      display: inline-block
+      position: absolute
+      background-image: url('../images/share.svg')
+      background-size: 100%
+
+.popup-share_visible
+  .popup-share__icon
+    opacity: 1
+
+.popup-share
+  pointer-events: none
+  position: absolute
+  padding: calcRem(32px) calcRem(37px)
+  width: calcRem(375px)
+  color: $black
+  top: 0
+  // top: 80%
+  // left: 50%
+  // transform: translate(-50%, 0) scale(.95)
+  // transform-origin: top
+  &_likes
+    top: 80%
+    left: 50%
+    transform: translate(-50%, 0) scale(.95)
+    transform-origin: top
+  background: $white
+  box-shadow: 0 0 calcRem(50px) rgba($black, 0)
+  transition: transform .2s, opacity .2s, box-shadow .2s
+  opacity: 0
+  &_visible
+    transform: translate(-50%, 0) scale(1)
+    opacity: 1
+    pointer-events: auto
+    box-shadow: 0 0 calcRem(50px) rgba($black, .2)
+  a
+    color: $black
+
+  &__icons
+    @include clearfix
+
+  &__icon
+    color: $black
+    width: calcRem(60px)
+    height: calcRem(60px)
+    line-height: calcRem(60px)
+    background: $yellow
+    display: inline-block
+    float: left
+    text-align: center
+    margin-right: calcRem(20px)
+    font-size: calcRem(30px)
+    opacity: 0
+    transition: color .2s, background .2s, opacity .5s
+    &:hover
+      background: $black
+      color: $yellow
+    &:last-child
+      margin-right: 0
+  &__copy
+    text-align: center
+    margin-top: calcRem(32px)
+
+@keyframes share
+  from
+    opacity: 0
+    transform: translate(-50%, -30px) scale(.95)
+  to
+    transform: translate(-50%, 0) scale(1)
+    opacity: 1
+    pointer-events: auto

@@ -1,0 +1,369 @@
+body
+  color: $black
+
+h1, h2, h3, h4, h5, h6
+  font-weight: normal
+
+.small-text
+  font-size: 48%
+  display: inline
+  margin-left: calcRem(5px)
+
+.grey-color
+  color: $grey
+
+.title-block
+  margin-bottom: calcRem(40px)
+
+.title-block__description
+  font-family: 'futura-book', sans-serif
+  text-transform: uppercase
+  font-size: calcRem(14px)
+  line-height: 1
+  letter-spacing: calcRem(1.4px)
+  margin: 0 0 calcRem(8px) 0
+
+.title-block__title
+  font-family: 'futura-heavy', sans-serif
+  font-size: calcRem(48px)
+  line-height: 1
+  transform: translateX(calcRem(-4px))
+  margin: 0 0 0 0
+
+.block-content__title,
+.tisp__title-content
+  position: relative
+  font-family: 'futura-heavy', sans-serif
+  font-size: calcRem(30px)
+  line-height: 1.2
+  margin: 0 0 calcRem(24px) 0
+  z-index: 2
+
+.property
+  width: calcRem(170px)
+  float: left
+  margin-right: calcRem(30px)
+  &:last-child
+    margin-right: 0
+
+.property__title
+  font-size: calcRem(48px)
+  font-family: 'futura-book', sans-serif
+  line-height: 1
+  margin: 0
+
+.property__description
+  color: $text-color
+  margin: calcRem(5px) 0 0 0
+  font-size: calcRem(18px)
+
+.block-content__description
+  padding-bottom: calcRem(24px)
+  box-shadow: 0 1px 0 $icons-color
+  &:after
+    content: ""
+    display: table
+    clear: both
+
+.highlighted
+  position: relative
+  padding: calcRem(8px)
+  box-sizing: border-box
+  box-shadow: 0 0 0 calcRem(30px) $white
+  z-index: 1
+  transition: 0.2s box-shadow
+  &:after
+    transform-origin: left
+    transform: scaleX(1)
+    z-index: -1
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: $yellow
+  &:before
+    content: ''
+    position: absolute
+    top: calcRem(6px)
+    right: calcRem(6px)
+    width: calcRem(11px)
+    height: calcRem(11px)
+    background-image: url('../images/arrow.svg')
+    background-size: 100%
+    background-repeat: no-repeat
+    background-position: top left
+
+.button
+  font-family: futura-medium, sans-serif
+  display: inline-block
+  line-height: 1
+  letter-spacing: calcRem(1.6px)
+  text-decoration: none
+  text-transform: uppercase
+  padding: calcRem(20px) calcRem(30px)
+  background: $black
+  color: $yellow
+  transition: 0.2s background-color, 0.2s color
+  &:hover
+    background-color: $yellow
+    color: $black
+
+.block-content__order
+  margin-top: calcRem(48px)
+
+.mortgage__block,
+.tips__content
+  &:after
+    content: ""
+    display: table
+    clear: both
+
+.mortgage__block
+  position: relative
+  box-shadow: 0 0 0 calcRem(24px) transparent
+  background-color: transparent
+  transition: box-shadow 0.2s, background-color 0.2s, opacity 0.8s, transform 0.8s
+  &:hover
+    box-shadow: 0 0 0 calcRem(24px) $white-grey
+    background-color: $white-grey
+    .highlighted
+      box-shadow: 0 0 0 calcRem(30px) $white-grey
+
+.block-link
+  position: absolute
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  z-index: 1
+
+
+.mortgage
+  margin-bottom: calcRem(72px)
+  &__block-image
+    width: 48.75%
+    float: left
+
+.mortgage
+  &__block-content
+    width: 48.75%
+    float: right
+    transform: translateY(14px)
+    position: relative
+    z-index: 9
+
+.image-bg
+  width: calcRem(520px)
+  height: calcRem(332px)
+  background-repeat: no-repeat
+  background-size: cover
+
+.mortgage
+  &__block
+    margin-bottom: calcRem(48px)
+    &:last-child
+      margin-bottom: 0
+
+.load-more
+  text-align: center
+  box-shadow: 0 -1px 0 $icons-color
+  transition: 0.2s box-shadow
+  &__button
+    padding: calcRem(40px) 0
+    font-size: calcRem(16px)
+    letter-spacing: calcRem(1.6px)
+    font-family: futura-medium, sans-serif
+    text-transform: uppercase
+    background-color: transparent
+    transition: 0.2s background-color
+    cursor: pointer
+    &:hover
+      background-color: $white-grey
+  &:hover
+    box-shadow: 0 -1px 0 $white-grey
+
+.badge
+  display: inline-block
+  width: calcRem(30px)
+  height: calcRem(30px)
+  border-radius: 50%
+  line-height: calcRem(30px)
+  color: $black
+  background: $yellow
+  margin-left: calcRem(5px)
+
+.tips__title
+  width: 31.75%
+  float: left
+
+.tips__links
+  width: calc(100% - 31.75%)
+  padding-left: calcRem(30px)
+  float: right
+  box-sizing: border-box
+
+.tips__links-link
+  font-size: calcRem(24px)
+  line-height: calcRem(30px)
+
+.link
+  color: $link
+  text-decoration: none
+  transition: color 0.2s
+  &:hover
+    color: lighten($link, 20%)
+
+.tips__links-content
+  position: relative
+  padding-left: calcRem(71px)
+  margin-bottom: calcRem(48px)
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: calcRem(7px)
+    width: calcRem(39px)
+    height: calcRem(48px)
+    background-image: url('../images/document.svg')
+    background-size: 100%
+    background-repeat: no-repeat
+    background-position: top left
+
+.link-description
+  font-size: calcRem(14px)
+  letter-spacing: calcRem(1.4px)
+  font-family: futura-medium, sans-serif
+  display: block
+  margin-top: calcRem(8px)
+
+.link-tip
+  font-size: calcRem(24px)
+  font-family: futura-book, sans-serif
+  display: block
+  margin-top: calcRem(8px)
+
+.tips__all
+  box-sizing: border-box
+  padding: calcRem(32px) 0
+  box-shadow: 0 -1px 0 $icons-color
+
+.all-recomendation
+  text-transform: uppercase
+  font-size: calcRem(16px)
+  letter-spacing: calcRem(1.6px)
+  font-family: futura-medium, sans-serif
+  position: relative
+  color: $black
+  text-decoration: none
+  padding-right: calcRem(19px)
+  transition: opacity 0.2s
+  &:hover
+    opacity: 0.5
+  &:after
+    content: ''
+    position: absolute
+    right: 0
+    top: calcRem(4px)
+    width: calcRem(11px)
+    height: calcRem(11px)
+    background-image: url('../images/arrow.svg')
+    background-size: 100%
+    background-repeat: no-repeat
+    background-position: top left
+
+.find-department
+  margin-left: calcRem(30px)
+  text-transform: uppercase
+  font-size: calcRem(16px)
+  letter-spacing: calcRem(1.6px)
+  font-family: futura-medium, sans-serif
+  position: relative
+  color: $black
+  text-decoration: none
+  padding-right: calcRem(26px)
+  transition: opacity 0.2s
+  &:hover
+    opacity: 0.5
+  &:after
+    content: ''
+    position: absolute
+    right: 0
+    top: 50%
+    transform: translateY(-10px)
+    width: calcRem(16px)
+    height: calcRem(20px)
+    background-image: url('../images/pin.svg')
+    background-size: 100%
+    background-repeat: no-repeat
+    background-position: top left
+
+.tip-over
+  margin-top: calcRem(-80px)
+
+.tips
+  transition: opacity 1.25s
+  transition-delay: opacity 0.2s
+  padding: 0 calcRem(35px)
+
+.tips__wrap
+  width: 100%
+  background: $white-grey
+  box-sizing: border-box
+  padding: calcRem(122px) 0 calcRem(48px) 0
+
+.tips__content
+  width: 100%
+  max-width: calcRem(1170px)
+  position: relative
+  margin: 0 auto
+
+.highlighted__block-link
+  position: absolute
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+
+.mortgage__block-image--small
+  width: 34.25%
+  float: left
+
+.mortgage__block-content--small
+  width: 65.25%
+  float: right
+  transform: translateY(14px)
+  position: relative
+  z-index: 9
+  .property__title
+    font-size: calcRem(32px)
+  .property__description
+    font-size: calcRem(16px)
+  .small-text
+    font-size: 70%
+  .block-content__order
+    display: none
+
+
+.image-bg--small
+  width: calcRem(350px)
+  height: calcRem(236px)
+  background-repeat: no-repeat
+  background-size: cover
+
+.for-clients
+  display: none
+
+.Preloader-b
+  background-color: rgba(0,0,0,0.7)
+  position: fixed
+  z-index: 9
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  opacity: 0
+  transition: 0.5s opacity
+  pointer-events: none
+

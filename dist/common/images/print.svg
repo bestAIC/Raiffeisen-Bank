@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="23px" viewBox="0 0 20 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Text-Styles-Copy" transform="translate(-860.000000, -396.000000)" fill="#000000">
+            <g id="Page-1" transform="translate(860.000000, 397.000000)">
+                <polygon id="Fill-1" points="2.9997 -0.0004 2.9997 4.9996 5.0007 4.9996 5.0007 2.0006 15.0007 2.0006 15.0007 4.9996 16.9997 4.9996 16.9997 -0.0004"></polygon>
+                <path d="M15,11 C15.552,11 16,11.448 16,12 C16,12.552 15.552,13 15,13 C14.448,13 14,12.552 14,12 C14,11.448 14.448,11 15,11" id="Fill-2"></path>
+                <path d="M18,16 L17,16 L17,14 L3,14 L3,16 L2,16 L2,9 C2,8.994 2.003,8.989 2.003,8.983 L2,8.983 L2,8 L3,8 L3,8.983 L3,10 L17,10 L17,8.983 L16.984,8.983 L16.984,8 L17.984,8 L17.984,8.923 C17.987,8.95 18,8.973 18,9 L18,16 Z M5,20 L15,20 L15,16 L5,16 L5,20 Z M15,6 L15,8 L5,8 L5,6 L0,6 L0,18 L3,18 L3,22 L17,22 L17,18 L20,18 L20,6 L15,6 Z" id="Fill-4"></path>
+            </g>
+        </g>
+    </g>
+</svg>
