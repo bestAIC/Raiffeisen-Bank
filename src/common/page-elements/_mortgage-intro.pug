@@ -1,13 +1,16 @@
 .morgage-wrapper
     .mortgage__block-image
         .video-bg
-            video#bgvid(autoplay='', loop='', poster='common/images/video-poster.jpg')
-                source(type='video/webm', src='common/images/video.webm')
-                source(type='video/mp4', src='common/images/video.mp4', title = 'Your browser does not support the <video> tag')
+            video#bgvid(preload='metadata', autoplay, loop, muted, webkit-playsinline, playsinline)
+                source(src='common/images/video.mp4')
+                source(src='common/images/video.webm')
     .mortgage-intro.container
         .mortgage-intro__block
             .mortgage__block-content
-                h6.title-block__description.grey-color Для жизни
+                h6.title-block__description.grey-color
+                    span.step Для жизни
+                    span.dot.breadcrumbs-dot
+                    span.step Ипотека
                 h1.title-block__title Рефинансирование кредитов иных банков
                 p.block-content__readme.grey-color Получите выгодные условия на покупку недвижимости в новостройках и вторичном рынке жилья, включая кредиты под залог квартиры в собственности.
                 .block-content__description
@@ -25,7 +28,7 @@
                     .property
                         .property__block
                             h3.property__title 8,5%
-                                span.small-text млн. ₽
+                                span.small-text млн. ?
                             p.property__description максимальная сумма
 
                 .mortgage__block-buttons

@@ -17,15 +17,24 @@
   &__item
     background-color: $white
     color: $black
-    padding: calcRem(40px) calcRem(30px)
+    //padding: calcRem(40px) calcRem(30px)
+    padding: 0 calcRem(30px)
     float: left
     height: calcRem(150px)
     width: calcRem(370px)
     font-size: calcRem(30px)
-    line-height: calcRem(36px)
     transition: 0.2s background-color
+    &:before
+      content: ''
+      display: inline-block
+      height: 100%
+      vertical-align: middle
     &:hover
       background-color: $yellow
+
+    span
+      display: inline-block
+      vertical-align: middle
 
     margin-left: calcRem(30px)
     margin-bottom: calcRem(30px)

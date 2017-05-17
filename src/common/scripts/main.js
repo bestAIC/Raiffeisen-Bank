@@ -97,6 +97,7 @@ function checkAnimation() {
 }
 
 $(window).load(function() {
+    checkAnimation();
     $(window).scroll(function(){
         checkAnimation();
     });
@@ -107,6 +108,11 @@ $('.header__hamburger').click(function(){
     $('html, body').toggleClass('show-menu-active');
 });
 
+$('.menu-wrapper__header').click(function(){
+    $('html, body').removeClass();
+    $('html, body').addClass('show-menu-active');
+});
+
 $('.sec-menu--mobile').click(function(){
     $('html, body').removeClass('popup-numbers-active show-menu-active');
     $('html, body').toggleClass('popup-links-active');
@@ -115,6 +121,10 @@ $('.sec-menu--mobile').click(function(){
 $('.ring').click(function(){
     $('html, body').removeClass('popup-links-active show-menu-active');
     $('html, body').toggleClass('popup-numbers-active');
+});
+
+$('.main-menu__link').click(function(){
+    $('html, body').removeClass('show-menu-active');
 });
 
 $('.popup-numbers').on('click', function(e) {
@@ -174,15 +184,11 @@ $('.conditions .load-more').on('click', function(){
     $('.conditions__row--hide').toggleClass('conditions__row--hide conditions__row--show');
 });
 
-$('.documents__item').on('click', function(){
-    event.preventDefault();
-    $('body').toggleClass('show-popup1');
-});
-
 $('.popup-tarif, .popup-tarif__close-svg').on('click', function(e){
     if (e.target !== this)
         return;
-    $('body').toggleClass('show-popup1');
+    var title = History.options.initialTitle;
+    History.pushState({} , title, "?");
 });
 
 $('.span-tooltip').on('click', function(e){
@@ -223,7 +229,42 @@ $('body').on('click', function(event){
     }
 });
 
-//Renat Sagdeev, [28.04.17 14:05]
+/*
+$(window).load(function() {
+var $header = $('#tabs-1');
+var $object = $('.morgage-wrapper');
+var $object2 = $('.more-questions ');
+
+var headerPostionTop = $header.offset().top;
+var object2PostionTop = $object2.offset().top - $header.height();
+
+$( window ).resize(function() {
+    headerPostionTop = $header.offset().top;
+    object2PostionTop = $object2.offset().top - $header.height();
+});
+
+    $(window).scroll(function (e) {
+        var scrollTop = $(document).scrollTop();
+
+        if (scrollTop >= headerPostionTop) {
+            $header.addClass('scroll');
+            $object.addClass('empty-space');
+        } else {
+            $header.removeClass('scroll');
+            $object.removeClass('empty-space');
+        }
+
+        if (scrollTop >= object2PostionTop) {
+            $header.removeClass('scroll');
+            $object.removeClass('empty-space');
+        }
+
+    });
+
+});*/
+
+//Renat Sagdeev, [04.05.17 18:38]
+
 function declOfNum(number, titles) {
     cases = [2, 0, 1, 1, 1, 2];
     return titles[ (number%100>4 && number%100<20)? 2 : cases[(number%10<5)?number%10:5] ];
@@ -231,6 +272,8 @@ function declOfNum(number, titles) {
 
 var cSlider = $('.input-slider');
 cSlider.each(function(){
+    //console.log($(this).attr('data-sl-value'));
+    $(this).attr('data-current-value', $(this).attr('data-sl-value'));
     $(this).slider({
         range: 'min',
         min: $(this).data('sl-min'),
@@ -246,18 +289,247 @@ function toPrice(str) {
     return String(str).replace(/(\d)(?=(\d{3})+([^\d]|$))/g, '$1 ');
 }
 
-$('#sl-period').on( "slide", function( event, ui ) {
-    $(this).parent().find('input').val(ui.value + ' ' + declOfNum(ui.value, ['год', 'года', 'лет']));
+function toPercent(x, y) {
+    return '(' + Math.floor(100 * x / y) + '%)';
+}
+
+
+if ($('#calc-input-period').length) {
+    $('#calc-input-period').inputmask({
+        alias: 'decimal',
+        showMaskOnHover: false,
+        showMaskOnFocus: false,
+        groupSeparator: ' ',
+        radixPoint: '.',
+        autoGroup: true,
+        rightAlign: false,
+        min: 0,
+        max: 55,
+        suffix: ' ' + declOfNum($(this), ['год', 'года', 'лет'])
+    });
+}
+
+/*$('#sl-period').on( "slide", function( event, ui ) {
+    $(this).parent().find('input').val(ui.value);
+    $(this).attr('data-current-value', ui.value);
+    $('#calc-input-period').inputmask({
+        suffix: ' '+declOfNum(ui.value, ['год', 'года', 'лет'])
+    });
+});
+*/
+if ($('#sl-period').length) {
+    $('#sl-period').on("slidestop", function (event, ui) {
+        $('#price-num').numerator({
+            duration: 500,
+            delimiter: ' ',
+            rounding: 2,
+            toValue: parseInt($('#sl-price').attr('data-current-value')) / (parseInt(ui.value) * 12)
+        });
+    });
+}
+
+if ($('#sl-period').length) {
+    $('#sl-price').on( "slide", function( event, ui ) {
+        $(this).parent().find('input').val(ui.value);
+        $(this).attr('data-current-value', ui.value);
+    });
+}
+if ($('#sl-price').length) {
+    $('#sl-price').on("slidestop", function (event, ui) {
+        $('#price-num').numerator({
+            duration: 500,
+            delimiter: ' ',
+            rounding: 2,
+            toValue: parseInt(ui.value) / (parseInt($('#sl-period').data('current-value') * 12))
+        });
+        //console.log(parseInt($('#sl-price').data('current-value')), (parseInt($('#sl-period').data('current-value')) * 12));
+    });
+}
+
+if ($('#sl-price').length) {
+    $('#sl-deposit').on("slide", function (event, ui) {
+        $(this).parent().find('input').val(ui.value);
+        $(this).attr('data-current-value', ui.value);
+        //$('#calc-input-deposit').inputmask({
+        //    suffix: ' '+toPercent(ui.value, $('#sl-price').attr('data-current-value'))
+        //});
+    });
+}
+
+if ($('#price-num').length) {
+    $('#price-num').numerator({
+        toValue: parseInt($('#sl-price').attr('data-current-value')) / (parseInt($('#sl-period').attr('data-current-value') * 12)),
+        duration: 500,
+        delimiter: ' ',
+        rounding: 2
+    });
+}
+
+if ($('#price-num').length) {
+    $('#calc-input-deposit').inputmask({
+        alias: 'decimal',
+        showMaskOnHover: false,
+        showMaskOnFocus: false,
+        groupSeparator: ' ',
+        radixPoint: '.',
+        autoGroup: true,
+        rightAlign: false,
+        min: 1,
+        max: 999999999,
+        //autoUnmask: true,
+        //unmaskAsNumber: false,
+        // suffix: ' '+'('+Math.floor(100 * $('#sl-deposit').data('current-value')/$('#sl-price').data('current-value'))+'%)'
+    });
+}
+if ($('#price-num').length) {
+    $('#calc-input-price').inputmask({
+        alias: 'decimal',
+        showMaskOnHover: false,
+        showMaskOnFocus: false,
+        groupSeparator: ' ',
+        radixPoint: '.',
+        autoGroup: true,
+        rightAlign: false,
+        min: 0,
+        max: 999999999
+    });
+}
+if ($('.scroll-header').length) {
+    $(window).scroll(function () {
+//capture scroll
+        var wintop = $(window).scrollTop(),
+            docheight = $('#tab-container-1').height(),
+            winheight = $(window).height(),
+            startLine = $('#tab-container-1').offset().top;
+        var scrolled = ((wintop - startLine) / (docheight - winheight)) * 1;
+
+        if (scrolled > 1) {
+            scrolled = 1;
+        }
+        if (scrolled < 0) {
+            scrolled = 0;
+        }
+
+        $('.scroll-line').css('transform', ('scaleX(' + scrolled + ')'));
+
+        if (wintop > startLine) {
+            $('.scroll-header').addClass('showHeader');
+        } else {
+            $('.scroll-header').removeClass('showHeader');
+        }
+    });
+}
+
+//scrollto anchor
+
+$('.scroll-up a').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 500);
+    return false;
 });
 
-$('#sl-price').on( "slide", function( event, ui ) {
-    $(this).parent().find('input').val(toPrice(ui.value));
-    console.log($('#sl-deposit').parent().find('input').val().replace(/ /g, ''));
+//site menu
+
+var $menuItems = $('.main-menu li');
+
+$menuItems.click(function(e){
+    e.preventDefault();
+    var index = $menuItems.index($(this)) + 1;
+    $('body').removeClass();
+    $('.main-menu li a').removeClass('link--active');
+    $('.main-menu li:nth-child('+index+') a').addClass('link--active');
+    $('body').addClass('show--site-menu');
+    $('body').addClass('show--site-menu-'+index);
 });
 
-$('#sl-deposit').on( "slide", function( event, ui ) {
-    var currPrice = parseInt($('#sl-price').parent().find('input').val().replace(/ /g, ''));
-    var percDeposit = Math.floor(100 * ui.value/currPrice);
-    $(this).parent().find('input').val(toPrice(ui.value) + ' (' + percDeposit + '%)');
+
+$('.menu-button__container').click(function(e){
+    e.preventDefault();
+    $(this).find('.menu-button__container--click').addClass('show-share-menu');
 });
 
+// end menu
+
+
+$('.Preloader-b').click(function(){
+    $('body').removeClass();
+});
+
+//renat 15.05 - filter
+
+$('.card-filter__content.filter--close').on('click', function () {
+    $(this).addClass('filter--open');
+    $(this).removeClass('filter--close');
+});
+
+var $results=$('.mortgage__block'),
+    $checks=$(':checkbox[name^="category"]');
+
+$checks.change(function(){
+    var $checked=$checks.filter(':checked');
+    $('.mortgage__blocks_hidden').css({'display':'block', 'opacity':'1'});
+    $('.load-more').hide();
+
+    if(!$checked.length){
+        $results.show().addClass('filter-show');
+        return;
+    }
+
+    var checkedVals= $.map($checked, function(el){
+        return el.value;
+    });
+
+    $results.removeClass('filter-show').hide().filter(function(){
+        var cats=$(this).data('category').split(' ');
+        var checkMatches=$.grep(checkedVals, function(val){
+            return $.inArray(val, cats) > -1;
+        });
+        return checkMatches.length === checkedVals.length;
+    }).show().addClass('filter-show');
+    if(!$results.length){
+//        console.log('no matches');
+    }
+});
+
+$('#bannerVideo video').on('timeupdate', function() {
+    $('#bannerVideoProgress').css("transform", "scaleX("+this.currentTime / this.duration+")");
+
+}).on('ended',function(){
+    setTimeout(function () {
+        $('#bannerVideo').addClass('banner--hide');
+    }, 500);
+});
+
+
+$('.b-card-list').each(function () {
+    var $this = $(this);
+    console.log($this.find('.b-card-list__slider-arrows'));
+    var slick = $this.find('.b-card-list__slider').slick({
+        variableWidth: true,
+        infinite: false,
+        slidesToScroll: 1,
+        slidesToShow: 2,
+        prevArrow: $this.find('.slider-prev'),
+        nextArrow: $this.find('.slider-next')
+    });
+});
+
+$(window).resize(function () {
+    if ($(window).width() < 450) {
+        $('.b-card-list__slider').slick('unslick');
+    } else {
+        $('.b-card-list').each(function () {
+            var $this = $(this);
+            console.log($this.find('.b-card-list__slider-arrows'));
+            var slick = $this.find('.b-card-list__slider').slick({
+                variableWidth: true,
+                infinite: false,
+                slidesToScroll: 1,
+                slidesToShow: 2,
+                prevArrow: $this.find('.slider-prev'),
+                nextArrow: $this.find('.slider-next')
+            });
+        });
+    }
+}).resize();

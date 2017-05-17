@@ -1,22 +1,23 @@
+include ../page-elements-1/_buttons
 .calc-block.container
   .calc-block--left
     .calculator
       .calculator__row
         .form-block.form-block--title
           .input-block.input-ruble
-            input.input-text(type='text' value='7 900 000')
+            input.input-text(type='text' value='7 900 000' id='calc-input-price')
             .form-block__text Стоимость недвижимости
             .input-slider(data-sl-min='7000000', id='sl-price' data-f-price='true', data-sl-step='50000' data-sl-max='9000000', data-sl-value='7800000')
       .calculator__row
         .form-block.form-block--title
           .input-block.input-ruble
-            input.input-text(type='text', value='1 185 000 (15%)')
+            input.input-text(type='text', value='1 185 000' id='calc-input-deposit')
             .form-block__text Первоначальный взнос
             .input-slider(data-sl-min='1000000', id='sl-deposit', data-f-price='true', data-sl-step='50000' data-sl-max='2000000', data-sl-value='1185000')
       .calculator__row
         .form-block.form-block--title
           .input-block
-            input.input-text(type='text' value='20 лет')
+            input.input-text(type='text' value='20' id='calc-input-period')
             .form-block__text Срок кредита
             .input-slider(data-sl-min='1', id='sl-period', data-f-year='true', data-sl-max='35', data-sl-value='20')
           //- .form-block__hint.grey-color Если вы не нашли ваш город в списке, пожалуйста, выберите значение Остальные города
@@ -38,8 +39,11 @@
     .calc-card
       .calc-card__month
         span Ежемесячный расчет
-        .calc-card__month-price от 88 185,04₽
-      
+        //.calc-card__month-price от 88 185,04₽
+        .calc-card__month-price
+          | от&thinsp;
+          span#price-num
+          | ₽
       .calc-card__info
         .calc-card__info-item
           .calc-card__text--left Ставка
@@ -56,6 +60,7 @@
           | Результат является предварительным. Полная стоимость расчитывается индивидуально. 
           a.link(href='') Подробнее
         
-      .calc-card__button.button Подать заявку
+      //.calc-card__button.button Подать заявку
+      +btn('Подать заявку', '#').calc-card__button
       .calc-card__full-info
         a.all-recomendation(href='') Полный расчет

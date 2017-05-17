@@ -33,5 +33,15 @@ module.exports = {
         tasks: [
             'pug'
         ]
+    },
+
+    svg: {
+        files: [
+            'src/common/icons/**.**'
+        ],
+        tasks: [
+            'svgstore'
+        ]
     }
+
 };

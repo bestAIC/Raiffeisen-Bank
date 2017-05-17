@@ -219,6 +219,7 @@ h1, h2, h3, h4, h5, h6
   position: relative
   padding-left: calcRem(71px)
   margin-bottom: calcRem(48px)
+  display: block
   &:before
     content: ''
     position: absolute
@@ -230,6 +231,35 @@ h1, h2, h3, h4, h5, h6
     background-size: 100%
     background-repeat: no-repeat
     background-position: top left
+
+
+.tips__links-blocks
+  position: relative
+  @include clearfix
+.tips__links-block
+  background-color: $white
+  color: $black
+  padding: 0 calcRem(35px)
+  float: left
+  height: calcRem(150px)
+  //width: calcRem(370px)
+  width: calc(50% - 15px)
+  font-size: calcRem(30px)
+  transition: 0.2s background-color
+  margin-right: 30px
+  margin-bottom: 30px
+  &:nth-child(even)
+    margin-right: 0
+  span
+    display: inline-block
+    vertical-align: middle
+  &:before
+    content: ''
+    display: inline-block
+    height: 100%
+    vertical-align: middle
+  &:hover
+    background-color: $yellow
 
 .link-description
   font-size: calcRem(14px)
@@ -366,4 +396,24 @@ h1, h2, h3, h4, h5, h6
   opacity: 0
   transition: 0.5s opacity
   pointer-events: none
+
+.dot
+  width: 4px
+  height: 4px
+  display: inline-block
+  vertical-align: middle
+  background-color: $grey
+  border-radius: 50%
+
+.mortgage-tabs
+  .dot
+    background-color: $black
+
+.step
+  line-height: 1
+  display: inline-block
+
+.breadcrumbs-dot
+  margin: 0 calcRem(16px)
+  transform: translateY(-50%)
 

@@ -58,6 +58,13 @@ ul.tabs li.current
 .tab-content.current
   display: inherit
   font-size: 0
+  animation: tab-fade .55s ease alternate
+
+@keyframes tab-fade
+  0%
+    opacity: 0
+  100%
+    opacity: 1
 
 .tab-link
   margin-right: calcRem(40px)
@@ -101,21 +108,23 @@ ul.tabs li.current
     padding: calcRem(50px) 7.5%
     line-height: 1
     box-sizing: border-box
-    border-bottom: 1px solid $white-grey
+    border-bottom: 1px solid $icons-color
     transition: background-color 0.2s, opacity 1.25s
     transition-delay: opacity 0.2s
     &:hover,
     &.active
       background-color: $white-grey
+      border-bottom-color: $white-grey
     h2
       padding: 0
       margin: 0
 
   > *:nth-child(even)
-    padding: 0
+    padding: 3rem 7.5% 3.75rem 7.5%
+    margin: 0 0 0 -7.5%
 
   > *:first-child
-    border-top: 1px solid $white-grey
+    border-top: 1px solid $icons-color
 
 .tab__block-accordion
   margin: calcRem(120px) 0 calcRem(48px) 0
@@ -126,6 +135,22 @@ ul.tabs li.current
   line-height: 0
   position: relative
   top: 4px
+
+.accordion__icon
+  font-size: calcRem(48px)
+  margin-right: calcRem(40px)
+  line-height: 0
+  position: relative
+  vertical-align: middle
+  display: inline-block
+
+  img
+    width: calcRem(40px)
+    height: calcRem(40px)
+    display: block
+    margin: 0
+    padding: 0
+
 
 .accordion__head-cross
   pointer-events: none
@@ -158,10 +183,13 @@ ul.tabs li.current
 
 .accordion__body
   font-size: 0px
-  margin-top: calcRem(48px)
-  margin-bottom: calcRem(60px)
   transition: opacity 1.25s
   transition-delay: opacity 0.2s
+  animation: tab-fade .55s ease alternate
+  width: 115%
+  margin-left: -7.5%
+
+  border-bottom: 1px solid $icons-color
 
 .accordion__body-left
   width: 60%
@@ -186,5 +214,39 @@ ul.tabs li.current
   .item--number
     margin-bottom: calcRem(24px)
 
+.accordion__body-sidebar--normal
+  width: 60%
+  font-size: calcRem(24px)
+  display: inline-block
+  text-align: left
+  .button
+    font-size: calcRem(16px)
+
+.accordion__body--half
+  width: 50%
+  vertical-align: top
+  padding-right: 8.5%
+
+.accordion__heading
+  font-size: calcRem(30px)
+  margin-top: 0%
+  margin-bottom: calcRem(32px)
+
+
 .accordion__body-navigation
   margin-top: calcRem(48px)
+
+@media all and (max-width: 1000px)
+  .accordion.accordion--mobile-shown
+    display: block
+  .accordion > *
+    box-sizing: border-box
+  .accordion > *:nth-child(even),
+  .accordion > *:nth-child(odd)
+    margin: 0
+    width: 100%
+  .accordion__body--half
+    width: 100%
+    padding-right: 0
+  .accordion__body--half + .accordion__body--half
+    margin-top: 3rem

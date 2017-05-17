@@ -3,6 +3,8 @@
   background-color: #fff
   position: relative
   z-index: 99999999999999
+  max-width: 1920px
+  margin: 0 auto
 .header
   &__logo
     width: calcRem(185px)
@@ -85,6 +87,20 @@
     transition: 0.2s opacity
     opacity: 1
     color: $text-color
+    &:after
+      content: ''
+      pointer-events: none
+      opacity: 0
+      transition: 0.2s transform
+      transform: scaleX(0)
+      height: calcRem(4px)
+      width: calc(100% + 30px)
+      margin-left: -15px
+      background: $black
+      position: absolute
+      left: 0
+      bottom: calcRem(-19px)
+      transform-origin: center
     &:hover
       opacity: 0.5
 
@@ -92,18 +108,8 @@
   color: $black!important
   position: relative
   &:after
-    pointer-events: none
-    content: ''
-    height: calcRem(4px)
-    width: calc(100% + 30px)
-    margin-left: -15px
-    background: $black
-    position: absolute
-    left: 0
-    bottom: calcRem(-19px)
-    transition: 0.1s transform
+    opacity: 1
     transform: scaleX(1)
-    transform-origin: center
   &:hover
     opacity: 1
 
@@ -191,12 +197,6 @@
   svg
     width: calcRem(18px)
     height: calcRem(21px)
-
-.scroll-header
-  box-shadow: 0 1px 0 $icons-color
-  transform: translateY(calcRem(-45px))
-  .header__bottom
-    padding: calcRem(16px) calcRem(35px)
 
 .header__hamburger
   position: absolute

@@ -22,6 +22,19 @@
 .conditions
   padding-top: calcRem(48px)
 
+  &--card
+    .conditions__title
+      font-size: calcRem(48px)
+      font-family: 'futura-book', sans-serif
+      .small-text
+        font-size: 62.5%
+    .conditions__desc
+      p
+        margin-bottom: calcRem(8px)
+        margin-left: 0
+      .small-text
+        font-size: 75%
+
   &__svg
     margin-left: calcRem(5px)
     position: relative
@@ -41,6 +54,19 @@
       opacity: 0
     &--show
       animation: show-1 .45s
+
+  &__head
+    margin-bottom: calcRem(80px)
+
+  &__heading
+    font-family: 'futura-heavy', sans-serif
+    font-size: calcRem(48px)
+    margin: 0
+  &__text
+    font-size: calcRem(24px)
+    margin: 0
+    margin-top: calcRem(16px)
+    line-height: calcRem(30px)
 
   &__title, &__desc
     display: inline-block

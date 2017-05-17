@@ -16,6 +16,8 @@ body.loading
     include common/page-elements-1/_popup-1
     //Page
     include common/page-elements/_header
+    include common/page-elements/_menu
+    include common/page-elements/_scroll-header
     .body-container
         .wrapper
             include common/page-elements/_mortgage-intro
@@ -24,10 +26,14 @@ body.loading
             include common/page-elements-1/_footer
     //Preloader
     include common/page-elements/_spinner
-
     //Scripts
     script(src="common/scripts/jquery.min.js")
     script(src="common/scripts/jquery-ui.min.js")
+    script(src="common/scripts/jquery.ui.touch-punch.min.js")
+    script(src='common/scripts/jquery-numerator.js')
+    script(src='common/scripts/inputmask.min.js')
+    script(src='common/scripts/jquery.inputmask.min.js')
+    script(src='common/scripts/inputmask.numeric.extensions.min.js')
     script(src="common/scripts/flowtype.min.js")
     script(src="../headsupgrid/hugrid.js")
     script(src="common/scripts/tabs.min.js")
