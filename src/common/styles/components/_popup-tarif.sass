@@ -105,7 +105,6 @@
       transform: rotate(90deg)
 
   &__actions
-    position: absolute
     width: calcRem(25px)
     height: 200px
     top: calcRem(20px)
@@ -116,17 +115,8 @@
     position: sticky
     top: -1px
     float: left
-    &__action-item
-      margin-bottom: calcRem(25px)
-      position: absolute
-      width: calcRem(25px)
-      height: 200px
-      top: calcRem(20px)
-      //left: calcRem(-100px)
-      transform: translateX(calcRem(-100px))
-      transition: transform .05s linear
+    z-index: 99
   &__action-item
-    position: relative
     margin-bottom: calcRem(25px)
   &__action-svg
     background-size: 100%

@@ -1,0 +1,19 @@
+
+<svg width="40px" height="32px" viewBox="0 0 40 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44 (41411) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="1600-cards" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="creds-1600-c-card-in-about-03" transform="translate(-215.000000, -1972.000000)">
+            <g id="Group-18-Copy-2" transform="translate(215.000000, 1970.000000)">
+                <g id="Group-15">
+                    <rect id="Rectangle-4-Copy-3" x="0" y="0" width="40" height="40"></rect>
+                    <path d="M38.5,25.5 L38.5,3.5 L1.5,3.5 L1.5,25.5 L11.6871191,25.5 L19,30.6190167 L19,25.5 L38.5,25.5 Z" id="Combined-Shape" stroke="#000000" stroke-width="3"></path>
+                    <circle id="Oval-2-Copy" fill="#000000" cx="12" cy="15" r="2"></circle>
+                    <circle id="Oval-2-Copy-2" fill="#000000" cx="20" cy="15" r="2"></circle>
+                    <circle id="Oval-2-Copy-3" fill="#000000" cx="28" cy="15" r="2"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

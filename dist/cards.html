@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<head>
+  <title>Карты</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="common/styles/slick.css">
+  <link rel="stylesheet" href="common/styles/normalize.css">
+  <link rel="stylesheet" href="common/styles/jquery-ui.structure.min.css">
+  <link rel="stylesheet" href="common/styles/main.css">
+  <link rel="stylesheet" href="../headsupgrid/hugrid.css">
+</head>
+<body class="loading">
+  <!--Popup-->
+  <div class="popup-links">
+    <div class="popup-links__content">
+      <ul class="popup-links__list">
+        <li class="popup-links__list-item"><a class="popup-links__link" href="">Для жизни</a><span class="popup-links__link-icon fa fa-check"></span></li>
+        <li class="popup-links__list-item"><a class="popup-links__link" href="">Для бизнеса</a></li>
+        <li class="popup-links__list-item"><a class="popup-links__link" href="">Premium<br><span class="popup-links__link-desc grey-color">Премальное обслуживание</span></a></li>
+        <li class="popup-links__list-item"><a class="popup-links__link" href="">Private<br><span class="popup-links__link-desc grey-color">Private Banking</span></a></li>
+        <li class="popup-links__list-item"><a class="popup-links__link" href="">О банке</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="popup-numbers">
+    <div class="popup-numbers__content">
+      <ul class="popup-numbers__list">
+        <li class="popup-numbers__list-item"><a class="popup-numbers__link" href="link:+74957219100">+7 495 721-91-00<br><span class="popup-numbers__link-desc grey-color">для звонков из Москвы</span></a></li>
+        <li class="popup-numbers__list-item"><a class="popup-numbers__link" href="link:88007009100">8 800 700-91-00<br><span class="popup-numbers__link-desc grey-color">для звонков из других регионов</span></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="popup-tarif">
+    <div class="popup-tarif__content"><span class="popup-tarif__close-svg"></span>
+      <div class="popup-tarif__container">
+        <div class="title-block container--m">
+          <h1 class="title-block__title">Требования к заемщику</h1>
+        </div>
+        <div class="mortgage-tabs mortgage-tabs--m">
+          <div class="container--m">
+            <ul class="tabs" data-tabgroup="tab-container-2">
+              <li class="tab-link current" data-tab="tab-1-2">Заемщики или созаемщики, участвующие доходами</li>
+              <li class="tab-link" data-tab="tab-2-2">Нифинансовый созаемщик</li>
+            </ul>
+          </div>
+        </div>
+        <div class="mortgage-tab-container" id="tab-container-2">
+          <div class="tab-content current" id="tab-1-2">
+            <div class="popup-tarif__text container--m">
+              <div class="popup-tarif__actions">
+                <div class="popup-tarif__action-item">
+                  <div class="popup-tarif__action-svg action-print"></div>
+                </div>
+                <div class="popup-tarif__action-item">
+                  <div class="popup-tarif__action-svg action-mail"></div>
+                  <div class="tooltip-mail">
+                    <div class="tooltip-mail__name grey-color">Электронная почта</div>
+                    <input class="tooltip-mail__input">
+                    <div class="tooltip-mail__button">Отправить</div>
+                  </div>
+                </div>
+                <div class="popup-tarif__action-item">
+                  <div class="popup-tarif__action-svg action-share"></div>
+                  <div class="popup-share popup-share_p">
+                    <div class="popup-share__icons"><a class="popup-share__icon" href=""><i class="fa fa-facebook"></i></a><a class="popup-share__icon" href=""><i class="fa fa-vk"></i></a><a class="popup-share__icon" href=""><i class="fa fa-twitter"></i></a><a class="popup-share__icon" href=""><i class="fa fa-google"></i></a></div>
+                    <div class="popup-share__copy"><a href="">Копировать ссылку</a></div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="popup-tarif__text-h2">Лица</h2>
+              <p>Созаемщиком могут выступать:</p>
+              <ul class="popup-tarif__list--ul">
+                <li class="popup-tarif__list-item">официальный супруг(а),</li>
+                <li class="popup-tarif__list-item">«гражданский» супруг(а).</li>
+              </ul>
+              <p>В случае рефинансирования кредита, выданного под залог приобретаемой недвижимости:</p>
+              <ul class="popup-tarif__list--ul">
+                <li class="popup-tarif__list-item">близкие<span class="span-tooltip">родственники<span class="span-tooltip__inner">Без наделения собственностью?в залоговом имуществе.</span></span> Заемщика или супруга(и), гражданского(ой) супруга(и) Заемщика?(при условии что он(а) выступает Созаемщиком по кредитному договору):</li>
+                <li class="popup-tarif__list-item list-style-empty">родители,</li>
+                <li class="popup-tarif__list-item list-style-empty">дети,</li>
+                <li class="popup-tarif__list-item list-style-empty">братья или сестры.</li>
+              </ul>
+              <h2 class="popup-tarif__text-h2">Требования</h2>
+              <h3 class="popup-tarif__text-h3">Возраст</h3>
+              <p>С обязательным заключением комбинированного договора ипотечного страхования:</p>
+              <ul class="popup-tarif__list--ul">
+                <li class="popup-tarif__list-item">от 21 года на момент подачи документов на кредит и не должен превышать 65 лет на момент окончания действия кредитного договора.</li>
+              </ul>
+              <p>Без обязательного заключения комбинированного договора ипотечного страхования:</p>
+              <ul class="popup-tarif__list--ul">
+                <li class="popup-tarif__list-item">от 21 года на момент подачи документов на кредит и не должен превышать 60 лет на момент окончания действия кредитного договора.</li>
+              </ul>
+              <h3 class="popup-tarif__text-h3">Гражданство</h3>
+              <p>Любое государство</p>
+              <h3 class="popup-tarif__text-h3">Фактическое место жительства</h3>
+              <p>В пределах административных границ (республики, области, края) региона присутствия кредитующего подразделения Банка.</p>
+              <h3 class="popup-tarif__text-h3">Регистрация</h3>
+              <p>Постоянно зарегистрированы на территории Российской Федерации или временно в регионе, где представлено кредитующее подразделение банка.</p>
+              <h3 class="popup-tarif__text-h3">Минимальный стаж работы</h3>
+              <p>Физические лица, работающие по найму:</p>
+              <ul class="popup-tarif__list--ul">
+                <li class="popup-tarif__list-item">не менее 6 месяцев при общем трудовом стаже не менее 1 года.</li>
+                <li class="popup-tarif__list-item">не менее 3 месяцев при общем трудовом стаже не менее 2 лет.</li>
+                <li class="popup-tarif__list-item">не менее 1 года, если данное место работы первое для заемщика.</li>
+              </ul>
+              <p>Нотариусы, занимающиеся частной практикой, адвокаты с собственным адвокатским кабинетом: профессиональная деятельность должна вестись не менее 1 финансового года.</p>
+              <p>Владельцы, совладельцы бизнеса, индивидуальные предприниматели: деятельность компании должна вестись не менее 3 финансовых лет.</p>
+              <h3 class="popup-tarif__text-h3">Наличие телефона</h3>
+              <p>Рабочий телефон, а также домашний или мобильный обязательно.</p>
+              <h3 class="popup-tarif__text-h3">Минимальный доход заемщика</h3>
+              <ul class="popup-tarif__list--ul">
+                <li class="popup-tarif__list-item">20 000 рублей — для Москвы и МО, Санкт-Петербурга и ЛО, Екатеринбурга, Магадана, Сургута, Тюмени, по основному месту работы после налогообложения.</li>
+                <li class="popup-tarif__list-item">15 000 рублей для остальных кредитующих подразделений банка.</li>
+              </ul>
+              <h3 class="popup-tarif__text-h3">Минимальный доход созаемщика</h3>
+              <ul class="popup-tarif__list--ul">
+                <li class="popup-tarif__list-item">10 000 рублей — по основному месту работы после налогообложения.</li>
+              </ul>
+              <h2 class="popup-tarif__text-h2">Кредитная история</h2>
+              <ol class="popup-tarif__list--ol">
+                <li class="popup-tarif__list-item">Отсутствие плохой кредитной истории</li>
+                <li class="popup-tarif__list-item">Действующие кредиты</li>
+              </ol>
+              <p>Не должен иметь более 2 ипотечных кредитов АО «Райффайзенбанк» или других банков ?(с учетом вновь<a class="popup-tarif__text-link" href="">одобряемого</a>).</p>
+            </div>
+          </div>
+          <div class="tab-content" id="tab-2-2">
+            <div class="popup-tarif__text container--m">
+              <div class="popup-tarif__actions">
+                <div class="popup-tarif__action-item">
+                  <div class="popup-tarif__action-svg action-print"></div>
+                </div>
+                <div class="popup-tarif__action-item">
+                  <div class="popup-tarif__action-svg action-mail"></div>
+                  <div class="tooltip-mail">
+                    <div class="tooltip-mail__name grey-color">Электронная почта</div>
+                    <input class="tooltip-mail__input">
+                    <div class="tooltip-mail__button">Отправить</div>
+                  </div>
+                </div>
+                <div class="popup-tarif__action-item">
+                  <div class="popup-tarif__action-svg action-share"></div>
+                  <div class="popup-share popup-share_p">
+                    <div class="popup-share__icons"><a class="popup-share__icon" href=""><i class="fa fa-facebook"></i></a><a class="popup-share__icon" href=""><i class="fa fa-vk"></i></a><a class="popup-share__icon" href=""><i class="fa fa-twitter"></i></a><a class="popup-share__icon" href=""><i class="fa fa-google"></i></a></div>
+                    <div class="popup-share__copy"><a href="">Копировать ссылку</a></div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="popup-tarif__text-h2">Созаемщик</h2>
+              <p>Созаемщиком могут выступать:</p>
+              <ul class="popup-tarif__list--ul">
+                <li class="popup-tarif__list-item">официальный супруг(а)</li>
+              </ul>
+              <h2 class="popup-tarif__text-h2">Требования</h2>
+              <h3 class="popup-tarif__text-h3">Возраст</h3>
+              <p>От 18 лет на момент подачи документов на кредит и до 70 лет на момент окончания действия кредитного договора.</p>
+              <h3 class="popup-tarif__text-h3">Гражданство</h3>
+              <p>Любое государство.</p>
+              <h3 class="popup-tarif__text-h3">Кредитная история</h3>
+              <p>Отсутствие плохой кредитной истории.</p>
+              <h3 class="popup-tarif__text-h3">Дополнительно</h3>
+              <p>Согласие созаемщика на получение данных из БКИ для получения одобрения кредита.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Page-->
+  <header id="header">
+    <div class="header__top"><a class="sec-menu__link sec-menu--mobile" href="">Для жизни<span class="arr-icon">
+          <svg width="8px" height="10px" viewbox="0 0 8 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g id="Text-Styles-Copy" transform="translate(-826.000000, -402.000000)" fill="#000000">
+                <path id="Combined-Shape" d="M832.767269,407 L833.066817,406.700452 L828.566817,402.200452 L826.933183,403.834086 L830.099097,407 L826.933183,410.165914 L828.566817,411.799548 L833.066817,407.299548 L832.767269,407 Z"></path>
+              </g>
+            </g>
+          </svg></span></a>
+      <ul class="sec-menu">
+        <li><a class="sec-menu__link link--active" href="#8">Для жизни</a></li>
+        <li><a class="sec-menu__link" href="#8">Для бизнеса</a></li>
+        <li><a class="sec-menu__link" href="#8">Премиальное обслуживание</a></li>
+        <li><a class="sec-menu__link" href="#8">Private Banking</a></li>
+        <li><span class="dot"></span></li>
+        <li><a class="sec-menu__link" href="#8">О банке</a></li>
+      </ul>
+      <ul class="sec-menu--right">
+        <li class="mobile-hide"><a class="sec-menu__link sm-i" href="#8">Москва<span class="city-icon">
+              <svg width="24px" height="22px" viewbox="0 0 24 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch-->
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="Text-Styles-Copy" transform="translate(-251.000000, -396.000000)" fill="#7D7D7D">
+                    <g id="house" transform="translate(251.000000, 396.000000)">
+                      <path id="Rectangle" d="M11.9768066,20 L22,20.0153198 L22,2 L11.9847412,2 L11.9768066,20 Z M24,0 L24,22 L10,22 L10,0 L24,0 Z" fill-rule="nonzero"></path>
+                      <path id="Rectangle-Copy" d="M1.984375,20 L10,20.0163574 L9.98638916,8 L2.02313232,8 L1.984375,20 Z M12,6 L12,22 L0,22 L0,6 L12,6 Z" fill-rule="nonzero"></path>
+                      <rect id="Rectangle-2" x="15" y="5" width="4" height="2"></rect>
+                      <rect id="Rectangle-2-Copy" x="15" y="9" width="4" height="2"></rect>
+                      <rect id="Rectangle-2-Copy-2" x="15" y="13" width="4" height="2"></rect>
+                    </g>
+                  </g>
+                </g>
+              </svg></span></a></li>
+        <li><a class="sec-menu__link sm-l" href="#8">Офисы и банкоматы<span class="location-icon">
+              <svg width="16px" height="20px" viewbox="0 0 16 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch-->
+                <defs></defs>
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="Text-Styles-Copy" transform="translate(-303.000000, -397.000000)" fill="#7A7A7A">
+                    <path id="Fill-8" d="M317.170422,409.67019 C318.15995,408.372088 318.756803,406.756713 318.781,404.99919 C318.841,400.64219 315.358,397.06019 311,397.00019 L310.998,397.00019 C306.61,396.97019 303.03,400.50319 303,404.89019 C303,407.28863 304.070653,409.439711 305.762512,410.887981 L311,417.00019 L317.282,409.67019 L317.170422,409.67019 Z M311,399.00019 C314.314,399.00019 317,401.68619 317,405.00019 C317,408.31419 314.314,411.00019 311,411.00019 C307.686,411.00019 305,408.31419 305,405.00019 C305,401.68619 307.686,399.00019 311,399.00019 L311,399.00019 Z"></path>
+                  </g>
+                </g>
+              </svg></span></a></li>
+        <li class="lang-menu"><a class="sec-menu__link" href="#8">En</a></li>
+        <li class="mobile-hide"><a class="sec-menu__link search-link" href="#8"><span class="search-icon">
+              <svg width="21px" height="22px" viewbox="0 0 21 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch-->
+                <g id="searh" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="Text-Styles-Copy" transform="translate(-351.000000, -396.000000)" fill-rule="nonzero" fill="#7F7F7F">
+                    <g id="search" transform="translate(351.000000, 396.000000)">
+                      <polygon id="Shape" points="19 21.2803688 20.5364426 20 15.5364426 14 14 15.2803688"></polygon>
+                      <path id="Oval" d="M18.156,9.078 C18.156,14.091641 14.091641,18.156 9.078,18.156 C4.06435904,18.156 0,14.091641 0,9.078 C0,4.06435904 4.06435904,0 9.078,0 C14.091641,0 18.156,4.06435904 18.156,9.078 Z M2,9.078 C2,12.9870715 5.16892854,16.156 9.078,16.156 C12.9870715,16.156 16.156,12.9870715 16.156,9.078 C16.156,5.16892854 12.9870715,2 9.078,2 C5.16892854,2 2,5.16892854 2,9.078 Z"></path>
+                    </g>
+                  </g>
+                </g>
+              </svg></span></a></li>
+      </ul>
+    </div>
+    <div class="header__bottom">
+      <div class="header__hamburger">
+        <div class="hamburger-menu"></div>
+      </div>
+      <div class="header__logo" style="background-image: url(common/images/logo-raif.svg);"></div>
+      <div class="header__menu">
+        <ul class="main-menu">
+          <li><a class="main-menu__link" href="#6">Карты</a></li>
+          <li><a class="main-menu__link" href="#6">Вклады и инвестиции</a></li>
+          <li><a class="main-menu__link" href="#6">Кредиты</a></li>
+          <li><a class="main-menu__link link--active" href="#6">Ипотека</a></li>
+          <li><a class="main-menu__link" href="#6">Пакеты услуг</a></li>
+          <li><a class="main-menu__link" href="#6">Страхование</a></li>
+          <li><a class="main-menu__link" href="#6">Сервисы</a></li>
+        </ul>
+      </div>
+      <div class="header__action"><a class="button-invert button-with-icon banking" href="#5">Интернет-Банк<span class="button-icon">
+              <svg class="svg-icon-user">
+                <use xlink:href="icons.svg#icon-user"></use>
+              </svg></span></a><a class="button-invert button-with-icon ring" href="#8">
+          <div class="button-icon-f"><span class="button-svg">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="20px" height="20px" viewbox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+                <defs></defs>
+                <g transform="translate(325.000000, 73.000000)">
+                  <path id="phone_1_" d="M-312-67.8c0.1,0.1,0.3,0.3,0.5,0.5l2.9-2.9l-0.6-0.6L-312-68L-312-67.8z M-322.7-57.3l0.6,0.6l2.8-2.8                            L-320-60L-322.7-57.3z M-320.2-55.4c0.5,0.1,1.1,0.3,1.8,0.3c1.8,0,4.5-0.7,7.7-3.9c4-4.1,3.8-7.4,3.3-9.1l-2.8,2.8                            c0.1,1-0.7,2-1.1,2.5c-0.9,1.2-2,2.2-3.2,3.2c-1.2,1-2,1.6-2.9,1.6c0,0-0.1,0-0.1,0L-320.2-55.4z M-318.3-53                            c-1.4,0-2.6-0.3-3.5-0.7l-1.7-1.3l-1-1c-0.3-0.3-0.5-0.7-0.5-1.2c0-0.5,0.2-0.9,0.5-1.2l3.3-3.3c0.3-0.3,0.8-0.5,1.2-0.5                            c0.5,0,0.9,0.2,1.2,0.5l1.8,1.4c0.4-0.3,0.9-0.7,1.2-0.9c1.1-0.8,2-1.8,2.9-2.9c0.3-0.4,0.5-0.7,0.6-0.8c-0.7-0.8-1.1-1.3-1.4-1.6                            l-0.1-0.1c-0.3-0.3-0.5-0.8-0.5-1.2c0-0.5,0.2-0.9,0.5-1.2l3.4-3.4c0.3-0.3,0.8-0.5,1.2-0.5c0.5,0,0.9,0.2,1.3,0.5l0.8,0.8l1.4,1.9                            c0.9,1.8,2.1,6.6-3.4,12.2C-312.8-53.8-316.2-53-318.3-53L-318.3-53z"></path>
+                </g>
+              </svg></span></div></a><a class="button-invert button-with-icon close" href="#8">
+          <div class="button-icon-f"><i class="fa fa-close"></i></div></a>
+      </div>
+    </div>
+  </header>
+  <div class="site-menu">
+    <div class="site-menu__container">
+      <div id="menu1">
+        <div class="menu-wrapper__header">Карты<i class="fa fa-chevron-left"></i></div>
+        <div class="menu-wrapper">
+          <div class="menu-col">
+            <div class="menu-block">
+              <div class="menu-body"><a class="menu-section-link" href="#99">Кредитные карты</a><a class="menu-section-link" href="#99">Дебетовые карты</a><a class="menu-section-link" href="#99">Скидки для вас</a></div>
+            </div>
+            <div class="menu-block menu-overline">
+              <div class="menu-detail">
+                <div class="span-warn">!</div>
+                <p>22 000+ банкоматов Райффайзенбанка и партнеров  в России и по всему миру</p>
+              </div>
+            </div>
+          </div>
+          <div class="menu-col">
+            <div class="menu-block">
+              <div class="menu-heading">Сервисы</div>
+              <div class="menu-body"><a class="menu-link main-menu__link" href="#99">Блокировка утерянной карты</a><a class="menu-link main-menu__link" href="#99">Активация кредитной карты</a></div>
+            </div>
+            <div class="menu-block">
+              <div class="menu-heading">Узнайте больше</div>
+              <div class="menu-body"><a class="menu-link main-menu__link" href="#99">Руководство владельца</a><a class="menu-link main-menu__link" href="#99">Вопросы и ответы</a><a class="menu-link main-menu__link" href="#99">Тарифы и условия</a></div>
+              <div class="menu-logo"><img class="logo-icon" src="common/images/Apple_Pay_logo.svg"><img class="logo-icon" src="common/images/samsung-pay.svg"><img class="logo-icon" src="common/images/Android_Pay_logo.svg"></div>
+            </div>
+          </div>
+          <div class="menu-col">
+            <div class="menu-block">
+              <div class="menu-image"><img class="menu-image-pic" src="common/images/kard.jpg"></div>
+              <div class="menu-description">
+                <h4 class="menu-description__header">Ты у меня одна!</h4>
+                <p class="menu-description__p">Карта #ВСЁСРАЗУ. До 5% cahsback. 7% на остаток по счету.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="menu-button">
+          <div class="menu-button__container" id="mb-c1"><a class="btn-text" href="#12" id="bt-1">Задать вопрос</a>
+            <div class="menu-button__container--click"><a class="button-menu" href="#331"><span class="button-menu-icon">
+                    <svg class="svg-icon-facebook">
+                      <use xlink:href="icons.svg#icon-facebook"></use>
+                    </svg></span>Facebook</a><a class="button-menu" href="#332"><span class="button-menu-icon">
+                    <svg class="svg-icon-telegram">
+                      <use xlink:href="icons.svg#icon-telegram"></use>
+                    </svg></span>Telegram</a><a class="button-menu" href="#333"><span class="button-menu-icon">
+                    <svg class="svg-icon-chat">
+                      <use xlink:href="icons.svg#icon-chat"></use>
+                    </svg></span>В чате</a><a class="button-menu" href="#334"><span class="button-menu-icon">
+                    <svg class="svg-icon-mail-export">
+                      <use xlink:href="icons.svg#icon-mail-export"></use>
+                    </svg></span>В письме</a><a class="button-menu" href="#335"><span class="button-menu-icon">
+                    <svg class="svg-icon-pc">
+                      <use xlink:href="icons.svg#icon-pc"></use>
+                    </svg></span>Через сайт</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="menu2">
+        <div class="menu-wrapper__header">Вклады и инвестиции<i class="fa fa-chevron-left"></i></div>
+        <div class="menu-wrapper">
+          <div class="menu-col">
+            <div class="menu-block">
+              <div class="menu-body"><a class="menu-section-link" href="#99">Вклады</a><a class="menu-section-link" href="#99">Накопительные счета</a><a class="menu-section-link" href="#99">Паевые инвестиционные фонды</a><a class="menu-section-link" href="#99">Пенсионные продукты</a><a class="menu-section-link" href="#99">Сейфовые ячейки</a><a class="menu-section-link" href="#99">Специальные предложения</a></div>
+            </div>
+          </div>
+          <div class="menu-col">
+            <div class="menu-block">
+              <div class="menu-heading">Сервисы</div>
+              <div class="menu-body"><a class="menu-link main-menu__link" href="#99">Подборщик вкладов</a><a class="menu-link main-menu__link" href="#99">Автоматическое пополнение</a></div>
+            </div>
+            <div class="menu-block">
+              <div class="menu-heading">Узнайте больше</div>
+              <div class="menu-body"><a class="menu-link main-menu__link" href="#99">Вклады застрахованы</a><a class="menu-link main-menu__link" href="#99">Вопросы и ответы</a><a class="menu-link main-menu__link" href="#99">Тарифы и условия</a><a class="menu-link main-menu__link" href="#99">Архив тарифов</a></div>
+            </div>
+          </div>
+          <div class="menu-col">
+            <div class="menu-block">
+              <div class="menu-image"><img class="menu-image-pic" src="common/images/kard.jpg"></div>
+              <div class="menu-description">
+                <h4 class="menu-description__header">На каждый день</h4>
+                <p class="menu-description__p">6% в год на остаток по счету для клиентов, получающих зарплату в Райффайзенбанке и индивидуальных зарплатных клиентов</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="menu-button">
+          <div class="menu-button__container" id="mb-c2"><a class="btn-text" href="#12" id="bt-2">Задать вопрос</a>
+            <div class="menu-button__container--click"><a class="button-menu" href="#331"><span class="button-menu-icon">
+                    <svg class="svg-icon-facebook">
+                      <use xlink:href="icons.svg#icon-facebook"></use>
+                    </svg></span>Facebook</a><a class="button-menu" href="#332"><span class="button-menu-icon">
+                    <svg class="svg-icon-telegram">
+                      <use xlink:href="icons.svg#icon-telegram"></use>
+                    </svg></span>Telegram</a><a class="button-menu" href="#333"><span class="button-menu-icon">
+                    <svg class="svg-icon-chat">
+                      <use xlink:href="icons.svg#icon-chat"></use>
+                    </svg></span>В чате</a><a class="button-menu" href="#334"><span class="button-menu-icon">
+                    <svg class="svg-icon-mail-export">
+                      <use xlink:href="icons.svg#icon-mail-export"></use>
+                    </svg></span>В письме</a><a class="button-menu" href="#335"><span class="button-menu-icon">
+                    <svg class="svg-icon-pc">
+                      <use xlink:href="icons.svg#icon-pc"></use>
+                    </svg></span>Через сайт</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="menu3">
+        <div class="menu-wrapper__header">Кредиты<i class="fa fa-chevron-left"></i></div>
+        <div class="menu-wrapper">
+          <div class="menu-col">
+            <div class="menu-block">
+              <div class="menu-body"><a class="menu-section-link" href="#99">Потребительские кредиты</a></div>
+            </div>
+            <div class="menu-block menu-overline">
+              <div class="menu-detail">
+                <div class="span-warn">!</div>
+                <p>Без поручительств и гарантий третьих лиц</p>
+              </div>
+              <div class="menu-detail">
+                <div class="span-warn">!</div>
+                <p>Рассмотрение заявки: от 2 до 5 рабочих дней</p>
+              </div>
+            </div>
+          </div>
+          <div class="menu-col">
+            <div class="menu-block">
+              <div class="menu-heading">Сервисы</div>
+              <div class="menu-body"><a class="menu-link main-menu__link" href="#99">Калькулятор</a><a class="menu-link main-menu__link" href="#99">Выезд кредитного специалиста</a></div>
+            </div>
+            <div class="menu-block">
+              <div class="menu-heading">Узнайте больше</div>
+              <div class="menu-body"><a class="menu-link main-menu__link" href="#99">Способы погашения кредита</a><a class="menu-link main-menu__link" href="#99">Обслуживание кредитов банков-партнёров</a><a class="menu-link main-menu__link" href="#99">Тарифы и условия</a><a class="menu-link main-menu__link" href="#99">Вопросы и ответы</a></div>
+            </div>
+          </div>
+          <div class="menu-col">
+            <div class="menu-block">
+              <div class="menu-image"><img class="menu-image-pic" src="common/images/kard.jpg"></div>
+              <div class="menu-description">
+                <h4 class="menu-description__header">Персональный кредит</h4>
+                <p class="menu-description__p">Не откладывайте исполнение ваших желаний — оформите кредит на любые цели без залога и поручителей и без комиссии за выдачу.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="menu-button">
+          <div class="menu-button__container" id="mb-c3"><a class="btn-text" href="#12" id="bt-3">Задать вопрос</a>
+            <div class="menu-button__container--click"><a class="button-menu" href="#331"><span class="button-menu-icon">
+                    <svg class="svg-icon-facebook">
+                      <use xlink:href="icons.svg#icon-facebook"></use>
+                    </svg></span>Facebook</a><a class="button-menu" href="#332"><span class="button-menu-icon">
+                    <svg class="svg-icon-telegram">
+                      <use xlink:href="icons.svg#icon-telegram"></use>
+                    </svg></span>Telegram</a><a class="button-menu" href="#333"><span class="button-menu-icon">
+                    <svg class="svg-icon-chat">
+                      <use xlink:href="icons.svg#icon-chat"></use>
+                    </svg></span>В чате</a><a class="button-menu" href="#334"><span class="button-menu-icon">
+                    <svg class="svg-icon-mail-export">
+                      <use xlink:href="icons.svg#icon-mail-export"></use>
+                    </svg></span>В письме</a><a class="button-menu" href="#335"><span class="button-menu-icon">
+                    <svg class="svg-icon-pc">
+                      <use xlink:href="icons.svg#icon-pc"></use>
+                    </svg></span>Через сайт</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="menu4">
+        <div class="menu-wrapper__header">Ипотека<i class="fa fa-chevron-left"></i></div>
+        <div class="menu-wrapper">
+          <div class="menu-col">
+            <div class="menu-block">
+              <div class="menu-body"><a class="menu-section-link" href="#99">Ипотека</a><a class="menu-section-link" href="#99">Специальные предложения</a></div>
+            </div>
+            <div class="menu-block menu-overline">
+              <div class="menu-detail">
+                <div class="span-warn">!</div>
+                <p>Без поручительств и гарантий третьих лиц</p>
+              </div>
+              <div class="menu-detail">
+                <div class="span-warn">!</div>
+                <p>Рассмотрение заявки: от 2 до 5 рабочих дней</p>
+              </div>
+            </div>
+          </div>
+          <div class="menu-col">
+            <div class="menu-block">
+              <div class="menu-heading">Сервисы</div>
+              <div class="menu-body"><a class="menu-link main-menu__link" href="#99">Ипотечный калькулятор</a><a class="menu-link main-menu__link" href="#99">Витрина объектов недвижимости</a><a class="menu-link main-menu__link" href="#99">Партнеры</a></div>
+            </div>
+            <div class="menu-block">
+              <div class="menu-heading">Узнайте больше</div>
+              <div class="menu-body"><a class="menu-link main-menu__link" href="#99">Для ипотечных клиентов</a><a class="menu-link main-menu__link" href="#99">Способы погашения кредита</a><a class="menu-link main-menu__link" href="#99">Страхование</a><a class="menu-link main-menu__link" href="#99">Полная стоимость кредита</a><a class="menu-link main-menu__link" href="#99">Тарифы и условия</a></div>
+            </div>
+          </div>
+          <div class="menu-col">
+            <div class="menu-block">
+              <div class="menu-image"><img class="menu-image-pic" src="common/images/kard.jpg"></div>
+              <div class="menu-description">
+                <h4 class="menu-description__header">Ипотека с материнским капиталом</h4>
+                <p class="menu-description__p">Вы сможете полностью покрыть или значительно снизить первоначальный взнос средствами материнского капитала.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="menu-button">
+          <div class="menu-button__container" id="mb-c4"><a class="btn-text" href="#12" id="bt-4">Задать вопрос</a>
+            <div class="menu-button__container--click"><a class="button-menu" href="#331"><span class="button-menu-icon">
+                    <svg class="svg-icon-facebook">
+                      <use xlink:href="icons.svg#icon-facebook"></use>
+                    </svg></span>Facebook</a><a class="button-menu" href="#332"><span class="button-menu-icon">
+                    <svg class="svg-icon-telegram">
+                      <use xlink:href="icons.svg#icon-telegram"></use>
+                    </svg></span>Telegram</a><a class="button-menu" href="#333"><span class="button-menu-icon">
+                    <svg class="svg-icon-chat">
+                      <use xlink:href="icons.svg#icon-chat"></use>
+                    </svg></span>В чате</a><a class="button-menu" href="#334"><span class="button-menu-icon">
+                    <svg class="svg-icon-mail-export">
+                      <use xlink:href="icons.svg#icon-mail-export"></use>
+                    </svg></span>В письме</a><a class="button-menu" href="#335"><span class="button-menu-icon">
+                    <svg class="svg-icon-pc">
+                      <use xlink:href="icons.svg#icon-pc"></use>
+                    </svg></span>Через сайт</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="menu5">
+        <div class="menu-wrapper__header">Пакеты услуг<i class="fa fa-chevron-left"></i></div>
+        <div class="menu-wrapper">
+          <div class="menu-col">
+            <div class="menu-block">
+              <div class="menu-body"><a class="menu-section-link" href="#99">Оптимальный</a><a class="menu-section-link" href="#99">Золотой</a><a class="menu-section-link" href="#99">Зарплатный</a><a class="menu-section-link" href="#99">Премиум</a></div>
+            </div>
+            <!--.menu-block.menu-overline
+            .menu-detail
+                .span-warn !
+                p Без поручительств и гарантий третьих лиц
+            .menu-detail
+                .span-warn !
+                p Рассмотрение заявки: от 2 до 5 рабочих дней
+            -->
+          </div>
+          <div class="menu-col">
+            <div class="menu-block">
+              <div class="menu-heading">Узнайте больше</div>
+              <div class="menu-body"><a class="menu-link main-menu__link" href="#99">Если вы сменили работу</a><a class="menu-link main-menu__link" href="#99">Индивидуальное зарплатное обслуживание</a><a class="menu-link main-menu__link" href="#99">Зарплатный проект для компаний</a><a class="menu-link main-menu__link" href="#99">Вопросы и ответы</a><a class="menu-link main-menu__link" href="#99">Тарифы и условия</a></div>
+            </div>
+          </div>
+          <div class="menu-col">
+            <div class="menu-block">
+              <div class="menu-image"><img class="menu-image-pic" src="common/images/kard.jpg"></div>
+              <div class="menu-description">
+                <h4 class="menu-description__header">Премиум Директ</h4>
+                <p class="menu-description__p">Уникальная программа премиального банковского обслуживания с акцентом на дистанционное предоставление услуг.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="menu-button">
+          <div class="menu-button__container" id="mb-c5"><a class="btn-text" href="#12" id="bt-5">Задать вопрос</a>
+            <div class="menu-button__container--click"><a class="button-menu" href="#331"><span class="button-menu-icon">
+                    <svg class="svg-icon-facebook">
+                      <use xlink:href="icons.svg#icon-facebook"></use>
+                    </svg></span>Facebook</a><a class="button-menu" href="#332"><span class="button-menu-icon">
+                    <svg class="svg-icon-telegram">
+                      <use xlink:href="icons.svg#icon-telegram"></use>
+                    </svg></span>Telegram</a><a class="button-menu" href="#333"><span class="button-menu-icon">
+                    <svg class="svg-icon-chat">
+                      <use xlink:href="icons.svg#icon-chat"></use>
+                    </svg></span>В чате</a><a class="button-menu" href="#334"><span class="button-menu-icon">
+                    <svg class="svg-icon-mail-export">
+                      <use xlink:href="icons.svg#icon-mail-export"></use>
+                    </svg></span>В письме</a><a class="button-menu" href="#335"><span class="button-menu-icon">
+                    <svg class="svg-icon-pc">
+                      <use xlink:href="icons.svg#icon-pc"></use>
+                    </svg></span>Через сайт</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="menu6">
+        <div class="menu-wrapper__header">Страхование<i class="fa fa-chevron-left"></i></div>
+        <div class="menu-wrapper">
+          <div class="menu-col">
+            <div class="menu-block">
+              <div class="menu-body"><a class="menu-section-link" href="#99">Страхование</a></div>
+            </div>
+            <div class="menu-block menu-overline">
+              <div class="menu-detail">
+                <div class="span-warn">!</div>
+                <p>Гибкие программы на все случаи жизни</p>
+              </div>
+              <div class="menu-detail">
+                <div class="span-warn">!</div>
+                <p>Возможности защиты заемщиков кредитов</p>
+              </div>
+            </div>
+          </div>
+          <div class="menu-col">
+            <div class="menu-block">
+              <div class="menu-heading">Узнайте больше</div>
+              <div class="menu-body"><a class="menu-link main-menu__link" href="#99">Вопросы и ответы</a><a class="menu-link main-menu__link" href="#99">Тарифы и условия</a></div>
+            </div>
+          </div>
+          <div class="menu-col">
+            <div class="menu-block">
+              <div class="menu-image"><img class="menu-image-pic" src="common/images/kard.jpg"></div>
+              <div class="menu-description">
+                <h4 class="menu-description__header">Защита для дома и квартиры</h4>
+                <p class="menu-description__p">Простой способ избежать непредсказуемых расходов на ремонт квартиры и замену поврежденного имущества.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="menu-button">
+          <div class="menu-button__container" id="mb-c6"><a class="btn-text" href="#12" id="bt-6">Задать вопрос</a>
+            <div class="menu-button__container--click"><a class="button-menu" href="#331"><span class="button-menu-icon">
+                    <svg class="svg-icon-facebook">
+                      <use xlink:href="icons.svg#icon-facebook"></use>
+                    </svg></span>Facebook</a><a class="button-menu" href="#332"><span class="button-menu-icon">
+                    <svg class="svg-icon-telegram">
+                      <use xlink:href="icons.svg#icon-telegram"></use>
+                    </svg></span>Telegram</a><a class="button-menu" href="#333"><span class="button-menu-icon">
+                    <svg class="svg-icon-chat">
+                      <use xlink:href="icons.svg#icon-chat"></use>
+                    </svg></span>В чате</a><a class="button-menu" href="#334"><span class="button-menu-icon">
+                    <svg class="svg-icon-mail-export">
+                      <use xlink:href="icons.svg#icon-mail-export"></use>
+                    </svg></span>В письме</a><a class="button-menu" href="#335"><span class="button-menu-icon">
+                    <svg class="svg-icon-pc">
+                      <use xlink:href="icons.svg#icon-pc"></use>
+                    </svg></span>Через сайт</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="menu7">
+        <div class="menu-wrapper__header">Сервисы<i class="fa fa-chevron-left"></i></div>
+        <div class="menu-wrapper">
+          <div class="menu-col">
+            <div class="menu-block">
+              <div class="menu-heading">Услуги банка онлайн</div>
+              <div class="menu-body">
+                <div class="menu-body__section"><a class="menu-section-link" href="#99">Интернет-банк</a>
+                  <div class="menu-link__description grey-color">Управляйте своими счетами – удобно, быстро и безопасно</div><a class="btn-text-icon" href="#w">Подключить<span>
+                        <svg class="svg-iconarrow">
+                          <use xlink:href="icons.svg#icon-arrow"></use>
+                        </svg></span></a>
+                </div>
+              </div>
+              <div class="menu-body">
+                <div class="menu-body__section"><a class="menu-section-link" href="#99">Приложение R-Connect</a>
+                  <div class="menu-link__description grey-color">Бесплатное приложение для быстрого управления финансами</div><a class="btn-store" href="#22"><img src="common/images/app-store.svg"></a><a class="btn-store" href="#22"><img src="common/images/google-play-badge.svg"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="menu-col">
+            <div class="menu-block">
+              <div class="menu-heading">Доступ без интернета</div>
+              <div class="menu-body">
+                <div class="menu-body__section"><a class="menu-section-link" href="#99">СМС-банк</a>
+                  <div class="menu-link__description grey-color">Возможности уведомления и подключения услуг через СМС</div>
+                </div>
+              </div>
+              <div class="menu-body">
+                <div class="menu-body__section"><a class="menu-section-link" href="#99">Банкоматы</a>
+                  <div class="menu-link__description grey-color">Операции, доступные в 2000 банкоматах по всей России  и в банкоматах партнеров</div>
+                </div>
+              </div>
+              <div class="menu-body">
+                <div class="menu-body__section"><a class="menu-section-link" href="#99">Информационный центр</a>
+                  <div class="menu-link__description grey-color">Быстрый заказ любых продуктов. Круглосуточная консультация держателей карт</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="menu-col">
+            <div class="menu-block">
+              <div class="menu-heading">Самообслуживание</div>
+              <div class="menu-body"><a class="menu-link main-menu__link" href="#99">Документы без очереди</a><a class="menu-link main-menu__link" href="#99">Курьерская доставка</a><a class="menu-link main-menu__link" href="#99">Информация о готовности карты</a><a class="menu-link main-menu__link" href="#99">Заказ денег</a></div>
+            </div>
+            <div class="menu-block">
+              <div class="menu-heading">Узнайте больше</div>
+              <div class="menu-body"><a class="menu-link main-menu__link" href="#99">Безопасность</a><a class="menu-link main-menu__link" href="#99">Вопросы и ответы</a></div>
+              <div class="menu-logo"><img class="logo-icon" src="common/images/Apple_Pay_logo.svg"><img class="logo-icon" src="common/images/samsung-pay.svg"><img class="logo-icon" src="common/images/Android_Pay_logo.svg"></div>
+            </div>
+          </div>
+        </div>
+        <div class="menu-button">
+          <div class="menu-button__container" id="mb-c7"><a class="btn-text" href="#12" id="bt-7">Задать вопрос</a>
+            <div class="menu-button__container--click"><a class="button-menu" href="#331"><span class="button-menu-icon">
+                    <svg class="svg-icon-facebook">
+                      <use xlink:href="icons.svg#icon-facebook"></use>
+                    </svg></span>Facebook</a><a class="button-menu" href="#332"><span class="button-menu-icon">
+                    <svg class="svg-icon-telegram">
+                      <use xlink:href="icons.svg#icon-telegram"></use>
+                    </svg></span>Telegram</a><a class="button-menu" href="#333"><span class="button-menu-icon">
+                    <svg class="svg-icon-chat">
+                      <use xlink:href="icons.svg#icon-chat"></use>
+                    </svg></span>В чате</a><a class="button-menu" href="#334"><span class="button-menu-icon">
+                    <svg class="svg-icon-mail-export">
+                      <use xlink:href="icons.svg#icon-mail-export"></use>
+                    </svg></span>В письме</a><a class="button-menu" href="#335"><span class="button-menu-icon">
+                    <svg class="svg-icon-pc">
+                      <use xlink:href="icons.svg#icon-pc"></use>
+                    </svg></span>Через сайт</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="body-container">
+    <div class="wrapper cards-wrapper">
+      <div class="morgage-wrapper">
+        <div class="mortgage__block-image">
+          <div class="card-image-transform"><img src="common/images/kard.jpg"></div>
+        </div>
+        <div class="mortgage-intro container">
+          <div class="mortgage-intro__block">
+            <div class="mortgage__block-content">
+              <h6 class="title-block__description grey-color">Новая кредитная карта</h6>
+              <h1 class="title-block__title">#ВСЁСРАЗУ</h1>
+              <p class="block-content__readme grey-color">Оплачивайте покупки и накапливайте мили для премиальных перелётов и повышения класса обслуживания по программе Miles&More</p>
+              <div class="block-content__description">
+                <div class="property">
+                  <div class="property__block">
+                    <h3 class="property__title">5%</h3>
+                    <p class="property__description">cashback на все покупки по карте</p>
+                  </div>
+                </div>
+                <div class="property">
+                  <div class="property__block">
+                    <h3 class="property__title">50<span class="small-text">дней</span></h3>
+                    <p class="property__description">беспроцентный льготный период</p>
+                  </div>
+                </div>
+                <div class="property">
+                  <div class="property__block">
+                    <h3 class="property__title">image</h3>
+                    <p class="property__description">индивидуальный дизайн карты</p>
+                  </div>
+                </div>
+              </div>
+              <div class="mortgage__block-buttons">
+                <!--a.button(href='#23') Оставить заявку--><a class="button" href="#23">Оформить карту</a><a class="btn-text" href="#23">Подробнее</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-filter">
+        <div class="container">
+          <div class="card-filter__content filter--close"><span class="card-filter__title">Выберите подходящие возможности карты
+              <svg width="16px" height="19px" viewbox="0 0 16 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="Text-Styles-Copy" transform="translate(-734.000000, -398.000000)" fill="#000000">
+                    <g id="Page-1" transform="translate(734.000000, 397.000000)">
+                      <polygon id="Fill-1" points="0 11.0043 16 11.0043 16 8.9993 0 8.9993"></polygon>
+                      <polygon id="Fill-2" points="0 18.0043 16 18.0043 16 15.9993 0 15.9993"></polygon>
+                      <polygon id="Fill-3" points="2.006 12.0073 5.006 12.0073 5.006 7.9983 2.006 7.9983"></polygon>
+                      <polygon id="Fill-4" points="10.005 19.0073 13.006 19.0073 13.006 14.9983 10.005 14.9983"></polygon>
+                      <polygon id="Fill-5" points="0 4.0063 16 4.0063 16 2.0013 0 2.0013"></polygon>
+                      <polygon id="Fill-6" points="8.005 5.0083 11.006 5.0083 11.006 0.9993 8.005 0.9993"></polygon>
+                    </g>
+                  </g>
+                </g>
+              </svg></span>
+            <div class="card-filter__body">
+              <div class="card-filter__heading">Выберите подходящие возможности карты</div>
+              <div class="card-filter__list">
+                <div class="card-filter__item">
+                  <div class="checkbox-block">
+                    <label class="checkbox-block__label" for="filter-1">
+                      <input class="input-checkbox" type="checkbox" id="filter-1" value="cat-1" name="category"><span class="checkbox-block__span"></span>для платежей в интернете
+                    </label>
+                  </div>
+                </div>
+                <div class="card-filter__item">
+                  <div class="checkbox-block">
+                    <label class="checkbox-block__label" for="filter-2">
+                      <input class="input-checkbox" type="checkbox" id="filter-2" value="cat-2" name="category"><span class="checkbox-block__span"></span>с cashback
+                    </label>
+                  </div>
+                </div>
+                <div class="card-filter__item">
+                  <div class="checkbox-block">
+                    <label class="checkbox-block__label" for="filter-3">
+                      <input class="input-checkbox" type="checkbox" id="filter-3" value="cat-3" name="category"><span class="checkbox-block__span"></span>без ограничений
+                    </label>
+                  </div>
+                </div>
+                <!--.card-filter__item-->
+                <!--    .checkbox-block-->
+                <!--        label.checkbox-block__label(for='filter-4')-->
+                <!--            input.input-checkbox(type='checkbox' id='filter-4' value='cat-4' name='category')-->
+                <!--            span.checkbox-block__span-->
+                <!--            | для путешествий-->
+                <!--.card-filter__item-->
+                <!--    .checkbox-block-->
+                <!--        label.checkbox-block__label(for='filter-5')-->
+                <!--            input.input-checkbox(type='checkbox' id='filter-5' value='cat-5' name='category')-->
+                <!--            span.checkbox-block__span-->
+                <!--            | с бонусами от покупок-->
+                <!--.card-filter__item-->
+                <!--    .checkbox-block-->
+                <!--        label.checkbox-block__label(for='filter-6')-->
+                <!--            input.input-checkbox(type='checkbox' id='filter-6' value='cat-6' name='category')-->
+                <!--            span.checkbox-block__span-->
+                <!--            | с PayPass или payWave-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mortgage container">
+        <div class="mortgage__block mortgage__block--cards" data-category="cat-1 cat-4">
+          <div class="mortgage__block-image">
+            <div class="image-bg" style="background-image: url(common/images/kard.jpg);"></div>
+          </div>
+          <div class="mortgage__block-content">
+            <h3 class="block-content__title">#ВСЁСРАЗУ</h3>
+            <div class="block-content__description">
+              <div class="property"><a href="#31"></a>
+                <div class="property__block">
+                  <h3 class="property__title">5%</h3>
+                  <p class="property__description">cashback на все покупки по карте</p>
+                </div>
+              </div>
+              <div class="property">
+                <div class="property__block">
+                  <h3 class="property__title">image</h3>
+                  <p class="property__description">индивидуальный дизайн карты</p>
+                </div>
+              </div>
+              <div class="property">
+                <div class="property__block">
+                  <h3 class="property__title">1<span class="small-text">день</span></h3>
+                  <p class="property__description">на информирование и&nbsp;выдачу карты</p>
+                </div>
+              </div>
+            </div>
+            <div class="block-content__order">
+              <!--a(href = '#').button Оставить заявку--><a class="button" href="#">Оформить карту</a><a class="btn-text" href="#">Подробнее</a>
+            </div>
+          </div><a class="block-link" href="#30"></a>
+        </div>
+        <div class="mortgage__block mortgage__block--cards" data-category="cat-3 cat-4">
+          <div class="mortgage__block-image">
+            <div class="image-bg" style="background-image: url(common/images/kard.jpg);"></div>
+          </div>
+          <div class="mortgage__block-content">
+            <h3 class="block-content__title">Наличная карта</h3>
+            <div class="block-content__description">
+              <div class="property"><a href="#31"></a>
+                <div class="property__block">
+                  <h3 class="property__title">0%</h3>
+                  <p class="property__description">снятие наличных без комиссии</p>
+                </div>
+              </div>
+              <div class="property">
+                <div class="property__block">
+                  <h3 class="property__title">1<span class="small-text">день</span></h3>
+                  <p class="property__description">на оформление и выдачу карты</p>
+                </div>
+              </div>
+              <div class="property">
+                <div class="property__block">
+                  <h3 class="property__title">300<span class="small-text">тыс. ₽</span></h3>
+                  <p class="property__description">кредитный лимит по карте</p>
+                </div>
+              </div>
+            </div>
+            <div class="block-content__order">
+              <!--a(href = '#').button Оставить заявку--><a class="button" href="#">Оформить карту</a><a class="btn-text" href="#">Подробнее</a>
+            </div>
+          </div><a class="block-link" href="#30"></a>
+        </div>
+        <div class="mortgage__blocks_hidden">
+          <div class="mortgage__block mortgage__block--cards" id="firstInLoaded" data-category="cat-6 cat-2">
+            <div class="mortgage__block-image--small">
+              <div class="image-bg--small" style="background-image: url(common/images/kard.jpg);"></div>
+            </div>
+            <div class="mortgage__block-content--small">
+              <h3 class="block-content__title">Покупки в плюс</h3>
+              <div class="block-content__description">
+                <div class="property">
+                  <div class="property__block">
+                    <h3 class="property__title">0₽</h3>
+                    <p class="property__description">снятие наличных без комиссии</p>
+                  </div>
+                </div>
+                <div class="property">
+                  <div class="property__block">
+                    <h3 class="property__title">50<span class="small-text">дней</span></h3>
+                    <p class="property__description">на оформление и выдачу карты</p>
+                  </div>
+                </div>
+                <div class="property">
+                  <div class="property__block">
+                    <h3 class="property__title">1<span class="small-text">день</span></h3>
+                    <p class="property__description">кредитный лимит по карте</p>
+                  </div>
+                </div>
+              </div>
+              <div class="block-content__order"><a class="button" href="#">Оставить заявку</a></div>
+            </div>
+          </div>
+          <div class="mortgage__block mortgage__block--cards" data-category="cat-2 cat-1">
+            <div class="mortgage__block-image--small">
+              <div class="image-bg--small" style="background-image: url(common/images/kard.jpg);"></div>
+            </div>
+            <div class="mortgage__block-content--small">
+              <h3 class="block-content__title">Austrian Airlines MasterCard World</h3>
+              <div class="block-content__description">
+                <div class="property">
+                  <div class="property__block">
+                    <h3 class="property__title">0₽</h3>
+                    <p class="property__description">перелеты по всему миру</p>
+                  </div>
+                </div>
+                <div class="property">
+                  <div class="property__block">
+                    <h3 class="property__title">0₽<span class="small-text"></span></h3>
+                    <p class="property__description">страхование путешествий</p>
+                  </div>
+                </div>
+                <div class="property">
+                  <div class="property__block">
+                    <h3 class="property__title">50<span class="small-text">дней</span></h3>
+                    <p class="property__description">беспроцентный льготный период</p>
+                  </div>
+                </div>
+              </div>
+              <div class="block-content__order"><a class="button" href="#">Оставить заявку</a></div>
+            </div>
+          </div>
+          <div class="mortgage__block mortgage__block--cards" data-category="cat-6">
+            <div class="mortgage__block-image--small">
+              <div class="image-bg--small" style="background-image: url(common/images/kard.jpg);"></div>
+            </div>
+            <div class="mortgage__block-content--small">
+              <h3 class="block-content__title">Travel Rewards</h3>
+              <div class="block-content__description">
+                <div class="property">
+                  <div class="property__block">
+                    <h3 class="property__title">Miles +</h3>
+                    <p class="property__description">билеты в обмен на Travel Miles</p>
+                  </div>
+                </div>
+                <div class="property">
+                  <div class="property__block">
+                    <h3 class="property__title">0₽<span class="small-text"></span></h3>
+                    <p class="property__description">страхование путешествий</p>
+                  </div>
+                </div>
+                <div class="property">
+                  <div class="property__block">
+                    <h3 class="property__title">50<span class="small-text">дней</span></h3>
+                    <p class="property__description">беспроцентный льготный период</p>
+                  </div>
+                </div>
+              </div>
+              <div class="block-content__order"><a class="button" href="#">Оставить заявку</a></div>
+            </div>
+          </div>
+          <!--.mortgage__block.loaded-block-->
+          <!--    .mortgage__block-image--small-->
+          <!--        .image-bg--small(style="background-image: url(common/images/img1.jpg);")-->
+          <!---->
+          <!--    .mortgage__block-content--small-->
+          <!--        h3.block-content__title Квартира на вторичном рынке-->
+          <!--        .block-content__description-->
+          <!--            .property.highlighted-->
+          <!--                a(href='#31').highlighted__block-link-->
+          <!--                .property__block-->
+          <!--                    h3.property__title 8,5%-->
+          <!--                    p.property__description ставка снижена до 23 марта-->
+          <!---->
+          <!--            .property-->
+          <!--                .property__block-->
+          <!--                    h3.property__title 1–25-->
+          <!--                        span.small-text лет-->
+          <!--                    p.property__description срок кредитования-->
+          <!---->
+          <!--            .property-->
+          <!--                .property__block-->
+          <!--                    h3.property__title 8,5%-->
+          <!--                        span.small-text млн. ₽-->
+          <!--                    p.property__description максимальная сумма-->
+          <!---->
+          <!--        .block-content__order-->
+          <!--            a(href = '#').button Оставить заявку-->
+          <!---->
+          <!---->
+          <!---->
+          <!--.mortgage__block.loaded-block-->
+          <!--    .mortgage__block-image--small-->
+          <!--        .image-bg--small(style="background-image: url(common/images/img1.jpg);")-->
+          <!---->
+          <!--    .mortgage__block-content--small-->
+          <!--        h3.block-content__title Квартира на вторичном рынке-->
+          <!--        .block-content__description-->
+          <!--            .property-->
+          <!--                .property__block-->
+          <!--                    h3.property__title 8,5%-->
+          <!--                    p.property__description ставка снижена до 23 марта-->
+          <!---->
+          <!--            .property-->
+          <!--                .property__block-->
+          <!--                    h3.property__title 1–25-->
+          <!--                        span.small-text лет-->
+          <!--                    p.property__description срок кредитования-->
+          <!---->
+          <!--            .property-->
+          <!--                .property__block-->
+          <!--                    h3.property__title 8,5%-->
+          <!--                        span.small-text млн. ₽-->
+          <!--                    p.property__description максимальная сумма-->
+          <!---->
+          <!--        .block-content__order-->
+          <!--            a(href = '#').button Оставить заявку-->
+          <!---->
+          <!---->
+          <!--.mortgage__block.loaded-block-->
+          <!--    .mortgage__block-image--small-->
+          <!--        .image-bg--small(style="background-image: url(common/images/img1.jpg);")-->
+          <!---->
+          <!--    .mortgage__block-content--small-->
+          <!--        h3.block-content__title Квартира на вторичном рынке-->
+          <!--        .block-content__description-->
+          <!--            .property-->
+          <!--                .property__block-->
+          <!--                    h3.property__title 8,5%-->
+          <!--                    p.property__description ставка снижена до 23 марта-->
+          <!---->
+          <!--            .property-->
+          <!--                .property__block-->
+          <!--                    h3.property__title 1–25-->
+          <!--                        span.small-text лет-->
+          <!--                    p.property__description срок кредитования-->
+          <!---->
+          <!--            .property-->
+          <!--                .property__block-->
+          <!--                    h3.property__title 8,5%-->
+          <!--                        span.small-text млн. ₽-->
+          <!--                    p.property__description максимальная сумма-->
+          <!---->
+          <!--        .block-content__order-->
+          <!--            a(href = '#').button Оставить заявку-->
+        </div>
+        <div class="load-more">
+          <div class="load-more__button">Все кредитные карты<span class="badge" id="count-hidden"></span></div>
+        </div>
+      </div>
+      <!--.b-card-list-->
+      <!--    .b-card-list__container.container-->
+      <!--        h3.b-card-list__title Использование миль-->
+      <!--        p.b-card-list__desc.grey-color С помощью накопленных миль Miles&More вы можете-->
+      <!--        .b-card-list__slider-->
+      <!--            .b-card-list__item-->
+      <!--                a.b-card-list__item-image(href='')-->
+      <!--                a.b-card-list__item-link--small(href='')-->
+      <!--                    span Премиальные билеты от группы Austrian Airlines-->
+      <!--            .b-card-list__item-->
+      <!--                a.b-card-list__item-image(href='')-->
+      <!--                a.b-card-list__item-link--small(href='')-->
+      <!--                    span Повысить класс обслуживания полёта-->
+      <!--            .b-card-list__item-->
+      <!--                a.b-card-list__item-image(href='')-->
+      <!--                a.b-card-list__item-link--small(href='')-->
+      <!--                    span Выбрать товарыи услуги на сайте Miles&More-->
+      <!---->
+      <!---->
+      <!--.b-card-list-->
+      <!--    .b-card-list__container.container-->
+      <!--        h3.b-card-list__title Специальные предложения-->
+      <!--        .b-card-list__slider-->
+      <!--            .b-card-list__item-->
+      <!--                a.b-card-list__item-image(href='')-->
+      <!--                a.b-card-list__item-link(href='')-->
+      <!--                    h4 1%-->
+      <!--                    span от заработной платы обратно на счёт в течение 6 месяцев-->
+      <!--            .b-card-list__item-->
+      <!--                a.b-card-list__item-image(href='')-->
+      <!--                a.b-card-list__item-link(href='')-->
+      <!--                    h4 15,9%-->
+      <!--                    span одна ставка для всех кредитов-->
+      <!--            .b-card-list__item-->
+      <!--                a.b-card-list__item-image(href='')-->
+      <!--                a.b-card-list__item-link(href='')-->
+      <!--                    h4 50%-->
+      <!--                    span скидки на напитки в Шоколаднице по Samsung Pay-->
+      <div class="mobile-payment">
+        <div class="container">
+          <div class="mobile-payment__content">
+            <div class="mobile-payment__item">
+              <svg class="apple-pay" xmlns="http://www.w3.org/2000/svg" width="2500" height="1170" viewbox="0.9 1.001 105.913 49.583">
+                <path d="M28.036 21.536c.056 5.849 5.297 7.795 5.355 7.82-.044.138-.837 2.774-2.76 5.498-1.664 2.354-3.39 4.7-6.109 4.749-2.672.048-3.53-1.534-6.586-1.534-3.054 0-4.009 1.485-6.538 1.582-2.624.096-4.623-2.547-6.3-4.893-3.427-4.8-6.046-13.56-2.529-19.474 1.747-2.937 4.868-4.797 8.257-4.844 2.577-.048 5.01 1.679 6.586 1.679 1.574 0 4.531-2.077 7.64-1.772 1.3.053 4.952.509 7.297 3.834-.19.114-4.359 2.465-4.313 7.355M23.014 7.172C24.407 5.538 25.346 3.264 25.09 1c-2.009.078-4.438 1.296-5.878 2.929-1.292 1.446-2.422 3.76-2.117 5.979 2.24.168 4.526-1.102 5.92-2.737M43.183 4.375a62.54 62.54 0 0 1 3.418-.47 37.158 37.158 0 0 1 4.112-.208c2.136 0 3.977.252 5.525.756 1.55.504 2.821 1.226 3.817 2.165a8.894 8.894 0 0 1 2.003 2.972c.48 1.147.718 2.469.718 3.964 0 1.808-.327 3.39-.986 4.746a9.868 9.868 0 0 1-2.696 3.416c-1.14.92-2.492 1.607-4.058 2.06-1.567.451-3.275.677-5.127.677-1.672 0-3.078-.121-4.216-.364v15.02h-2.51V4.375zm2.51 17.524c.605.173 1.281.295 2.029.364.748.07 1.548.104 2.402.104 3.203 0 5.686-.73 7.448-2.19 1.761-1.46 2.643-3.599 2.643-6.415 0-1.356-.231-2.539-.694-3.547a6.374 6.374 0 0 0-1.975-2.477c-.854-.644-1.868-1.13-3.043-1.461-1.176-.33-2.475-.495-3.9-.495-1.138 0-2.117.043-2.936.13-.818.087-1.477.183-1.975.287v15.7zM82.738 33.165c0 1.008.017 2.017.053 3.025.035 1.008.141 1.98.32 2.92h-2.349l-.373-3.547h-.109c-.32.488-.729.974-1.227 1.46s-1.076.93-1.734 1.33c-.659.4-1.406.722-2.243.965a9.857 9.857 0 0 1-2.75.365c-1.245 0-2.34-.2-3.285-.6-.943-.4-1.717-.921-2.322-1.564a6.383 6.383 0 0 1-1.36-2.217 7.298 7.298 0 0 1-.454-2.503c0-2.955 1.272-5.232 3.817-6.832 2.545-1.6 6.381-2.365 11.508-2.295v-.678c0-.662-.063-1.419-.187-2.27a7.012 7.012 0 0 0-.829-2.425c-.427-.764-1.067-1.407-1.921-1.928-.854-.522-2.012-.783-3.47-.783-1.105 0-2.198.165-3.284.495-1.086.33-2.073.79-2.963 1.382l-.801-1.826c1.138-.764 2.314-1.311 3.523-1.641a14.348 14.348 0 0 1 3.791-.495c1.78 0 3.23.295 4.352.886 1.121.591 2.002 1.356 2.643 2.294a8.448 8.448 0 0 1 1.308 3.156 17.83 17.83 0 0 1 .348 3.468v9.858zm-2.51-7.458a35.361 35.361 0 0 0-4.246.156c-1.476.138-2.838.444-4.083.912-1.247.47-2.278 1.156-3.096 2.06s-1.229 2.104-1.229 3.6c0 1.771.516 3.076 1.55 3.91 1.03.834 2.187 1.252 3.469 1.252 1.032 0 1.958-.138 2.776-.418.819-.278 1.529-.652 2.135-1.12s1.112-1 1.522-1.59c.41-.593.721-1.2.936-1.827.178-.696.268-1.2.268-1.514v-5.421zM87.646 14.075l6.512 16.272a56.4 56.4 0 0 1 1.016 2.79c.32.956.605 1.835.854 2.634h.107c.25-.764.534-1.625.854-2.582.321-.955.677-1.938 1.068-2.948l6.088-16.167h2.668l-7.42 18.36a210.246 210.246 0 0 1-2.11 5.293 49.701 49.701 0 0 1-2.002 4.276 30.451 30.451 0 0 1-2.057 3.365 14.147 14.147 0 0 1-2.322 2.555c-.995.868-1.913 1.504-2.75 1.904-.836.4-1.396.652-1.681.756l-.856-2.034a21.445 21.445 0 0 0 2.137-1.095 11.617 11.617 0 0 0 2.295-1.773c.642-.626 1.345-1.45 2.11-2.478.765-1.025 1.45-2.268 2.056-3.729.213-.556.32-.922.32-1.096 0-.242-.106-.608-.32-1.095l-9.238-23.21h2.671z"></path>
+              </svg>
+            </div>
+            <div class="mobile-payment__item">
+              <svg class="samsung-pay" version="1" xmlns="http://www.w3.org/2000/svg" width="280" height="127" viewbox="0 0 2800 1270">
+                <path d="M630 945V620h60c47 0 60 3 60 15 0 13 4 13 27-2 38-25 155-24 203 1 49 26 88 64 113 111 31 57 30 173 0 231-29 55-93 109-149 124-52 15-136 8-170-15-13-8-26-15-29-15s-5 45-5 100v100H630V945zm283 51c54-23 80-59 85-120 6-73-18-122-72-147-52-23-73-24-115-1-106 57-89 246 24 275 34 8 45 7 78-7zM1830 1263c0-5 18-51 40-103l41-95-101-218c-55-119-100-220-100-223s28-4 61-2l62 3 66 153c36 83 68 152 71 152s32-69 65-153l61-152 63-3c52-2 63 0 58 11-3 8-65 155-139 326l-133 311h-57c-32 0-58-3-58-7zM1331 1096c-48-17-108-71-133-119-30-56-32-175-4-227 26-49 64-88 111-113 53-28 168-31 208-4 23 15 27 15 27 2 0-12 13-15 60-15h60v480h-55c-50 0-55-2-55-22 0-19-2-20-17-6-43 37-136 48-202 24zm165-112c50-34 70-133 38-199-22-46-60-69-115-69-81 0-129 54-129 146 0 47 5 62 27 89 49 58 120 71 179 33zM70 419C20 399 0 370 0 318v-48h55c54 0 55 1 55 29 0 35 22 55 50 46 16-5 20-14 18-33-2-20-19-35-73-68C16 190 0 170 0 113c0-55 12-78 50-98s152-20 189 0c33 16 41 33 41 81v34h-55c-51 0-55-2-55-24 0-29-28-42-48-22-22 22-8 43 50 73 29 16 67 42 85 60 29 27 33 37 33 85 0 63-18 94-66 114-38 16-117 17-154 3zM1373 419c-46-13-73-53-73-105v-44h55c52 0 55 2 55 24 0 23 23 56 38 56 19-1 33-20 30-41-2-17-22-35-73-66-38-23-78-54-87-70-28-44-23-97 11-135 29-32 31-33 114-33 77 0 88 3 111 24 19 18 26 35 26 63v38h-49c-43 0-50-3-55-24-7-29-29-39-51-23-26 20-8 44 61 83 85 47 104 73 104 139 0 38-6 60-20 78-33 42-121 58-197 36zM1760 420c-19-4-45-20-57-35-22-25-23-34-23-201V10h110l2 163 3 162 24 3c13 2 28-2 32-10 5-7 9-82 9-165V10h110v159c0 177-8 214-52 237-36 19-112 26-158 14zM2562 400c-45-28-52-53-52-190s7-162 52-190c62-38 201-20 227 28 6 12 11 37 11 56v36h-54c-52 0-55-1-58-27-3-31-30-42-53-23-21 18-21 222 0 240 28 23 50 8 53-38 3-37 1-42-17-42-17 0-21-6-21-35v-35h150v86c0 47-5 94-11 106-26 48-165 66-227 28zM350 404c0-4 16-89 35-191s35-189 35-194 43-9 95-9c90 0 95 1 100 23 3 12 21 102 39 200l33 178-61-3-60-3-22-148c-19-132-34-194-34-141 0 10-9 81-21 157l-22 137h-58c-33 0-59-3-59-6zM760 210V10h90c50 0 90 3 90 8 0 16 39 244 42 248 3 2 12-47 22-109 25-161 14-147 110-147h83l6 122c4 66 7 156 7 200v78h-110l-1-152-1-153-19 100c-11 55-24 124-30 153l-11 53-56-3-57-3-26-135-27-135-1 138-1 137H760V210zM2070 210V10h159l25 83c13 45 31 105 40 132l15 50V143l1-133h110v400h-157l-43-142c-23-79-44-145-46-147-1-2 0 63 3 143l6 146h-113V210z"></path>
+              </svg>
+            </div>
+            <div class="mobile-payment__item">
+              <svg class="android-pay" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 790 820">
+                <style>
+                  .st0 {fill: #000000 }
+                  .st1 {  fill-rule: evenodd;  clip-rule: evenodd;  fill: #000000 }
+                  .st2 {  fill: #000000  }
+                </style>
+                <path class="st0" d="M238.4 575.6c-.1 1.5-.2 3-.2 4.6 0 12.7-.1 25.4 0 38.2 0 3.2-1 4.3-4.1 4.1-2.9-.2-5.8-.2-8.7 0-2.6.1-3.5-1-3.4-3.5.2-3.3 0-6.6 0-9.9 0-43.5.1-86.9-.1-130.4 0-4.1 1.2-5.5 5.2-5 2.4.3 4.8.3 7.1 0 3.3-.4 4.2 1.1 4 4.1-.2 2.7 0 5.4.5 8.5 16.6-13.8 34.9-18.2 55.3-12.2 12.8 3.8 22.9 11.4 30.5 22.3 16 22.9 14.2 53.7-4.7 74.8-10.4 11.6-23.7 17.9-39.4 18.8-15.7.9-29.3-4.2-41-14.8-.3 0-.7.2-1 .4zm-.4-28c-.3 5.1 1.6 9 4.9 12.5 12.3 13 27.4 17.2 44.5 12.6 16.1-4.4 26.5-15.3 30.3-31.5 4.1-17.6-.8-32.7-14.7-44.5-8-6.8-17.3-9.6-27.8-9.6-13.6.1-24.6 5.3-33.4 15.5-2.5 2.9-3.9 6.1-3.8 10.1.2 5.9.3 29.3 0 34.9zM444 575c-27.5 24.6-63.5 15.1-80.5-3.9-19.3-21.5-20.6-55.5-2.7-77.8 6.7-8.3 15-14.6 25-18.3 9.9-3.6 20-4.7 30.4-2.8 10.5 1.9 19.6 6.8 28.5 14.7 0-4.2.1-7.3 0-10.4-.1-2.2.8-3.1 3.1-3.1 3.4.1 6.9-.2 10.3.2 1 .1 1.9 1.8 2.8 2.7.1.1 0 .5 0 .8v106.5c0 2.7-.8 3.9-3.6 3.7-3.8-.2-8.6 1.1-11.2-.7-1.9-1.4-1.1-6.7-1.5-10.3-.1-.2-.3-.6-.6-1.3zm1.3-60.6c.6-7-3-11.9-7.6-16.3-10.8-10.1-24.1-13-38-10.6-27.3 4.8-42.3 32.1-32.9 58.1 10.1 28 42.2 37.4 66.6 20.2 7.7-5.4 13.2-12 11.9-22.5-.5-4.2-.5-23.6 0-28.9zm27.6-40.9c5.9 0 11.2-.2 16.5.2 1.3.1 2.9 2 3.5 3.4 10.8 25.7 21.5 51.4 32.2 77.1 1.3 3.1 2.7 6.2 4.4 10.2 1.1-2.1 1.9-3.3 2.4-4.6 11.5-27.4 22.9-54.8 34.3-82.3 1.2-3 2.7-4.4 6.1-4.1 4.3.3 8.7.1 13.7.1-1.2 3-2.2 5.5-3.3 8-16.6 38.6-33.3 77.1-49.9 115.7-5.4 12.6-14.2 21.6-28 24.7-3.8.8-7.8.8-11.8 1.2-2.2.2-3.2-.7-3.1-3 .1-3.4.1-6.9 0-10.3-.1-2.3 1.1-2.8 3.1-3 14.9-1 23.3-7.9 26.7-22 .3-1.4-.5-3.3-1.1-4.8-14.7-34.2-29.4-68.4-44.2-102.6-.5-1-.9-2.1-1.5-3.9z"></path>
+                <path class="st1" d="M389.2 207.2c10.3 0 20 1.9 28.7 5.3l12.9-19.8c.7-1.1 2.1-1.4 3.2-.7s1.4 2.1.7 3.2l-12.4 19.1c20.5 9.5 34.5 34.4 34.9 55.2h-136c.4-20.8 14.4-45.7 34.9-55.2l-12.4-19.1c-.7-1.1-.4-2.5.7-3.2 1.1-.7 2.5-.4 3.2.7l12.9 19.8c8.7-3.4 18.4-5.3 28.7-5.3zm-12.4 182v33.9c0 8.4-6.9 15.3-15.3 15.3s-15.3-6.9-15.3-15.3v-33.9h-12.8c-6.8 0-12.4-5.6-12.4-12.4V275.1h136.2v101.8c0 6.8-5.6 12.4-12.4 12.4H432v33.9c0 8.4-6.9 15.3-15.3 15.3s-15.3-6.9-15.3-15.3v-33.9h-24.6v-.1zm-76.1-116.1c8.4 0 15.3 6.9 15.3 15.3v61.1c0 8.4-6.9 15.3-15.3 15.3s-15.3-6.9-15.3-15.3v-61.1c.1-8.5 6.9-15.3 15.3-15.3zm177.8 0c8.4 0 15.3 6.9 15.3 15.3v61.1c0 8.4-6.9 15.3-15.3 15.3s-15.3-6.9-15.3-15.3v-61.1c0-8.5 6.9-15.3 15.3-15.3zm-119.6-41c4.3 0 7.8 3.5 7.8 7.8s-3.5 7.8-7.8 7.8-7.8-3.5-7.8-7.8 3.5-7.8 7.8-7.8zm61.4 0c4.3 0 7.8 3.5 7.8 7.8s-3.5 7.8-7.8 7.8-7.8-3.5-7.8-7.8 3.5-7.8 7.8-7.8z"></path>
+                <path class="st2" d="M391.8 743.6c-44.8 0-88.2-8.8-129.1-26.1-39.5-16.7-75-40.6-105.4-71.1-30.5-30.5-54.4-65.9-71.1-105.4-17.3-40.9-26.1-84.3-26.1-129.1s8.8-88.2 26.1-129.1c16.7-39.5 40.6-75 71.1-105.4 30.5-30.5 65.9-54.4 105.4-71.1C303.6 89 347 80.2 391.8 80.2S480 89 520.9 106.3c39.5 16.7 75 40.6 105.4 71.1 30.5 30.5 54.4 65.9 71.1 105.4 17.3 40.9 26.1 84.3 26.1 129.1s-8.8 88.2-26.1 129.1c-16.7 39.5-40.6 75-71.1 105.4-30.5 30.5-65.9 54.4-105.4 71.1-40.8 17.3-84.3 26.1-129.1 26.1zm0-654c-43.5 0-85.7 8.5-125.4 25.3C228 131.1 193.6 154.4 164 184s-52.9 64-69.1 102.4c-16.8 39.7-25.3 81.9-25.3 125.4s8.5 85.7 25.3 125.4c16.2 38.4 39.5 72.8 69.1 102.4 29.6 29.6 64.1 52.8 102.4 69.1 39.7 16.8 81.9 25.3 125.4 25.3s85.7-8.5 125.4-25.3c38.4-16.2 72.8-39.5 102.4-69.1 29.6-29.6 52.8-64.1 69.1-102.4 16.8-39.7 25.3-81.9 25.3-125.4s-8.5-85.7-25.3-125.4c-16.2-38.4-39.5-72.8-69.1-102.4-29.6-29.6-64.1-52.8-102.4-69.1-39.6-16.8-81.9-25.3-125.4-25.3z"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tips loaded-block">
+        <div class="tips__wrap container">
+          <div class="tips__content">
+            <div class="tips__title">
+              <h3 class="tisp__title-content">Уже есть кредитная карта</h3>
+            </div>
+            <div class="tips__links">
+              <div class="tips__links-blocks"><a class="tips__links-block" href=""><span>Льготный период кредитования</span></a><a class="tips__links-block" href=""><span>Контроль расхода средств</span></a><a class="tips__links-block" href=""><span>Пополнение и погашения задолженности</span></a><a class="tips__links-block" href=""><span>Увеличение кредитного лимита</span></a></div>
+              <div class="tips__all"><a class="all-recomendation" href="#3">Все рекомендации</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="likes loaded-block">
+        <div class="likes__wrap">
+          <div class="likes__content">
+            <div class="likes__block">
+              <div class="likes__text">
+                <p>Эта страница полезна?</p>
+              </div>
+              <div class="likes__buttons">
+                <button class="likes__button likes__button_yes"><span>Да
+                    <svg width="21px" height="18px" viewbox="0 0 21 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <g id="icon-like" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="icon-like-g" transform="translate(-644.000000, -398.000000)" fill="#000000">
+                          <path id="icon-like-path" d="M661.166,414 L654.192,414 L650,412.323 L650,407 L651,407 C651.4,407 651.762,406.762 651.919,406.394 L654.659,400 L656,400 L656,404 C656,404.552 656.447,405 657,405 L662.802,405 L661.166,414 Z M646,414 L648,414 L648,406 L646,406 L646,414 Z M665,403 L658,403 L658,398 L654,398 C653.6,398 653.238,398.239 653.08,398.606 L650.341,405 L650,405 C650,404.448 649.553,404 649,404 L644,404 L644,416 L649,416 C649.552,416 650,415.552 650,415 L650,414.478 L653.627,415.928 C653.752,415.952 653.875,415.976 654,416 L662.835,416 L664.984,404.179 L665,403 Z"></path>
+                        </g>
+                      </g>
+                    </svg></span></button>
+                <button class="likes__button likes__button_no"><span>Нет
+                    <svg width="21px" height="18px" viewbox="0 0 21 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <g id="icon-notlike" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="icon-notlike-g" transform="translate(-590.000000, -398.000000)" fill="#000000">
+                          <path id="icon-notlike-path" d="M607.166,414 L600.192,414 L596,412.323 L596,407 L597,407 C597.4,407 597.762,406.762 597.919,406.394 L600.659,400 L602,400 L602,404 C602,404.552 602.447,405 603,405 L608.802,405 L607.166,414 Z M592,414 L594,414 L594,406 L592,406 L592,414 Z M611,403 L604,403 L604,398 L600,398 C599.6,398 599.238,398.239 599.08,398.606 L596.341,405 L596,405 C596,404.448 595.553,404 595,404 L590,404 L590,416 L595,416 C595.552,416 596,415.552 596,415 L596,414.478 L599.627,415.928 C599.752,415.952 599.875,415.976 600,416 L608.835,416 L610.984,404.179 L611,403 Z" transform="translate(600.500000, 407.000000) scale(1, -1) translate(-600.500000, -407.000000) "></path>
+                        </g>
+                      </g>
+                    </svg></span></button>
+              </div>
+              <div class="likes__info grey-color">
+                <p>90% клиентов считают страницу полезной</p>
+              </div>
+            </div>
+            <div class="likes__share"><a class="likes__share-link" href=""><span>Поделиться</span></a>
+              <div class="popup-share popup-share_likes">
+                <div class="popup-share__icons"><a class="popup-share__icon" href=""><i class="fa fa-facebook"></i></a><a class="popup-share__icon" href=""><i class="fa fa-vk"></i></a><a class="popup-share__icon" href=""><i class="fa fa-twitter"></i></a><a class="popup-share__icon" href=""><i class="fa fa-google"></i></a></div>
+                <div class="popup-share__copy"><a href="">Копировать ссылку</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer loaded-block">
+        <div class="footer__content">
+          <div class="footer__top cols cols3">
+            <div class="footer__phones col">
+              <div class="footer__phones-1">
+                <div class="footer__number"><a class="phone-link" href="tel:+74957219100">+7 495 721 91 00</a></div>
+                <div class="footer__number-desc grey-color"><span>для звонков по Москве</span></div>
+              </div>
+              <div class="footer__phones-2">
+                <div class="footer__number"><a class="phone-link" href="tel:88007009100">8 800 700 91 00</a></div>
+                <div class="footer__number-desc grey-color"><span>для звонков из других регионов</span></div>
+              </div>
+            </div>
+            <div class="footer__links col">
+              <ul>
+                <li><a href="">Пресс-Центр</a></li>
+                <li><a href="">О банке</a></li>
+                <li><a href="">Аналитика</a></li>
+                <li><a href="">Инвесторам</a></li>
+              </ul>
+            </div>
+            <div class="footer__links col">
+              <ul>
+                <li><a href="">Карьера в банке</a></li>
+                <li><a href="">Контактная информация</a></li>
+                <li><a href="">Качество обслуживания</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__bottom cols cols3 grey-color">
+            <div class="footer__socials col col_right"><a href=""><i class="fa fa-facebook"></i></a><a href=""><i class="fa fa-vk"></i></a><a href=""><i class="fa fa-twitter"></i></a><a href=""><i class="fa fa-paper-plane-o"></i></a><a href=""><i class="fa fa-instagram"></i></a></div>
+            <div class="footer__copyright col">
+              <p>© 2003 – 2016 АО «Райффайзенбанк»</p>
+              <p>Генеральная лицензия Банка России № 3292<br>от 17.02.2015</p>
+            </div>
+            <div class="footer__info col">
+              <ul>
+                <li><a href="">Информация о максимальных процентных ставках<br>по вкладам физических лиц</a></li>
+                <li><a href="">Центр раскрытия корпоративной информации</a></li>
+                <li><a href="">Раскрытие информации в соответствии с Указанием<br>Банка России от 28.12.2015 года № 3921-У</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <!--Preloader-->
+  <div class="Preloader-b"></div>
+  <div class="Preloader">
+    <div class="loader"></div>
+  </div>
+  <!--Scripts-->
+  <script src="common/scripts/jquery.min.js"></script>
+  <script src="common/scripts/jquery-ui.min.js"></script>
+  <script src="common/scripts/jquery.ui.touch-punch.min.js"></script>
+  <script src="common/scripts/flowtype.min.js"></script>
+  <!--script(src='common/scripts/isotope.pkgd.min.js')-->
+  <script src="common/scripts/slick.min.js"></script>
+  <script src="../headsupgrid/hugrid.js"></script>
+  <script src="common/scripts/tabs.min.js"></script>
+  <script src="common/scripts/loadmore.min.js"></script>
+  <script src="common/scripts/main.min.js"></script>
+</body>

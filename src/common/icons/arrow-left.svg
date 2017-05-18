@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="16px" viewBox="0 0 15 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>icons24/arrow-left</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="1600-cards" stroke="none" stroke-width="1" fill="" fill-rule="evenodd">
+        <g id="Card-hov-1" transform="translate(-1348.000000, -26.000000)" fill="">
+            <g id="Group-31" transform="translate(207.000000, 0.000000)">
+                <g id="Group-30-Copy" transform="translate(1050.000000, 4.000000)">
+                    <g id="Group-8" transform="translate(68.000000, 0.000000)">
+                        <g id="icons24/arrow-left" transform="translate(18.000000, 18.000000)">
+                            <path d="M13.987649,15.7530773 L13.987649,5 L11.987649,5 L11.987649,15.779547 L6.95566654,9.94250294 L4.98459721,11.567897 L12.0202417,18.5563492 L12.9756861,19.043335 L13.9161158,18.5563492 L20.9787378,11.567897 L19.0022974,9.94250294 L13.987649,15.7530773 Z" id="Combined-Shape" transform="translate(12.981668, 12.021667) rotate(-90.000000) translate(-12.981668, -12.021667) "></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,21 @@
+
+<svg width="38px" height="37px" viewBox="0 0 38 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44 (41411) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="1600-cards" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="creds-1600-c-card-in-about-03" transform="translate(-217.000000, -1284.000000)">
+            <g id="Group-26-Copy" transform="translate(215.000000, 1281.000000)">
+                <rect id="Rectangle-4-Copy-2" x="0" y="0" width="40" height="40"></rect>
+                <path d="M3.5,4.5 L3.5,23.5 L30.5,23.5 L30.5,4.5 L3.5,4.5 Z" id="Rectangle-6" stroke="#000000" stroke-width="3"></path>
+                <polyline id="Path-5" stroke="#000000" stroke-width="3" points="4 9 17.1659836 14.0029456 30.3319672 9"></polyline>
+                <g id="Group-20" transform="translate(19.000000, 19.000000)">
+                    <circle id="Oval-2" stroke="#000000" stroke-width="3" fill="#F4F5F5" cx="9.5" cy="9.5" r="9.5"></circle>
+                    <text id="₽" font-family=".AppleSystemUIFont" font-size="13" font-weight="normal" line-spacing="16" fill="#000000">
+                        <tspan x="6" y="14">₽</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

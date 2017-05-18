@@ -1,0 +1,69 @@
+.showHeader
+  opacity: 1 !important
+  transform: translateY(0) !important
+
+.scroll-header
+  box-shadow: 0 1px 0 $icons-color
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  width: 100%
+  background-color: $white
+  z-index: 99999
+  padding: calcRem(10px) 0
+  font-size: 0
+  transform: translateY(-100px)
+  opacity: 0
+  transition: transform 0.5s, opacity 0.5s
+
+.scroll-header--left,
+.scroll-header--right
+  width: 50%
+  display: inline-block
+
+.scroll-header--left
+  text-align: left
+
+.scroll-header--right
+  text-align: right
+
+
+.scroll-line
+  width: 100%
+  position: absolute
+  bottom: -1px
+  height: 4px
+  background-color: $yellow
+  transform: scaleX(0)
+  transform-origin: left
+  backface-visibility: hidden
+  will-change: transform
+
+.scroll-up
+  display: inline-block
+  margin-left: calcRem(35px)
+  vertical-align: middle
+  opacity: 0.5
+
+.scroll-title
+  display: inline-block
+  vertical-align: middle
+
+.scroll-button
+  display: inline-block
+  margin-right: calcRem(35px)
+  vertical-align: middle
+
+.scroll-title
+  font-size: calcRem(18px)
+  margin-left: calcRem(35px)
+  vertical-align: middle
+
+.scroll-up
+  .btn-text-icon
+    padding-left: calcRem(18px)
+    padding-right: 0
+    span
+      left: 0
+      right: auto

@@ -1,0 +1,329 @@
+@import "easing"
+
+.show--site-menu
+  .site-menu
+    opacity: 1
+    pointer-events: auto
+  .Preloader-b
+    opacity: 1
+    pointer-events: auto
+
+
+.show--site-menu-1
+  #menu1
+    pointer-events: auto
+    .menu-wrapper
+      opacity: 1
+    .menu-button
+      opacity: 1
+  .site-menu__container
+    transform: translateX(0)
+
+.show--site-menu-2
+  #menu2
+    pointer-events: auto
+    .menu-wrapper
+      opacity: 1
+    .menu-button
+      opacity: 1
+  .site-menu__container
+    transform: translateX(-100vw)
+
+.show--site-menu-3
+  #menu3
+    pointer-events: auto
+    .menu-wrapper
+      opacity: 1
+    .menu-button
+      opacity: 1
+  .site-menu__container
+    transform: translateX(-200vw)
+
+.show--site-menu-4
+  #menu4
+    pointer-events: auto
+    .menu-wrapper
+      opacity: 1
+    .menu-button
+      opacity: 1
+  .site-menu__container
+    transform: translateX(-300vw)
+
+.show--site-menu-5
+  #menu5
+    pointer-events: auto
+    .menu-wrapper
+      opacity: 1
+    .menu-button
+      opacity: 1
+  .site-menu__container
+    transform: translateX(-400vw)
+
+.show--site-menu-6
+  #menu6
+    pointer-events: auto
+    .menu-wrapper
+      opacity: 1
+    .menu-button
+      opacity: 1
+  .site-menu__container
+    transform: translateX(-500vw)
+
+.show--site-menu-7
+  #menu7
+    pointer-events: auto
+    .menu-wrapper
+      opacity: 1
+    .menu-button
+      opacity: 1
+  .site-menu__container
+    transform: translateX(-600vw)
+
+.site-menu
+  background-color: $white
+  font-size: 0
+  position: absolute
+  z-index: 99
+  width: 100%
+  overflow: hidden
+  left: 50%
+  max-width: 1920px
+  transform: translateX(-50%)
+  opacity: 0
+  top: calcRem(132px)
+  pointer-events: none
+  transition: 0.2s opacity
+
+.site-menu__container
+  white-space: nowrap
+  width: 100%
+  transition: transform 0.5s $easing1
+
+#menu1,
+#menu2,
+#menu3,
+#menu4,
+#menu5,
+#menu6,
+#menu7
+  width: 100vw
+  display: inline-block
+  vertical-align: top
+  white-space: normal
+  background-color: $white
+  pointer-events: none
+  transition: opacity 0.2s
+
+.menu-wrapper
+  width: calcRem(1250px)
+  margin: 0 auto
+  padding: calcRem(40px) 0
+  opacity: 0.05
+  transition: 0.1s opacity
+
+.menu-col
+  width: calc(100% / 3)
+  padding: 0 calcRem(40px)
+  display: inline-block
+  vertical-align: top
+
+.menu-block
+  margin-bottom: calcRem(72px)
+
+.menu-heading
+  font-size: calcRem(14px)
+  color: $grey
+  text-transform: uppercase
+  letter-spacing: calcRem(1.4px)
+  border-top: 4px solid $yellow
+  padding-top: calcRem(12px)
+  margin-bottom: calcRem(24px)
+
+.menu-link
+  font-size: calcRem(22px)
+  width: 100%
+  display: block
+  margin-bottom: calcRem(24px)
+  &:last-child
+    margin-bottom: 0
+
+.menu-image
+ margin-bottom: calcRem(26px)
+
+.menu-image-pic
+  width: 100%
+
+.menu-description
+  &__header
+    font-family: futura-heavy, sans-serif
+    font-size: calcRem(24px)
+    line-height: 1.2
+    margin: 0 0 calcRem(6px)
+  &__p
+    font-family: futura-book, Helvetica, sans-serif
+    font-size: calcRem(18px)
+    line-height: 1.5
+    margin: 0
+    color: $text-color
+
+.menu-section-link
+  font-family: futura-heavy, sans-serif
+  font-size: calcRem(24px)
+  color: $black
+  display: block
+  transition: opacity .2s
+  margin-bottom: calcRem(40px)
+  &:last-child
+    margin-bottom: 0
+  &:hover
+    opacity: .5
+
+.menu-detail
+  position: relative
+  padding-left: calcRem(48px)
+  margin-bottom: calcRem(32px)
+  p
+    font-size: calcRem(18px)
+    line-height: 1.7
+    color: $text-color
+    margin: 0
+
+.menu-logo
+  margin-top: calcRem(28px)
+
+.logo-icon
+  display: inline-block
+  margin-right: 12.5%
+  &:last-child
+    margin-right: 0
+
+.menu-button
+  opacity: 0
+  transition-delay: 0.1s
+  transition: 0.2s opacity
+
+.menu-button__container
+  text-align: center
+  margin: 0 calcRem(35px) calcRem(35px) calcRem(35px)
+  .btn-text
+    background-color: $white-grey
+    padding: calcRem(35px) 0
+    width: 100%
+    display: inline-block
+
+
+.menu-overline
+  box-shadow: 0 -1px 0 $icons-color
+  padding-top: calcRem(30px)
+
+.menu-link__description
+  font-size: calcRem(22px)
+  letter-spacing: calcRem(-0.2px)
+  line-height: 1.5
+  padding: calcRem(8px) 0 0 0
+
+.menu-body__section
+  .menu-section-link
+    margin: 0
+
+.menu-body__section
+  margin-bottom: calcRem(48px)
+  .btn-text-icon
+    padding: 20px 0
+    display: inline-block
+    width: 100%
+    text-align: center
+    background-color: $white-grey
+    margin-top: calcRem(24px)
+    span
+      position: relative
+      right: auto
+
+.btn-store
+  height: calcRem(60px)
+  text-align: center
+  background-color: $white-grey
+  line-height: calcRem(60px)
+  display: inline-block
+  width: 50%
+  box-shadow: 0 0 0 1px $white
+  opacity: 1
+  transition: background-color 0.2s
+  margin-top: calcRem(24px)
+  img
+    display: inline-block
+    vertical-align: middle
+    width: 75%
+  &:hover
+    background-color: $yellow
+
+.menu-wrapper__header
+  display: none
+
+.svg-icon-facebook
+  width: calcRem(14px)
+  height: calcRem(25px)
+
+.svg-icon-telegram
+  width: calcRem(24px)
+  height: calcRem(20px)
+
+.svg-icon-chat
+  width: calcRem(22px)
+  height: calcRem(22px)
+
+.svg-icon-mail-export
+  width: calcRem(24px)
+  height: calcRem(16px)
+
+.svg-icon-pc
+  width: calcRem(22px)
+  height: calcRem(20px)
+
+
+.menu-button__container
+  position: relative
+
+.menu-button__container--click
+  position: absolute
+  width: 100%
+  height: 100%
+  top: 0
+  opacity: 0
+  pointer-events: none
+  background-color: $white-grey
+  transition: 0.2s opacity
+
+.show-share-menu
+    opacity: 1
+    pointer-events: auto
+
+.show-share-menu2
+  .menu-button__container--click
+    opacity: 1
+    pointer-events: auto
+
+.show-share-menu3
+  .menu-button__container--click
+    opacity: 1
+    pointer-events: auto
+
+.show-share-menu4
+  .menu-button__container--click
+    opacity: 1
+    pointer-events: auto
+
+.show-share-menu5
+  .menu-button__container--click
+    opacity: 1
+    pointer-events: auto
+
+.show-share-menu6
+  .menu-button__container--click
+    opacity: 1
+    pointer-events: auto
+
+.show-share-menu7
+  .menu-button__container--click
+    opacity: 1
+    pointer-events: auto

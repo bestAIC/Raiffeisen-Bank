@@ -1,0 +1,440 @@
+.mortgage__block--cards
+  .image-bg--small, .image-bg
+    background-size: 100%
+
+  .mortgage__block-image, .mortgage__block-image--small
+    padding: 0 calcRem(15px)
+    max-width: calcRem(550px)
+    margin: 0 auto
+
+  .image-bg, .image-bg--small
+    height: 0
+    padding-top: 65%
+
+.mobile-payment
+  margin-bottom: calcRem(80px)
+  &__content
+    @include clearfix
+  &__item
+    display: inline-block
+    float: left
+    //max-width: calcRem(390px)
+    width: 33.3%
+    height: calcRem(150px)
+    text-align: center
+    svg
+      width: 100%
+      height: 100%
+      max-width: calcRem(100px)
+      margin: 0 auto
+      display: inline-block
+      vertical-align: middle
+    &:before
+      content: ''
+      display: inline-block
+      height: 100%
+      vertical-align: middle
+
+//.samsung-pay
+//.android-pay
+.apple-pay
+  height: auto
+
+.card-filter
+  width: 100%
+  background: $yellow
+  margin-bottom: calcRem(80px)
+  transition: padding .2s
+
+  &__content
+    position: relative
+    padding: calcRem(18px) 0
+    &.filter--close
+      cursor: pointer
+    &.filter--open
+      padding: calcRem(40px) 0
+
+      .card-filter__title
+        opacity: 0
+        height: 0
+        pointer-events: none
+        display: none
+
+      .card-filter__body
+        opacity: 1
+        pointer-events: all
+        max-height: 600px
+        //transform: translateY(0)
+      .card-filter__close
+        opacity: 1
+        pointer-events: all
+
+  &__body
+    opacity: 0
+    //height: 0
+    max-height: 0
+    pointer-events: none
+    transition: opacity .4s, max-height .5s linear
+    //transform: translateY(-10px)
+
+
+  &__title
+    position: relative
+    font-size: calcRem(14px)
+    line-height: calcRem(36px)
+    text-transform: uppercase
+    padding-right: calcRem(36px)
+    height: auto
+    pointer-events: all
+    opacity: 1
+    svg
+      position: absolute
+      width: calcRem(24px)
+      height: calcRem(24px)
+      right: 0
+      top: 50%
+      margin-top: calcRem(-12px)
+
+  &__heading
+    font-size: calcRem(36px)
+    font-family: futura-heavy, sans-serif
+
+  &__list
+    @include clearfix
+    margin-top: calcRem(40px)
+
+  &__item
+    font-size: calcRem(24px)
+    float: left
+    display: inline-block
+    width: calc(100%/3)
+    margin-bottom: calcRem(32px)
+
+
+.filter-show
+  animation: filtr-anim 1s ease alternate
+
+@keyframes filtr-anim
+  from
+    opacity: 0
+  to
+    opacity: 1
+
+@keyframes card-rotate
+  from
+    opacity: 0
+    transform: rotateY(0deg) scale(.7)
+  to
+    opacity: 1
+    transform: rotateY(30deg) scale(.8)
+
+.card-image-transform
+  opacity: 0
+  animation: card-rotate 1s 3s forwards
+  img
+    width: 100%
+
+
+.cards-wrapper
+  .mortgage__block-image
+    perspective: 1000px
+
+.b-card-list
+  @include clearfix
+  overflow: hidden
+  margin-top: calcRem(120px)
+  position: relative
+
+  @media screen and (min-width: 1024px)
+    &:hover
+      .b-card-list__slider-arrows
+        opacity: 1
+        pointer-events: all
+
+  &__container
+    position: relative
+
+  &__title
+    font-size: calcRem(48px)
+    font-family: futura-heavy, sans-serif
+    margin: 0
+  &__desc
+    font-size: calcRem(24px)
+    line-height: calcRem(30px)
+    margin: 0
+    margin-top: calcRem(16px)
+
+  &__slider
+    margin-top: calcRem(48px)
+    .slick-list
+      overflow: visible
+
+  &__slider-arrows
+    position: absolute
+    right: 0
+    top: calcRem(16px)
+    @include clearfix
+    transition: opacity .2s
+    opacity: 0
+    pointer-events: none
+
+    .slider-next
+      margin-left: calcRem(5px)
+    .slider-prev, .slider-next
+      &.slick-disabled, &.slick-disabled:hover
+        pointer-events: none
+        background: $white-grey
+        svg
+          use
+            fill: $icons-color
+      display: inline-block
+      cursor: pointer
+      outline: 0
+      background: $yellow
+      position: relative
+      width: calcRem(50px)
+      height: calcRem(50px)
+      transition: background .2s
+      &:hover
+        background: $black
+        svg
+          use
+            fill: $yellow
+      svg
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%)
+        width: calcRem(20px)
+        height: calcRem(20px)
+        use
+          transition: fill .2s
+          fill: $black
+
+  &__item
+    outline: 0
+    position: relative
+    width: 100%
+    max-width: calcRem(570px)
+    margin-right: calcRem(30px)
+    margin-bottom: calcRem(15px)
+    &:last-child
+      margin-right: 0
+
+  &__item-image
+    display: block
+    padding-top: 75%
+    background-image: url('../images/p-img-1.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center center
+  &__item-bg
+    display: block
+    padding-top: 75%
+    background: $yellow
+
+  &--small
+    .b-card-list__item
+      max-width: calcRem(270px)
+
+      &:hover
+        img
+          filter: grayscale(0)
+          opacity: 1
+
+    img
+        opacity: .5
+        position: absolute
+        display: block
+        width: 65%
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%)
+        transition: filter .2s, opacity .2s
+        filter: grayscale(100%)
+
+    .b-card-list__item-image
+      background: none
+
+    .b-card-list__item-link--small
+      width: 100%
+      height: 100%
+      left: 0
+      bottom: 0
+      background: $yellow
+      font-size: calcRem(30px)
+      span
+        padding-bottom: calcRem(40px)
+        padding-left: calcRem(16px)
+
+  &__item-icon
+    position: absolute
+    width: 70px
+    height: 30px
+    background: $black
+    opacity: .15
+    left: calcRem(40px)
+    top: calcRem(32px)
+  &__item-text
+    position: absolute
+    left: 0
+    top: 0
+    height: 100%
+    width: 100%
+    padding: calcRem(162px) calcRem(40px) 0
+    h3
+      font-size: calcRem(48px)
+      margin: 0
+      font-family: futura-heavy, sans-serif
+    p
+      font-size: calcRem(30px)
+      margin: 0
+      margin-top: calcRem(24px)
+
+  &__item-link, &__item-link--small
+    white-space: normal
+    position: absolute
+    width: calcRem(200px)
+    height: calcRem(150px)
+    bottom: calcRem(40px)
+    left: calcRem(40px)
+    font-size: calcRem(18px)
+    color: $text-color
+    transition: background-color .2s linear
+    &:after
+      content: ''
+      position: absolute
+      width: calcRem(12px)
+      height: calcRem(12px)
+      top: calcRem(10px)
+      right: calcRem(10px)
+      background-image: url('../images/arrow.svg')
+      background-size: 100%
+      background-repeat: no-repeat
+
+  &__item-link
+    background-color: $yellow
+    h4
+      font-size: calcRem(48px)
+      margin: 0
+      padding: calcRem(8px) calcRem(16px)
+      padding-bottom: 0
+    span
+      display: block
+      padding: calcRem(8px) calcRem(16px)
+      padding-top: 0
+
+  &__item-link--small
+    background-color: $white
+    line-height: calcRem(24px)
+    font-family: futura-heavy, sans-serif
+
+    .b-card-list__item:hover &
+      background-color: $yellow
+
+    span
+      padding: calcRem(24px) calcRem(16px)
+      position: absolute
+      bottom: 0
+
+.cards-wrapper
+  .block-content__order,
+  .mortgage__block-buttons
+    .btn-text
+      margin-left: calcRem(24px)
+
+
+.banner
+  height: calcRem(200px)
+  max-height: calcRem(200px)
+  width: 100%
+  opacity: 1
+  padding: 0 calcRem(35px)
+  position: relative
+  pointer-events: all
+  transition: max-height .2s, opacity .2s
+  transition-timing-function: linear
+
+  .banner-bg-video
+    display: block
+    position: relative
+    overflow: hidden
+    width: 100%
+    height: 100%
+
+    video
+      position: absolute
+      width: 100%
+      top: 50%
+      transform: translateY(-50%)
+
+  .banner-progress
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+    height: 4px
+    z-index: 5
+    background: $yellow
+    transform: scaleX(0)
+    transition: transform .5s linear
+    transform-origin: left
+  .banner-content
+    width: 100%
+    position: absolute
+    text-align: center
+    top: 0
+    margin-top: calcRem(48px)
+    color: $white
+    padding: 0 calcRem(10px)
+
+  .banner-heading
+    font-family: 'futura-medium'
+    font-size: calcRem(24px)
+    line-height: calcRem(30px)
+    margin: 0
+  .banner-text
+    margin-top: calcRem(8px)
+    font-size: calcRem(18px)
+    margin: 0
+
+.banner--hide
+  opacity: 0
+  max-height: 0
+  pointer-events: none
+  //animation: hide-banner .2s linear forwards
+
+@keyframes hide-banner
+  from
+    opacity: 1
+    height: calcRem(200px)
+  to
+    opacity: 0
+    height: 0
+    pointer-events: none
+
+
+
+.block-text
+  &__heading
+    font-size: calcRem(48px)
+    .small-text
+      font-size: 62.5%
+  &__text
+    font-size: calcRem(24px)
+    margin-top: calcRem(16px)
+
+
+.accordion--card
+  .accordion__body-left
+    float: left
+  .accordion__body-right
+    float: right
+
+  .more-questions__actions-item
+    width: calcRem(170px)!important
+    margin-right: calcRem(30px)!important
+    &:last-child
+      margin-right: 0
+  .more-questions__svg
+    right: auto!important

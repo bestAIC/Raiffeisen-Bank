@@ -1,0 +1,262 @@
+//
+   Created by renat on 17.05.17.
+
+.morgage-wrapper
+    .mortgage__block-image
+        .card-image-transform
+            img(src='common/images/kard.jpg')
+    .mortgage-intro.container
+        .mortgage-intro__block
+            .mortgage__block-content
+                h6.title-block__description.grey-color
+                    span.step Для жизни
+                    span.dot.breadcrumbs-dot
+                    span.step Кредитные карты
+                h1.title-block__title Austrian Airlines MasterCard World
+                p.block-content__readme.grey-color Оплачивайте покупки и накапливайте мили для премиальных перелётов и повышения класса обслуживания по программе Miles&More
+                .block-content__description
+                    .property
+                        .property__block
+                            h3.property__title 0₽
+                            p.property__description перелеты по всему миру
+
+                    .property
+                        .property__block
+                            h3.property__title 0₽
+                                span.small-text дней
+                            p.property__description беспроцентный льготный период
+
+                    .property
+                        .property__block
+                            h3.property__title 50
+                                span.small-text дней
+                            p.property__description беспроцентный льготный период
+
+                .mortgage__block-buttons
+                    //a.button(href='#23') Оставить заявку
+                    +btn('Оформить карту', '#23')
+
+.mortgage-tabs.loaded-block
+    .container
+        ul.tabs(data-tabgroup='tab-container-1')
+            li.tab-link.current(data-tab='tab-1') О карте
+            li.tab-link(data-tab='tab-2') Тарифы
+            li.tab-link(data-tab='tab-3') Дистанционное управление
+            li.tab-link(data-tab='tab-4') Вопрос-ответ
+
+.mortgage-tab-container#tab-container-1
+    #tab-1.tab-content.current
+        .block-text.container.cols.cols3
+            .block-text__item.col
+                .block-text__heading 600 000₽
+                .block-text__text Максимальный кредитный
+                    br
+                    | лимит по карте
+            .block-text__item.col
+                .block-text__heading 1
+                    .small-text день
+                .block-text__text Моментальная выдача карты
+                    br
+                    |в день обращения
+            .block-text__item.col
+                .block-text__heading 0₽
+                .block-text__text Интернет-банк, Мобильный банк и SMS-уведомления
+        .conditions.container.conditions--card
+            .conditions__head
+                h2.conditions__heading Накопление миль
+                p.conditions__text.grey-color Вы можете накопить мили за покупки по вашей карте, путешествия Austrian Airlines
+                    br
+                    | любой из авиакомпаний, участвующей в программе Miles&More
+            .conditions__row
+                .conditions__title
+                    h3 1
+                        |
+                        span.small-text миля
+                .conditions__desc
+                    p За каждые 50₽, потраченных по карте
+            .conditions__row
+                .conditions__title
+                    h3
+                        span.small-text до
+                        |
+                        |  2000
+                        |
+                        span.small-text миль
+                .conditions__desc
+                    p За полёт Москва — Вена с Austrian Airlines
+                    p.grey-color.small-text Перелёт в одну сторону бизнес-классом (не включая Executive Bonus)
+            .conditions__row
+                .conditions__title
+                    h3
+                        span.small-text до
+                        |
+                        | 10 000
+                        |
+                        span.small-text миль
+                .conditions__desc
+                    p Без комиссий за рассмотрение заявки и выдачу кредита.
+                    p.grey-color.small-text Перелёт в одну сторону бизнес-классом (не включая Executive Bonus)
+
+        .b-card-list.b-card-list--small
+            .b-card-list__container.container
+                h3.b-card-list__title Где можно копить мили
+                .b-card-list__slider-arrows
+                    .slider-prev
+                        svg.slider-arrow-svg
+                            use(xlink:href='icons.svg#icon-arrow-right')
+                    .slider-next
+                        svg.slider-arrow-svg
+                            use(xlink:href='icons.svg#icon-arrow-left')
+                .b-card-list__slider
+                    a.b-card-list__item.b-card-list__item--main(href='')
+                        .b-card-list__item-image
+                        .b-card-list__item-link--small
+                            span Авиакомпании
+                    a.b-card-list__item(href='')
+                        .b-card-list__item-image
+                        img(src='common/images/air-1.svg')
+                    a.b-card-list__item(href='')
+                        .b-card-list__item-image
+                        img(src='common/images/air-3.svg')
+                    a.b-card-list__item(href='')
+                        .b-card-list__item-image
+                        img(src='common/images/air-2.svg')
+                    a.b-card-list__item(href='')
+                        .b-card-list__item-image
+                        img(src='common/images/air-4.svg')
+                    a.b-card-list__item.b-card-list__item--main(href='')
+                        .b-card-list__item-image
+                        .b-card-list__item-link--small
+                            span Отели
+                    a.b-card-list__item(href='')
+                        .b-card-list__item-image
+                        img(src='common/images/hotel-2.svg')
+                    a.b-card-list__item(href='')
+                        .b-card-list__item-image
+                        img(src='common/images/hotel-1.svg')
+                    a.b-card-list__item(href='')
+                        .b-card-list__item-image
+                        img(src='common/images/hotel-3.svg')
+
+
+
+        .b-card-list
+            .b-card-list__container.container
+                h3.b-card-list__title Использование миль
+                p.b-card-list__desc.grey-color С помощью накопленных миль Miles&More вы можете
+                .b-card-list__slider-arrows
+                    .slider-prev
+                        svg.slider-arrow-svg
+                            use(xlink:href='icons.svg#icon-arrow-right')
+                    .slider-next
+                        svg.slider-arrow-svg
+                            use(xlink:href='icons.svg#icon-arrow-left')
+                .b-card-list__slider
+                    a.b-card-list__item(href='')
+                        .b-card-list__item-image
+                        .b-card-list__item-link--small
+                            span Премиальные билеты от группы Austrian Airlines
+                    a.b-card-list__item(href='')
+                        .b-card-list__item-image
+                        .b-card-list__item-link--small
+                            span Повысить класс обслуживания полёта
+                    a.b-card-list__item(href='')
+                        .b-card-list__item-image(href='')
+                        .b-card-list__item-link--small(href='')
+                            span Выбрать товарыи услуги на сайте Miles&More
+
+        .b-card-list
+            .b-card-list__container.container
+                h3.b-card-list__title Cash&Milles
+                .b-card-list__slider-arrows
+                    .slider-prev
+                        svg.slider-arrow-svg
+                            use(xlink:href='icons.svg#icon-arrow-right')
+                    .slider-next
+                        svg.slider-arrow-svg
+                            use(xlink:href='icons.svg#icon-arrow-left')
+                .b-card-list__slider
+                    a.b-card-list__item
+                        .b-card-list__item-bg
+                        .b-card-list__item-icon
+                        .b-card-list__item-text
+                            h3 Купить полёт
+                                br
+                                | за мили
+                            p Теперь перелёт можно оплачивать милями полностью либо частично
+                    a.b-card-list__item
+                        .b-card-list__item-bg
+                        .b-card-list__item-icon
+                        .b-card-list__item-text
+                            h3 7 000 миль
+                            p Этого достаточно, чтобы внести их в стоимость билета при бронировании перелёта на сайте LH.com
+
+
+        .care
+            .care__wrap.container(style="background-image: url(common/images/p-img-2.jpg)")
+                .care__content
+                    h1.title-block__title
+                        | Копите и летайте 
+                        br
+                        | вместе с Райффайзен
+                    .mortgage__block-buttons
+                        //a.button(href='#23') Оставить заявку
+                        +btn('Оставить заявку', '#23')
+                        a.find-department(href='#23') Найти отделение
+
+        .b-card-list
+            .b-card-list__container.container
+                h3.b-card-list__title Специальные предложения
+                .b-card-list__slider-arrows
+                    .slider-prev
+                        svg.slider-arrow-svg
+                            use(xlink:href='icons.svg#icon-arrow-right')
+                    .slider-next
+                        svg.slider-arrow-svg
+                            use(xlink:href='icons.svg#icon-arrow-left')
+                .b-card-list__slider
+                    a.b-card-list__item(href='')
+                        .b-card-list__item-image
+                        .b-card-list__item-link
+                            h4 1%
+                            span от заработной платы обратно на счёт в течение 6 месяцев
+                    a.b-card-list__item
+                        .b-card-list__item-image
+                        .b-card-list__item-link
+                            h4 15,9%
+                            span одна ставка для всех кредитов
+                    a.b-card-list__item(href='')
+                        .b-card-list__item-image(href='')
+                        .b-card-list__item-link(href='')
+                            h4 50%
+                            span скидки на напитки в Шоколаднице по Samsung Pay
+    #tab-2.tab-content
+        include ../page-elements-1/_tarif
+        include ../page-elements-1/_more-questions
+    #tab-3.tab-content
+        include ../page-elements-sansay/_tabs_accordion--cards
+    #tab-4.tab-content
+        .accordion.container
+            - var n = 0
+            while n < 7
+                .accordion__head.loaded-block
+                    h2 Что такое кредитная карта с льготным периодом?
+                    .accordion__head-cross
+                        img(src='common/images/close.svg')
+                .accordion__body.accordion--card.loaded-block
+                    .accordion__body-left
+                        p Кредитная карта с льготным периодом — это банковская карта с установленным лимитом кредитования, предназначенная для оплаты, резервирования товаров и услуг, а также для получения наличных денежных средств, которая позволяет бесплатно пользоваться кредитными средствами в течение определенного периода.
+                    .accordion__body-sidebar
+                        .more-questions__actions-item.item--fb
+                            svg.more-questions__svg(width='44px', height='80px', viewbox='0 0 44 80', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+                                g#Page-1(stroke='none', stroke-width='1', fill='none', fill-rule='evenodd')
+                                    g#Text-Styles-Copy(transform='translate(-560.000000, -1728.000000)', fill='#E0E1E2')
+                                        path#Fill-1(d='M601.69953,1728.01667 L591.305688,1728 C579.629387,1728 572.084622,1735.72726 572.084622,1747.68772 L572.084622,1756.76577 L561.634116,1756.76577 C560.731644,1756.76577 560,1757.49658 560,1758.39738 L560,1771.54947 C560,1772.45111 560.732477,1773.18109 561.634116,1773.18109 L572.083789,1773.18109 L572.083789,1806.36838 C572.083789,1807.27002 572.815433,1808 573.717905,1808 L587.351645,1808 C588.25495,1808 588.985761,1807.26919 588.985761,1806.36838 L588.985761,1773.18109 L601.204546,1773.18109 C602.107017,1773.18109 602.838661,1772.45111 602.838661,1771.54947 L602.843661,1758.39738 C602.843661,1757.9649 602.671167,1757.55074 602.364509,1757.24409 C602.057852,1756.93743 601.642032,1756.76577 601.208712,1756.76577 L588.987427,1756.76577 L588.987427,1749.07017 C588.987427,1745.37196 589.8699,1743.49452 594.695582,1743.49452 L601.697864,1743.49202 C602.600335,1743.49202 603.331146,1742.76121 603.331146,1741.8604 L603.331146,1729.64828 C603.331146,1728.74831 602.601169,1728.01833 601.69953,1728.01667')
+                            a.more-questions__link(href='') Facebook
+                        .more-questions__actions-item.item--telegram
+                            svg.more-questions__svg(width='80px', height='68px', viewbox='0 0 80 68', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+                                g#Page-1(stroke='none', stroke-width='1', fill='none', fill-rule='evenodd')
+                                    g#Text-Styles-Copy(transform='translate(-696.000000, -1735.000000)', fill='#E0E1E2')
+                                        path#Page-1(d='M761.452175,1748.53121 L727.34165,1779.36922 L726.01338,1793.56341 L719.300487,1772.9419 L759.137164,1747.75835 C761.125933,1746.54986 762.949355,1747.19967 761.452175,1748.53121 M770.59882,1735.44458 L699.734736,1762.83167 C694.898105,1764.77606 694.926751,1767.47906 698.853082,1768.68443 L716.526838,1774.21169 L723.289157,1794.98623 C724.111292,1797.25998 723.706087,1798.16182 726.088929,1798.16182 C727.927935,1798.16182 728.743688,1797.32172 729.767981,1796.3191 C730.419277,1795.68042 734.286385,1791.9132 738.604265,1787.70664 L756.988243,1801.31678 C760.371184,1803.1868 762.813693,1802.21802 763.656163,1798.16865 L775.723844,1741.18735 C776.959347,1736.22397 773.835411,1733.97263 770.59882,1735.44458')
+                            a.more-questions__link(href='') Telegram
+                - n++

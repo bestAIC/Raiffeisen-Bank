@@ -40,13 +40,16 @@
     right: 1.5625rem!important
     margin: 0!important
 
+  .logo-icon
+    margin-right: calcRem(30px)
+
 
 @media screen and (max-width: 1000px)
   .mortgage__block-image
     left: 0!important
 
   .scroll-header
-    display: none
+    display: block
 
   .scroll
     left: 0!important
@@ -122,7 +125,7 @@
     transform: translate(40px,-4px)
 
   .header__menu
-    position: fixed
+    position: absolute
     background-color: white
     width: 100vw
     height: 100vh
@@ -474,3 +477,65 @@
 
   .wrapper
     margin-top: calcRem(-60px)
+
+  //menu
+  .menu-wrapper
+    width: 100% !important
+    padding: 0 15px
+  .menu-col
+    width: 100% !important
+    padding: 0
+
+  .menu-wrapper__header
+    position: relative
+    text-align: center
+    display: block
+    font-size: 18px
+    font-family: futura-heavy, sans-serif
+    color: $text-color
+    padding: 15px 0
+    background-color: $white-grey
+    margin-bottom: 24px
+    .fa-chevron-left
+      position: absolute
+      left: 15px
+      top: calc(50% - 5px)
+      font-size: 12px
+      line-height: 1
+
+  .menu-image
+    max-width: 280px
+
+  .menu-section-link
+    font-size: 24px
+
+  .menu-heading
+    font-size: 14px
+
+  .menu-link
+    font-size: 22px
+
+  .menu-description__header
+    font-size: 24px
+
+  .menu-description__p
+    font-size: 18px
+
+  .menu-button__container
+    margin: 0 15px 15px
+
+  .menu-button__container
+    .btn-text
+      font-size: 16px
+
+  .menu-body__section
+    .btn-text-icon
+      font-size: 16px
+
+  .btn-store
+    img
+      width: auto
+
+  .menu-detail
+    p
+      font-size: 18px

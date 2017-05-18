@@ -127,6 +127,7 @@ $('.main-menu__link').click(function(){
     $('html, body').removeClass('show-menu-active');
 });
 
+
 $('.popup-numbers').on('click', function(e) {
     if (e.target !== this)
         return;
@@ -184,11 +185,17 @@ $('.conditions .load-more').on('click', function(){
     $('.conditions__row--hide').toggleClass('conditions__row--hide conditions__row--show');
 });
 
+$('.documents__item').on('click', function(){
+    event.preventDefault();
+    $('body').toggleClass('show-popup1');
+    $('.scroll-header').toggleClass('showHeader');
+});
+
 $('.popup-tarif, .popup-tarif__close-svg').on('click', function(e){
     if (e.target !== this)
         return;
-    var title = History.options.initialTitle;
-    History.pushState({} , title, "?");
+    $('body').toggleClass('show-popup1');
+    $('.scroll-header').toggleClass('showHeader');
 });
 
 $('.span-tooltip').on('click', function(e){
@@ -492,44 +499,9 @@ $checks.change(function(){
     }
 });
 
-$('#bannerVideo video').on('timeupdate', function() {
-    $('#bannerVideoProgress').css("transform", "scaleX("+this.currentTime / this.duration+")");
-
-}).on('ended',function(){
-    setTimeout(function () {
-        $('#bannerVideo').addClass('banner--hide');
-    }, 500);
-});
-
-
-$('.b-card-list').each(function () {
-    var $this = $(this);
-    console.log($this.find('.b-card-list__slider-arrows'));
-    var slick = $this.find('.b-card-list__slider').slick({
-        variableWidth: true,
-        infinite: false,
-        slidesToScroll: 1,
-        slidesToShow: 2,
-        prevArrow: $this.find('.slider-prev'),
-        nextArrow: $this.find('.slider-next')
-    });
-});
-
-$(window).resize(function () {
-    if ($(window).width() < 450) {
-        $('.b-card-list__slider').slick('unslick');
-    } else {
-        $('.b-card-list').each(function () {
-            var $this = $(this);
-            console.log($this.find('.b-card-list__slider-arrows'));
-            var slick = $this.find('.b-card-list__slider').slick({
-                variableWidth: true,
-                infinite: false,
-                slidesToScroll: 1,
-                slidesToShow: 2,
-                prevArrow: $this.find('.slider-prev'),
-                nextArrow: $this.find('.slider-next')
-            });
-        });
+$(window).load(function(){
+    if ($('#bgvid').length) {
+        document.getElementById('bgvid').play();
     }
-}).resize();
+});
+

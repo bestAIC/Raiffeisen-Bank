@@ -1,0 +1,24 @@
+@font-face {
+	font-family: "futura-book";
+	src: url("(FuturaNewBook-Reg)FuturaNewBook.otf") format("otf"),
+		 url("(FuturaNewBook-Reg)FuturaNewBook.woff2") format("woff2"),
+		 url("(FuturaNewBook-Reg)FuturaNewBook.woff") format("woff")
+}
+@font-face {
+	font-family: "futura-demi";
+	src: url("(FuturaNewDemi-Reg)FTN65.otf") format("otf"),
+		 url("(FuturaNewDemi-Reg)FTN65.woff2") format("woff2"),
+		 url("(FuturaNewDemi-Reg)FTN65.woff") format("woff")
+}
+@font-face {
+	font-family: "futura-medium";
+	src: url("(FuturaNewMedium-Reg)ftn55.otf") format("otf"),
+		 url("(FuturaNewMedium-Reg)ftn55.woff2") format("woff2"),
+		 url("(FuturaNewMedium-Reg)ftn55.woff") format("woff")
+}
+@font-face {
+	font-family: "futura-heavy";
+	src: url("(FuturaNewHeavy-Reg)FuturaNewHeavy.otf") format("otf"),
+		 url("(FuturaNewHeavy-Reg)FuturaNewHeavy.woff2") format("woff2"),
+		 url("(FuturaNewHeavy-Reg)FuturaNewHeavy.woff") format("woff")
+}

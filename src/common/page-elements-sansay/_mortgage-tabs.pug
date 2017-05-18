@@ -1,0 +1,30 @@
+.mortgage-tabs.loaded-block#tabs-1
+    .container
+        ul.tabs(data-tabgroup='tab-container-1')
+            li.tab-link.current(data-tab='tab-1') Как получить
+            li.tab-link(data-tab='tab-2') Тарифы и условия
+            li.tab-link(data-tab='tab-3') Калькулятор
+            li.tab-brake
+                span.dot
+            li.tab-link(data-tab='tab-4') Для клиентов
+
+.mortgage-tab-container#tab-container-1
+    #tab-1.tab-content.current
+        include ../page-elements/_tabs_content
+        include ../page-elements/_tabs_accordion
+        include ../page-elements/_care-block
+        include ../page-elements/_tips
+        .for-clients.loaded-block
+            a(href="#1").link__for-clients Как оформить
+            i.fa.fa-chevron-right
+        .for-clients.loaded-block
+            a(href="#1").link__for-clients Для ипотечных клиентов
+            i.fa.fa-chevron-right
+        include ../page-elements-1/_more-questions
+    #tab-2.tab-content
+        include ../page-elements-sansay/_tarif
+        include ../page-elements-1/_more-questions
+    #tab-3.tab-content
+        include ../page-elements-1/_calculator
+    #tab-4.tab-content
+        include ../page-elements/_tips-1
