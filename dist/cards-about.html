@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <head>
-  <title>Ипотека</title>
+  <title>Карты</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="common/styles/slick.css">
   <link rel="stylesheet" href="common/styles/normalize.css">
   <link rel="stylesheet" href="common/styles/jquery-ui.structure.min.css">
   <link rel="stylesheet" href="common/styles/main.css">
@@ -672,597 +673,729 @@
       </div>
     </div>
   </div>
-  <!--include ../page-elements-1/_buttons-->
-  <div class="scroll-header">
-    <div class="scroll-header--left">
-      <div class="scroll-up grey-color"><a class="btn-text-icon" href="#tabs-1">Наверх<span>
-              <svg class="svg-iconarrow-up">
-                <use xlink:href="icons.svg#icon-arrow-up"></use>
-              </svg></span></a>
-      </div>
-      <div class="scroll-title">Рефинансирование кредитов иных банков</div>
-    </div>
-    <div class="scroll-header--right">
-      <div class="scroll-button"><a class="button" href="#34">Оставить заявку</a>
-      </div>
-    </div>
-    <div class="scroll-line"></div>
-  </div>
   <div class="body-container">
-    <div class="wrapper">
+    <div class="wrapper cards-wrapper">
+      <!--
+      Created by renat on 17.05.17.
+      
+      -->
       <div class="morgage-wrapper">
         <div class="mortgage__block-image">
-          <div class="video-bg">
-            <video id="bgvid" preload="metadata" loop muted webkit-playsinline playsinline>
-              <source src="common/images/video.mp4">
-              <source src="common/images/video.webm">
-            </video>
-          </div>
+          <div class="card-image-transform"><img src="common/images/kard.jpg"></div>
         </div>
         <div class="mortgage-intro container">
           <div class="mortgage-intro__block">
             <div class="mortgage__block-content">
-              <h6 class="title-block__description grey-color"><span class="step">Для жизни</span><span class="dot breadcrumbs-dot"></span><span class="step">Ипотека</span></h6>
-              <h1 class="title-block__title">Рефинансирование кредитов иных банков</h1>
-              <p class="block-content__readme grey-color">Получите выгодные условия на покупку недвижимости в новостройках и вторичном рынке жилья, включая кредиты под залог квартиры в собственности.</p>
+              <h6 class="title-block__description grey-color"><span class="step">Для жизни</span><span class="dot breadcrumbs-dot"></span><span class="step">Кредитные карты</span></h6>
+              <h1 class="title-block__title">Austrian Airlines MasterCard World</h1>
+              <p class="block-content__readme grey-color">Оплачивайте покупки и накапливайте мили для премиальных перелётов и повышения класса обслуживания по программе Miles&More</p>
               <div class="block-content__description">
                 <div class="property">
                   <div class="property__block">
-                    <h3 class="property__title">8,5%</h3>
-                    <p class="property__description">ставка снижена до 23 марта</p>
+                    <h3 class="property__title">0₽</h3>
+                    <p class="property__description">перелеты по всему миру</p>
                   </div>
                 </div>
                 <div class="property">
                   <div class="property__block">
-                    <h3 class="property__title">1–25<span class="small-text">лет</span></h3>
-                    <p class="property__description">срок кредитования</p>
+                    <h3 class="property__title">0₽<span class="small-text">дней</span></h3>
+                    <p class="property__description">беспроцентный льготный период</p>
                   </div>
                 </div>
                 <div class="property">
                   <div class="property__block">
-                    <h3 class="property__title">8,5%<span class="small-text">млн. ?</span></h3>
-                    <p class="property__description">максимальная сумма</p>
+                    <h3 class="property__title">50<span class="small-text">дней</span></h3>
+                    <p class="property__description">беспроцентный льготный период</p>
                   </div>
                 </div>
               </div>
-              <div class="mortgage__block-buttons"><a class="button" href="#23">Оставить заявку</a><a class="find-department" href="#23">Найти отделение</a></div>
+              <div class="mortgage__block-buttons">
+                <!--a.button(href='#23') Оставить заявку--><a class="button" href="#23">Оформить карту</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="mortgage-tabs loaded-block" id="tabs-1">
+      <div class="mortgage-tabs loaded-block">
         <div class="container">
           <ul class="tabs" data-tabgroup="tab-container-1">
-            <li class="tab-link current" data-tab="tab-1">Как получить</li>
-            <li class="tab-link" data-tab="tab-2">Тарифы и условия</li>
-            <li class="tab-link" data-tab="tab-3">Калькулятор</li>
-            <li class="tab-brake"><span class="dot"></span></li>
-            <li class="tab-link" data-tab="tab-4">Для клиентов</li>
+            <li class="tab-link current" data-tab="tab-1">О карте</li>
+            <li class="tab-link" data-tab="tab-2">Тарифы</li>
+            <li class="tab-link" data-tab="tab-3">Дистанционное управление</li>
+            <li class="tab-link" data-tab="tab-4">Вопрос-ответ</li>
           </ul>
         </div>
       </div>
       <div class="mortgage-tab-container" id="tab-container-1">
         <div class="tab-content current" id="tab-1">
-          <div class="container tabs-content loaded-block">
-            <div class="tab__block-icon">
-              <div class="block-icon__image"><img src="common/images/bi-1.svg"></div>
-              <div class="block-icon__content">
-                <p>Без поручительств и гарантий третьих лиц</p>
+          <div class="block-text container cols cols3">
+            <div class="block-text__item col">
+              <div class="block-text__heading">600 000₽</div>
+              <div class="block-text__text">Максимальный кредитный<br>лимит по карте</div>
+            </div>
+            <div class="block-text__item col">
+              <div class="block-text__heading">1
+                <div class="small-text">день</div>
+              </div>
+              <div class="block-text__text">Моментальная выдача карты<br>в день обращения</div>
+            </div>
+            <div class="block-text__item col">
+              <div class="block-text__heading">0₽</div>
+              <div class="block-text__text">Интернет-банк, Мобильный банк и SMS-уведомления</div>
+            </div>
+          </div>
+          <div class="conditions container conditions--card">
+            <div class="conditions__head">
+              <h2 class="conditions__heading">Накопление миль</h2>
+              <p class="conditions__text grey-color">Вы можете накопить мили за покупки по вашей карте, путешествия Austrian Airlines<br>любой из авиакомпаний, участвующей в программе Miles&More</p>
+            </div>
+            <div class="conditions__row">
+              <div class="conditions__title">
+                <h3>
+                  1<span class="small-text">миля</span></h3>
+              </div>
+              <div class="conditions__desc">
+                <p>За каждые 50₽, потраченных по карте</p>
               </div>
             </div>
-            <div class="tab__block-icon">
-              <div class="block-icon__image"><img src="common/images/bi-2.svg"></div>
-              <div class="block-icon__content">
-                <p>Рассмотрение заявки от 2 до 5 рабочих дней</p>
+            <div class="conditions__row">
+              <div class="conditions__title">
+                <h3><span class="small-text">до</span>
+                  
+                   2000
+                  <span class="small-text">миль</span>
+                </h3>
+              </div>
+              <div class="conditions__desc">
+                <p>За полёт Москва — Вена с Austrian Airlines</p>
+                <p class="grey-color small-text">Перелёт в одну сторону бизнес-классом (не включая Executive Bonus)</p>
               </div>
             </div>
-            <div class="tab__block-icon">
-              <div class="block-icon__image"><img src="common/images/bi-3.svg"></div>
-              <div class="block-icon__content">
-                <p>Договор комбинированного страхования не нужен</p>
+            <div class="conditions__row">
+              <div class="conditions__title">
+                <h3><span class="small-text">до</span>
+                  
+                  10 000
+                  <span class="small-text">миль</span>
+                </h3>
+              </div>
+              <div class="conditions__desc">
+                <p>Без комиссий за рассмотрение заявки и выдачу кредита.</p>
+                <p class="grey-color small-text">Перелёт в одну сторону бизнес-классом (не включая Executive Bonus)</p>
               </div>
             </div>
           </div>
-          <div class="container">
-            <div class="tab__block-accordion loaded-block">
-              <div class="block-icon__accordion">
-                <h1 class="title-block__title">Как оформить рефинансирование</h1>
-              </div>
-              <div class="block-icon__accordion">
-                <p class="grey-color">5 простых шагов к собственному жилью</p>
-              </div>
-            </div>
-            <div class="accordion">
-              <div class="accordion__head active loaded-block">
-                <h2><span class="accordion__number">1</span>Консультация и подача заявки</h2>
-                <div class="accordion__head-description grey-color">1 рабочий день</div>
-                <div class="accordion__head-cross"><img src="common/images/close.svg"></div>
-              </div>
-              <div class="accordion__body loaded-block">
-                <div class="accordion__body-left">
-                  <ul class="popup-tarif__list--ul">
-                    <li class="popup-tarif__list-item">Получите консультацию по телефону или в отделении или оформите предварительную заявку на сайте</li>
-                    <li class="popup-tarif__list-item">Подготовьте<span class="span-tooltip">необходимые документы<span class="span-tooltip__inner">Без наделения собственностью в залоговом имуществе.</span></span></li>
-                    <li class="popup-tarif__list-item">Отправьте скан документов по электронной почте Вашему менеджеру или передайте в бумажном виде в любое отделение</li>
-                  </ul>
-                  <div class="accordion__body-navigation"><a class="button" href="#23">Оставить заявку</a></div>
+          <div class="b-card-list b-card-list--small">
+            <div class="b-card-list__container container">
+              <h3 class="b-card-list__title">Где можно копить мили</h3>
+              <div class="b-card-list__slider-arrows">
+                <div class="slider-prev">
+                  <svg class="slider-arrow-svg">
+                    <use xlink:href="icons.svg#icon-arrow-right"></use>
+                  </svg>
                 </div>
-                <div class="accordion__body-sidebar">
-                  <div class="more-questions__actions-item item--number">
-                    <svg class="more-questions__svg" width="48px" height="80px" viewbox="0 0 48 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                        <g id="Text-Styles-Copy" transform="translate(-260.000000, -1728.000000)" fill="#E0E1E2">
-                          <path id="Combined-Shape" d="M287.280906,1758.05339 L278.34337,1766.99092 L275.514236,1764.16179 L284.45139,1755.22463 L279.156331,1755.57716 L278.891166,1751.58554 L291.07108,1751.43493 L290.919759,1763.61413 L286.927434,1763.34826 L287.280906,1758.05339 Z M260,1808 L260,1728 L308,1728 L308,1808 L260,1808 Z M266,1802 L302,1802 L302,1735 L266,1735 L266,1802 Z M288,1794 C288,1796.209 286.209,1798 284,1798 C281.791,1798 280,1796.209 280,1794 C280,1791.791 281.791,1790 284,1790 C286.209,1790 288,1791.791 288,1794 Z"></path>
-                        </g>
-                      </g>
-                    </svg><a class="more-questions__link" href="tel:+74957219100">
-                      <div class="more-questions__link-phone"><span>Телефон горячей линии</span><br>+7 495 721 91 00</div></a>
-                  </div>
-                  <div class="more-questions__actions-item item--location">
-                    <svg class="more-questions__svg" width="64px" height="80px" viewbox="0 0 64 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                        <g id="Text-Styles-Copy" transform="translate(-396.000000, -1728.000000)" fill="#E0E1E2">
-                          <path id="Fill-8" d="M453.465503,1778.68028 C457.47835,1773.48792 459.898776,1767.02648 459.996903,1759.99646 C460.240222,1742.56862 446.115565,1728.24076 428.442508,1728.00076 L428.434398,1728.00076 C410.639682,1727.88076 396.121659,1742.01263 396,1759.56046 C396,1769.15413 400.341833,1777.75837 407.202853,1783.5514 L428.442508,1808 L453.917988,1778.68028 L453.465503,1778.68028 Z M428.442508,1736.00068 C441.881817,1736.00068 452.77439,1746.74458 452.77439,1760.00046 C452.77439,1773.25633 441.881817,1784.00023 428.442508,1784.00023 C415.003199,1784.00023 404.110627,1773.25633 404.110627,1760.00046 C404.110627,1746.74458 415.003199,1736.00068 428.442508,1736.00068 L428.442508,1736.00068 Z"></path>
-                        </g>
-                      </g>
-                    </svg><a class="more-questions__link" href="">Найти отделение</a>
-                  </div>
+                <div class="slider-next">
+                  <svg class="slider-arrow-svg">
+                    <use xlink:href="icons.svg#icon-arrow-left"></use>
+                  </svg>
                 </div>
               </div>
-              <div class="accordion__head loaded-block">
-                <h2><span class="accordion__number">2</span>Консультация и подача заявки</h2>
-                <div class="accordion__head-description grey-color">1 рабочий день</div>
-                <div class="accordion__head-cross"><img src="common/images/close.svg"></div>
-              </div>
-              <div class="accordion__body loaded-block">
-                <div class="accordion__body-left">
-                  <ul class="popup-tarif__list--ul">
-                    <li class="popup-tarif__list-item">Получите консультацию по телефону или в отделении или оформите предварительную заявку на сайте</li>
-                    <li class="popup-tarif__list-item">Подготовьте<span class="span-tooltip">необходимые документы<span class="span-tooltip__inner">Без наделения собственностью в залоговом имуществе.</span></span></li>
-                    <li class="popup-tarif__list-item">Отправьте скан документов по электронной почте Вашему менеджеру или передайте в бумажном виде в любое отделение</li>
-                  </ul>
-                  <div class="accordion__body-navigation"><a class="button" href="#23">Оставить заявку</a></div>
-                </div>
-                <div class="accordion__body-sidebar">
-                  <div class="more-questions__actions-item item--number">
-                    <svg class="more-questions__svg" width="48px" height="80px" viewbox="0 0 48 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                        <g id="Text-Styles-Copy" transform="translate(-260.000000, -1728.000000)" fill="#E0E1E2">
-                          <path id="Combined-Shape" d="M287.280906,1758.05339 L278.34337,1766.99092 L275.514236,1764.16179 L284.45139,1755.22463 L279.156331,1755.57716 L278.891166,1751.58554 L291.07108,1751.43493 L290.919759,1763.61413 L286.927434,1763.34826 L287.280906,1758.05339 Z M260,1808 L260,1728 L308,1728 L308,1808 L260,1808 Z M266,1802 L302,1802 L302,1735 L266,1735 L266,1802 Z M288,1794 C288,1796.209 286.209,1798 284,1798 C281.791,1798 280,1796.209 280,1794 C280,1791.791 281.791,1790 284,1790 C286.209,1790 288,1791.791 288,1794 Z"></path>
-                        </g>
-                      </g>
-                    </svg><a class="more-questions__link" href="tel:+74957219100">
-                      <div class="more-questions__link-phone"><span>Телефон горячей линии</span><br>+7 495 721 91 00</div></a>
-                  </div>
-                  <div class="more-questions__actions-item item--location">
-                    <svg class="more-questions__svg" width="64px" height="80px" viewbox="0 0 64 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                        <g id="Text-Styles-Copy" transform="translate(-396.000000, -1728.000000)" fill="#E0E1E2">
-                          <path id="Fill-8" d="M453.465503,1778.68028 C457.47835,1773.48792 459.898776,1767.02648 459.996903,1759.99646 C460.240222,1742.56862 446.115565,1728.24076 428.442508,1728.00076 L428.434398,1728.00076 C410.639682,1727.88076 396.121659,1742.01263 396,1759.56046 C396,1769.15413 400.341833,1777.75837 407.202853,1783.5514 L428.442508,1808 L453.917988,1778.68028 L453.465503,1778.68028 Z M428.442508,1736.00068 C441.881817,1736.00068 452.77439,1746.74458 452.77439,1760.00046 C452.77439,1773.25633 441.881817,1784.00023 428.442508,1784.00023 C415.003199,1784.00023 404.110627,1773.25633 404.110627,1760.00046 C404.110627,1746.74458 415.003199,1736.00068 428.442508,1736.00068 L428.442508,1736.00068 Z"></path>
-                        </g>
-                      </g>
-                    </svg><a class="more-questions__link" href="">Найти отделение</a>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion__head loaded-block">
-                <h2><span class="accordion__number">3</span>Консультация и подача заявки</h2>
-                <div class="accordion__head-description grey-color">1 рабочий день</div>
-                <div class="accordion__head-cross"><img src="common/images/close.svg"></div>
-              </div>
-              <div class="accordion__body loaded-block">
-                <div class="accordion__body-left">
-                  <ul class="popup-tarif__list--ul">
-                    <li class="popup-tarif__list-item">Получите консультацию по телефону или в отделении или оформите предварительную заявку на сайте</li>
-                    <li class="popup-tarif__list-item">Подготовьте<span class="span-tooltip">необходимые документы<span class="span-tooltip__inner">Без наделения собственностью в залоговом имуществе.</span></span></li>
-                    <li class="popup-tarif__list-item">Отправьте скан документов по электронной почте Вашему менеджеру или передайте в бумажном виде в любое отделение</li>
-                  </ul>
-                  <div class="accordion__body-navigation"><a class="button" href="#23">Оставить заявку</a></div>
-                </div>
-                <div class="accordion__body-sidebar">
-                  <div class="more-questions__actions-item item--number">
-                    <svg class="more-questions__svg" width="48px" height="80px" viewbox="0 0 48 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                        <g id="Text-Styles-Copy" transform="translate(-260.000000, -1728.000000)" fill="#E0E1E2">
-                          <path id="Combined-Shape" d="M287.280906,1758.05339 L278.34337,1766.99092 L275.514236,1764.16179 L284.45139,1755.22463 L279.156331,1755.57716 L278.891166,1751.58554 L291.07108,1751.43493 L290.919759,1763.61413 L286.927434,1763.34826 L287.280906,1758.05339 Z M260,1808 L260,1728 L308,1728 L308,1808 L260,1808 Z M266,1802 L302,1802 L302,1735 L266,1735 L266,1802 Z M288,1794 C288,1796.209 286.209,1798 284,1798 C281.791,1798 280,1796.209 280,1794 C280,1791.791 281.791,1790 284,1790 C286.209,1790 288,1791.791 288,1794 Z"></path>
-                        </g>
-                      </g>
-                    </svg><a class="more-questions__link" href="tel:+74957219100">
-                      <div class="more-questions__link-phone"><span>Телефон горячей линии</span><br>+7 495 721 91 00</div></a>
-                  </div>
-                  <div class="more-questions__actions-item item--location">
-                    <svg class="more-questions__svg" width="64px" height="80px" viewbox="0 0 64 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                        <g id="Text-Styles-Copy" transform="translate(-396.000000, -1728.000000)" fill="#E0E1E2">
-                          <path id="Fill-8" d="M453.465503,1778.68028 C457.47835,1773.48792 459.898776,1767.02648 459.996903,1759.99646 C460.240222,1742.56862 446.115565,1728.24076 428.442508,1728.00076 L428.434398,1728.00076 C410.639682,1727.88076 396.121659,1742.01263 396,1759.56046 C396,1769.15413 400.341833,1777.75837 407.202853,1783.5514 L428.442508,1808 L453.917988,1778.68028 L453.465503,1778.68028 Z M428.442508,1736.00068 C441.881817,1736.00068 452.77439,1746.74458 452.77439,1760.00046 C452.77439,1773.25633 441.881817,1784.00023 428.442508,1784.00023 C415.003199,1784.00023 404.110627,1773.25633 404.110627,1760.00046 C404.110627,1746.74458 415.003199,1736.00068 428.442508,1736.00068 L428.442508,1736.00068 Z"></path>
-                        </g>
-                      </g>
-                    </svg><a class="more-questions__link" href="">Найти отделение</a>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion__head loaded-block">
-                <h2><span class="accordion__number">4</span>Консультация и подача заявки</h2>
-                <div class="accordion__head-description grey-color">1 рабочий день</div>
-                <div class="accordion__head-cross"><img src="common/images/close.svg"></div>
-              </div>
-              <div class="accordion__body loaded-block">
-                <div class="accordion__body-left">
-                  <ul class="popup-tarif__list--ul">
-                    <li class="popup-tarif__list-item">Получите консультацию по телефону или в отделении или оформите предварительную заявку на сайте</li>
-                    <li class="popup-tarif__list-item">Подготовьте<span class="span-tooltip">необходимые документы<span class="span-tooltip__inner">Без наделения собственностью в залоговом имуществе.</span></span></li>
-                    <li class="popup-tarif__list-item">Отправьте скан документов по электронной почте Вашему менеджеру или передайте в бумажном виде в любое отделение</li>
-                  </ul>
-                  <div class="accordion__body-navigation"><a class="button" href="#23">Оставить заявку</a></div>
-                </div>
-                <div class="accordion__body-sidebar">
-                  <div class="more-questions__actions-item item--number">
-                    <svg class="more-questions__svg" width="48px" height="80px" viewbox="0 0 48 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                        <g id="Text-Styles-Copy" transform="translate(-260.000000, -1728.000000)" fill="#E0E1E2">
-                          <path id="Combined-Shape" d="M287.280906,1758.05339 L278.34337,1766.99092 L275.514236,1764.16179 L284.45139,1755.22463 L279.156331,1755.57716 L278.891166,1751.58554 L291.07108,1751.43493 L290.919759,1763.61413 L286.927434,1763.34826 L287.280906,1758.05339 Z M260,1808 L260,1728 L308,1728 L308,1808 L260,1808 Z M266,1802 L302,1802 L302,1735 L266,1735 L266,1802 Z M288,1794 C288,1796.209 286.209,1798 284,1798 C281.791,1798 280,1796.209 280,1794 C280,1791.791 281.791,1790 284,1790 C286.209,1790 288,1791.791 288,1794 Z"></path>
-                        </g>
-                      </g>
-                    </svg><a class="more-questions__link" href="tel:+74957219100">
-                      <div class="more-questions__link-phone"><span>Телефон горячей линии</span><br>+7 495 721 91 00</div></a>
-                  </div>
-                  <div class="more-questions__actions-item item--location">
-                    <svg class="more-questions__svg" width="64px" height="80px" viewbox="0 0 64 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                        <g id="Text-Styles-Copy" transform="translate(-396.000000, -1728.000000)" fill="#E0E1E2">
-                          <path id="Fill-8" d="M453.465503,1778.68028 C457.47835,1773.48792 459.898776,1767.02648 459.996903,1759.99646 C460.240222,1742.56862 446.115565,1728.24076 428.442508,1728.00076 L428.434398,1728.00076 C410.639682,1727.88076 396.121659,1742.01263 396,1759.56046 C396,1769.15413 400.341833,1777.75837 407.202853,1783.5514 L428.442508,1808 L453.917988,1778.68028 L453.465503,1778.68028 Z M428.442508,1736.00068 C441.881817,1736.00068 452.77439,1746.74458 452.77439,1760.00046 C452.77439,1773.25633 441.881817,1784.00023 428.442508,1784.00023 C415.003199,1784.00023 404.110627,1773.25633 404.110627,1760.00046 C404.110627,1746.74458 415.003199,1736.00068 428.442508,1736.00068 L428.442508,1736.00068 Z"></path>
-                        </g>
-                      </g>
-                    </svg><a class="more-questions__link" href="">Найти отделение</a>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion__head loaded-block">
-                <h2><span class="accordion__number">5</span>Консультация и подача заявки</h2>
-                <div class="accordion__head-description grey-color">1 рабочий день</div>
-                <div class="accordion__head-cross"><img src="common/images/close.svg"></div>
-              </div>
-              <div class="accordion__body loaded-block">
-                <div class="accordion__body-left">
-                  <ul class="popup-tarif__list--ul">
-                    <li class="popup-tarif__list-item">Получите консультацию по телефону или в отделении или оформите предварительную заявку на сайте</li>
-                    <li class="popup-tarif__list-item">Подготовьте<span class="span-tooltip">необходимые документы<span class="span-tooltip__inner">Без наделения собственностью в залоговом имуществе.</span></span></li>
-                    <li class="popup-tarif__list-item">Отправьте скан документов по электронной почте Вашему менеджеру или передайте в бумажном виде в любое отделение</li>
-                  </ul>
-                  <div class="accordion__body-navigation"><a class="button" href="#23">Оставить заявку</a></div>
-                </div>
-                <div class="accordion__body-sidebar">
-                  <div class="more-questions__actions-item item--number">
-                    <svg class="more-questions__svg" width="48px" height="80px" viewbox="0 0 48 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                        <g id="Text-Styles-Copy" transform="translate(-260.000000, -1728.000000)" fill="#E0E1E2">
-                          <path id="Combined-Shape" d="M287.280906,1758.05339 L278.34337,1766.99092 L275.514236,1764.16179 L284.45139,1755.22463 L279.156331,1755.57716 L278.891166,1751.58554 L291.07108,1751.43493 L290.919759,1763.61413 L286.927434,1763.34826 L287.280906,1758.05339 Z M260,1808 L260,1728 L308,1728 L308,1808 L260,1808 Z M266,1802 L302,1802 L302,1735 L266,1735 L266,1802 Z M288,1794 C288,1796.209 286.209,1798 284,1798 C281.791,1798 280,1796.209 280,1794 C280,1791.791 281.791,1790 284,1790 C286.209,1790 288,1791.791 288,1794 Z"></path>
-                        </g>
-                      </g>
-                    </svg><a class="more-questions__link" href="tel:+74957219100">
-                      <div class="more-questions__link-phone"><span>Телефон горячей линии</span><br>+7 495 721 91 00</div></a>
-                  </div>
-                  <div class="more-questions__actions-item item--location">
-                    <svg class="more-questions__svg" width="64px" height="80px" viewbox="0 0 64 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                        <g id="Text-Styles-Copy" transform="translate(-396.000000, -1728.000000)" fill="#E0E1E2">
-                          <path id="Fill-8" d="M453.465503,1778.68028 C457.47835,1773.48792 459.898776,1767.02648 459.996903,1759.99646 C460.240222,1742.56862 446.115565,1728.24076 428.442508,1728.00076 L428.434398,1728.00076 C410.639682,1727.88076 396.121659,1742.01263 396,1759.56046 C396,1769.15413 400.341833,1777.75837 407.202853,1783.5514 L428.442508,1808 L453.917988,1778.68028 L453.465503,1778.68028 Z M428.442508,1736.00068 C441.881817,1736.00068 452.77439,1746.74458 452.77439,1760.00046 C452.77439,1773.25633 441.881817,1784.00023 428.442508,1784.00023 C415.003199,1784.00023 404.110627,1773.25633 404.110627,1760.00046 C404.110627,1746.74458 415.003199,1736.00068 428.442508,1736.00068 L428.442508,1736.00068 Z"></path>
-                        </g>
-                      </g>
-                    </svg><a class="more-questions__link" href="">Найти отделение</a>
-                  </div>
-                </div>
-              </div>
+              <div class="b-card-list__slider"><a class="b-card-list__item b-card-list__item--main" href="">
+                  <div class="b-card-list__item-image"></div>
+                  <div class="b-card-list__item-link--small"><span>Авиакомпании</span></div></a><a class="b-card-list__item" href="">
+                  <div class="b-card-list__item-image"></div><img src="common/images/air-1.svg"></a><a class="b-card-list__item" href="">
+                  <div class="b-card-list__item-image"></div><img src="common/images/air-3.svg"></a><a class="b-card-list__item" href="">
+                  <div class="b-card-list__item-image"></div><img src="common/images/air-2.svg"></a><a class="b-card-list__item" href="">
+                  <div class="b-card-list__item-image"></div><img src="common/images/air-4.svg"></a><a class="b-card-list__item b-card-list__item--main" href="">
+                  <div class="b-card-list__item-image"></div>
+                  <div class="b-card-list__item-link--small"><span>Отели</span></div></a><a class="b-card-list__item" href="">
+                  <div class="b-card-list__item-image"></div><img src="common/images/hotel-2.svg"></a><a class="b-card-list__item" href="">
+                  <div class="b-card-list__item-image"></div><img src="common/images/hotel-1.svg"></a><a class="b-card-list__item" href="">
+                  <div class="b-card-list__item-image"></div><img src="common/images/hotel-3.svg"></a></div>
             </div>
           </div>
-          <div class="care loaded-block">
-            <div class="care__wrap container" style="background-image: url(common/images/bg.jpg);">
+          <div class="b-card-list">
+            <div class="b-card-list__container container">
+              <h3 class="b-card-list__title">Использование миль</h3>
+              <p class="b-card-list__desc grey-color">С помощью накопленных миль Miles&More вы можете</p>
+              <div class="b-card-list__slider-arrows">
+                <div class="slider-prev">
+                  <svg class="slider-arrow-svg">
+                    <use xlink:href="icons.svg#icon-arrow-right"></use>
+                  </svg>
+                </div>
+                <div class="slider-next">
+                  <svg class="slider-arrow-svg">
+                    <use xlink:href="icons.svg#icon-arrow-left"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="b-card-list__slider"><a class="b-card-list__item" href="">
+                  <div class="b-card-list__item-image"></div>
+                  <div class="b-card-list__item-link--small"><span>Премиальные билеты от группы Austrian Airlines</span></div></a><a class="b-card-list__item" href="">
+                  <div class="b-card-list__item-image"></div>
+                  <div class="b-card-list__item-link--small"><span>Повысить класс обслуживания полёта</span></div></a><a class="b-card-list__item" href="">
+                  <div class="b-card-list__item-image" href=""></div>
+                  <div class="b-card-list__item-link--small" href=""><span>Выбрать товарыи услуги на сайте Miles&More</span></div></a></div>
+            </div>
+          </div>
+          <div class="b-card-list">
+            <div class="b-card-list__container container">
+              <h3 class="b-card-list__title">Cash&Milles</h3>
+              <div class="b-card-list__slider-arrows">
+                <div class="slider-prev">
+                  <svg class="slider-arrow-svg">
+                    <use xlink:href="icons.svg#icon-arrow-right"></use>
+                  </svg>
+                </div>
+                <div class="slider-next">
+                  <svg class="slider-arrow-svg">
+                    <use xlink:href="icons.svg#icon-arrow-left"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="b-card-list__slider"><a class="b-card-list__item">
+                  <div class="b-card-list__item-bg"></div>
+                  <div class="b-card-list__item-icon"></div>
+                  <div class="b-card-list__item-text">
+                    <h3>Купить полёт<br>за мили</h3>
+                    <p>Теперь перелёт можно оплачивать милями полностью либо частично</p>
+                  </div></a><a class="b-card-list__item">
+                  <div class="b-card-list__item-bg"></div>
+                  <div class="b-card-list__item-icon"></div>
+                  <div class="b-card-list__item-text">
+                    <h3>7 000 миль</h3>
+                    <p>Этого достаточно, чтобы внести их в стоимость билета при бронировании перелёта на сайте LH.com</p>
+                  </div></a></div>
+            </div>
+          </div>
+          <div class="care">
+            <div class="care__wrap container" style="background-image: url(common/images/p-img-2.jpg);">
               <div class="care__content">
-                <h1 class="title-block__title">Мы позаботимся<br>о вашей ипотеке!</h1>
+                <h1 class="title-block__title">Копите и летайте <br>вместе с Райффайзен</h1>
                 <div class="mortgage__block-buttons">
                   <!--a.button(href='#23') Оставить заявку--><a class="button" href="#23">Оставить заявку</a><a class="find-department" href="#23">Найти отделение</a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="tips loaded-block">
-            <div class="tips__wrap container">
-              <div class="tips__content">
-                <div class="tips__title">
-                  <h3 class="tisp__title-content">Уже есть<br>ипотечный кредит</h3>
+          <div class="b-card-list">
+            <div class="b-card-list__container container">
+              <h3 class="b-card-list__title">Специальные предложения</h3>
+              <div class="b-card-list__slider-arrows">
+                <div class="slider-prev">
+                  <svg class="slider-arrow-svg">
+                    <use xlink:href="icons.svg#icon-arrow-right"></use>
+                  </svg>
                 </div>
-                <div class="tips__links"><a class="tips__links-content" href="#3"><span class="link tips__links-link">Памятка по снятию обременения</span><span class="link-description grey-color">PDF, 2 Мб</span></a><a class="tips__links-content" href="#3"><span class="link tips__links-link">Памятка по погашению ипотечного кредита</span><span class="link-description grey-color">PDF, 2 Мб</span></a><a class="tips__links-content" href="#3"><span class="link tips__links-link">Памятка по оформлению залога квартиры после получения права собственности (первичный рынок)</span><span class="link-description grey-color">PDF, 2 Мб</span></a>
-                  <div class="tips__all"><a class="all-recomendation" href="#3">Все рекомендации</a>
-                    <!--+btn-text-icon('Все рекомендации','arrow','#w')-->
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="for-clients loaded-block"><a class="link__for-clients" href="#1">Как оформить</a><i class="fa fa-chevron-right"></i></div>
-          <div class="for-clients loaded-block"><a class="link__for-clients" href="#1">Для ипотечных клиентов</a><i class="fa fa-chevron-right"></i></div>
-          <div class="more-questions loaded-block">
-            <div class="more-questions__content container">
-              <div class="more-questions__title">
-                <h2 class="heading-h2">Остались вопросы?</h2>
-              </div>
-              <div class="more-questions__actions">
-                <div class="more-questions__actions-item item--number">
-                  <svg class="more-questions__svg" width="48px" height="80px" viewbox="0 0 48 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                      <g id="Text-Styles-Copy" transform="translate(-260.000000, -1728.000000)" fill="#E0E1E2">
-                        <path id="Combined-Shape" d="M287.280906,1758.05339 L278.34337,1766.99092 L275.514236,1764.16179 L284.45139,1755.22463 L279.156331,1755.57716 L278.891166,1751.58554 L291.07108,1751.43493 L290.919759,1763.61413 L286.927434,1763.34826 L287.280906,1758.05339 Z M260,1808 L260,1728 L308,1728 L308,1808 L260,1808 Z M266,1802 L302,1802 L302,1735 L266,1735 L266,1802 Z M288,1794 C288,1796.209 286.209,1798 284,1798 C281.791,1798 280,1796.209 280,1794 C280,1791.791 281.791,1790 284,1790 C286.209,1790 288,1791.791 288,1794 Z"></path>
-                      </g>
-                    </g>
-                  </svg><a class="more-questions__link" href="tel:+74957219100">
-                    <div class="more-questions__link-phone"><span>Телефон горячей линии</span><br>+7 495 721 91 00</div></a>
-                </div>
-                <div class="more-questions__actions-item item--fb">
-                  <svg class="more-questions__svg" width="44px" height="80px" viewbox="0 0 44 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                      <g id="Text-Styles-Copy" transform="translate(-560.000000, -1728.000000)" fill="#E0E1E2">
-                        <path id="Fill-1" d="M601.69953,1728.01667 L591.305688,1728 C579.629387,1728 572.084622,1735.72726 572.084622,1747.68772 L572.084622,1756.76577 L561.634116,1756.76577 C560.731644,1756.76577 560,1757.49658 560,1758.39738 L560,1771.54947 C560,1772.45111 560.732477,1773.18109 561.634116,1773.18109 L572.083789,1773.18109 L572.083789,1806.36838 C572.083789,1807.27002 572.815433,1808 573.717905,1808 L587.351645,1808 C588.25495,1808 588.985761,1807.26919 588.985761,1806.36838 L588.985761,1773.18109 L601.204546,1773.18109 C602.107017,1773.18109 602.838661,1772.45111 602.838661,1771.54947 L602.843661,1758.39738 C602.843661,1757.9649 602.671167,1757.55074 602.364509,1757.24409 C602.057852,1756.93743 601.642032,1756.76577 601.208712,1756.76577 L588.987427,1756.76577 L588.987427,1749.07017 C588.987427,1745.37196 589.8699,1743.49452 594.695582,1743.49452 L601.697864,1743.49202 C602.600335,1743.49202 603.331146,1742.76121 603.331146,1741.8604 L603.331146,1729.64828 C603.331146,1728.74831 602.601169,1728.01833 601.69953,1728.01667"></path>
-                      </g>
-                    </g>
-                  </svg><a class="more-questions__link" href="">Facebook</a>
-                </div>
-                <div class="more-questions__actions-item item--telegram">
-                  <svg class="more-questions__svg" width="80px" height="68px" viewbox="0 0 80 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                      <g id="Text-Styles-Copy" transform="translate(-696.000000, -1735.000000)" fill="#E0E1E2">
-                        <path id="Page-1" d="M761.452175,1748.53121 L727.34165,1779.36922 L726.01338,1793.56341 L719.300487,1772.9419 L759.137164,1747.75835 C761.125933,1746.54986 762.949355,1747.19967 761.452175,1748.53121 M770.59882,1735.44458 L699.734736,1762.83167 C694.898105,1764.77606 694.926751,1767.47906 698.853082,1768.68443 L716.526838,1774.21169 L723.289157,1794.98623 C724.111292,1797.25998 723.706087,1798.16182 726.088929,1798.16182 C727.927935,1798.16182 728.743688,1797.32172 729.767981,1796.3191 C730.419277,1795.68042 734.286385,1791.9132 738.604265,1787.70664 L756.988243,1801.31678 C760.371184,1803.1868 762.813693,1802.21802 763.656163,1798.16865 L775.723844,1741.18735 C776.959347,1736.22397 773.835411,1733.97263 770.59882,1735.44458"></path>
-                      </g>
-                    </g>
-                  </svg><a class="more-questions__link" href="">Telegram</a>
-                </div>
-                <div class="more-questions__actions-item item--email">
-                  <svg class="more-questions__svg" width="80px" height="54px" viewbox="0 0 80 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                      <g id="Text-Styles-Copy" transform="translate(-850.000000, -1741.000000)" fill="#E0E1E2">
-                        <path id="Page-1" d="M856.666667,1788.25 L856.666667,1751.72913 L888.233333,1774.237 C888.773333,1774.57788 889.386667,1774.75 890,1774.75 C890.613333,1774.75 891.226667,1774.57788 891.766667,1774.237 L923.333333,1751.72575 L923.336667,1788.25 L856.666667,1788.25 Z M917.043333,1747.75 L890,1767.3925 L862.956667,1747.75 L917.043333,1747.75 Z M923.333333,1741 L856.666667,1741 L850,1741 L850,1747.75 L850,1788.25 L850,1795 L856.666667,1795 L923.333333,1795 L930,1795 L930,1788.25 L930,1747.75 L930,1741 L923.333333,1741 Z"></path>
-                      </g>
-                    </g>
-                  </svg><a class="more-questions__link" href="">E-mail</a>
-                </div>
-                <div class="more-questions__actions-item item--location">
-                  <svg class="more-questions__svg" width="64px" height="80px" viewbox="0 0 64 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                      <g id="Text-Styles-Copy" transform="translate(-396.000000, -1728.000000)" fill="#E0E1E2">
-                        <path id="Fill-8" d="M453.465503,1778.68028 C457.47835,1773.48792 459.898776,1767.02648 459.996903,1759.99646 C460.240222,1742.56862 446.115565,1728.24076 428.442508,1728.00076 L428.434398,1728.00076 C410.639682,1727.88076 396.121659,1742.01263 396,1759.56046 C396,1769.15413 400.341833,1777.75837 407.202853,1783.5514 L428.442508,1808 L453.917988,1778.68028 L453.465503,1778.68028 Z M428.442508,1736.00068 C441.881817,1736.00068 452.77439,1746.74458 452.77439,1760.00046 C452.77439,1773.25633 441.881817,1784.00023 428.442508,1784.00023 C415.003199,1784.00023 404.110627,1773.25633 404.110627,1760.00046 C404.110627,1746.74458 415.003199,1736.00068 428.442508,1736.00068 L428.442508,1736.00068 Z"></path>
-                      </g>
-                    </g>
-                  </svg><a class="more-questions__link" href="">Отделение</a>
+                <div class="slider-next">
+                  <svg class="slider-arrow-svg">
+                    <use xlink:href="icons.svg#icon-arrow-left"></use>
+                  </svg>
                 </div>
               </div>
+              <div class="b-card-list__slider"><a class="b-card-list__item" href="">
+                  <div class="b-card-list__item-image"></div>
+                  <div class="b-card-list__item-link">
+                    <h4>1%</h4><span>от заработной платы обратно на счёт в течение 6 месяцев</span>
+                  </div></a><a class="b-card-list__item">
+                  <div class="b-card-list__item-image"></div>
+                  <div class="b-card-list__item-link">
+                    <h4>15,9%</h4><span>одна ставка для всех кредитов</span>
+                  </div></a><a class="b-card-list__item" href="">
+                  <div class="b-card-list__item-image" href=""></div>
+                  <div class="b-card-list__item-link" href="">
+                    <h4>50%</h4><span>скидки на напитки в Шоколаднице по Samsung Pay</span>
+                  </div></a></div>
             </div>
           </div>
         </div>
         <div class="tab-content" id="tab-2">
-          <div class="title-block container">
-            <h1 class="title-block__title">Условия кредитования</h1>
-          </div>
-          <div class="conditions container">
-            <div class="conditions__row">
+          <div class="conditions conditions--tarif container">
+            <div class="conditions__row conditions__row--currency">
               <div class="conditions__title">
-                <h3>Сроки ипотеки</h3>
+                <h3>Валюта карты</h3>
               </div>
               <div class="conditions__desc">
-                <p><span class="span-yellow">от 1 до 25 лет</span> — при рефинансировании кредита, выданного на цели приобретения недвижимости под залог приобретаемой недвижимости или недвижимости в собственности,</p>
-                <p><span class="span-yellow">от 1 до 15 лет</span> — при рефинансировании кредита, выданного на любые цели (за исключением предпринимательских целей) под залог иной жилой недвижимости в собственности.</p>
-              </div>
-            </div>
-            <div class="conditions__row">
-              <div class="conditions__title">
-                <h3>Валюта кредита</h3>
-              </div>
-              <div class="conditions__desc">
-                <p>Рубли РФ.</p>
+                <div class="col-currency currency--exist currency--active" data-currency="ruble"><span class="currency--value">₽</span></div>
+                <div class="col-currency" data-currency="dollar"><span class="currency--value">$</span></div>
+                <div class="col-currency currency--exist" data-currency="euro"><span class="currency--value">€</span></div>
               </div>
             </div>
             <div class="conditions__row">
               <div class="conditions__title">
-                <h3>Комиссия</h3>
+                <h3>Начисление миль</h3>
               </div>
               <div class="conditions__desc">
-                <p>Без комиссий за рассмотрение заявки и выдачу кредита.</p>
+                <div class="col-currency currency--ruble">
+                  <p>50₽ = 1 миля</p>
+                </div>
+                <div class="col-currency currency--dollar">&#8203;</div>
+                <div class="col-currency currency--euro">
+                  <p>50₽ = 1 миля</p>
+                </div>
               </div>
             </div>
-            <div class="conditions__row conditions__row--hide">
+            <div class="conditions__row">
               <div class="conditions__title">
-                <h3>Способы предоставления кредита </h3>
+                <h3>СМС-Банк</h3>
               </div>
               <div class="conditions__desc">
-                <p>Кредитные средства предоставляются в безналичной форме на счет заемщика в валюте кредита, открытый в банке для этой цели при подписании кредитного договора, договора об ипотеке и закладной.</p>
+                <div class="col-currency currency--ruble">
+                  <p>0₽</p>
+                </div>
+                <div class="col-currency currency--dollar">&#8203;</div>
+                <div class="col-currency currency--euro">
+                  <p>10₽</p>
+                </div>
               </div>
             </div>
-            <div class="conditions__row conditions__row--hide">
+            <div class="conditions__row">
               <div class="conditions__title">
-                <h3>Погашение ипотеки</h3>
+                <h3>Интернет-банк</h3>
               </div>
               <div class="conditions__desc">
-                <p>Ежемесячно, равными.</p>
+                <div class="col-currency currency--ruble">
+                  <p>0₽</p>
+                </div>
+                <div class="col-currency currency--dollar">&#8203;</div>
+                <div class="col-currency currency--euro">
+                  <p>10₽</p>
+                </div>
               </div>
             </div>
-            <div class="conditions__row conditions__row--hide">
+            <div class="conditions__row">
               <div class="conditions__title">
-                <h3>Обеспечение<br>по кредиту</h3>
+                <h3>Мобильный банк</h3>
               </div>
               <div class="conditions__desc">
-                <p>Ипотека (залог) имеющейся в собственности недвижимости в пользу банка.</p>
+                <div class="col-currency currency--ruble">
+                  <p>0₽</p>
+                </div>
+                <div class="col-currency currency--dollar">&#8203;</div>
+                <div class="col-currency currency--euro">
+                  <p>10₽</p>
+                </div>
               </div>
             </div>
-            <div class="conditions__row conditions__row--hide">
+            <div class="conditions__row">
               <div class="conditions__title">
-                <h3>Прочее</h3>
+                <h3>Обслуживание счета (в год)</h3>
               </div>
               <div class="conditions__desc">
-                <p>При неоплате очередного платежа в установленное время, заемщик должен оплатить пени в размере 0,06 % от суммы платежа за каждый просроченный день.</p>
+                <div class="col-currency currency--ruble">
+                  <p>2 990₽</p>
+                  <p class="small-text grey-color">основная карта</p>
+                  <p>500₽</p>
+                  <p class="small-text grey-color">дополнительная карта</p>
+                </div>
+                <div class="col-currency currency--dollar">&#8203;</div>
+                <div class="col-currency currency--euro">
+                  <p>500₽
+                    <p class="small-text grey-color">дополнительная карта</p>
+                  </p>
+                </div>
               </div>
             </div>
-            <div class="load-more">
-              <div class="load-more__button">Все условия
-                <svg class="conditions__svg" width="16px" height="14px" viewbox="0 0 16 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <g id="Text-Styles-Copy" transform="translate(-690.000000, -400.000000)" fill="#000000">
-                      <path id="Combined-Shape" d="M699.003052,410.753077 L699.003052,400 L697.003052,400 L697.003052,410.779547 L691.971069,404.942503 L690,406.567897 L697.035645,413.556349 L697.991089,414.043335 L698.931519,413.556349 L705.994141,406.567897 L704.0177,404.942503 L699.003052,410.753077 Z"></path>
-                    </g>
-                  </g>
-                </svg>
+            <div class="conditions__row">
+              <div class="conditions__title">
+                <h3>Перевод и выдачу наличных</h3>
+              </div>
+              <div class="conditions__desc">
+                <div class="col-currency currency--ruble">
+                  <p>3% + 300₽</p>
+                  <p class="small-text grey-color">от снятия</p>
+                </div>
+                <div class="col-currency currency--dollar">&#8203;</div>
+                <div class="col-currency currency--euro">
+                  <p>3% + 300₽
+                    <p class="small-text grey-color">от снятия</p>
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="documents loaded-block">
-            <div class="documents__wrap">
-              <div class="documents__content container">
-                <div class="documents__title">
-                  <h2 class="heading-h2">Подробная информация и документы</h2>
+            <div class="conditions__row">
+              <div class="conditions__title">
+                <h3>Выдачу наличных<br>в сторонних банках</h3>
+              </div>
+              <div class="conditions__desc">
+                <div class="col-currency currency--ruble">
+                  <p>3,9% + 390₽</p>
+                  <p class="small-text grey-color">от снятия</p>
                 </div>
-                <div class="documents__list"><a class="documents__item" href=""><span>Требования к заемщику</span></a><a class="documents__item" href=""><span>Требования к имуществу</span></a><a class="documents__item" href=""><span>Список документов</span></a><a class="documents__item" href=""><span>Готовые процентные ставки</span></a><a class="documents__item" href=""><span>Полная стоимость кредита</span></a><a class="documents__item" href=""><span>Тарифы</span></a></div>
+                <div class="col-currency currency--dollar">&#8203;</div>
+                <div class="col-currency currency--euro">
+                  <p>3,9% + 390₽</p>
+                  <p class="small-text grey-color">от снятия</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="more-questions loaded-block">
-            <div class="more-questions__content container">
-              <div class="more-questions__title">
-                <h2 class="heading-h2">Остались вопросы?</h2>
+            <div class="conditions__row">
+              <div class="conditions__title">
+                <h3>Операции за рубежом<br>в валюте отличной<br>от валюты счета</h3>
               </div>
-              <div class="more-questions__actions">
-                <div class="more-questions__actions-item item--number">
-                  <svg class="more-questions__svg" width="48px" height="80px" viewbox="0 0 48 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                      <g id="Text-Styles-Copy" transform="translate(-260.000000, -1728.000000)" fill="#E0E1E2">
-                        <path id="Combined-Shape" d="M287.280906,1758.05339 L278.34337,1766.99092 L275.514236,1764.16179 L284.45139,1755.22463 L279.156331,1755.57716 L278.891166,1751.58554 L291.07108,1751.43493 L290.919759,1763.61413 L286.927434,1763.34826 L287.280906,1758.05339 Z M260,1808 L260,1728 L308,1728 L308,1808 L260,1808 Z M266,1802 L302,1802 L302,1735 L266,1735 L266,1802 Z M288,1794 C288,1796.209 286.209,1798 284,1798 C281.791,1798 280,1796.209 280,1794 C280,1791.791 281.791,1790 284,1790 C286.209,1790 288,1791.791 288,1794 Z"></path>
-                      </g>
-                    </g>
-                  </svg><a class="more-questions__link" href="tel:+74957219100">
-                    <div class="more-questions__link-phone"><span>Телефон горячей линии</span><br>+7 495 721 91 00</div></a>
+              <div class="conditions__desc">
+                <div class="col-currency currency--ruble">
+                  <p>3% + 300₽</p>
+                  <p class="small-text grey-color">от снятия</p>
                 </div>
-                <div class="more-questions__actions-item item--fb">
-                  <svg class="more-questions__svg" width="44px" height="80px" viewbox="0 0 44 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                      <g id="Text-Styles-Copy" transform="translate(-560.000000, -1728.000000)" fill="#E0E1E2">
-                        <path id="Fill-1" d="M601.69953,1728.01667 L591.305688,1728 C579.629387,1728 572.084622,1735.72726 572.084622,1747.68772 L572.084622,1756.76577 L561.634116,1756.76577 C560.731644,1756.76577 560,1757.49658 560,1758.39738 L560,1771.54947 C560,1772.45111 560.732477,1773.18109 561.634116,1773.18109 L572.083789,1773.18109 L572.083789,1806.36838 C572.083789,1807.27002 572.815433,1808 573.717905,1808 L587.351645,1808 C588.25495,1808 588.985761,1807.26919 588.985761,1806.36838 L588.985761,1773.18109 L601.204546,1773.18109 C602.107017,1773.18109 602.838661,1772.45111 602.838661,1771.54947 L602.843661,1758.39738 C602.843661,1757.9649 602.671167,1757.55074 602.364509,1757.24409 C602.057852,1756.93743 601.642032,1756.76577 601.208712,1756.76577 L588.987427,1756.76577 L588.987427,1749.07017 C588.987427,1745.37196 589.8699,1743.49452 594.695582,1743.49452 L601.697864,1743.49202 C602.600335,1743.49202 603.331146,1742.76121 603.331146,1741.8604 L603.331146,1729.64828 C603.331146,1728.74831 602.601169,1728.01833 601.69953,1728.01667"></path>
-                      </g>
-                    </g>
-                  </svg><a class="more-questions__link" href="">Facebook</a>
+                <div class="col-currency currency--dollar">&#8203;</div>
+                <div class="col-currency currency--euro">
+                  <p>3% + 300₽
+                    <p class="small-text grey-color">от снятия</p>
+                  </p>
                 </div>
-                <div class="more-questions__actions-item item--telegram">
-                  <svg class="more-questions__svg" width="80px" height="68px" viewbox="0 0 80 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                      <g id="Text-Styles-Copy" transform="translate(-696.000000, -1735.000000)" fill="#E0E1E2">
-                        <path id="Page-1" d="M761.452175,1748.53121 L727.34165,1779.36922 L726.01338,1793.56341 L719.300487,1772.9419 L759.137164,1747.75835 C761.125933,1746.54986 762.949355,1747.19967 761.452175,1748.53121 M770.59882,1735.44458 L699.734736,1762.83167 C694.898105,1764.77606 694.926751,1767.47906 698.853082,1768.68443 L716.526838,1774.21169 L723.289157,1794.98623 C724.111292,1797.25998 723.706087,1798.16182 726.088929,1798.16182 C727.927935,1798.16182 728.743688,1797.32172 729.767981,1796.3191 C730.419277,1795.68042 734.286385,1791.9132 738.604265,1787.70664 L756.988243,1801.31678 C760.371184,1803.1868 762.813693,1802.21802 763.656163,1798.16865 L775.723844,1741.18735 C776.959347,1736.22397 773.835411,1733.97263 770.59882,1735.44458"></path>
-                      </g>
-                    </g>
-                  </svg><a class="more-questions__link" href="">Telegram</a>
+              </div>
+            </div>
+            <div class="conditions__row">
+              <div class="conditions__title">
+                <h3>Комиссия за внесение наличных</h3>
+              </div>
+              <div class="conditions__desc">
+                <div class="col-currency currency--ruble">
+                  <p>100₽</p>
+                  <p class="small-text grey-color">до 10 000 руб.</p>
+                  <p>100₽</p>
+                  <p class="small-text grey-color">от 10 000 руб. а так же в других валютах</p>
                 </div>
-                <div class="more-questions__actions-item item--email">
-                  <svg class="more-questions__svg" width="80px" height="54px" viewbox="0 0 80 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                      <g id="Text-Styles-Copy" transform="translate(-850.000000, -1741.000000)" fill="#E0E1E2">
-                        <path id="Page-1" d="M856.666667,1788.25 L856.666667,1751.72913 L888.233333,1774.237 C888.773333,1774.57788 889.386667,1774.75 890,1774.75 C890.613333,1774.75 891.226667,1774.57788 891.766667,1774.237 L923.333333,1751.72575 L923.336667,1788.25 L856.666667,1788.25 Z M917.043333,1747.75 L890,1767.3925 L862.956667,1747.75 L917.043333,1747.75 Z M923.333333,1741 L856.666667,1741 L850,1741 L850,1747.75 L850,1788.25 L850,1795 L856.666667,1795 L923.333333,1795 L930,1795 L930,1788.25 L930,1747.75 L930,1741 L923.333333,1741 Z"></path>
-                      </g>
-                    </g>
-                  </svg><a class="more-questions__link" href="">E-mail</a>
-                </div>
-                <div class="more-questions__actions-item item--location">
-                  <svg class="more-questions__svg" width="64px" height="80px" viewbox="0 0 64 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                      <g id="Text-Styles-Copy" transform="translate(-396.000000, -1728.000000)" fill="#E0E1E2">
-                        <path id="Fill-8" d="M453.465503,1778.68028 C457.47835,1773.48792 459.898776,1767.02648 459.996903,1759.99646 C460.240222,1742.56862 446.115565,1728.24076 428.442508,1728.00076 L428.434398,1728.00076 C410.639682,1727.88076 396.121659,1742.01263 396,1759.56046 C396,1769.15413 400.341833,1777.75837 407.202853,1783.5514 L428.442508,1808 L453.917988,1778.68028 L453.465503,1778.68028 Z M428.442508,1736.00068 C441.881817,1736.00068 452.77439,1746.74458 452.77439,1760.00046 C452.77439,1773.25633 441.881817,1784.00023 428.442508,1784.00023 C415.003199,1784.00023 404.110627,1773.25633 404.110627,1760.00046 C404.110627,1746.74458 415.003199,1736.00068 428.442508,1736.00068 L428.442508,1736.00068 Z"></path>
-                      </g>
-                    </g>
-                  </svg><a class="more-questions__link" href="">Отделение</a>
+                <div class="col-currency currency--dollar">&#8203;</div>
+                <div class="col-currency currency--euro">
+                  <p>100₽
+                    <p class="small-text grey-color">до 10 000 руб.</p>
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div class="tab-content" id="tab-3">
-          <div class="calc-block container">
-            <div class="calc-block--left">
-              <div class="calculator">
-                <div class="calculator__row">
-                  <div class="form-block form-block--title">
-                    <div class="input-block input-ruble">
-                      <input class="input-text" type="text" value="7 900 000" id="calc-input-price">
-                      <div class="form-block__text">Стоимость недвижимости</div>
-                      <div class="input-slider" data-sl-min="7000000" id="sl-price" data-f-price="true" data-sl-step="50000" data-sl-max="9000000" data-sl-value="7800000"></div>
-                    </div>
-                  </div>
+          <div class="container">
+            <div class="accordion accordion--mobile-shown">
+              <div class="accordion__head active loaded-block">
+                <h2><span class="accordion__icon"><img src="common/images/icon-internet-bank.svg"></span>Интернет-банк</h2>
+                <div class="accordion__head-cross"><img src="common/images/close.svg"></div>
+              </div>
+              <div class="accordion__body loaded-block">
+                <div class="accordion__body-left accordion__body--half">
+                  <h5 class="accordion__heading">С помощью СМС-Банка вы сможете</h5>
+                  <ul class="popup-tarif__list--ul">
+                    <li class="popup-tarif__list-item">Получить информацию о последних покупках и переводах</li>
+                    <li class="popup-tarif__list-item">Узнать о доставке перевыпуещенных карт в отделении Раффайзен</li>
+                    <li class="popup-tarif__list-item">Узать дату и сумму внесения минимального ежемесячного платежа</li>
+                  </ul>
+                  <div class="accordion__body-navigation"><a class="button" href="#24">Подключить</a></div>
                 </div>
-                <div class="calculator__row">
-                  <div class="form-block form-block--title">
-                    <div class="input-block input-ruble">
-                      <input class="input-text" type="text" value="1 185 000" id="calc-input-deposit">
-                      <div class="form-block__text">Первоначальный взнос</div>
-                      <div class="input-slider" data-sl-min="1000000" id="sl-deposit" data-f-price="true" data-sl-step="50000" data-sl-max="2000000" data-sl-value="1185000"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="calculator__row">
-                  <div class="form-block form-block--title">
-                    <div class="input-block">
-                      <input class="input-text" type="text" value="20" id="calc-input-period">
-                      <div class="form-block__text">Срок кредита</div>
-                      <div class="input-slider" data-sl-min="1" id="sl-period" data-f-year="true" data-sl-max="35" data-sl-value="20"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="calculator__row">
-                  <div class="checkbox-block">
-                    <label class="checkbox-block__label" for="check-zp">
-                      <input class="input-checkbox" type="checkbox" id="check-zp" value=""><span class="checkbox-block__span"></span>Я зарплатный или премиальный клиент Банка
-                    </label>
-                  </div>
-                </div>
-                <div class="calculator__row">
-                  <div class="form-block form-block--title">
-                    <div class="input-block input-triangle">
-                      <select class="input-select" id="select-1">
-                        <option value="">Справка 2-НДФЛ</option>
-                        <option>Справка о доходах</option>
-                      </select>
-                      <div class="form-block__text">Уровень доходов подтверждаю</div>
-                    </div>
-                  </div>
+                <div class="accordion__body-sidebar accordion__body--half accordion__body-sidebar--normal">
+                  <h5 class="accordion__heading">С помощью СМС-запроса сможете</h5>
+                  <ul class="popup-tarif__list--ul">
+                    <li class="popup-tarif__list-item">Узнать остаток средств по кредитной карте, в любое время дня и ночи</li>
+                    <li class="popup-tarif__list-item">Узнать список пяти последних операций по карте</li>
+                    <li class="popup-tarif__list-item">Оплатить мобильную связь</li>
+                    <li class="popup-tarif__list-item">Перевести деньги между своими картами</li>
+                  </ul>
                 </div>
               </div>
-            </div>
-            <div class="calc-block--right">
-              <div class="calc-card">
-                <div class="calc-card__month"><span>Ежемесячный расчет</span>
-                  <!--.calc-card__month-price от 88 185,04₽-->
-                  <div class="calc-card__month-price">от&thinsp;<span id="price-num"></span>₽</div>
+              <div class="accordion__head loaded-block">
+                <h2><span class="accordion__icon"><img src="common/images/icon-app.svg"></span>Приложение</h2>
+                <div class="accordion__head-cross"><img src="common/images/close.svg"></div>
+              </div>
+              <div class="accordion__body loaded-block">
+                <div class="accordion__body-left accordion__body--half">
+                  <h5 class="accordion__heading">С помощью СМС-Банка вы сможете</h5>
+                  <ul class="popup-tarif__list--ul">
+                    <li class="popup-tarif__list-item">Получить информацию о последних покупках и переводах</li>
+                    <li class="popup-tarif__list-item">Узнать о доставке перевыпуещенных карт в отделении Раффайзен</li>
+                    <li class="popup-tarif__list-item">Узать дату и сумму внесения минимального ежемесячного платежа</li>
+                  </ul>
+                  <div class="accordion__body-navigation"><a class="button" href="#24">Подключить</a></div>
                 </div>
-                <div class="calc-card__info">
-                  <div class="calc-card__info-item">
-                    <div class="calc-card__text--left">Ставка</div>
-                    <div class="calc-card__text--right">от 11,5%</div>
-                  </div>
-                  <div class="calc-card__info-item">
-                    <div class="calc-card__text--left">Общая сумма выплат</div>
-                    <div class="calc-card__text--right">от 5 204 313,41₽</div>
-                  </div>
+                <div class="accordion__body-sidebar accordion__body--half accordion__body-sidebar--normal">
+                  <h5 class="accordion__heading">С помощью СМС-запроса сможете</h5>
+                  <ul class="popup-tarif__list--ul">
+                    <li class="popup-tarif__list-item">Узнать остаток средств по кредитной карте, в любое время дня и ночи</li>
+                    <li class="popup-tarif__list-item">Узнать список пяти последних операций по карте</li>
+                    <li class="popup-tarif__list-item">Оплатить мобильную связь</li>
+                    <li class="popup-tarif__list-item">Перевести деньги между своими картами</li>
+                  </ul>
                 </div>
-                <div class="calc-card__detail">
-                  <div class="span-warn">!</div>
-                  <p>Результат является предварительным. Полная стоимость расчитывается индивидуально. <a class="link" href="">Подробнее</a></p>
+              </div>
+              <div class="accordion__head loaded-block">
+                <h2><span class="accordion__icon"><img src="common/images/icon-sms-bank.svg"></span>СМС-Банк</h2>
+                <div class="accordion__head-cross"><img src="common/images/close.svg"></div>
+              </div>
+              <div class="accordion__body loaded-block">
+                <div class="accordion__body-left accordion__body--half">
+                  <h5 class="accordion__heading">С помощью СМС-Банка вы сможете</h5>
+                  <ul class="popup-tarif__list--ul">
+                    <li class="popup-tarif__list-item">Получить информацию о последних покупках и переводах</li>
+                    <li class="popup-tarif__list-item">Узнать о доставке перевыпуещенных карт в отделении Раффайзен</li>
+                    <li class="popup-tarif__list-item">Узать дату и сумму внесения минимального ежемесячного платежа</li>
+                  </ul>
+                  <div class="accordion__body-navigation"><a class="button" href="#24">Подключить</a></div>
                 </div>
-                <!--.calc-card__button.button Подать заявку--><a class="button calc-card__button" href="#">Подать заявку</a>
-                <div class="calc-card__full-info"><a class="all-recomendation" href="">Полный расчет</a></div>
+                <div class="accordion__body-sidebar accordion__body--half accordion__body-sidebar--normal">
+                  <h5 class="accordion__heading">С помощью СМС-запроса сможете</h5>
+                  <ul class="popup-tarif__list--ul">
+                    <li class="popup-tarif__list-item">Узнать остаток средств по кредитной карте, в любое время дня и ночи</li>
+                    <li class="popup-tarif__list-item">Узнать список пяти последних операций по карте</li>
+                    <li class="popup-tarif__list-item">Оплатить мобильную связь</li>
+                    <li class="popup-tarif__list-item">Перевести деньги между своими картами</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion__head loaded-block">
+                <h2><span class="accordion__icon"><img src="common/images/icon-teleinfo.svg"></span>Телеинфо</h2>
+                <div class="accordion__head-cross"><img src="common/images/close.svg"></div>
+              </div>
+              <div class="accordion__body loaded-block">
+                <div class="accordion__body-left accordion__body--half">
+                  <h5 class="accordion__heading">С помощью СМС-Банка вы сможете</h5>
+                  <ul class="popup-tarif__list--ul">
+                    <li class="popup-tarif__list-item">Получить информацию о последних покупках и переводах</li>
+                    <li class="popup-tarif__list-item">Узнать о доставке перевыпуещенных карт в отделении Раффайзен</li>
+                    <li class="popup-tarif__list-item">Узать дату и сумму внесения минимального ежемесячного платежа</li>
+                  </ul>
+                  <div class="accordion__body-navigation"><a class="button" href="#24">Подключить</a></div>
+                </div>
+                <div class="accordion__body-sidebar accordion__body--half accordion__body-sidebar--normal">
+                  <h5 class="accordion__heading">С помощью СМС-запроса сможете</h5>
+                  <ul class="popup-tarif__list--ul">
+                    <li class="popup-tarif__list-item">Узнать остаток средств по кредитной карте, в любое время дня и ночи</li>
+                    <li class="popup-tarif__list-item">Узнать список пяти последних операций по карте</li>
+                    <li class="popup-tarif__list-item">Оплатить мобильную связь</li>
+                    <li class="popup-tarif__list-item">Перевести деньги между своими картами</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion__head loaded-block">
+                <h2><span class="accordion__icon"><img src="common/images/icon-info-center.svg"></span>Инфо центр</h2>
+                <div class="accordion__head-cross"><img src="common/images/close.svg"></div>
+              </div>
+              <div class="accordion__body loaded-block">
+                <div class="accordion__body-left accordion__body--half">
+                  <h5 class="accordion__heading">С помощью СМС-Банка вы сможете</h5>
+                  <ul class="popup-tarif__list--ul">
+                    <li class="popup-tarif__list-item">Получить информацию о последних покупках и переводах</li>
+                    <li class="popup-tarif__list-item">Узнать о доставке перевыпуещенных карт в отделении Раффайзен</li>
+                    <li class="popup-tarif__list-item">Узать дату и сумму внесения минимального ежемесячного платежа</li>
+                  </ul>
+                  <div class="accordion__body-navigation"><a class="button" href="#24">Подключить</a></div>
+                </div>
+                <div class="accordion__body-sidebar accordion__body--half accordion__body-sidebar--normal">
+                  <h5 class="accordion__heading">С помощью СМС-запроса сможете</h5>
+                  <ul class="popup-tarif__list--ul">
+                    <li class="popup-tarif__list-item">Узнать остаток средств по кредитной карте, в любое время дня и ночи</li>
+                    <li class="popup-tarif__list-item">Узнать список пяти последних операций по карте</li>
+                    <li class="popup-tarif__list-item">Оплатить мобильную связь</li>
+                    <li class="popup-tarif__list-item">Перевести деньги между своими картами</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div class="tab-content" id="tab-4">
-          <div class="tips tip-over">
-            <div class="tips__wrap container">
-              <div class="tips__content">
-                <div class="tips__title">
-                  <h3 class="tisp__title-content">Правила<br>обслуживания</h3>
+          <div class="accordion container">
+            <div class="accordion__head">
+              <h2>Что такое кредитная карта с льготным периодом?</h2>
+              <div class="accordion__head-cross"><img src="common/images/close.svg"></div>
+            </div>
+            <div class="accordion__body accordion--card">
+              <div class="accordion__body-left">
+                <p>Кредитная карта с льготным периодом — это банковская карта с установленным лимитом кредитования, предназначенная для оплаты, резервирования товаров и услуг, а также для получения наличных денежных средств, которая позволяет бесплатно пользоваться кредитными средствами в течение определенного периода.</p>
+              </div>
+              <div class="accordion__body-sidebar">
+                <div class="more-questions__actions-item item--fb">
+                  <svg class="more-questions__svg" width="44px" height="80px" viewbox="0 0 44 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Text-Styles-Copy" transform="translate(-560.000000, -1728.000000)" fill="#E0E1E2">
+                        <path id="Fill-1" d="M601.69953,1728.01667 L591.305688,1728 C579.629387,1728 572.084622,1735.72726 572.084622,1747.68772 L572.084622,1756.76577 L561.634116,1756.76577 C560.731644,1756.76577 560,1757.49658 560,1758.39738 L560,1771.54947 C560,1772.45111 560.732477,1773.18109 561.634116,1773.18109 L572.083789,1773.18109 L572.083789,1806.36838 C572.083789,1807.27002 572.815433,1808 573.717905,1808 L587.351645,1808 C588.25495,1808 588.985761,1807.26919 588.985761,1806.36838 L588.985761,1773.18109 L601.204546,1773.18109 C602.107017,1773.18109 602.838661,1772.45111 602.838661,1771.54947 L602.843661,1758.39738 C602.843661,1757.9649 602.671167,1757.55074 602.364509,1757.24409 C602.057852,1756.93743 601.642032,1756.76577 601.208712,1756.76577 L588.987427,1756.76577 L588.987427,1749.07017 C588.987427,1745.37196 589.8699,1743.49452 594.695582,1743.49452 L601.697864,1743.49202 C602.600335,1743.49202 603.331146,1742.76121 603.331146,1741.8604 L603.331146,1729.64828 C603.331146,1728.74831 602.601169,1728.01833 601.69953,1728.01667"></path>
+                      </g>
+                    </g>
+                  </svg><a class="more-questions__link" href="">Facebook</a>
                 </div>
-                <div class="tips__links"><a class="tips__links-content" href="#2"><span class="link tips__links-link">Памятка по погашению ипотечного кредита</span><span class="link-tip grey-color">Как правильно совершать ежемесячные платежи, как оформить досрочное погашение и многое другое!</span><span class="link-description grey-color">PDF, 2 Мб</span></a><a class="tips__links-content" href="#1"><span class="link tips__links-link">Памятка по снятию обременения</span><span class="link-description grey-color">PDF, 2 Мб</span></a><a class="tips__links-content" href="#3"><span class="link tips__links-link">Памятка по погашению ипотечного кредита</span><span class="link-description grey-color">PDF, 2 Мб</span></a><a class="tips__links-content" href="#3"><span class="link tips__links-link">Памятка по оформлению залога квартиры после получения права собственности (первичный рынок)</span><span class="link-description grey-color">PDF, 2 Мб</span></a><a class="tips__links-content" href="#2"><span class="link tips__links-link">Памятка по погашению ипотечного кредита</span><span class="link-description grey-color">PDF, 2 Мб</span></a>
-                  <div class="tips__all"><a class="all-recomendation" href="#3">Все рекомендации</a></div>
+                <div class="more-questions__actions-item item--telegram">
+                  <svg class="more-questions__svg" width="80px" height="68px" viewbox="0 0 80 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Text-Styles-Copy" transform="translate(-696.000000, -1735.000000)" fill="#E0E1E2">
+                        <path id="Page-1" d="M761.452175,1748.53121 L727.34165,1779.36922 L726.01338,1793.56341 L719.300487,1772.9419 L759.137164,1747.75835 C761.125933,1746.54986 762.949355,1747.19967 761.452175,1748.53121 M770.59882,1735.44458 L699.734736,1762.83167 C694.898105,1764.77606 694.926751,1767.47906 698.853082,1768.68443 L716.526838,1774.21169 L723.289157,1794.98623 C724.111292,1797.25998 723.706087,1798.16182 726.088929,1798.16182 C727.927935,1798.16182 728.743688,1797.32172 729.767981,1796.3191 C730.419277,1795.68042 734.286385,1791.9132 738.604265,1787.70664 L756.988243,1801.31678 C760.371184,1803.1868 762.813693,1802.21802 763.656163,1798.16865 L775.723844,1741.18735 C776.959347,1736.22397 773.835411,1733.97263 770.59882,1735.44458"></path>
+                      </g>
+                    </g>
+                  </svg><a class="more-questions__link" href="">Telegram</a>
+                </div>
+              </div>
+            </div>
+            <div class="accordion__head">
+              <h2>Что такое кредитная карта с льготным периодом?</h2>
+              <div class="accordion__head-cross"><img src="common/images/close.svg"></div>
+            </div>
+            <div class="accordion__body accordion--card">
+              <div class="accordion__body-left">
+                <p>Кредитная карта с льготным периодом — это банковская карта с установленным лимитом кредитования, предназначенная для оплаты, резервирования товаров и услуг, а также для получения наличных денежных средств, которая позволяет бесплатно пользоваться кредитными средствами в течение определенного периода.</p>
+              </div>
+              <div class="accordion__body-sidebar">
+                <div class="more-questions__actions-item item--fb">
+                  <svg class="more-questions__svg" width="44px" height="80px" viewbox="0 0 44 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Text-Styles-Copy" transform="translate(-560.000000, -1728.000000)" fill="#E0E1E2">
+                        <path id="Fill-1" d="M601.69953,1728.01667 L591.305688,1728 C579.629387,1728 572.084622,1735.72726 572.084622,1747.68772 L572.084622,1756.76577 L561.634116,1756.76577 C560.731644,1756.76577 560,1757.49658 560,1758.39738 L560,1771.54947 C560,1772.45111 560.732477,1773.18109 561.634116,1773.18109 L572.083789,1773.18109 L572.083789,1806.36838 C572.083789,1807.27002 572.815433,1808 573.717905,1808 L587.351645,1808 C588.25495,1808 588.985761,1807.26919 588.985761,1806.36838 L588.985761,1773.18109 L601.204546,1773.18109 C602.107017,1773.18109 602.838661,1772.45111 602.838661,1771.54947 L602.843661,1758.39738 C602.843661,1757.9649 602.671167,1757.55074 602.364509,1757.24409 C602.057852,1756.93743 601.642032,1756.76577 601.208712,1756.76577 L588.987427,1756.76577 L588.987427,1749.07017 C588.987427,1745.37196 589.8699,1743.49452 594.695582,1743.49452 L601.697864,1743.49202 C602.600335,1743.49202 603.331146,1742.76121 603.331146,1741.8604 L603.331146,1729.64828 C603.331146,1728.74831 602.601169,1728.01833 601.69953,1728.01667"></path>
+                      </g>
+                    </g>
+                  </svg><a class="more-questions__link" href="">Facebook</a>
+                </div>
+                <div class="more-questions__actions-item item--telegram">
+                  <svg class="more-questions__svg" width="80px" height="68px" viewbox="0 0 80 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Text-Styles-Copy" transform="translate(-696.000000, -1735.000000)" fill="#E0E1E2">
+                        <path id="Page-1" d="M761.452175,1748.53121 L727.34165,1779.36922 L726.01338,1793.56341 L719.300487,1772.9419 L759.137164,1747.75835 C761.125933,1746.54986 762.949355,1747.19967 761.452175,1748.53121 M770.59882,1735.44458 L699.734736,1762.83167 C694.898105,1764.77606 694.926751,1767.47906 698.853082,1768.68443 L716.526838,1774.21169 L723.289157,1794.98623 C724.111292,1797.25998 723.706087,1798.16182 726.088929,1798.16182 C727.927935,1798.16182 728.743688,1797.32172 729.767981,1796.3191 C730.419277,1795.68042 734.286385,1791.9132 738.604265,1787.70664 L756.988243,1801.31678 C760.371184,1803.1868 762.813693,1802.21802 763.656163,1798.16865 L775.723844,1741.18735 C776.959347,1736.22397 773.835411,1733.97263 770.59882,1735.44458"></path>
+                      </g>
+                    </g>
+                  </svg><a class="more-questions__link" href="">Telegram</a>
+                </div>
+              </div>
+            </div>
+            <div class="accordion__head">
+              <h2>Что такое кредитная карта с льготным периодом?</h2>
+              <div class="accordion__head-cross"><img src="common/images/close.svg"></div>
+            </div>
+            <div class="accordion__body accordion--card">
+              <div class="accordion__body-left">
+                <p>Кредитная карта с льготным периодом — это банковская карта с установленным лимитом кредитования, предназначенная для оплаты, резервирования товаров и услуг, а также для получения наличных денежных средств, которая позволяет бесплатно пользоваться кредитными средствами в течение определенного периода.</p>
+              </div>
+              <div class="accordion__body-sidebar">
+                <div class="more-questions__actions-item item--fb">
+                  <svg class="more-questions__svg" width="44px" height="80px" viewbox="0 0 44 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Text-Styles-Copy" transform="translate(-560.000000, -1728.000000)" fill="#E0E1E2">
+                        <path id="Fill-1" d="M601.69953,1728.01667 L591.305688,1728 C579.629387,1728 572.084622,1735.72726 572.084622,1747.68772 L572.084622,1756.76577 L561.634116,1756.76577 C560.731644,1756.76577 560,1757.49658 560,1758.39738 L560,1771.54947 C560,1772.45111 560.732477,1773.18109 561.634116,1773.18109 L572.083789,1773.18109 L572.083789,1806.36838 C572.083789,1807.27002 572.815433,1808 573.717905,1808 L587.351645,1808 C588.25495,1808 588.985761,1807.26919 588.985761,1806.36838 L588.985761,1773.18109 L601.204546,1773.18109 C602.107017,1773.18109 602.838661,1772.45111 602.838661,1771.54947 L602.843661,1758.39738 C602.843661,1757.9649 602.671167,1757.55074 602.364509,1757.24409 C602.057852,1756.93743 601.642032,1756.76577 601.208712,1756.76577 L588.987427,1756.76577 L588.987427,1749.07017 C588.987427,1745.37196 589.8699,1743.49452 594.695582,1743.49452 L601.697864,1743.49202 C602.600335,1743.49202 603.331146,1742.76121 603.331146,1741.8604 L603.331146,1729.64828 C603.331146,1728.74831 602.601169,1728.01833 601.69953,1728.01667"></path>
+                      </g>
+                    </g>
+                  </svg><a class="more-questions__link" href="">Facebook</a>
+                </div>
+                <div class="more-questions__actions-item item--telegram">
+                  <svg class="more-questions__svg" width="80px" height="68px" viewbox="0 0 80 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Text-Styles-Copy" transform="translate(-696.000000, -1735.000000)" fill="#E0E1E2">
+                        <path id="Page-1" d="M761.452175,1748.53121 L727.34165,1779.36922 L726.01338,1793.56341 L719.300487,1772.9419 L759.137164,1747.75835 C761.125933,1746.54986 762.949355,1747.19967 761.452175,1748.53121 M770.59882,1735.44458 L699.734736,1762.83167 C694.898105,1764.77606 694.926751,1767.47906 698.853082,1768.68443 L716.526838,1774.21169 L723.289157,1794.98623 C724.111292,1797.25998 723.706087,1798.16182 726.088929,1798.16182 C727.927935,1798.16182 728.743688,1797.32172 729.767981,1796.3191 C730.419277,1795.68042 734.286385,1791.9132 738.604265,1787.70664 L756.988243,1801.31678 C760.371184,1803.1868 762.813693,1802.21802 763.656163,1798.16865 L775.723844,1741.18735 C776.959347,1736.22397 773.835411,1733.97263 770.59882,1735.44458"></path>
+                      </g>
+                    </g>
+                  </svg><a class="more-questions__link" href="">Telegram</a>
+                </div>
+              </div>
+            </div>
+            <div class="accordion__head">
+              <h2>Что такое кредитная карта с льготным периодом?</h2>
+              <div class="accordion__head-cross"><img src="common/images/close.svg"></div>
+            </div>
+            <div class="accordion__body accordion--card">
+              <div class="accordion__body-left">
+                <p>Кредитная карта с льготным периодом — это банковская карта с установленным лимитом кредитования, предназначенная для оплаты, резервирования товаров и услуг, а также для получения наличных денежных средств, которая позволяет бесплатно пользоваться кредитными средствами в течение определенного периода.</p>
+              </div>
+              <div class="accordion__body-sidebar">
+                <div class="more-questions__actions-item item--fb">
+                  <svg class="more-questions__svg" width="44px" height="80px" viewbox="0 0 44 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Text-Styles-Copy" transform="translate(-560.000000, -1728.000000)" fill="#E0E1E2">
+                        <path id="Fill-1" d="M601.69953,1728.01667 L591.305688,1728 C579.629387,1728 572.084622,1735.72726 572.084622,1747.68772 L572.084622,1756.76577 L561.634116,1756.76577 C560.731644,1756.76577 560,1757.49658 560,1758.39738 L560,1771.54947 C560,1772.45111 560.732477,1773.18109 561.634116,1773.18109 L572.083789,1773.18109 L572.083789,1806.36838 C572.083789,1807.27002 572.815433,1808 573.717905,1808 L587.351645,1808 C588.25495,1808 588.985761,1807.26919 588.985761,1806.36838 L588.985761,1773.18109 L601.204546,1773.18109 C602.107017,1773.18109 602.838661,1772.45111 602.838661,1771.54947 L602.843661,1758.39738 C602.843661,1757.9649 602.671167,1757.55074 602.364509,1757.24409 C602.057852,1756.93743 601.642032,1756.76577 601.208712,1756.76577 L588.987427,1756.76577 L588.987427,1749.07017 C588.987427,1745.37196 589.8699,1743.49452 594.695582,1743.49452 L601.697864,1743.49202 C602.600335,1743.49202 603.331146,1742.76121 603.331146,1741.8604 L603.331146,1729.64828 C603.331146,1728.74831 602.601169,1728.01833 601.69953,1728.01667"></path>
+                      </g>
+                    </g>
+                  </svg><a class="more-questions__link" href="">Facebook</a>
+                </div>
+                <div class="more-questions__actions-item item--telegram">
+                  <svg class="more-questions__svg" width="80px" height="68px" viewbox="0 0 80 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Text-Styles-Copy" transform="translate(-696.000000, -1735.000000)" fill="#E0E1E2">
+                        <path id="Page-1" d="M761.452175,1748.53121 L727.34165,1779.36922 L726.01338,1793.56341 L719.300487,1772.9419 L759.137164,1747.75835 C761.125933,1746.54986 762.949355,1747.19967 761.452175,1748.53121 M770.59882,1735.44458 L699.734736,1762.83167 C694.898105,1764.77606 694.926751,1767.47906 698.853082,1768.68443 L716.526838,1774.21169 L723.289157,1794.98623 C724.111292,1797.25998 723.706087,1798.16182 726.088929,1798.16182 C727.927935,1798.16182 728.743688,1797.32172 729.767981,1796.3191 C730.419277,1795.68042 734.286385,1791.9132 738.604265,1787.70664 L756.988243,1801.31678 C760.371184,1803.1868 762.813693,1802.21802 763.656163,1798.16865 L775.723844,1741.18735 C776.959347,1736.22397 773.835411,1733.97263 770.59882,1735.44458"></path>
+                      </g>
+                    </g>
+                  </svg><a class="more-questions__link" href="">Telegram</a>
+                </div>
+              </div>
+            </div>
+            <div class="accordion__head">
+              <h2>Что такое кредитная карта с льготным периодом?</h2>
+              <div class="accordion__head-cross"><img src="common/images/close.svg"></div>
+            </div>
+            <div class="accordion__body accordion--card">
+              <div class="accordion__body-left">
+                <p>Кредитная карта с льготным периодом — это банковская карта с установленным лимитом кредитования, предназначенная для оплаты, резервирования товаров и услуг, а также для получения наличных денежных средств, которая позволяет бесплатно пользоваться кредитными средствами в течение определенного периода.</p>
+              </div>
+              <div class="accordion__body-sidebar">
+                <div class="more-questions__actions-item item--fb">
+                  <svg class="more-questions__svg" width="44px" height="80px" viewbox="0 0 44 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Text-Styles-Copy" transform="translate(-560.000000, -1728.000000)" fill="#E0E1E2">
+                        <path id="Fill-1" d="M601.69953,1728.01667 L591.305688,1728 C579.629387,1728 572.084622,1735.72726 572.084622,1747.68772 L572.084622,1756.76577 L561.634116,1756.76577 C560.731644,1756.76577 560,1757.49658 560,1758.39738 L560,1771.54947 C560,1772.45111 560.732477,1773.18109 561.634116,1773.18109 L572.083789,1773.18109 L572.083789,1806.36838 C572.083789,1807.27002 572.815433,1808 573.717905,1808 L587.351645,1808 C588.25495,1808 588.985761,1807.26919 588.985761,1806.36838 L588.985761,1773.18109 L601.204546,1773.18109 C602.107017,1773.18109 602.838661,1772.45111 602.838661,1771.54947 L602.843661,1758.39738 C602.843661,1757.9649 602.671167,1757.55074 602.364509,1757.24409 C602.057852,1756.93743 601.642032,1756.76577 601.208712,1756.76577 L588.987427,1756.76577 L588.987427,1749.07017 C588.987427,1745.37196 589.8699,1743.49452 594.695582,1743.49452 L601.697864,1743.49202 C602.600335,1743.49202 603.331146,1742.76121 603.331146,1741.8604 L603.331146,1729.64828 C603.331146,1728.74831 602.601169,1728.01833 601.69953,1728.01667"></path>
+                      </g>
+                    </g>
+                  </svg><a class="more-questions__link" href="">Facebook</a>
+                </div>
+                <div class="more-questions__actions-item item--telegram">
+                  <svg class="more-questions__svg" width="80px" height="68px" viewbox="0 0 80 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Text-Styles-Copy" transform="translate(-696.000000, -1735.000000)" fill="#E0E1E2">
+                        <path id="Page-1" d="M761.452175,1748.53121 L727.34165,1779.36922 L726.01338,1793.56341 L719.300487,1772.9419 L759.137164,1747.75835 C761.125933,1746.54986 762.949355,1747.19967 761.452175,1748.53121 M770.59882,1735.44458 L699.734736,1762.83167 C694.898105,1764.77606 694.926751,1767.47906 698.853082,1768.68443 L716.526838,1774.21169 L723.289157,1794.98623 C724.111292,1797.25998 723.706087,1798.16182 726.088929,1798.16182 C727.927935,1798.16182 728.743688,1797.32172 729.767981,1796.3191 C730.419277,1795.68042 734.286385,1791.9132 738.604265,1787.70664 L756.988243,1801.31678 C760.371184,1803.1868 762.813693,1802.21802 763.656163,1798.16865 L775.723844,1741.18735 C776.959347,1736.22397 773.835411,1733.97263 770.59882,1735.44458"></path>
+                      </g>
+                    </g>
+                  </svg><a class="more-questions__link" href="">Telegram</a>
+                </div>
+              </div>
+            </div>
+            <div class="accordion__head">
+              <h2>Что такое кредитная карта с льготным периодом?</h2>
+              <div class="accordion__head-cross"><img src="common/images/close.svg"></div>
+            </div>
+            <div class="accordion__body accordion--card">
+              <div class="accordion__body-left">
+                <p>Кредитная карта с льготным периодом — это банковская карта с установленным лимитом кредитования, предназначенная для оплаты, резервирования товаров и услуг, а также для получения наличных денежных средств, которая позволяет бесплатно пользоваться кредитными средствами в течение определенного периода.</p>
+              </div>
+              <div class="accordion__body-sidebar">
+                <div class="more-questions__actions-item item--fb">
+                  <svg class="more-questions__svg" width="44px" height="80px" viewbox="0 0 44 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Text-Styles-Copy" transform="translate(-560.000000, -1728.000000)" fill="#E0E1E2">
+                        <path id="Fill-1" d="M601.69953,1728.01667 L591.305688,1728 C579.629387,1728 572.084622,1735.72726 572.084622,1747.68772 L572.084622,1756.76577 L561.634116,1756.76577 C560.731644,1756.76577 560,1757.49658 560,1758.39738 L560,1771.54947 C560,1772.45111 560.732477,1773.18109 561.634116,1773.18109 L572.083789,1773.18109 L572.083789,1806.36838 C572.083789,1807.27002 572.815433,1808 573.717905,1808 L587.351645,1808 C588.25495,1808 588.985761,1807.26919 588.985761,1806.36838 L588.985761,1773.18109 L601.204546,1773.18109 C602.107017,1773.18109 602.838661,1772.45111 602.838661,1771.54947 L602.843661,1758.39738 C602.843661,1757.9649 602.671167,1757.55074 602.364509,1757.24409 C602.057852,1756.93743 601.642032,1756.76577 601.208712,1756.76577 L588.987427,1756.76577 L588.987427,1749.07017 C588.987427,1745.37196 589.8699,1743.49452 594.695582,1743.49452 L601.697864,1743.49202 C602.600335,1743.49202 603.331146,1742.76121 603.331146,1741.8604 L603.331146,1729.64828 C603.331146,1728.74831 602.601169,1728.01833 601.69953,1728.01667"></path>
+                      </g>
+                    </g>
+                  </svg><a class="more-questions__link" href="">Facebook</a>
+                </div>
+                <div class="more-questions__actions-item item--telegram">
+                  <svg class="more-questions__svg" width="80px" height="68px" viewbox="0 0 80 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Text-Styles-Copy" transform="translate(-696.000000, -1735.000000)" fill="#E0E1E2">
+                        <path id="Page-1" d="M761.452175,1748.53121 L727.34165,1779.36922 L726.01338,1793.56341 L719.300487,1772.9419 L759.137164,1747.75835 C761.125933,1746.54986 762.949355,1747.19967 761.452175,1748.53121 M770.59882,1735.44458 L699.734736,1762.83167 C694.898105,1764.77606 694.926751,1767.47906 698.853082,1768.68443 L716.526838,1774.21169 L723.289157,1794.98623 C724.111292,1797.25998 723.706087,1798.16182 726.088929,1798.16182 C727.927935,1798.16182 728.743688,1797.32172 729.767981,1796.3191 C730.419277,1795.68042 734.286385,1791.9132 738.604265,1787.70664 L756.988243,1801.31678 C760.371184,1803.1868 762.813693,1802.21802 763.656163,1798.16865 L775.723844,1741.18735 C776.959347,1736.22397 773.835411,1733.97263 770.59882,1735.44458"></path>
+                      </g>
+                    </g>
+                  </svg><a class="more-questions__link" href="">Telegram</a>
+                </div>
+              </div>
+            </div>
+            <div class="accordion__head">
+              <h2>Что такое кредитная карта с льготным периодом?</h2>
+              <div class="accordion__head-cross"><img src="common/images/close.svg"></div>
+            </div>
+            <div class="accordion__body accordion--card">
+              <div class="accordion__body-left">
+                <p>Кредитная карта с льготным периодом — это банковская карта с установленным лимитом кредитования, предназначенная для оплаты, резервирования товаров и услуг, а также для получения наличных денежных средств, которая позволяет бесплатно пользоваться кредитными средствами в течение определенного периода.</p>
+              </div>
+              <div class="accordion__body-sidebar">
+                <div class="more-questions__actions-item item--fb">
+                  <svg class="more-questions__svg" width="44px" height="80px" viewbox="0 0 44 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Text-Styles-Copy" transform="translate(-560.000000, -1728.000000)" fill="#E0E1E2">
+                        <path id="Fill-1" d="M601.69953,1728.01667 L591.305688,1728 C579.629387,1728 572.084622,1735.72726 572.084622,1747.68772 L572.084622,1756.76577 L561.634116,1756.76577 C560.731644,1756.76577 560,1757.49658 560,1758.39738 L560,1771.54947 C560,1772.45111 560.732477,1773.18109 561.634116,1773.18109 L572.083789,1773.18109 L572.083789,1806.36838 C572.083789,1807.27002 572.815433,1808 573.717905,1808 L587.351645,1808 C588.25495,1808 588.985761,1807.26919 588.985761,1806.36838 L588.985761,1773.18109 L601.204546,1773.18109 C602.107017,1773.18109 602.838661,1772.45111 602.838661,1771.54947 L602.843661,1758.39738 C602.843661,1757.9649 602.671167,1757.55074 602.364509,1757.24409 C602.057852,1756.93743 601.642032,1756.76577 601.208712,1756.76577 L588.987427,1756.76577 L588.987427,1749.07017 C588.987427,1745.37196 589.8699,1743.49452 594.695582,1743.49452 L601.697864,1743.49202 C602.600335,1743.49202 603.331146,1742.76121 603.331146,1741.8604 L603.331146,1729.64828 C603.331146,1728.74831 602.601169,1728.01833 601.69953,1728.01667"></path>
+                      </g>
+                    </g>
+                  </svg><a class="more-questions__link" href="">Facebook</a>
+                </div>
+                <div class="more-questions__actions-item item--telegram">
+                  <svg class="more-questions__svg" width="80px" height="68px" viewbox="0 0 80 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Text-Styles-Copy" transform="translate(-696.000000, -1735.000000)" fill="#E0E1E2">
+                        <path id="Page-1" d="M761.452175,1748.53121 L727.34165,1779.36922 L726.01338,1793.56341 L719.300487,1772.9419 L759.137164,1747.75835 C761.125933,1746.54986 762.949355,1747.19967 761.452175,1748.53121 M770.59882,1735.44458 L699.734736,1762.83167 C694.898105,1764.77606 694.926751,1767.47906 698.853082,1768.68443 L716.526838,1774.21169 L723.289157,1794.98623 C724.111292,1797.25998 723.706087,1798.16182 726.088929,1798.16182 C727.927935,1798.16182 728.743688,1797.32172 729.767981,1796.3191 C730.419277,1795.68042 734.286385,1791.9132 738.604265,1787.70664 L756.988243,1801.31678 C760.371184,1803.1868 762.813693,1802.21802 763.656163,1798.16865 L775.723844,1741.18735 C776.959347,1736.22397 773.835411,1733.97263 770.59882,1735.44458"></path>
+                      </g>
+                    </g>
+                  </svg><a class="more-questions__link" href="">Telegram</a>
                 </div>
               </div>
             </div>
@@ -1363,11 +1496,9 @@
   <script src="common/scripts/jquery.min.js"></script>
   <script src="common/scripts/jquery-ui.min.js"></script>
   <script src="common/scripts/jquery.ui.touch-punch.min.js"></script>
-  <script src="common/scripts/jquery-numerator.js"></script>
-  <script src="common/scripts/inputmask.min.js"></script>
-  <script src="common/scripts/jquery.inputmask.min.js"></script>
-  <script src="common/scripts/inputmask.numeric.extensions.min.js"></script>
   <script src="common/scripts/flowtype.min.js"></script>
+  <!--script(src='common/scripts/isotope.pkgd.min.js')-->
+  <script src="common/scripts/slick.min.js"></script>
   <script src="../headsupgrid/hugrid.js"></script>
   <script src="common/scripts/tabs.min.js"></script>
   <script src="common/scripts/loadmore.min.js"></script>

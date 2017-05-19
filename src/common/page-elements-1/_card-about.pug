@@ -231,19 +231,129 @@
                             h4 50%
                             span скидки на напитки в Шоколаднице по Samsung Pay
     #tab-2.tab-content
-        include ../page-elements-1/_tarif
-        include ../page-elements-1/_more-questions
+        .conditions.conditions--tarif.container
+            .conditions__row.conditions__row--currency
+                .conditions__title
+                    h3 Валюта карты
+                .conditions__desc
+                    .col-currency.currency--exist.currency--active(data-currency='ruble')
+                        span.currency--value ₽
+                    .col-currency(data-currency='dollar')
+                        span.currency--value $
+                    .col-currency.currency--exist(data-currency='euro')
+                        span.currency--value €
+            .conditions__row
+                .conditions__title
+                    h3 Начисление миль
+                .conditions__desc
+                    .col-currency.currency--ruble
+                        p 50₽ = 1 миля
+                    .col-currency.currency--dollar &#8203;
+                    .col-currency.currency--euro
+                        p 50₽ = 1 миля
+            .conditions__row
+                .conditions__title
+                    h3 СМС-Банк
+                .conditions__desc
+                    .col-currency.currency--ruble
+                        p 0₽
+                    .col-currency.currency--dollar &#8203;
+                    .col-currency.currency--euro
+                        p 10₽
+            .conditions__row
+                .conditions__title
+                    h3 Интернет-банк
+                .conditions__desc
+                    .col-currency.currency--ruble
+                        p 0₽
+                    .col-currency.currency--dollar &#8203;
+                    .col-currency.currency--euro
+                        p 10₽
+            .conditions__row
+                .conditions__title
+                    h3 Мобильный банк
+                .conditions__desc
+                    .col-currency.currency--ruble
+                        p 0₽
+                    .col-currency.currency--dollar &#8203;
+                    .col-currency.currency--euro
+                        p 10₽
+            .conditions__row
+                .conditions__title
+                    h3 Обслуживание счета (в год)
+                .conditions__desc
+                    .col-currency.currency--ruble
+                        p 2 990₽
+                        p.small-text.grey-color основная карта
+                        p 500₽
+                        p.small-text.grey-color дополнительная карта
+                    .col-currency.currency--dollar &#8203;
+                    .col-currency.currency--euro
+                        p 500₽
+                            p.small-text.grey-color дополнительная карта
+            .conditions__row
+                .conditions__title
+                    h3 Перевод и выдачу наличных
+                .conditions__desc
+                    .col-currency.currency--ruble
+                        p 3% + 300₽
+                        p.small-text.grey-color от снятия
+                    .col-currency.currency--dollar &#8203;
+                    .col-currency.currency--euro
+                        p 3% + 300₽
+                            p.small-text.grey-color от снятия
+            .conditions__row
+                .conditions__title
+                    h3 Выдачу наличных
+                        br
+                        |в сторонних банках
+                .conditions__desc
+                    .col-currency.currency--ruble
+                        p 3,9% + 390₽
+                        p.small-text.grey-color от снятия
+                    .col-currency.currency--dollar &#8203;
+                    .col-currency.currency--euro
+                        p 3,9% + 390₽
+                        p.small-text.grey-color от снятия
+            .conditions__row
+                .conditions__title
+                    h3 Операции за рубежом
+                        br
+                        |в валюте отличной
+                        br
+                        |от валюты счета
+                .conditions__desc
+                    .col-currency.currency--ruble
+                        p 3% + 300₽
+                        p.small-text.grey-color от снятия
+                    .col-currency.currency--dollar &#8203;
+                    .col-currency.currency--euro
+                        p 3% + 300₽
+                            p.small-text.grey-color от снятия
+            .conditions__row
+                .conditions__title
+                    h3 Комиссия за внесение наличных
+                .conditions__desc
+                    .col-currency.currency--ruble
+                        p 100₽
+                        p.small-text.grey-color до 10 000 руб.
+                        p 100₽
+                        p.small-text.grey-color от 10 000 руб. а так же в других валютах
+                    .col-currency.currency--dollar &#8203;
+                    .col-currency.currency--euro
+                        p 100₽
+                            p.small-text.grey-color до 10 000 руб.
     #tab-3.tab-content
         include ../page-elements-sansay/_tabs_accordion--cards
     #tab-4.tab-content
         .accordion.container
             - var n = 0
             while n < 7
-                .accordion__head.loaded-block
+                .accordion__head
                     h2 Что такое кредитная карта с льготным периодом?
                     .accordion__head-cross
                         img(src='common/images/close.svg')
-                .accordion__body.accordion--card.loaded-block
+                .accordion__body.accordion--card
                     .accordion__body-left
                         p Кредитная карта с льготным периодом — это банковская карта с установленным лимитом кредитования, предназначенная для оплаты, резервирования товаров и услуг, а также для получения наличных денежных средств, которая позволяет бесплатно пользоваться кредитными средствами в течение определенного периода.
                     .accordion__body-sidebar

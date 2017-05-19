@@ -35,6 +35,17 @@
       .small-text
         font-size: 75%
 
+  &--tarif
+    .conditions__title
+      font-family: 'futura-book', sans-serif
+      .small-text
+        font-size: 62.5%
+    .conditions__desc
+      p
+        margin-bottom: calcRem(8px)
+        margin-left: 0
+      .small-text
+        font-size: 75%
   &__svg
     margin-left: calcRem(5px)
     position: relative
@@ -98,3 +109,70 @@
   100%
     opacity: 1
     transform: translateY(0)
+
+
+.conditions--tarif
+  .conditions__title
+    width: 40%
+  .conditions__desc
+    width: 60%
+  .conditions__desc
+    @include clearfix
+  .col-currency
+    width: 33.33%
+    float: left
+    display: inline-block
+  @media screen and (max-width: 1000px)
+    .conditions__row--currency
+      .col-currency
+        width: 33.33%
+        float: left
+        display: inline-block
+      .conditions__title, .conditions__desc
+        display: block
+        float: none
+        width: 100%
+        padding-left: 0
+    .conditions__title, .conditions__desc
+      display: inline-block
+      float: left
+      margin-bottom: 0
+    .conditions__title
+      width: 40%
+    .conditions__desc
+      width: 60%
+      padding-left: calcRem(30px)
+    .col-currency
+      width: 100%
+      float: none
+      display: block
+    .currency--dollar, .currency--euro
+      display: none
+
+    .conditions__row--currency
+      .col-currency
+        margin-top: calcRem(15px)
+    .currency--active
+      margin-top: 0
+      .currency--value
+        background: $yellow!important
+        color: $black
+.conditions__row--currency
+  width: 115%
+  margin-left: -7.5%
+  padding: calcRem(40px) 7.5%
+  background: $white-grey
+  .conditions__title
+    line-height: calcRem(75px)
+  .currency--exist
+    .currency--value
+      background: $black
+  .currency--value
+    display: block
+    width: calcRem(75px)
+    height: calcRem(75px)
+    text-align: center
+    line-height: calcRem(75px)
+    background: $icons-color
+    font-size: calcRem(48px)
+    color: $white-grey

@@ -130,10 +130,11 @@
 
 .card-image-transform
   opacity: 0
-  animation: card-rotate 1s 3s forwards
   img
     width: 100%
 
+.card-image-transform--start
+  animation: card-rotate 2s forwards
 
 .cards-wrapper
   .mortgage__block-image
@@ -218,6 +219,7 @@
     max-width: calcRem(570px)
     margin-right: calcRem(30px)
     margin-bottom: calcRem(15px)
+    display: inline-block
     &:last-child
       margin-right: 0
 
@@ -435,6 +437,6 @@
     width: calcRem(170px)!important
     margin-right: calcRem(30px)!important
     &:last-child
-      margin-right: 0
+      margin-right: 0!important
   .more-questions__svg
     right: auto!important

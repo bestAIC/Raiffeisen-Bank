@@ -12,7 +12,7 @@
 </head>
 <body class="loading">
   <!--Popup-->
-  <div class="popup-links">
+  <div class="popup-links popup">
     <div class="popup-links__content">
       <ul class="popup-links__list">
         <li class="popup-links__list-item"><a class="popup-links__link" href="">Для жизни</a><span class="popup-links__link-icon fa fa-check"></span></li>
@@ -23,7 +23,7 @@
       </ul>
     </div>
   </div>
-  <div class="popup-numbers">
+  <div class="popup-numbers popup">
     <div class="popup-numbers__content">
       <ul class="popup-numbers__list">
         <li class="popup-numbers__list-item"><a class="popup-numbers__link" href="link:+74957219100">+7 495 721-91-00<br><span class="popup-numbers__link-desc grey-color">для звонков из Москвы</span></a></li>
@@ -31,7 +31,7 @@
       </ul>
     </div>
   </div>
-  <div class="popup-tarif">
+  <div class="popup-tarif popup">
     <div class="popup-tarif__content"><span class="popup-tarif__close-svg"></span>
       <div class="popup-tarif__container">
         <div class="title-block container--m">
@@ -675,6 +675,20 @@
   </div>
   <div class="body-container">
     <div class="wrapper cards-wrapper">
+      <!--
+      Created by renat on 16.05.17.
+      
+      -->
+      <div class="banner" id="bannerVideo"><a class="banner-bg-video" href="">
+          <video preload="metadata" autoplay muted webkit-playsinline playsinline>
+            <source src="common/images/video.mp4">
+            <source src="common/images/video.webm">
+          </video>
+          <div class="banner-progress" id="bannerVideoProgress"></div>
+          <div class="banner-content">
+            <h4 class="banner-heading">Всё самое лучшее в одной карте!</h4>
+            <p class="banner-text">До 5% cash back на любые покупки, мили S7, поездки на Яндекс Такси,<br>сертификаты в Ozon</p>
+          </div></a></div>
       <div class="morgage-wrapper">
         <div class="mortgage__block-image">
           <div class="card-image-transform"><img src="common/images/kard.jpg"></div>
@@ -1016,44 +1030,6 @@
           <div class="load-more__button">Все кредитные карты<span class="badge" id="count-hidden"></span></div>
         </div>
       </div>
-      <!--.b-card-list-->
-      <!--    .b-card-list__container.container-->
-      <!--        h3.b-card-list__title Использование миль-->
-      <!--        p.b-card-list__desc.grey-color С помощью накопленных миль Miles&More вы можете-->
-      <!--        .b-card-list__slider-->
-      <!--            .b-card-list__item-->
-      <!--                a.b-card-list__item-image(href='')-->
-      <!--                a.b-card-list__item-link--small(href='')-->
-      <!--                    span Премиальные билеты от группы Austrian Airlines-->
-      <!--            .b-card-list__item-->
-      <!--                a.b-card-list__item-image(href='')-->
-      <!--                a.b-card-list__item-link--small(href='')-->
-      <!--                    span Повысить класс обслуживания полёта-->
-      <!--            .b-card-list__item-->
-      <!--                a.b-card-list__item-image(href='')-->
-      <!--                a.b-card-list__item-link--small(href='')-->
-      <!--                    span Выбрать товарыи услуги на сайте Miles&More-->
-      <!---->
-      <!---->
-      <!--.b-card-list-->
-      <!--    .b-card-list__container.container-->
-      <!--        h3.b-card-list__title Специальные предложения-->
-      <!--        .b-card-list__slider-->
-      <!--            .b-card-list__item-->
-      <!--                a.b-card-list__item-image(href='')-->
-      <!--                a.b-card-list__item-link(href='')-->
-      <!--                    h4 1%-->
-      <!--                    span от заработной платы обратно на счёт в течение 6 месяцев-->
-      <!--            .b-card-list__item-->
-      <!--                a.b-card-list__item-image(href='')-->
-      <!--                a.b-card-list__item-link(href='')-->
-      <!--                    h4 15,9%-->
-      <!--                    span одна ставка для всех кредитов-->
-      <!--            .b-card-list__item-->
-      <!--                a.b-card-list__item-image(href='')-->
-      <!--                a.b-card-list__item-link(href='')-->
-      <!--                    h4 50%-->
-      <!--                    span скидки на напитки в Шоколаднице по Samsung Pay-->
       <div class="mobile-payment">
         <div class="container">
           <div class="mobile-payment__content">
@@ -1070,9 +1046,19 @@
             <div class="mobile-payment__item">
               <svg class="android-pay" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 790 820">
                 <style>
-                  .st0 {fill: #000000 }
-                  .st1 {  fill-rule: evenodd;  clip-rule: evenodd;  fill: #000000 }
-                  .st2 {  fill: #000000  }
+                  .st0 {
+                      fill: #000000
+                  }
+                  
+                  .st1 {
+                      fill-rule: evenodd;
+                      clip-rule: evenodd;
+                      fill: #000000
+                  }
+                  
+                  .st2 {
+                      fill: #000000
+                  }
                 </style>
                 <path class="st0" d="M238.4 575.6c-.1 1.5-.2 3-.2 4.6 0 12.7-.1 25.4 0 38.2 0 3.2-1 4.3-4.1 4.1-2.9-.2-5.8-.2-8.7 0-2.6.1-3.5-1-3.4-3.5.2-3.3 0-6.6 0-9.9 0-43.5.1-86.9-.1-130.4 0-4.1 1.2-5.5 5.2-5 2.4.3 4.8.3 7.1 0 3.3-.4 4.2 1.1 4 4.1-.2 2.7 0 5.4.5 8.5 16.6-13.8 34.9-18.2 55.3-12.2 12.8 3.8 22.9 11.4 30.5 22.3 16 22.9 14.2 53.7-4.7 74.8-10.4 11.6-23.7 17.9-39.4 18.8-15.7.9-29.3-4.2-41-14.8-.3 0-.7.2-1 .4zm-.4-28c-.3 5.1 1.6 9 4.9 12.5 12.3 13 27.4 17.2 44.5 12.6 16.1-4.4 26.5-15.3 30.3-31.5 4.1-17.6-.8-32.7-14.7-44.5-8-6.8-17.3-9.6-27.8-9.6-13.6.1-24.6 5.3-33.4 15.5-2.5 2.9-3.9 6.1-3.8 10.1.2 5.9.3 29.3 0 34.9zM444 575c-27.5 24.6-63.5 15.1-80.5-3.9-19.3-21.5-20.6-55.5-2.7-77.8 6.7-8.3 15-14.6 25-18.3 9.9-3.6 20-4.7 30.4-2.8 10.5 1.9 19.6 6.8 28.5 14.7 0-4.2.1-7.3 0-10.4-.1-2.2.8-3.1 3.1-3.1 3.4.1 6.9-.2 10.3.2 1 .1 1.9 1.8 2.8 2.7.1.1 0 .5 0 .8v106.5c0 2.7-.8 3.9-3.6 3.7-3.8-.2-8.6 1.1-11.2-.7-1.9-1.4-1.1-6.7-1.5-10.3-.1-.2-.3-.6-.6-1.3zm1.3-60.6c.6-7-3-11.9-7.6-16.3-10.8-10.1-24.1-13-38-10.6-27.3 4.8-42.3 32.1-32.9 58.1 10.1 28 42.2 37.4 66.6 20.2 7.7-5.4 13.2-12 11.9-22.5-.5-4.2-.5-23.6 0-28.9zm27.6-40.9c5.9 0 11.2-.2 16.5.2 1.3.1 2.9 2 3.5 3.4 10.8 25.7 21.5 51.4 32.2 77.1 1.3 3.1 2.7 6.2 4.4 10.2 1.1-2.1 1.9-3.3 2.4-4.6 11.5-27.4 22.9-54.8 34.3-82.3 1.2-3 2.7-4.4 6.1-4.1 4.3.3 8.7.1 13.7.1-1.2 3-2.2 5.5-3.3 8-16.6 38.6-33.3 77.1-49.9 115.7-5.4 12.6-14.2 21.6-28 24.7-3.8.8-7.8.8-11.8 1.2-2.2.2-3.2-.7-3.1-3 .1-3.4.1-6.9 0-10.3-.1-2.3 1.1-2.8 3.1-3 14.9-1 23.3-7.9 26.7-22 .3-1.4-.5-3.3-1.1-4.8-14.7-34.2-29.4-68.4-44.2-102.6-.5-1-.9-2.1-1.5-3.9z"></path>
                 <path class="st1" d="M389.2 207.2c10.3 0 20 1.9 28.7 5.3l12.9-19.8c.7-1.1 2.1-1.4 3.2-.7s1.4 2.1.7 3.2l-12.4 19.1c20.5 9.5 34.5 34.4 34.9 55.2h-136c.4-20.8 14.4-45.7 34.9-55.2l-12.4-19.1c-.7-1.1-.4-2.5.7-3.2 1.1-.7 2.5-.4 3.2.7l12.9 19.8c8.7-3.4 18.4-5.3 28.7-5.3zm-12.4 182v33.9c0 8.4-6.9 15.3-15.3 15.3s-15.3-6.9-15.3-15.3v-33.9h-12.8c-6.8 0-12.4-5.6-12.4-12.4V275.1h136.2v101.8c0 6.8-5.6 12.4-12.4 12.4H432v33.9c0 8.4-6.9 15.3-15.3 15.3s-15.3-6.9-15.3-15.3v-33.9h-24.6v-.1zm-76.1-116.1c8.4 0 15.3 6.9 15.3 15.3v61.1c0 8.4-6.9 15.3-15.3 15.3s-15.3-6.9-15.3-15.3v-61.1c.1-8.5 6.9-15.3 15.3-15.3zm177.8 0c8.4 0 15.3 6.9 15.3 15.3v61.1c0 8.4-6.9 15.3-15.3 15.3s-15.3-6.9-15.3-15.3v-61.1c0-8.5 6.9-15.3 15.3-15.3zm-119.6-41c4.3 0 7.8 3.5 7.8 7.8s-3.5 7.8-7.8 7.8-7.8-3.5-7.8-7.8 3.5-7.8 7.8-7.8zm61.4 0c4.3 0 7.8 3.5 7.8 7.8s-3.5 7.8-7.8 7.8-7.8-3.5-7.8-7.8 3.5-7.8 7.8-7.8z"></path>
@@ -1086,7 +1072,7 @@
         <div class="tips__wrap container">
           <div class="tips__content">
             <div class="tips__title">
-              <h3 class="tisp__title-content">Уже есть кредитная карта</h3>
+              <h3 class="tisp__title-content">Уже есть<br>кредитная карта</h3>
             </div>
             <div class="tips__links">
               <div class="tips__links-blocks"><a class="tips__links-block" href=""><span>Льготный период кредитования</span></a><a class="tips__links-block" href=""><span>Контроль расхода средств</span></a><a class="tips__links-block" href=""><span>Пополнение и погашения задолженности</span></a><a class="tips__links-block" href=""><span>Увеличение кредитного лимита</span></a></div>

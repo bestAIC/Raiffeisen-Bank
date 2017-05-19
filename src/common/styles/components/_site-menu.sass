@@ -27,7 +27,7 @@
     .menu-button
       opacity: 1
   .site-menu__container
-    transform: translateX(-100vw)
+    transform: translateX(-100%)
 
 .show--site-menu-3
   #menu3
@@ -37,7 +37,7 @@
     .menu-button
       opacity: 1
   .site-menu__container
-    transform: translateX(-200vw)
+    transform: translateX(-200%)
 
 .show--site-menu-4
   #menu4
@@ -47,7 +47,7 @@
     .menu-button
       opacity: 1
   .site-menu__container
-    transform: translateX(-300vw)
+    transform: translateX(-300%)
 
 .show--site-menu-5
   #menu5
@@ -57,7 +57,7 @@
     .menu-button
       opacity: 1
   .site-menu__container
-    transform: translateX(-400vw)
+    transform: translateX(-400%)
 
 .show--site-menu-6
   #menu6
@@ -67,7 +67,7 @@
     .menu-button
       opacity: 1
   .site-menu__container
-    transform: translateX(-500vw)
+    transform: translateX(-500%)
 
 .show--site-menu-7
   #menu7
@@ -77,7 +77,7 @@
     .menu-button
       opacity: 1
   .site-menu__container
-    transform: translateX(-600vw)
+    transform: translateX(-600%)
 
 .site-menu
   background-color: $white
@@ -92,7 +92,7 @@
   opacity: 0
   top: calcRem(132px)
   pointer-events: none
-  transition: 0.2s opacity
+  transition: 0.2s opacity, 0.15s height $easing1
 
 .site-menu__container
   white-space: nowrap
@@ -106,7 +106,8 @@
 #menu5,
 #menu6,
 #menu7
-  width: 100vw
+  width: 100%
+  max-width: 1920px
   display: inline-block
   vertical-align: top
   white-space: normal
@@ -148,7 +149,7 @@
     margin-bottom: 0
 
 .menu-image
- margin-bottom: calcRem(26px)
+  margin-bottom: calcRem(26px)
 
 .menu-image-pic
   width: 100%
@@ -210,7 +211,6 @@
     padding: calcRem(35px) 0
     width: 100%
     display: inline-block
-
 
 .menu-overline
   box-shadow: 0 -1px 0 $icons-color
@@ -294,36 +294,11 @@
   background-color: $white-grey
   transition: 0.2s opacity
 
+.button-menu
+  opacity: 0
+
 .show-share-menu
+  opacity: 1
+  pointer-events: auto
+  .button-menu
     opacity: 1
-    pointer-events: auto
-
-.show-share-menu2
-  .menu-button__container--click
-    opacity: 1
-    pointer-events: auto
-
-.show-share-menu3
-  .menu-button__container--click
-    opacity: 1
-    pointer-events: auto
-
-.show-share-menu4
-  .menu-button__container--click
-    opacity: 1
-    pointer-events: auto
-
-.show-share-menu5
-  .menu-button__container--click
-    opacity: 1
-    pointer-events: auto
-
-.show-share-menu6
-  .menu-button__container--click
-    opacity: 1
-    pointer-events: auto
-
-.show-share-menu7
-  .menu-button__container--click
-    opacity: 1
-    pointer-events: auto

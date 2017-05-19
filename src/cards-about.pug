@@ -20,27 +20,7 @@ body.loading
     include common/page-elements/_menu
     .body-container
         .wrapper.cards-wrapper
-            include common/page-elements-1/_banner
-            include common/page-elements-1/_cards
-            .tips.loaded-block
-                .tips__wrap.container
-                    .tips__content
-                        .tips__title
-                            h3.tisp__title-content Уже есть
-                                br
-                                | кредитная карта
-                        .tips__links
-                            .tips__links-blocks
-                                a.tips__links-block(href='')
-                                    span Льготный период кредитования
-                                a.tips__links-block(href='')
-                                    span Контроль расхода средств
-                                a.tips__links-block(href='')
-                                    span Пополнение и погашения задолженности
-                                a.tips__links-block(href='')
-                                    span Увеличение кредитного лимита
-                            .tips__all
-                                a(href="#3").all-recomendation Все рекомендации
+            include common/page-elements-1/_card-about
             include common/page-elements-1/_likes
             include common/page-elements-1/_footer
     //Preloader
