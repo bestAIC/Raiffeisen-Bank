@@ -2,7 +2,7 @@ include ../page-elements-1/_buttons
 .morgage-wrapper
     .mortgage__block-image
         .card-image-transform
-            img(src='common/images/kard.jpg')
+            img(src='common/images/kard.png')
     .mortgage-intro.container
         .mortgage-intro__block
             .mortgage__block-content
@@ -33,7 +33,7 @@ include ../page-elements-1/_buttons
 
 .card-filter
     .container
-        .card-filter__content.filter--close
+        .card-filter__content.filter--open
             span.card-filter__title Выберите подходящие возможности карты
                 svg(width='16px', height='19px', viewbox='0 0 16 19', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
                     g#Page-1(stroke='none', stroke-width='1', fill='none', fill-rule='evenodd')
@@ -90,7 +90,7 @@ include ../page-elements-1/_buttons
     .mortgage__block.mortgage__block--cards(data-category='cat-1 cat-4')
 
         .mortgage__block-image
-            .image-bg(style="background-image: url(common/images/kard.jpg);")
+            .image-bg(style="background-image: url(common/images/kard.png);")
 
         .mortgage__block-content
             h3.block-content__title #ВСЁСРАЗУ
@@ -122,7 +122,7 @@ include ../page-elements-1/_buttons
     .mortgage__block.mortgage__block--cards(data-category='cat-3 cat-4')
 
         .mortgage__block-image
-            .image-bg(style="background-image: url(common/images/kard.jpg);")
+            .image-bg(style="background-image: url(common/images/kard.png);")
 
         .mortgage__block-content
             h3.block-content__title Наличная карта
@@ -142,7 +142,7 @@ include ../page-elements-1/_buttons
                 .property
                     .property__block
                         h3.property__title 300
-                            span.small-text тыс. ₽
+                            span.small-text тыс. &#8381;
                         p.property__description кредитный лимит по карте
 
             .block-content__order
@@ -155,14 +155,14 @@ include ../page-elements-1/_buttons
     .mortgage__blocks_hidden
         .mortgage__block.mortgage__block--cards#firstInLoaded(data-category='cat-6 cat-2')
             .mortgage__block-image--small
-                .image-bg--small(style="background-image: url(common/images/kard.jpg);")
+                .image-bg--small(style="background-image: url(common/images/kard.png);")
 
             .mortgage__block-content--small
                 h3.block-content__title Покупки в плюс
                 .block-content__description
                     .property
                         .property__block
-                            h3.property__title 0₽
+                            h3.property__title 0&#8381;
                             p.property__description снятие наличных без комиссии
 
                     .property
@@ -184,19 +184,19 @@ include ../page-elements-1/_buttons
 
         .mortgage__block.mortgage__block--cards(data-category='cat-2 cat-1')
             .mortgage__block-image--small
-                .image-bg--small(style="background-image: url(common/images/kard.jpg);")
+                .image-bg--small(style="background-image: url(common/images/kard.png);")
 
             .mortgage__block-content--small
                 h3.block-content__title Austrian Airlines MasterCard World
                 .block-content__description
                     .property
                         .property__block
-                            h3.property__title 0₽
+                            h3.property__title 0&#8381;
                             p.property__description перелеты по всему миру
 
                     .property
                         .property__block
-                            h3.property__title 0₽
+                            h3.property__title 0&#8381;
                                 span.small-text
                             p.property__description страхование путешествий
 
@@ -213,7 +213,7 @@ include ../page-elements-1/_buttons
 
         .mortgage__block.mortgage__block--cards(data-category='cat-6')
             .mortgage__block-image--small
-                .image-bg--small(style="background-image: url(common/images/kard.jpg);")
+                .image-bg--small(style="background-image: url(common/images/kard.png);")
 
             .mortgage__block-content--small
                 h3.block-content__title Travel Rewards
@@ -225,7 +225,7 @@ include ../page-elements-1/_buttons
 
                     .property
                         .property__block
-                            h3.property__title 0₽
+                            h3.property__title 0&#8381;
                                 span.small-text
                             p.property__description страхование путешествий
 
@@ -262,7 +262,7 @@ include ../page-elements-1/_buttons
         //            .property
         //                .property__block
         //                    h3.property__title 8,5%
-        //                        span.small-text млн. ₽
+        //                        span.small-text млн. &#8381;
         //                    p.property__description максимальная сумма
         //
         //        .block-content__order
@@ -291,7 +291,7 @@ include ../page-elements-1/_buttons
         //            .property
         //                .property__block
         //                    h3.property__title 8,5%
-        //                        span.small-text млн. ₽
+        //                        span.small-text млн. &#8381;
         //                    p.property__description максимальная сумма
         //
         //        .block-content__order
@@ -319,7 +319,7 @@ include ../page-elements-1/_buttons
         //            .property
         //                .property__block
         //                    h3.property__title 8,5%
-        //                        span.small-text млн. ₽
+        //                        span.small-text млн. &#8381;
         //                    p.property__description максимальная сумма
         //
         //        .block-content__order

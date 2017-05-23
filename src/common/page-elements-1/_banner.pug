@@ -3,13 +3,13 @@
 
 .banner#bannerVideo
     a.banner-bg-video(href='')
-        video(preload='metadata', autoplay, muted, webkit-playsinline, playsinline)
+        video#banner-video(preload='metadata', muted, webkit-playsinline, playsinline)
             source(src='common/images/video.mp4')
             source(src='common/images/video.webm')
+        .banner-wrapper
         .banner-progress#bannerVideoProgress
         .banner-content
             h4.banner-heading Всё самое лучшее в одной карте!
             p.banner-text До 5% cash back на любые покупки, мили S7, поездки на Яндекс Такси,
                 br
                 | сертификаты в Ozon
-

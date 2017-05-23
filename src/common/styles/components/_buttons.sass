@@ -100,7 +100,12 @@
   margin: 0 5px
   backface-visibility: hidden
   margin-top: calcRem(9px)
-  transition: 0.2s background-color
+  transition: 0.2s background-color, 0.2 opacity
+  $time-offset: 0.1
+  @for $i from 1 through 7
+    &:nth-child(#{$i})
+      $time-offset: $time-offset + 0.025
+      transition: 0.2s background-color, opacity 0.3s #{$time-offset}s
   span
     height: calcRem(20px)
     width: calcRem(40px)

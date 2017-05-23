@@ -4,7 +4,7 @@
 .morgage-wrapper
     .mortgage__block-image
         .card-image-transform
-            img(src='common/images/kard.jpg')
+            img(src='common/images/card-1.jpg')
     .mortgage-intro.container
         .mortgage-intro__block
             .mortgage__block-content
@@ -17,12 +17,12 @@
                 .block-content__description
                     .property
                         .property__block
-                            h3.property__title 0₽
+                            h3.property__title 0&#8381;
                             p.property__description перелеты по всему миру
 
                     .property
                         .property__block
-                            h3.property__title 0₽
+                            h3.property__title 0&#8381;
                                 span.small-text дней
                             p.property__description беспроцентный льготный период
 
@@ -48,7 +48,7 @@
     #tab-1.tab-content.current
         .block-text.container.cols.cols3
             .block-text__item.col
-                .block-text__heading 600 000₽
+                .block-text__heading 600 000&#8381;
                 .block-text__text Максимальный кредитный
                     br
                     | лимит по карте
@@ -59,7 +59,7 @@
                     br
                     |в день обращения
             .block-text__item.col
-                .block-text__heading 0₽
+                .block-text__heading 0&#8381;
                 .block-text__text Интернет-банк, Мобильный банк и SMS-уведомления
         .conditions.container.conditions--card
             .conditions__head
@@ -73,7 +73,7 @@
                         |
                         span.small-text миля
                 .conditions__desc
-                    p За каждые 50₽, потраченных по карте
+                    p За каждые 50&#8381;, потраченных по карте
             .conditions__row
                 .conditions__title
                     h3
@@ -168,25 +168,22 @@
         .b-card-list
             .b-card-list__container.container
                 h3.b-card-list__title Cash&Milles
-                .b-card-list__slider-arrows
-                    .slider-prev
-                        svg.slider-arrow-svg
-                            use(xlink:href='icons.svg#icon-arrow-right')
-                    .slider-next
-                        svg.slider-arrow-svg
-                            use(xlink:href='icons.svg#icon-arrow-left')
                 .b-card-list__slider
-                    a.b-card-list__item
+                    a.b-card-list__item.b-card-list__item--no-image
                         .b-card-list__item-bg
                         .b-card-list__item-icon
+                            svg
+                                use(xlink:href='icons.svg#icon-icon-2')
                         .b-card-list__item-text
                             h3 Купить полёт
                                 br
                                 | за мили
                             p Теперь перелёт можно оплачивать милями полностью либо частично
-                    a.b-card-list__item
+                    a.b-card-list__item.b-card-list__item--no-image
                         .b-card-list__item-bg
                         .b-card-list__item-icon
+                            svg
+                                use(xlink:href='icons.svg#icon-icon-1')
                         .b-card-list__item-text
                             h3 7 000 миль
                             p Этого достаточно, чтобы внести их в стоимость билета при бронировании перелёта на сайте LH.com
@@ -237,7 +234,7 @@
                     h3 Валюта карты
                 .conditions__desc
                     .col-currency.currency--exist.currency--active(data-currency='ruble')
-                        span.currency--value ₽
+                        span.currency--value &#8381;
                     .col-currency(data-currency='dollar')
                         span.currency--value $
                     .col-currency.currency--exist(data-currency='euro')
@@ -247,60 +244,60 @@
                     h3 Начисление миль
                 .conditions__desc
                     .col-currency.currency--ruble
-                        p 50₽ = 1 миля
+                        p 50&#8381; = 1 миля
                     .col-currency.currency--dollar &#8203;
                     .col-currency.currency--euro
-                        p 50₽ = 1 миля
+                        p 50&#8381; = 1 миля
             .conditions__row
                 .conditions__title
                     h3 СМС-Банк
                 .conditions__desc
                     .col-currency.currency--ruble
-                        p 0₽
+                        p 0&#8381;
                     .col-currency.currency--dollar &#8203;
                     .col-currency.currency--euro
-                        p 10₽
+                        p 10&#8381;
             .conditions__row
                 .conditions__title
                     h3 Интернет-банк
                 .conditions__desc
                     .col-currency.currency--ruble
-                        p 0₽
+                        p 0&#8381;
                     .col-currency.currency--dollar &#8203;
                     .col-currency.currency--euro
-                        p 10₽
+                        p 10&#8381;
             .conditions__row
                 .conditions__title
                     h3 Мобильный банк
                 .conditions__desc
                     .col-currency.currency--ruble
-                        p 0₽
+                        p 0&#8381;
                     .col-currency.currency--dollar &#8203;
                     .col-currency.currency--euro
-                        p 10₽
+                        p 10&#8381;
             .conditions__row
                 .conditions__title
                     h3 Обслуживание счета (в год)
                 .conditions__desc
                     .col-currency.currency--ruble
-                        p 2 990₽
+                        p 2 990&#8381;
                         p.small-text.grey-color основная карта
-                        p 500₽
+                        p 500&#8381;
                         p.small-text.grey-color дополнительная карта
                     .col-currency.currency--dollar &#8203;
                     .col-currency.currency--euro
-                        p 500₽
+                        p 500&#8381;
                             p.small-text.grey-color дополнительная карта
             .conditions__row
                 .conditions__title
                     h3 Перевод и выдачу наличных
                 .conditions__desc
                     .col-currency.currency--ruble
-                        p 3% + 300₽
+                        p 3% + 300&#8381;
                         p.small-text.grey-color от снятия
                     .col-currency.currency--dollar &#8203;
                     .col-currency.currency--euro
-                        p 3% + 300₽
+                        p 3% + 300&#8381;
                             p.small-text.grey-color от снятия
             .conditions__row
                 .conditions__title
@@ -309,11 +306,11 @@
                         |в сторонних банках
                 .conditions__desc
                     .col-currency.currency--ruble
-                        p 3,9% + 390₽
+                        p 3,9% + 390&#8381;
                         p.small-text.grey-color от снятия
                     .col-currency.currency--dollar &#8203;
                     .col-currency.currency--euro
-                        p 3,9% + 390₽
+                        p 3,9% + 390&#8381;
                         p.small-text.grey-color от снятия
             .conditions__row
                 .conditions__title
@@ -324,24 +321,24 @@
                         |от валюты счета
                 .conditions__desc
                     .col-currency.currency--ruble
-                        p 3% + 300₽
+                        p 3% + 300&#8381;
                         p.small-text.grey-color от снятия
                     .col-currency.currency--dollar &#8203;
                     .col-currency.currency--euro
-                        p 3% + 300₽
+                        p 3% + 300&#8381;
                             p.small-text.grey-color от снятия
             .conditions__row
                 .conditions__title
                     h3 Комиссия за внесение наличных
                 .conditions__desc
                     .col-currency.currency--ruble
-                        p 100₽
+                        p 100&#8381;
                         p.small-text.grey-color до 10 000 руб.
-                        p 100₽
+                        p 100&#8381;
                         p.small-text.grey-color от 10 000 руб. а так же в других валютах
                     .col-currency.currency--dollar &#8203;
                     .col-currency.currency--euro
-                        p 100₽
+                        p 100&#8381;
                             p.small-text.grey-color до 10 000 руб.
     #tab-3.tab-content
         include ../page-elements-sansay/_tabs_accordion--cards
