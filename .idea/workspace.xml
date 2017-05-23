@@ -1,64 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5743e040-2a84-4336-92d1-5b0ee526217b" name="Default" comment="mobile fix">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/common/images/card-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/common/images/kard.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/images/kard.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/Raiffeisen-Bank-aic.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/icons/icon-1.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/icons/icon-2.svg" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/scripts/main.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/styles/main.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/styles/main.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/(FuturaNewBook-Reg)FuturaNewBook.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/(FuturaNewBook-Reg)FuturaNewBook.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/(FuturaNewBook-Reg)FuturaNewBook.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/(FuturaNewDemi-Reg)FTN65.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/(FuturaNewDemi-Reg)FTN65.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/(FuturaNewDemi-Reg)FTN65.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/(FuturaNewHeavy-Reg)FuturaNewHeavy.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/(FuturaNewHeavy-Reg)FuturaNewHeavy.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/(FuturaNewHeavy-Reg)FuturaNewHeavy.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/(FuturaNewMedium-Reg)ftn55.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/(FuturaNewMedium-Reg)ftn55.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/(FuturaNewMedium-Reg)ftn55.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/fonts.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/_footer.pug" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/common/page-elements/menu-components/menu1.pug" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/common/page-elements/menu-components/menu2.pug" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/common/page-elements/menu-components/menu3.pug" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/common/page-elements/menu-components/menu4.pug" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/common/page-elements/menu-components/menu5.pug" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/common/page-elements/menu-components/menu6.pug" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/common/page-elements/menu-components/menu7.pug" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/common/images/p-img-1.jpg" afterPath="$PROJECT_DIR$/dist/common/images/p-img-1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/common/images/p-img-2.jpg" afterPath="$PROJECT_DIR$/dist/common/images/p-img-2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gruntfile.js" afterPath="$PROJECT_DIR$/Gruntfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/cards-about.html" afterPath="$PROJECT_DIR$/dist/cards-about.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/cards.html" afterPath="$PROJECT_DIR$/dist/cards.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/common/scripts/main.min.js" afterPath="$PROJECT_DIR$/dist/common/scripts/main.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/common/styles/main.css" afterPath="$PROJECT_DIR$/dist/common/styles/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/common/styles/main.css.map" afterPath="$PROJECT_DIR$/dist/common/styles/main.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/icons.svg" afterPath="$PROJECT_DIR$/dist/icons.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/index.html" afterPath="$PROJECT_DIR$/dist/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/mortgage.html" afterPath="$PROJECT_DIR$/dist/mortgage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cards-about.pug" afterPath="$PROJECT_DIR$/src/cards-about.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cards.pug" afterPath="$PROJECT_DIR$/src/cards.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/page-elements-1/_banner.pug" afterPath="$PROJECT_DIR$/src/common/page-elements-1/_banner.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/page-elements-1/_calculator.pug" afterPath="$PROJECT_DIR$/src/common/page-elements-1/_calculator.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/page-elements-1/_card-about.pug" afterPath="$PROJECT_DIR$/src/common/page-elements-1/_card-about.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/page-elements-1/_cards.pug" afterPath="$PROJECT_DIR$/src/common/page-elements-1/_cards.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/scripts/main.js" afterPath="$PROJECT_DIR$/src/common/scripts/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/styles/components/_buttons.sass" afterPath="$PROJECT_DIR$/src/common/styles/components/_buttons.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/styles/components/_calculator.sass" afterPath="$PROJECT_DIR$/src/common/styles/components/_calculator.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/styles/components/_cards.sass" afterPath="$PROJECT_DIR$/src/common/styles/components/_cards.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/styles/components/_conditions.sass" afterPath="$PROJECT_DIR$/src/common/styles/components/_conditions.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/styles/components/_site-menu.sass" afterPath="$PROJECT_DIR$/src/common/styles/components/_site-menu.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.pug" afterPath="$PROJECT_DIR$/src/index.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mortgage.pug" afterPath="$PROJECT_DIR$/src/mortgage.pug" />
+    <list default="true" id="5743e040-2a84-4336-92d1-5b0ee526217b" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -136,6 +80,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -239,7 +184,7 @@
       <workItem from="1495107990174" duration="1025000" />
       <workItem from="1495200585371" duration="1373000" />
       <workItem from="1495440427743" duration="239000" />
-      <workItem from="1495536081935" duration="168000" />
+      <workItem from="1495536081935" duration="235000" />
     </task>
     <task id="LOCAL-00001" summary="mobile fix">
       <created>1495108353858</created>
@@ -255,11 +200,18 @@
       <option name="project" value="LOCAL" />
       <updated>1495200756787</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="mobile fix">
+      <created>1495536279975</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1495536279975</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2805000" />
+    <option name="totallyTimeSpent" value="2872000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
