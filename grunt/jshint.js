@@ -5,6 +5,6 @@ module.exports = {
     },
 
     main: [
-        'src/common/scripts/*.js'
+        'src/common/new/scripts/*.js'
     ]
 };

@@ -7,6 +7,6 @@ module.exports = {
         ]
     },
     dist: {
-        src: './dist/common/styles/*.css'
+        src: './dist/common/new/styles/*.css'
     }
 };

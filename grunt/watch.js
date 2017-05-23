@@ -7,7 +7,7 @@ module.exports = {
 
     scripts: {
         files: [
-            'src/common/scripts/*.js'
+            'src/common/new/scripts/*.js'
         ],
         tasks: [
             'jshint',
@@ -17,8 +17,8 @@ module.exports = {
 
     styles: {
         files: [
-            'src/common/styles/*.sass',
-            'src/common/styles/components/*.sass'
+            'src/common/new/styles/*.sass',
+            'src/common/new/styles/components/*.sass'
         ],
         tasks: [
             'sass:dev',
@@ -37,7 +37,7 @@ module.exports = {
 
     svg: {
         files: [
-            'src/common/icons/**.**'
+            'src/common/new/icons/**.**'
         ],
         tasks: [
             'svgstore'

@@ -1,5 +1,5 @@
 module.exports = {
     all: [
-        "dist/common"
+        "dist/common/new/"
     ]
 };

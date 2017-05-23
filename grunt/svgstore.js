@@ -5,7 +5,7 @@ module.exports = {
       // cleanup: ['fill']
     },
     files: {
-      'dist/icons.svg': ['src/common/icons/*.svg']
+      'dist/icons.svg': ['src/common/new/icons/*.svg']
     }
   }
 };

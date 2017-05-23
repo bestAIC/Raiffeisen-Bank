@@ -7,9 +7,9 @@ module.exports = {
         },
         files: [{
             expand: true,
-            cwd: 'src/common/styles',
+            cwd: 'src/common/new/styles',
             src: ['*.sass'],
-            dest: 'dist/common/styles',
+            dest: 'dist/common/new/styles',
             ext: '.css'
         }]
     },
@@ -21,9 +21,9 @@ module.exports = {
         },
         files: [{
             expand: true,
-            cwd: 'src/common/styles',
+            cwd: 'src/common/new/styles',
             src: ['*.sass'],
-            dest: 'dist/common/styles',
+            dest: 'dist/common/new/styles',
             ext: '.css'
         }]
     }
