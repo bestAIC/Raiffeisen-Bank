@@ -1,0 +1,30 @@
+mixin tips(title, href, link)
+    .tips
+        .tips__wrap.container
+            .tips__content
+                .tips__title
+                    h3.tisp__title-content!= title
+                .tips__links
+
+                    block
+
+                    .tips__all
+                        +btn-text-icon(link,'arrow',href)
+                        //a(href=href).all-recomendation= link
+
+
+mixin tip(href, title, desc)
+    a.tips__links-content(href=href)
+        span.link.tips__links-link!= title
+        span.link-description.grey-color= desc
+
+mixin tip-b(href, title, desc, p)
+    a.tips__links-content(href=href)
+        span.link.tips__links-link!= title
+        span.link-tip.grey-color!= p
+        span.link-description.grey-color= desc
+
+mixin tips-block(href, title)
+    a.tips__links-block(href=href)
+        span!= title
+

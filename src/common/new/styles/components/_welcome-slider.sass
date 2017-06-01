@@ -1,0 +1,81 @@
+.b-card-list__item-interactive
+  outline: 0
+  position: relative
+  width: 100%
+  max-width: calcRem(570px)
+  margin-right: calcRem(30px)
+  display: inline-block
+  vertical-align: top
+  height: calcRem(450px)
+  transition: background-color 0.2s, color 0.2s
+  background-color: $white
+  overflow: hidden
+  .property
+    position: absolute
+    left: calcRem(30px)
+    bottom: calcRem(30px)
+    .highlighted
+      box-shadow: none
+
+  .b-card-list__item-image
+    padding-top: 0
+    height: 100%
+
+  .b-card-list__item-video
+    position: absolute
+    width: 101%
+    height: 101%
+    video
+      max-width: 101%
+      max-height: 101%
+      width: 101%
+      height: 101%
+
+.b-card-list__item-2
+  outline: 0
+  position: relative
+  width: 100%
+  max-width: calcRem(370px)
+  margin-right: calcRem(30px)
+  display: inline-block
+  vertical-align: top
+  height: calcRem(400px)
+  transition: background-color 0.2s, color 0.2s
+  background-color: $white
+  padding: calcRem(30px)
+  color: $text-color
+  &:hover
+    background-color: $black
+    color: $white
+    .property__title
+      color: $white
+    .property__description
+      color: $white
+    svg
+      use
+        fill: $white
+
+  .property__title
+    color: $black
+    transition: color 0.2s
+  .property__description
+    color: $text-color
+    transition: 0.2s color
+
+.b-card-list__item-main-icon
+  width: calcRem(82px)
+  height: calcRem(82px)
+  margin-bottom: calcRem(32px)
+  svg
+    width: 100%
+    height: 100%
+    use
+      transition: fill 0.2s
+
+.cols2
+  .col
+    width: 50%
+    padding-right: calcRem(24px)
+    &:last-child
+      padding-right: 0
+

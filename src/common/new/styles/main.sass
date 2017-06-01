@@ -12,6 +12,7 @@ div
   display: block
 
 *
+  -moz-osx-font-smoothing: grayscale
   -webkit-font-smoothing: antialiased
 
 body
@@ -30,11 +31,12 @@ body
       list-style: none
 
 .body-container
-  padding-top: calcRem(60px)
   background-color: white
   max-width: 1920px
   margin: 0 auto
 
+@import "components/margins"
+@import "components/paddings"
 @import "components/spinner"
 @import "components/colors"
 @import "components/fonts"
@@ -57,6 +59,16 @@ body
 @import "components/scroll-header"
 @import "components/site-menu"
 @import "components/cards"
+@import "components/welcome-banner"
+@import "components/promo-block"
+@import "components/news-block"
+@import "components/info-blocks"
+@import "components/welcome-slider"
+@import "components/order"
+
+//@import "importMap"
+@import "../blocks/inputs/inputs"
 
 @import "components/mobile"
 @import "components/mobile2"
+@import "components/mobile-welcome"

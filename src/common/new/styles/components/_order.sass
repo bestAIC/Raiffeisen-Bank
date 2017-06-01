@@ -1,0 +1,60 @@
+.b-block-heading
+  margin-bottom: calcRem(48px)
+  padding-top: calcRem(16px)
+
+.order-block
+  font-size: 1rem
+  margin-bottom: calcRem(120px)
+
+.order-row
+  @include clearfix
+
+.order-block-left, .order-block-right
+  display: inline-block
+  float: left
+
+.order-block-left
+  width: calcRem(400px)
+  h3
+    font-size: 24px
+    font-family: 'futura-heavy', sans-serif
+
+.order-block-right
+  width: calcRem(770px)
+
+.order-input-row
+  margin-bottom: calcRem(32px)
+  @include clearfix
+  
+
+.order-input-block
+  @include clearfix
+
+  .link-times
+    font-size: calcRem(18px)
+    border-bottom: 1px dashed $black
+    color: $black
+
+  &__item
+    display: inline-block
+    float: left
+    margin-right: calcRem(30px)
+
+  &--half
+    display: inline-block
+    float: left
+    width: calcRem(370px)
+    &:first-child
+      margin-right: calcRem(30px)
+
+  &--captcha
+    display: inline-block
+    float: left
+    width: calcRem(270px)
+
+.order-input-catpcha
+  display: inline-block
+  float: left
+  margin-left: calcRem(5px)
+  margin-top: calcRem(22px)
+  width: calcRem(100px)

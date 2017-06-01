@@ -1,0 +1,23 @@
+mixin tabs-ul(id, ul)
+    .mortgage-tabs.loaded-block(id='tabs-'+id)
+        .container
+            ul.tabs(data-tabgroup='tab-container-'+id)
+                - var ind = 1
+                each val, index in ul
+                    if val == 'dot'
+                        li.tab-brake
+                            span.dot
+                    else if index == 0
+                        li.tab-link.current(data-tab='tab-' + ind)= val
+                        - ind++
+                    else
+                        li.tab-link(data-tab='tab-'+ind)= val
+                        - ind++
+
+mixin tabs(id)
+    .mortgage-tab-container(id='tab-container-'+id)
+        block
+
+mixin tab(id)
+    .tab-content(id='tab-'+id)&attributes(attributes)
+        block

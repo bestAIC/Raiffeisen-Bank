@@ -1,0 +1,53 @@
+.info-blocks.loaded-block
+    .container.info-blocks__wrap
+        .currency-block
+            h2.info-blocks__title Курсы валют
+            .currency-block__container
+                .currency-block__container-wrapper
+                    .currency-block__row
+                        h6.title-block__description.grey-color.currency--head Валюта
+                        h2.currency--name.cn-value USD
+                        h2.currency--name.cn-value EUR
+                    .currency-block__row
+                        h6.title-block__description.grey-color.currency--head Покупка
+                        h2.currency--name.cn-data 60,45
+                            span.indicator.indicator-revert
+                                <svg width="9" height="9" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg"><path d="M4.5 9L9 0H0" fill="#333" fill-rule="evenodd"/></svg>
+                        h2.currency--name.cn-data 68,33
+                            span.indicator
+                                <svg width="9" height="9" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg"><path d="M4.5 9L9 0H0" fill="#333" fill-rule="evenodd"/></svg>
+                    .currency-block__row
+                        h6.title-block__description.grey-color.currency--head Продажа
+                        h2.currency--name.cn-data 63,90
+                            span.indicator
+                                <svg width="9" height="9" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg"><path d="M4.5 9L9 0H0" fill="#333" fill-rule="evenodd"/></svg>
+                        h2.currency--name.cn-data 71,45
+                            span.indicator
+                                <svg width="9" height="9" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg"><path d="M4.5 9L9 0H0" fill="#333" fill-rule="evenodd"/></svg>
+                    .currency-block__row
+                        h6.title-block__description.grey-color.currency--head Курс цб на 13.11
+                        h2.currency--name.cn-data 62,4499
+                            span.indicator.indicator-revert
+                                <svg width="9" height="9" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg"><path d="M4.5 9L9 0H0" fill="#333" fill-rule="evenodd"/></svg>
+                        h2.currency--name.cn-data 70,2359
+                            span.indicator
+                                <svg width="9" height="9" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg"><path d="M4.5 9L9 0H0" fill="#333" fill-rule="evenodd"/></svg>
+            .currency-block__button
+                +btn-inv('Курсы Райффайзен-Онлайн', '#')
+
+        .map-block
+            h2.info-blocks__title Офисы и банкоматы
+            #map-background
+            .map-block__tab-panel
+                .tab-panel__container
+                    .tab-panel__el#tp__el1 Офисы
+                    .tab-panel__el.el--active#tp__el2 Банкоматы
+                    .tab-panel__el#tp__el3 Терминалы
+                .tab-panel__search
+                    form
+                        input(type="text" placeholder="Поиск по адресу").search__input-text
+                        .search__input-button
+                            span.arrow-icon
+                                <svg class="slider-arrow-svg">
+                                    <use xlink:href="common/new/icons/icons.svg#icon-arrow-right"></use>
+                                </svg>

@@ -47,6 +47,7 @@ h1, h2, h3, h4, h5, h6
     margin-right: 0
 
 .property__title
+  color: $black
   font-size: calcRem(48px)
   font-family: 'futura-book', sans-serif
   line-height: 1
@@ -72,6 +73,8 @@ h1, h2, h3, h4, h5, h6
   box-shadow: 0 0 0 calcRem(30px) $white
   z-index: 1
   transition: 0.2s box-shadow
+  -webkit-backface-visibility: hidden
+  backface-visibility: hidden
   &:after
     transform-origin: left
     transform: scaleX(1)
@@ -83,6 +86,10 @@ h1, h2, h3, h4, h5, h6
     width: 100%
     height: 100%
     background: $yellow
+    box-shadow: 0 0 0 0 $yellow
+    transition: 0.2s box-shadow
+    -webkit-backface-visibility: hidden
+    backface-visibility: hidden
   &:before
     content: ''
     position: absolute
@@ -94,6 +101,15 @@ h1, h2, h3, h4, h5, h6
     background-size: 100%
     background-repeat: no-repeat
     background-position: top left
+    transform: translate3d(0,0,0)
+    transition: 0.2s transform
+    -webkit-backface-visibility: hidden
+    backface-visibility: hidden
+  &:hover
+    &:after
+      box-shadow: 0 0 0 calcRem(10px) $yellow
+    &:before
+      transform: translate3d(5px,-5px,0)
 
 .button
   font-family: futura-medium, sans-serif
@@ -193,6 +209,7 @@ h1, h2, h3, h4, h5, h6
   color: $black
   background: $yellow
   margin-left: calcRem(5px)
+  padding-left: 2px
 
 .tips__title
   width: 31.75%

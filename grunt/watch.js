@@ -18,7 +18,9 @@ module.exports = {
     styles: {
         files: [
             'src/common/new/styles/*.sass',
-            'src/common/new/styles/components/*.sass'
+            'src/common/new/styles/components/*.sass',
+            'src/common/new/blocks/**/*.sass',
+            'src/common/new/elements/**/*.sass'
         ],
         tasks: [
             'sass:dev',

@@ -1,3 +1,36 @@
 .container
   width: calcRem(1170px)
   margin: 0 auto 0 auto
+
+.container-grey
+  background: $white-grey
+  box-sizing: border-box
+  margin: calcRem(35px) calcRem(35px) 0 calcRem(35px)
+  padding: calcRem(40px) 0
+  //showup
+  transition: opacity 1.25s
+  transition-delay: 0.2s
+  .b-card-list
+    margin-top: 0
+  .b-card-list__container
+    padding: calcRem(60px) 0
+
+.container-black
+  background-color: $black
+  color: $white
+  box-sizing: border-box
+  margin: 0 calcRem(35px) 0 calcRem(35px)
+  padding: calcRem(40px) 0
+  //showup
+  transition: opacity 1.25s
+  transition-delay: 0.2s
+
+.welcome-slider-2,
+.info-blocks
+  //showup
+  transition: opacity 1.25s
+  transition-delay: 0.2s
+
+.half-margin
+  padding-top: 0!important
+  margin-top: -40px

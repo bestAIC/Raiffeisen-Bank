@@ -1,0 +1,45 @@
+mixin ac-block()
+    .accordion.container
+
+mixin ac-item(title)
+    .accordion__section
+        .accordion__head
+            h2!= title
+            .accordion__head-cross
+                img(src='common/new/images/close.svg')
+        .accordion__body.accordion--card
+            block
+
+mixin ac-item-d(number, h2, desc)
+    .accordion__section
+        .accordion__head.active.loaded-block
+            h2
+                span.accordion__number= number
+                !=h2
+            .accordion__head-description.grey-color!= desc
+            .accordion__head-cross
+                img(src='common/new/images/close.svg')
+        .accordion__body.loaded-block
+            block
+
+mixin ac-item-icon(image, h2)
+    .accordion.accordion--mobile-shown
+        .accordion__section
+            .accordion__head.active
+                h2
+                    span.accordion__icon
+                        img(src='common/new/images/'+image)
+                    =!h2
+
+                .accordion__head-cross
+                    img(src='common/new/images/close.svg')
+            .accordion__body
+                block
+
+mixin ac-left()
+    .accordion__body-left
+        block
+
+mixin ac-sidebar()
+    .accordion__body-sidebar
+        block

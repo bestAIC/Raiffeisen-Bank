@@ -1,0 +1,11 @@
+mixin banner(href, title, text, video)
+    .banner#bannerVideo
+        a.banner-bg-video(href=href)
+            video#banner-video(preload='metadata', muted, webkit-playsinline, playsinline)
+                source(src='common/new/images/'+video+'.mp4')
+                source(src='common/new/images/'+video+'.webm')
+            .banner-wrapper
+            .banner-progress#bannerVideoProgress
+            .banner-content
+                h4.banner-heading= title
+                p.banner-text!= text

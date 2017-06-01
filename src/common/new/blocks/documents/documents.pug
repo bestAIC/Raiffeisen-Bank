@@ -1,0 +1,13 @@
+mixin documents(title)
+    .documents.loaded-block
+        .documents__wrap
+            .documents__content.container
+                .documents__title
+                    h2.heading-h2!= title
+                .documents__list
+                    block
+
+
+mixin doument(text, href)
+    a.documents__item(href=href)
+        span!= text

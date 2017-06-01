@@ -1,0 +1,38 @@
+.welcome-slider-2.loaded-block
+    .b-card-list
+        .b-card-list__container.container
+            h3.b-card-list__title Специальные предложения
+            .b-card-list__slider-arrows
+                .slider-prev
+                    svg.slider-arrow-svg
+                        use(xlink:href='common/new/icons/icons.svg#icon-arrow-right')
+                .slider-next
+                    svg.slider-arrow-svg
+                        use(xlink:href='common/new/icons/icons.svg#icon-arrow-left')
+            .b-card-list__slider
+                a.b-card-list__item-interactive(href='')
+                    .b-card-list__item-video
+                        video#bgvid-card1(preload='metadata', muted, webkit-playsinline, playsinline)
+                            source(src='common/new/images/video_4c-2.mp4')
+                            source(src='common/new/images/video_4c-2.webm')
+                    .property
+                        .property__block.highlighted
+                            h3.property__title 1%
+                            p.property__description от заработной платы обратно на счёт в течение 6 месяцев
+
+                a.b-card-list__item-interactive(href='')
+                    .b-card-list__item-video
+                        video#bgvid-card2(preload='metadata', muted, webkit-playsinline, playsinline)
+                            source(src='common/new/images/NewProject.mp4')
+                            source(src='common/new/images/NewProject.webm')
+                    .property
+                        .property__block.highlighted
+                            h3.property__title 15,9%
+                            p.property__description одна ставка для всех кредитов
+
+                a.b-card-list__item-interactive(href='')
+                    .b-card-list__item-image(style="background-image: url(common/new/images/c8c3a5500d.jpg)")
+                    .property
+                        .property__block.highlighted
+                            h3.property__title 50%
+                            p.property__description скидки на напитки в Шоколаднице по Samsung Pay

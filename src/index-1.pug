@@ -1,0 +1,103 @@
+extends common/_layout
+include common/new/blocks/titles/titles
+include common/new/blocks/main-block/main-block
+include common/new/blocks/buttons/buttons
+include common/new/blocks/tips/tips
+
+
+block title
+    | �������
+
+block content
+    include common/new/elements/popup-links
+    include common/new/elements/popup-numbers
+
+    // Page
+    include common/new/page-elements/_header
+    include common/new/page-elements/_menu
+
+    .body-container
+        +title('��� �����', '�������')
+
+        .mortgage.container
+            +main-block('#ee', 'img1.jpg')
+                +main-block-title('�������� �� ��������� �����')
+                +main-block-decription
+                    +main-property-highlighted('������ ������� �� 23 �����', 'mortgage.html')
+                        | 8,5%
+                    +main-property('���� ������������')
+                        | 1-25
+                        +small-text('���')
+                    +main-property('������������ �����')
+                        | 8,5%
+                        +small-text('���. &#8381;')
+                +main-block-order
+                    +btn('�������� ������', '#22')
+
+            +main-block('#ee', 'img1.jpg')
+                +main-block-title('�������� �� ��������� �����')
+                +main-block-decription
+                    +main-property('������ ������� �� 23 �����', 'mortgage.html')
+                        | 8,5%
+                    +main-property('���� ������������')
+                        | 1-25
+                        +small-text('���')
+                    +main-property('������������ �����')
+                        | 8,5%
+                        +small-text('���. &#8381;')
+                +main-block-order
+                    +btn('�������� ������', '#22')
+            .mortgage__blocks_hidden
+                - var n = 0
+                while n < 3
+                    +main-block-small('img1.jpg').loaded-block
+                        +main-block-title('�������� �� ��������� �����')
+                        +main-block-decription
+                            +main-property('������ ������� �� 23 �����', 'mortgage.html')
+                                | 8,5%
+                            +main-property('���� ������������')
+                                | 1-25
+                                +small-text('���')
+                            +main-property('������������ �����')
+                                | 8,5%
+                                +small-text('���. &#8381;')
+                    - n++
+
+                +main-block-small('img1.jpg').loaded-block
+                    +main-block-title('�������� �� ��������� �����')
+                    +main-block-decription
+                        +main-property-highlighted('������ ������� �� 23 �����', 'mortgage.html')
+                            | 8,5%
+                        +main-property('���� ������������')
+                            | 1-25
+                            +small-text('���')
+                        +main-property('������������ �����')
+                            | 8,5%
+                            +small-text('���. &#8381;')
+
+                +main-block-small('img1.jpg').loaded-block
+                    +main-block-title('�������� �� ��������� �����')
+                    +main-block-decription
+                        +main-property('������ ������� �� 23 �����', 'mortgage.html')
+                            | 8,5%
+                        +main-property('���� ������������')
+                            | 1-25
+                            +small-text('���')
+                        +main-property('������������ �����')
+                            | 8,5%
+                            +small-text('���. &#8381;')
+
+            .load-more
+                .load-more__button ��� ��������� �������
+                    span.badge#count-hidden
+
+        +tips('��� ���� ��������� ������', '#22', '��� ������������')
+            +tip('#4', '������� �� ������ �����������', 'PDF, 2 ��')
+            +tip('#6', '������� �� ��������� ���������� �������', 'PDF, 2 ��')
+            +tip('#5', '������� �� ���������� ������ �������� ����� ��������� ����� ������������� (��������� �����)', 'PDF, 2 ��')
+
+
+        include common/new/elements/likes/likes
+        include common/new/elements/footer/footer
+
+    include common/new/page-elements/_spinner

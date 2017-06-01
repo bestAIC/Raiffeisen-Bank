@@ -1,4 +1,5 @@
-include _buttons
+include ../page-elements-1/_buttons
+include ../blocks/inputs/inputs
 .calc-block.container
   .calc-block--left
     .calculator
@@ -22,18 +23,20 @@ include _buttons
             .input-slider(data-sl-min='1', id='sl-period', data-f-year='true', data-sl-max='35', data-sl-value='20')
           //- .form-block__hint.grey-color Если вы не нашли ваш город в списке, пожалуйста, выберите значение Остальные города
       .calculator__row
-        .checkbox-block
-          label.checkbox-block__label(for='check-zp')
-            input.input-checkbox(type='checkbox' id='check-zp' value='')
-            span.checkbox-block__span
-            | Я зарплатный или премиальный клиент Банка
+        //.checkbox-block
+        //  label.checkbox-block__label(for='check-zp')
+        //    input.input-checkbox(type='checkbox' id='check-zp' value='')
+        //    span.checkbox-block__span
+        //    | Я зарплатный или премиальный клиент Банка
+        +checkbox('aa', 'r1', 'kk', 'Я зарплатный или премиальный клиент Банка')
       .calculator__row
-        .form-block.form-block--title
-          .input-block.input-triangle
-            select.input-select#select-1
-              option(value='') Справка 2-НДФЛ
-              option Справка о доходах
-            .form-block__text Уровень доходов подтверждаю
+        //.form-block.form-block--title
+        //  .input-block.input-triangle
+        //    select.input-select#select-1
+        //      option(value='') Справка 2-НДФЛ
+        //      option Справка о доходах
+        //    .form-block__text Уровень доходов подтверждаю
+        +select('aa', 'Уровень доходов подтверждаю', {'fff': 'Справка 2-НДФЛ', 'aaa': 'Справка о доходах'})
 
   .calc-block--right
     .calc-card

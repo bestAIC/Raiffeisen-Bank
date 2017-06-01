@@ -2,19 +2,19 @@ mixin btn-icon(text, svg, href)
     a(href=href).button.button-with-icon&attributes(attributes)= text
         span.button-icon
             svg(class='svg-icon-'+svg)
-                use(xlink:href='icons.svg#icon-'+svg)
+                use(xlink:href='common/new/icons/icons.svg#icon-'+svg)
 
 mixin btn-icon-inv(text, svg, href)
     a(href=href).button-invert.button-with-icon&attributes(attributes)= text
         span.button-icon
             svg(class='svg-icon-'+svg)
-                use(xlink:href='icons.svg#icon-'+svg)
+                use(xlink:href='common/new/icons/icons.svg#icon-'+svg)
 
 mixin btn-menu-icon(text, svg, href)
     a(href=href).button-menu&attributes(attributes)
         span.button-menu-icon
             svg(class='svg-icon-'+svg)
-                use(xlink:href='icons.svg#icon-'+svg)
+                use(xlink:href='common/new/icons/icons.svg#icon-'+svg)
         | #{text}
 
 mixin btn(text, href)
@@ -30,7 +30,7 @@ mixin btn-text-icon(text, svg, href)
     a(href=href).btn-text-icon&attributes(attributes)= text
         span
             svg(class='svg-icon'+svg)
-                use(xlink:href='icons.svg#icon-'+svg)
+                use(xlink:href='common/new/icons/icons.svg#icon-'+svg)
 
 
 mixin btn-tab(text, href)

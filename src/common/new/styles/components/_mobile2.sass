@@ -428,6 +428,8 @@
   #bannerVideo
     padding: 0
 
+  .b-card-list__item
+    margin-bottom: calcRem(15px)
   .b-card-list__container
     padding: 0 calcRem(15px)
 
@@ -443,3 +445,31 @@
     width: 100%
     display: block
     float: none
+
+  .order-block
+    padding: 0 calcRem(15px)
+
+  .order-block-left, .order-block-right
+    display: block
+    width: 100%
+
+  .order-input-block
+
+    &--half
+      display: block
+      width: 100%
+      margin-right: 0
+      margin-bottom: calcRem(32px)
+      &:last-of-type
+        margin-bottom: 0
+
+  .b-block-heading
+    padding-left: calcRem(15px)
+
+    .title-block__description
+      white-space: nowrap
+      overflow: hidden
+      overflow-x: scroll
+
+    h1
+      padding-right: calcRem(15px)

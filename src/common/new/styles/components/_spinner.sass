@@ -4,6 +4,17 @@
     pointer-events: auto
   .loader
     opacity: 1
+  .video-intro
+    &:before
+      transform: scaleX(1)
+  .welcome-banner
+    .mortgage-intro__block
+      opacity: 0
+      transform: translateX(-40px)
+      .highlighted
+        &:after
+          transform: scaleX(0)
+
 
 .Preloader
   background-color: rgba(255,255,255,1)

@@ -1,0 +1,121 @@
+.button, .button-invert
+  position: relative
+  font-family: futura-medium, sans-serif
+  font-size: calcRem(16px)
+  display: inline-block
+  line-height: 1
+  letter-spacing: calcRem(1.6px)
+  text-decoration: none
+  text-transform: uppercase
+  padding: calcRem(20px) calcRem(30px)
+  transition: 0.2s background-color, 0.2s color
+
+.button
+  background: $black
+  color: $yellow
+  svg
+    use, &
+      fill: $yellow
+      transition: 0.2s fill
+  &:hover
+    background-color: $yellow
+    color: $black
+    svg
+      use, &
+        fill: $black
+
+.button-invert
+  background-color: $yellow
+  color: $black
+  svg
+    use, &
+      fill: $black
+      transition: 0.2s fill
+  &:hover
+    background-color: $black
+    color: $yellow
+    svg
+      use, &
+        fill: $yellow
+
+.button-with-icon
+  padding: calcRem(20px) calcRem(30px) calcRem(20px) calcRem(50px)
+
+.btn-disable
+  background-color: $icons-color
+  color: $grey
+  pointer-events: none
+  svg
+    use, &
+      fill: $grey
+
+
+.btn-text, .btn-text-icon
+  text-transform: uppercase
+  font-size: calcRem(16px)
+  letter-spacing: calcRem(1.6px)
+  font-family: futura-medium, sans-serif
+  position: relative
+  color: $black
+  text-decoration: none
+  transition: opacity 0.2s
+  &:hover
+    opacity: 0.5
+
+.btn-text-icon
+  padding-right: calcRem(18px)
+  span
+    transition: transform .2s
+    position: absolute
+    right: 0
+    svg
+      width: calcRem(11px)
+      height: calcRem(11px)
+      use, &
+        fill: $black
+
+.btn-text-disable
+  color: $icons-color
+  pointer-events: none
+  span
+    svg
+      use
+        fill: $icons-color
+
+.btn-tab-inv
+  color: $grey
+  &:hover
+    color: $black
+
+
+.button-menu
+  font-size: calcRem(16px)
+  text-transform: uppercase
+  letter-spacing: calcRem(1.6px)
+  color: $black
+  font-family: futura-medium, sans-serif
+  background-color: $white
+  display: inline-block
+  padding: calcRem(25px) calcRem(30px)
+  margin: 0 5px
+  backface-visibility: hidden
+  margin-top: calcRem(9px)
+  transition: 0.2s background-color, 0.2 opacity
+  $time-offset: 0.1
+  @for $i from 1 through 7
+    &:nth-child(#{$i})
+      $time-offset: $time-offset + 0.025
+      transition: 0.2s background-color, opacity 0.3s #{$time-offset}s
+  span
+    height: calcRem(20px)
+    width: calcRem(40px)
+    display: inline-block
+    margin-right: 4px
+    vertical-align: text-top
+    backface-visibility: hidden
+    svg
+      backface-visibility: hidden
+      use
+        fill: $black
+  &:hover
+    background-color: $yellow

@@ -1,0 +1,15 @@
+mixin slider(h3, p, arrow)
+    .b-card-list
+        .b-card-list__container.container
+            h3.b-card-list__title= h3
+            p.b-card-list__desc.grey-color!= p
+            if arrow = true
+                .b-card-list__slider-arrows
+                    .slider-prev
+                        svg.slider-arrow-svg
+                            use(xlink:href='common/new/icons.svg#icon-arrow-right')
+                    .slider-next
+                        svg.slider-arrow-svg
+                            use(xlink:href='common/new/icons.svg#icon-arrow-left')
+            .b-card-list__slider
+                block

@@ -1,0 +1,71 @@
+mixin input(nm)
+    .form-block
+        .input-block
+            input.input-text(type='text' name=nm)&attributes(attributes)
+
+mixin input-with-text(nm, text)
+    .form-block.form-block--title
+        .input-block
+            input.input-text(type='text' name=nm)&attributes(attributes)
+            .form-block__text= text
+
+mixin input-hint(nm, text, hint)
+    .form-block.form-block--title
+        .input-block
+            input.input-text(type='text' name=nm)&attributes(attributes)
+            .form-block__text= text
+            .form-block__hint.grey-color!= hint
+
+mixin input-date(nm, text, hint)
+    .form-block.form-block--title
+        .input-block.input-calendar
+            input.input-text(type='text' data-jq='datepicker' name=nm)&attributes(attributes)
+            .form-block__text= text
+
+
+mixin select(nm, text, options)
+    .form-block.form-block--title
+        .input-block.input-triangle
+            select(name=nm).input-select
+                each val, index in options
+                    option(value=index)= val
+            .form-block__text= text
+
+mixin select-hint(nm, text, hint, options)
+    .form-block.form-block--title
+        .input-block.input-triangle
+            select(name=nm).input-select
+                each val, index in options
+                    option(value=index)= val
+            .form-block__text= text
+            .form-block__hint.grey-color!= hint
+
+mixin checkbox(nm, id, val, text)
+    .checkbox-block
+        label.checkbox-block__label(for=id)
+            input.input-checkbox(name=nm type='checkbox' id=id value=val)
+            span.checkbox-block__span
+            = text
+
+mixin checkbox-tip(nm, id, val)
+    .checkbox-block
+        label.checkbox-block__label(for=id)
+            input.input-checkbox(name=nm type='checkbox' id=id value=val)
+            span.checkbox-block__span
+        block
+
+mixin radio(nm, id, val, text)
+    .radio-block
+        label.radio-block__label(for=id)
+            input.input-radio(name=nm type='radio' id=id value=val)&attributes(attributes)
+            span.radio-block__span
+            = text
+
+mixin input-slider(nm, id, text)
+    .form-block.form-block--title
+        .input-block
+            input.input-text(type='text' id=id)
+            .form-block__text= text
+            .input-slider&attributes(attributes)
+
+            //(data-sl-min='7000000', id='sl-price' data-f-price='true', data-sl-step='50000' data-sl-max='9000000', data-sl-value='7800000')

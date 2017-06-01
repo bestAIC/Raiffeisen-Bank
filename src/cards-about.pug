@@ -8,7 +8,7 @@ head
     link(rel="stylesheet" href="common/new/styles/normalize.css")
     link(rel="stylesheet" href="common/new/styles/jquery-ui.structure.min.css")
     link(rel="stylesheet" href="common/new/styles/main.css")
-    link(rel="stylesheet" href="../headsupgrid/hugrid.css")
+    //link(rel="stylesheet" href="../headsupgrid/hugrid.css")
 
 body.loading
     //Popup
@@ -18,7 +18,7 @@ body.loading
     //Page
     include common/new/page-elements/_header
     include common/new/page-elements/_menu
-    .body-container
+    .body-container.pt-32
         .wrapper.cards-wrapper
             include common/new/page-elements-1/_card-about
             include common/new/page-elements-1/_likes
@@ -26,15 +26,19 @@ body.loading
     //Preloader
     include common/new/page-elements/_spinner
 
-    //Scripts
-    script(src="common/new/scripts/jquery.min.js")
-    script(src="common/new/scripts/jquery-ui.min.js")
-    script(src="common/new/scripts/jquery.ui.touch-punch.min.js")
-    script(src="common/new/scripts/flowtype.min.js")
-    //script(src='common/new/scripts/isotope.pkgd.min.js')
-    script(src="common/new/scripts/slick.min.js")
-    script(src="../headsupgrid/hugrid.js")
-    script(src="common/new/scripts/tabs.min.js")
-    script(src="common/new/scripts/loadmore.min.js")
-    script(src="common/new/scripts/main.min.js")
+//Scripts
+script(src="common/new/scripts/jquery.min.js")
+script(src="common/new/scripts/jquery-ui.min.js")
+script(src="common/new/scripts/jquery.ui.touch-punch.min.js")
+script(src="common/new/scripts/flowtype.min.js")
+//script(src='common/new/scripts/isotope.pkgd.min.js')
+script(src="common/new/scripts/slick.min.js")
+script(src="../headsupgrid/hugrid.js")
+script(src="common/new/scripts/tabs.min.js")
+script(src="common/new/scripts/loadmore.min.js")
+script(src="common/new/scripts/accordion.min.js")
+script(src="common/new/scripts/svg4everybody.legacy.min.js")
+script(src="common/new/scripts/main.min.js")
+script.
+    svg4everybody();
 

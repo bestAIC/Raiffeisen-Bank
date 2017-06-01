@@ -1,0 +1,21 @@
+
+mixin care(image, title)
+    .care
+        .care__wrap.container(style="background-image: url(common/new/images/"+image+")")
+            .care__content
+                h1.title-block__title!= title
+                .mortgage__block-buttons
+                    block
+
+
+    //.care
+    //    .care__wrap.container(style="background-image: url(common/new/images/p-img-2.jpg)")
+    //        .care__content
+    //            h1.title-block__title
+    //                | Копите и летайте 
+    //                br
+    //                | вместе с Райффайзен
+    //            .mortgage__block-buttons
+    //                //a.button(href='#23') Оставить заявку
+    //                +btn('Оставить заявку', '#23')
+    //                a.find-department(href='#23') Найти отделение

@@ -100,31 +100,30 @@ ul.tabs li.current
     padding: calcRem(16px) 0 0 0
     margin: 0
 
-.accordion
+.accordion__section
   font-size: 22px
   transition: 0.2s background-color
+  border-bottom: 1px solid $icons-color
   > *:nth-child(odd)
     cursor: pointer
     padding: calcRem(50px) 7.5%
     line-height: 1
     box-sizing: border-box
-    border-bottom: 1px solid $icons-color
-    transition: background-color 0.2s, opacity 1.25s
+    transition: background-color 0.2s, box-shadow 0.2s, opacity 1.25s
     transition-delay: opacity 0.2s
     &:hover,
     &.active
       background-color: $white-grey
-      border-bottom-color: $white-grey
+      box-shadow: 0 1px 0 $white-grey, 0 -1px 0 $white-grey
     h2
       padding: 0
       margin: 0
 
   > *:nth-child(even)
     padding: 3rem 7.5% 3.75rem 7.5%
-    margin: 0 0 0 -7.5%
 
   > *:first-child
-    border-top: 1px solid $icons-color
+
 
 .tab__block-accordion
   margin: calcRem(120px) 0 calcRem(48px) 0
@@ -151,6 +150,9 @@ ul.tabs li.current
     margin: 0
     padding: 0
 
+.accordion__section
+  width: 115%
+  margin-left: -7.5%
 
 .accordion__head-cross
   pointer-events: none
@@ -158,8 +160,6 @@ ul.tabs li.current
 .accordion__head
   font-size: 0
   position: relative
-  width: 115%
-  margin-left: -7.5%
   h2
     font-size: calcRem(30px)
   .accordion__head-description
@@ -180,16 +180,14 @@ ul.tabs li.current
   .accordion__head-cross
     transform: rotate(0deg) translateY(-50%)
 
+.accordion
+  margin-bottom: calcRem(120px)
 
 .accordion__body
   font-size: 0px
   transition: opacity 1.25s
   transition-delay: opacity 0.2s
   animation: tab-fade .55s ease alternate
-  width: 115%
-  margin-left: -7.5%
-
-  border-bottom: 1px solid $icons-color
 
 .accordion__body-left
   width: 60%
@@ -197,6 +195,7 @@ ul.tabs li.current
   display: inline-block
   .button
     font-size: calcRem(16px)
+
 .accordion__body-sidebar
   width: 40%
   display: inline-block
@@ -235,6 +234,9 @@ ul.tabs li.current
 
 .accordion__body-navigation
   margin-top: calcRem(48px)
+
+.activeBody
+  display: block!important
 
 @media all and (max-width: 1000px)
   .accordion.accordion--mobile-shown

@@ -1,0 +1,15 @@
+mixin title-block-h1(title)
+    h1.title-block__title!= title
+
+mixin title-block-tags(tags)
+    h6.title-block__description.grey-color
+        each val, index in tags
+            if tags.length == 1 || index == tags.length - 1
+                span.step= val
+            else
+                span.step= val
+                span.dot.breadcrumbs-dot
+
+mixin span-tooltip(title, text)
+    span.span-tooltip!= title
+        span.span-tooltip__inner!= text

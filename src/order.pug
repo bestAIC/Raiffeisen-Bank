@@ -1,0 +1,212 @@
+extends common/_layout
+
+include common/new/blocks/utils/utils
+include common/new/blocks/tabs/tabs
+include common/new/blocks/inputs/inputs
+include common/new/blocks/buttons/buttons
+
+block title
+    | Заявка
+
+block content
+
+    include common/new/elements/popup-links
+    include common/new/elements/popup-numbers
+
+    .popup-tarif#popup-1.popup
+        .popup-tarif__content
+            span.popup-tarif__close-svg
+            .popup-tarif__container
+                .title-block.container--m
+                    h1.title-block__title Условия обработки персональных данных
+
+
+                    .popup-tarif__text.container--m
+                        .popup-tarif__actions
+                            .popup-tarif__action-item
+                                .popup-tarif__action-svg.action-print
+                            .popup-tarif__action-item
+                                .popup-tarif__action-svg.action-mail
+                                .tooltip-mail
+                                    .tooltip-mail__name.grey-color Электронная почта
+                                    input.tooltip-mail__input
+                                    .tooltip-mail__button Отправить
+                            .popup-tarif__action-item
+                                .popup-tarif__action-svg.action-share
+                                .popup-share.popup-share_p
+                                    .popup-share__icons
+                                        a.popup-share__icon(href='')
+                                            i.fa.fa-facebook
+                                        a.popup-share__icon(href='')
+                                            i.fa.fa-vk
+                                        a.popup-share__icon(href='')
+                                            i.fa.fa-twitter
+                                        a.popup-share__icon(href='')
+                                            i.fa.fa-google
+                                    .popup-share__copy
+                                        a(href='') Копировать ссылку
+                        p
+                            | Клиент, сведения о котором (ФИО, паспортные данные, сведения об адресе) содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк», 129090, г. Москва, ул. Троицкая, д. 17, стр.1 (включая получение от Клиента и/или от любых третьих лиц) персональных данных Клиента и подтверждает, что, давая такое согласие, действует своей волей и в своем интересе.
+                        p
+                            | Согласие дается Клиентом для целей заключения с Банком любых договоров и их дальнейшего исполнения, оказания Банком услуг, участия в проводимых Банком акциях, опросах, исследованиях (включая, но не ограничиваясь проведением опросов, исследований посредством электронной, телефонной и сотовой связи), принятия решений или совершения иных действий, порождающих юридические последствия в отношении Клиента или других лиц, предоставления Клиенту информации об оказываемых Банком услугах, предоставления Банком консультационных услуг, в том числе в целях заключения Клиентом в дальнейшем договоров/соглашений с иными лицами, и распространяется на следующую информацию: фамилия, имя, отчество, год, месяц, дата и место рождения, адрес, реквизиты документа, удостоверяющего личность, семейное, социальное, имущественное положение, образование, профессия, доходы, и любую иную информацию, относящуюся к личности Клиента (далее — «Персональные данные»).
+                        p
+                            | Обработка Персональных данных Клиента осуществляется Банком в объеме, который необходим для достижения каждой из вышеперечисленных целей. Клиент подтверждает, что данное согласие действует в течение срока хранения Банком Персональных данных Клиента, составляющего семьдесят пять лет с момента их получения, при этом Банк обязуется осуществить хранение Персональных данных в течение указанного срока.
+                        p
+                            | Клиент вправе отозвать свое согласие путем направления соответствующего письменного уведомления Банку не менее чем за 3 (три) месяца до момента отзыва согласия. В случае отзыва согласия Клиента на обработку Персональных данных, Банк вправе не прекращать обработку Персональных данных и не уничтожить их в случаях, предусмотренных законодательством РФ, в том числе, если сроки хранения Персональных данных не истекли. Расторжение любого заключенного с Банком договора не влечет прекращения обязанности Банка по хранению Персональных данных.
+                        p
+                            | Настоящее согласие предоставляется на осуществление любых действий с использованием средств автоматизации или без использования таких средств в отношении Персональных данных, которые необходимы или желаемы для достижения каждой из указанных выше целей, включая, без ограничения: сбор, систематизацию, накопление, хранение, уточнение (обновление, изменение), использование, распространение (в том числе передача), обезличивание, блокирование, уничтожение, трансграничную передачу Персональных данных, получение изображения путем фотографирования, а также осуществление любых иных действий с Персональными данными Клиента с учетом действующего законодательства.
+                        p
+                            | Обработка Персональных данных осуществляется Банком с применением следующих основных способов (но, не ограничиваясь ими): хранение, запись на электронные носители и их хранение, составление перечней, маркировка. Клиент признает и подтверждает, что в случае необходимости предоставления Персональных данных для достижения указанных выше целей третьему лицу (в том числе АО «Страховая компания МетЛайф», 127015, г. Москва, ул. Бутырская, д.76, стр.1, ООО «Телеконтакт», 142191, г. Москва, Орликов пер., дом 3 корпус «В», ООО «СК «Райффайзен Лайф»,115230, г. Москва, 1-й Нагатинский проезд, д.10, стр.1, АО «Либерти Страхование», 196084, г. Санкт-Петербург, Московский пр. д. 79А, лит. А, СПАО «РЕСО-Гарантия», 117105, г. Москва, Нагорный проезд, д. 6. а также иным некредитным и небанковским организациям), а равно как при привлечении третьих лиц к оказанию услуг, передачи Банком принадлежащих ему функций и полномочий иному лицу (уступке, в том числе для рассмотрения возможности уступки и принятию решения об уступке, залогу, принадлежащих Банку прав, взысканию задолженности и др.), Банк вправе в необходимом объеме раскрывать для совершения вышеуказанных действий информацию о Клиенте лично (включая Персональные данные) таким третьим лицам, их агентам и иным уполномоченным ими лицам, а также представлять таким лицам соответствующие документы, содержащие такую информацию с соблюдением требований законодательства.
+                        p
+                            | Также Клиент признает и подтверждает, что настоящее согласие считается данным им любым третьим лицам, указанным выше, с учетом соответствующих изменений, и любые такие третьи лица имеют право на обработку Персональных данных на основании настоящего согласия.
+
+
+
+
+    //Page
+    include common/new/page-elements/_header
+    include common/new/page-elements/_menu
+    //include common/new/page-elements/_scroll-header
+
+    .body-container.pt-32
+        .wrapper
+
+            .container
+                .b-block-heading
+                    +title-block-tags(['Для жизни', 'Ипотека', 'Рефинансирование кредитов иных банков'])
+                    +title-block-h1('Заявка')
+
+            +tabs-ul('1', ['Предварительная заявка на ипотеку', 'На консультацию'])
+
+            +tabs('1')
+
+                +tab('1').current
+
+                    .order-block.container
+
+                        .order-row
+                            .order-block-left
+                                h3 Общая информация
+                            .order-block-right
+                                .order-input-row
+                                    .order-input-block
+                                        +input-with-text('fio', 'Фамилия, имя, отчество')(placeholder='Фамилия, имя, отчество')
+                                .order-input-row
+                                    .order-input-block
+                                        .order-input-block__item
+                                            +radio('pol', 'pol_male', 'male', 'мужчина')(checked)
+                                        .order-input-block__item
+                                            +radio('pol', 'pol_female', 'female', 'женщина')
+                                .order-input-row
+                                    .order-input-block.order-input-block--half
+                                        +input-date('date', 'Дата рождения')(placeholder='Дата рождения' data-mask=true data-inputmask="'mask': '99.99.9999', 'placeholder': '_'," +
+                                        "'showMaskOnHover': 'false', 'showMaskOnFocus': 'false'")
+
+                        .order-row
+                            .order-block-left
+                                h3 Паспорт
+                            .order-block-right
+                                .order-input-row
+                                    .order-input-block.order-input-block--half
+                                        +input-with-text('p-serial', 'Серия')(data-mask=true data-inputmask="'mask': '9999'," +
+                                        "'showMaskOnHover': 'false', 'showMaskOnFocus': 'false', 'placeholder' : ''" placeholder='Серия')
+                                    .order-input-block.order-input-block--half
+                                        +input-with-text('p-number', 'Номер')(data-mask=true placeholder='Номер' data-inputmask="'mask': '999999'," +
+                                        " 'placeholder': ''")
+                                .order-input-row
+                                    .order-input-block
+                                        +input-with-text('p-given', 'Кем выдан')(placeholder='Кем выдан')
+
+                                .order-input-row
+                                    .order-input-block.order-input-block--half
+                                        +input-date('p-date', 'Дата выдачи')(placeholder='Дата выдачи' data-mask=true data-inputmask="'mask': '99.99.9999', 'placeholder': '-'")
+
+                        .order-row
+                            .order-block-left
+                                h3 Контакты
+                            .order-block-right
+                                .order-input-row
+                                    .order-input-block
+                                        +select-hint('city', 'Город подачи документов', 'Если вы не нашли ваш город в списке, пожалуйста,' +
+                                        ' выберите значение Остальные города', ['Москва', 'Самара', 'Санкт-Петербург', 'Остальные города'])
+                                .order-input-row
+                                    .order-input-block
+                                        +input-with-text('phone', 'Мобильный телефон')(data-mask=true placeholder='+7 (964) 385 54 43' data-inputmask="'mask': '+9 (999) 999 99 99', 'placeholder': '_'")
+
+                                .order-input-row
+                                    .order-input-block
+                                        +input-with-text('email', 'Электронная почта')(placeholder='example@mail.ru')
+
+                        .order-row
+                            .order-block-left
+                                h3 Подтверждение
+                            .order-block-right
+                                .order-input-row
+                                    .order-input-block
+                                        +checkbox-tip('check-1', 'order_ch-1')
+                                            a.open-popup-new()(href='#').link-times Я соглашаюсь с условиями обработки персональных данных
+                                .order-input-row
+                                    .order-input-block
+                                        +checkbox-tip('check-2', 'order_ch-2')
+                                            a.link-times Согласие на получение кредитного отчёта из БКИ
+
+                                .order-input-row
+                                    .order-input-block.order-input-block--captcha
+                                        +input-with-text('CAPTCHA', 'Проверочный код')
+                                    .order-input-catpcha
+
+                                .order-input-row
+                                    .order-input-block
+                                        +btn('Отправить', '#aa')
+
+
+
+
+
+                +tab('2')
+                    .order-block.container
+
+                        .order-row
+                            .order-block-left
+                                h3 Общая информация
+                            .order-block-right
+                                .order-input-row
+                                    .order-input-block
+                                        +input-with-text('fio', 'Фамилия, имя, отчество')(placeholder='Фамилия, имя, отчество')
+
+                        .order-row
+                            .order-block-left
+                                h3 Контакты
+                            .order-block-right
+                                .order-input-row
+                                    .order-input-block
+                                        +input-with-text('phone', 'Мобильный телефон')(data-mask=true placeholder='+7 (964) 385 54 43' data-inputmask="'mask': '+9 (999) 999 99 99', 'placeholder': '_'")
+
+                                .order-input-row
+                                    .order-input-block
+                                        +input-with-text('email', 'Электронная почта')(placeholder='example@mail.ru')
+
+                                .order-input-row
+                                    .order-input-block
+                                        +select-hint('city', 'Город подачи документов', 'Если вы не нашли ваш город в списке, пожалуйста,' +
+                                        ' выберите значение Остальные города', ['Москва', 'Самара', 'Санкт-Петербург', 'Остальные города'])
+
+                        .order-row
+                            .order-block-left
+                                h3 Подтверждение
+                            .order-block-right
+                                .order-input-row
+                                    .order-input-block
+                                        +checkbox-tip('check-3', 'order_ch-3')
+                                            a.open-popup-new()(href='#').link-times Я соглашаюсь с условиями обработки персональных данных
+
+                                .order-input-row
+                                    .order-input-block.order-input-block--captcha
+                                        +input-with-text('CAPTCHA', 'Проверочный код')
+                                    .order-input-catpcha
+
+                                .order-input-row
+                                    .order-input-block
+                                    +btn('Отправить', '#aa')
+
+            include common/new/elements/footer/footer

@@ -6,7 +6,7 @@ module.exports = {
         },
         files: [ {
             cwd: "src",
-            src: "**/[^_]*.pug",
+            src: ["**/[^_]*.pug", "!common/new/blocks/**/*.pug", "!common/new/elements/**/*.pug"],
             dest: "dist",
             expand: true,
             ext: ".html"

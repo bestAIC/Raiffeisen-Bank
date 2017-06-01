@@ -7,7 +7,21 @@
     width: calc(1920px - 70px)
     margin-left: calc(-1850px / 2)
 
+  .site-menu
+    margin-left: -960px
+
 @media screen and (max-width: 1525px)
+  .container-black
+    margin: 0 calcRem(25px) 0 calcRem(25px)
+  .container-grey
+    margin: calcRem(25px) calcRem(25px) 0 calcRem(25px)
+    .b-card-list
+      margin-top: 0
+
+  .video-intro
+    width: calc(100% - 3.125rem)
+    left: calcRem(25px)
+
   .header__logo
     margin-right: calcRem(30px)
   .main-menu
@@ -294,7 +308,11 @@
 
   .footer__socials
     a
-      margin-right: 15px
+      width: 45px
+      height: 45px
+      line-height: 45px
+      font-size: 1.5rem
+      margin-right: 30px
 
   .Preloader
     z-index: 9
@@ -338,11 +356,11 @@
   .mortgage__block-content--small
     margin-top: 16px
 
-  .morgage-wrapper
+  .mortgage-wrapper
     width: auto
     height: auto
 
-  .morgage-wrapper
+  .mortgage-wrapper
     .mortgage__block-image
       height: 60vw
       width: 100%

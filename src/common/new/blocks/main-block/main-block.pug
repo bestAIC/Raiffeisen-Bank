@@ -1,0 +1,50 @@
+
+mixin main-block(href, image)
+    .mortgage__block&attributes(attributes)
+
+        .mortgage__block-image
+            .image-bg(style="background-image: url(common/new/images/"+image+");")
+
+        .mortgage__block-content
+
+            block
+
+        a(href=href).block-link
+
+
+mixin main-block-small(image)
+    .mortgage__block&attributes(attributes)
+        .mortgage__block-image--small
+            .image-bg--small(style="background-image: url(common/new/images/"+image+");")
+
+        .mortgage__block-content--small
+            block
+
+mixin main-block-title(text)
+    h3.block-content__title!= text
+
+mixin main-block-decription
+    .block-content__description
+        block
+
+mixin main-block-order
+    .block-content__order
+        block
+
+mixin small-text(text)
+    span.small-text!= text
+
+mixin main-property(desc)
+    .property
+        .property__block
+            h3.property__title
+                block
+            p.property__description!= desc
+
+mixin main-property-highlighted(desc, href)
+    .property.highlighted
+        a(href=href).highlighted__block-link
+        .property__block
+            h3.property__title
+                block
+            p.property__description!= desc

@@ -1,0 +1,64 @@
+
+mixin intro-video(video, tags, title, desc)
+    .morgage-wrapper
+        .mortgage__block-image
+            .video-bg
+                video#bgvid(preload='metadata', loop, muted, webkit-playsinline, playsinline)
+                    source(src='common/new/images/'+video+'.mp4')
+                    source(src='common/new/images/'+video+'.webm')
+        .mortgage-intro.container
+            .mortgage-intro__block
+                .mortgage__block-content
+                    h6.title-block__description.grey-color
+                        span.step= tags[0]
+                        span.dot.breadcrumbs-dot
+                        span.step= tags[1]
+                    h1.title-block__title!= title
+                    p.block-content__readme.grey-color!= desc
+
+                    block
+
+
+mixin intro-card(image, tags, title, desc)
+    .morgage-wrapper
+        .mortgage__block-image
+            .card-image-transform
+                img(src='common/new/images/'+image)
+        .mortgage-intro.container
+            .mortgage-intro__block
+                .mortgage__block-content
+                    h6.title-block__description.grey-color
+                        each val, index in tags
+                            if tags.length == 1 || index == tags.length - 1
+                                span.step= val
+                            else
+                                span.step= val
+                                span.dot.breadcrumbs-dot
+                    h1.title-block__title!= title
+                    p.block-content__readme.grey-color!= desc
+
+                    block
+
+
+mixin intro-desc()
+    .block-content__description
+        block
+
+mixin intro-property(desc)
+    .property
+        .property__block
+            h3.property__title
+                block
+            p.property__description!= desc
+
+mixin intro-property-highlighted(desc, href)
+    .property.highlighted
+        a(href=href).highlighted__block-link
+        .property__block
+            h3.property__title
+                block
+            p.property__description!= desc
+
+mixin intro-buttons
+    .mortgage__block-buttons
+        block

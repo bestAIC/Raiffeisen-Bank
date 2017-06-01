@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "news-block.css",
+	"sources": [
+		"../../../../src/common/new/styles/news-block.sass"
+	],
+	"names": [],
+	"mappings": ""
+}

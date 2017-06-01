@@ -7,7 +7,7 @@ head
     link(rel="stylesheet" href="common/new/styles/normalize.css")
     link(rel="stylesheet" href="common/new/styles/jquery-ui.structure.min.css")
     link(rel="stylesheet" href="common/new/styles/main.css")
-    link(rel="stylesheet" href="../headsupgrid/hugrid.css")
+    //link(rel="stylesheet" href="../headsupgrid/hugrid.css")
 
 body.loading
     //Popup
@@ -20,26 +20,28 @@ body.loading
     include common/new/page-elements/_menu
     include common/new/page-elements/_scroll-header
 
-    .body-container
-
+    .body-container.pt-32
         .wrapper
             include common/new/page-elements/_mortgage-intro
             include common/new/page-elements/_mortgage-tabs
             include common/new/page-elements-1/_likes
             include common/new/page-elements-1/_footer
     //Preloader
-
     include common/new/page-elements/_spinner
-    //Scripts
-    script(src="common/new/scripts/jquery.min.js")
-    script(src="common/new/scripts/jquery-ui.min.js")
-    script(src="common/new/scripts/jquery.ui.touch-punch.min.js")
-    script(src='common/new/scripts/jquery-numerator.js')
-    script(src='common/new/scripts/inputmask.min.js')
-    script(src='common/new/scripts/jquery.inputmask.min.js')
-    script(src='common/new/scripts/inputmask.numeric.extensions.min.js')
-    script(src="common/new/scripts/flowtype.min.js")
-    script(src="../headsupgrid/hugrid.js")
-    script(src="common/new/scripts/tabs.min.js")
-    script(src="common/new/scripts/loadmore.min.js")
-    script(src="common/new/scripts/main.min.js")
+//Scripts
+script(src="common/new/scripts/jquery.min.js")
+script(src="common/new/scripts/jquery-ui.min.js")
+script(src="common/new/scripts/jquery.ui.touch-punch.min.js")
+script(src='common/new/scripts/jquery-numerator.js')
+script(src='common/new/scripts/inputmask.min.js')
+script(src='common/new/scripts/jquery.inputmask.min.js')
+script(src='common/new/scripts/inputmask.numeric.extensions.min.js')
+script(src="common/new/scripts/flowtype.min.js")
+script(src="../headsupgrid/hugrid.js")
+script(src="common/new/scripts/tabs.min.js")
+script(src="common/new/scripts/loadmore.min.js")
+script(src="common/new/scripts/accordion.min.js")
+script(src="common/new/scripts/svg4everybody.legacy.min.js")
+script(src="common/new/scripts/main.min.js")
+script.
+    svg4everybody();

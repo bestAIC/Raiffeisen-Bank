@@ -1,0 +1,33 @@
+doctype html
+head
+    title »потека
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(charset='windows-1251')
+    link(rel="stylesheet" href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+    link(rel="stylesheet" href="common/new/styles/normalize.css")
+    link(rel="stylesheet" href="common/new/styles/main.css")
+    //link(rel="stylesheet" href="../headsupgrid/hugrid.css")
+
+body.loading
+    //Popup
+    include common/new/page-elements-1/_popup-links
+    include common/new/page-elements-1/_popup-numbers
+    //Page
+    include common/new/page-elements/_header
+    include common/new/page-elements/_menu
+    .body-container.pt-32
+        include common/new/page-elements/_title-block
+        include common/new/page-elements/_container
+        include common/new/page-elements-1/_likes
+        include common/new/page-elements-1/_footer
+    //Preloader
+    include common/new/page-elements/_spinner
+
+    //Scripts
+script(src="common/new/scripts/jquery.min.js")
+script(src="common/new/scripts/flowtype.min.js")
+script(src="common/new/scripts/svg4everybody.legacy.min.js")
+script(src="common/new/scripts/main.min.js")
+script(src="common/new/scripts/loadmore.min.js")
+script.
+    svg4everybody();

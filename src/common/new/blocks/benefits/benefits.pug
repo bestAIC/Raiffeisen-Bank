@@ -1,0 +1,17 @@
+
+mixin benefit-icons(arr)
+    .container.tabs-content.loaded-block
+        each val, id in arr
+            .tab__block-icon
+                .block-icon__image
+                    img(src="common/new/images/"+id)
+                .block-icon__content
+                    p!= val
+
+
+mixin benefit-numbers(arr)
+    .block-text.container.cols.cols3
+        each val, head in arr
+            .block-text__item.col
+                .block-text__heading!= head
+                .block-text__text!= val
