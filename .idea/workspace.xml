@@ -1,183 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5743e040-2a84-4336-92d1-5b0ee526217b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/common/new/images/NewProject.mp4" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/common/new/images/NewProject.webm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/common/new/images/Russian_get_it_from_MS_InvariantCulture_Default.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/common/new/images/c8c3a5500d.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/common/new/images/cat_raw-2.mp4" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/common/new/images/cat_raw.webm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/common/new/images/screen01.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/common/new/images/screen02.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/common/new/images/screen03.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/common/new/images/screen04.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/common/new/images/screen05.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/common/new/images/screen06.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/common/new/images/video_4c-2.mp4" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/common/new/images/video_4c-2.webm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/images/NewProject.mp4" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/images/NewProject.webm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/images/c8c3a5500d.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/images/cat_raw-2.mp4" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/images/cat_raw.webm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/images/screen01.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/images/screen02.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/images/screen03.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/images/screen04.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/images/screen05.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/images/screen06.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/images/video_4c-2.mp4" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/images/video_4c-2.webm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/cards-1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/common/new/blocks/accordion/accordion.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/common/new/blocks/banner/banner.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/common/new/blocks/benefits/benefits.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/common/new/blocks/buttons/buttons.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/common/new/blocks/care/care.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/common/new/blocks/conditions/conditions.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/common/new/blocks/documents/documents.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/common/new/blocks/inputs/inputs.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/common/new/blocks/intro-block/intro-block.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/common/new/blocks/main-block/main-block.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/common/new/blocks/slider/slider.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/common/new/blocks/tabs/tabs.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/common/new/blocks/tips/tips.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/common/new/blocks/titles/titles.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/common/new/blocks/utils/utils.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/common/new/elements/footer/footer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/common/new/elements/likes/likes.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/common/new/elements/popup-links.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/common/new/elements/popup-numbers.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/common/new/elements/popup-tarif.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/common/new/icons/icons.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/common/new/images/Download_on_the_App_Store_Badge_RU_135x40.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/common/new/images/calendar.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/common/new/images/google-play.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/common/new/images/pin-rf.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/common/new/images/triangle.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/common/new/scripts/accordion.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/common/new/scripts/datepicker-ru.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/common/new/scripts/svg4everybody.legacy.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/common/new/styles/news-block.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/common/new/styles/news-block.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/index-1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/mortgage-1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/mortgage-list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/order-done.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/order.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grunt/sass_globbing.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cards-1.pug" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/_layout.pug" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/blocks/accordion/accordion.pug" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/blocks/accordion/accordion.sass" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/blocks/banner/banner.pug" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/blocks/banner/banner.sass" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/blocks/benefits/benefits.pug" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/blocks/benefits/benefits.sass" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/blocks/buttons/buttons.pug" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/blocks/buttons/buttons.sass" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/blocks/care/care.pug" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/blocks/care/care.sass" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/blocks/conditions/conditions.pug" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/blocks/conditions/conditions.sass" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/blocks/documents/documents.pug" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/blocks/documents/documnets.sass" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/blocks/inputs/inputs.pug" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/blocks/inputs/inputs.sass" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/blocks/intro-block/intro-block.pug" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/blocks/intro-block/intro-block.sass" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/blocks/main-block/main-block.pug" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/blocks/main-block/main-block.sass" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/blocks/slider/slider.pug" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/blocks/slider/slider.sass" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/blocks/tabs/tabs.pug" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/blocks/tabs/tabs.sass" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/blocks/tips/tips.pug" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/blocks/titles/titles.pug" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/blocks/titles/titles.sass" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/blocks/utils/utils.pug" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/blocks/utils/utils.sass" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/elements/footer/footer.pug" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/elements/likes/likes.pug" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/elements/popup-links.pug" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/elements/popup-numbers.pug" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/elements/popup-tarif.pug" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/icons/money.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/icons/money2.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/icons/people.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/icons/pig.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/images/pin-rf.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/page-elements/_index-page.pug" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/page-elements/index-page/_info-blocks.pug" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/page-elements/index-page/_news-black.pug" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/page-elements/index-page/_welcome-banner.pug" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/page-elements/index-page/_welcome-promo-app.pug" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/page-elements/index-page/_welcome-slider-1.pug" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/page-elements/index-page/_welcome-slider-2.pug" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/scripts/accordion.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/styles/components/_info-blocks.sass" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/styles/components/_margins.sass" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/styles/components/_mobile-welcome.sass" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/styles/components/_news-block.sass" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/styles/components/_order.sass" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/styles/components/_paddings.sass" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/styles/components/_promo-block.sass" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/styles/components/_welcome-banner.sass" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/new/styles/components/_welcome-slider.sass" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/index-1.pug" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mortgage-1.pug" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mortgage-list.pug" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/order-done.pug" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/order.pug" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/icons.svg" afterPath="" />
+    <list default="true" id="5743e040-2a84-4336-92d1-5b0ee526217b" name="Default" comment="index page&#10;order page">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/common/new/blocks/accordion/accordion.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/common/new/blocks/banner/banner.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/common/new/blocks/benefits/benefits.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/common/new/blocks/buttons/buttons.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/common/new/blocks/care/care.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/common/new/blocks/conditions/conditions.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/common/new/blocks/documents/documents.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/common/new/blocks/inputs/inputs.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/common/new/blocks/intro-block/intro-block.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/common/new/blocks/main-block/main-block.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/common/new/blocks/slider/slider.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/common/new/blocks/tabs/tabs.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/common/new/blocks/tips/tips.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/common/new/blocks/titles/titles.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/common/new/blocks/utils/utils.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/common/new/elements/footer/footer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/common/new/elements/likes/likes.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/common/new/elements/popup-links.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/common/new/elements/popup-numbers.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/common/new/elements/popup-tarif.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/headsupgrid/hugrid.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/headsupgrid/hugrid.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/headsupgrid/jquery-1.6.2.min.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/cards-about.html" afterPath="$PROJECT_DIR$/dist/cards-about.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/cards.html" afterPath="$PROJECT_DIR$/dist/cards.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/common/new/icons/user.svg" afterPath="$PROJECT_DIR$/dist/common/new/icons/user.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/common/new/scripts/jquery.min.js" afterPath="$PROJECT_DIR$/dist/common/new/scripts/jquery.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/common/new/scripts/jquery.history.js" afterPath="$PROJECT_DIR$/dist/common/new/scripts/jquery.history.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/common/new/scripts/main.min.js" afterPath="$PROJECT_DIR$/dist/common/new/scripts/main.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/common/new/styles/main.css" afterPath="$PROJECT_DIR$/dist/common/new/styles/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/common/new/styles/main.css.map" afterPath="$PROJECT_DIR$/dist/common/new/styles/main.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/index-1.html" afterPath="$PROJECT_DIR$/dist/index-1.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/index.html" afterPath="$PROJECT_DIR$/dist/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/mortgage-1.html" afterPath="$PROJECT_DIR$/dist/mortgage-1.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/mortgage-list.html" afterPath="$PROJECT_DIR$/dist/mortgage-list.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/mortgage.html" afterPath="$PROJECT_DIR$/dist/mortgage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grunt/pug.js" afterPath="$PROJECT_DIR$/grunt/pug.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grunt/svgstore.js" afterPath="$PROJECT_DIR$/grunt/svgstore.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grunt/watch.js" afterPath="$PROJECT_DIR$/grunt/watch.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/order-done.html" afterPath="$PROJECT_DIR$/dist/order-done.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/order.html" afterPath="$PROJECT_DIR$/dist/order.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cards-about.pug" afterPath="$PROJECT_DIR$/src/cards-about.pug" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cards.pug" afterPath="$PROJECT_DIR$/src/cards.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/new/icons/arrow.svg" afterPath="$PROJECT_DIR$/src/common/new/icons/arrow.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/new/page-elements-1/_buttons.pug" afterPath="$PROJECT_DIR$/src/common/new/page-elements-1/_buttons.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/new/page-elements-1/_calculator.pug" afterPath="$PROJECT_DIR$/src/common/new/page-elements-1/_calculator.pug" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/_layout.pug" afterPath="$PROJECT_DIR$/src/common/_layout.pug" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/new/blocks/buttons/buttons.pug" afterPath="$PROJECT_DIR$/src/common/new/blocks/buttons/buttons.pug" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/new/blocks/slider/slider.pug" afterPath="$PROJECT_DIR$/src/common/new/blocks/slider/slider.pug" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/new/page-elements-1/_card-about.pug" afterPath="$PROJECT_DIR$/src/common/new/page-elements-1/_card-about.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/new/page-elements-1/_cards.pug" afterPath="$PROJECT_DIR$/src/common/new/page-elements-1/_cards.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/new/page-elements-1/_popup-1.pug" afterPath="$PROJECT_DIR$/src/common/new/page-elements-1/_popup-1.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/new/page-elements-sansay/_tabs_accordion--cards.pug" afterPath="$PROJECT_DIR$/src/common/new/page-elements-sansay/_tabs_accordion--cards.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/new/page-elements/_container.pug" afterPath="$PROJECT_DIR$/src/common/new/page-elements/_container.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/new/page-elements/_mortgage-intro.pug" afterPath="$PROJECT_DIR$/src/common/new/page-elements/_mortgage-intro.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/new/page-elements/_tab-section-content.pug" afterPath="$PROJECT_DIR$/src/common/new/page-elements/_tab-section-content.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/new/page-elements/_tabs_accordion.pug" afterPath="$PROJECT_DIR$/src/common/new/page-elements/_tabs_accordion.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/new/page-elements/_tips.pug" afterPath="$PROJECT_DIR$/src/common/new/page-elements/_tips.pug" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/new/page-elements-1/_documents.pug" afterPath="$PROJECT_DIR$/src/common/new/page-elements-1/_documents.pug" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/new/scripts/main.js" afterPath="$PROJECT_DIR$/src/common/new/scripts/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/new/styles/components/_cards.sass" afterPath="$PROJECT_DIR$/src/common/new/styles/components/_cards.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/new/styles/components/_care-block.sass" afterPath="$PROJECT_DIR$/src/common/new/styles/components/_care-block.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/new/styles/components/_container.sass" afterPath="$PROJECT_DIR$/src/common/new/styles/components/_container.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/new/styles/components/_footer.sass" afterPath="$PROJECT_DIR$/src/common/new/styles/components/_footer.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/new/styles/components/_header.sass" afterPath="$PROJECT_DIR$/src/common/new/styles/components/_header.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/new/styles/components/_likes.sass" afterPath="$PROJECT_DIR$/src/common/new/styles/components/_likes.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/new/styles/components/_loadmore.sass" afterPath="$PROJECT_DIR$/src/common/new/styles/components/_loadmore.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/new/styles/components/_mobile.sass" afterPath="$PROJECT_DIR$/src/common/new/styles/components/_mobile.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/new/styles/components/_mobile2.sass" afterPath="$PROJECT_DIR$/src/common/new/styles/components/_mobile2.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/new/styles/components/_mortgage-intro.sass" afterPath="$PROJECT_DIR$/src/common/new/styles/components/_mortgage-intro.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/new/styles/components/_mortgage-tabs.sass" afterPath="$PROJECT_DIR$/src/common/new/styles/components/_mortgage-tabs.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/new/styles/components/_popup-tarif.sass" afterPath="$PROJECT_DIR$/src/common/new/styles/components/_popup-tarif.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/new/styles/components/_site-menu.sass" afterPath="$PROJECT_DIR$/src/common/new/styles/components/_site-menu.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/new/styles/components/_spinner.sass" afterPath="$PROJECT_DIR$/src/common/new/styles/components/_spinner.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/new/styles/components/_ui.sass" afterPath="$PROJECT_DIR$/src/common/new/styles/components/_ui.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/new/styles/main.sass" afterPath="$PROJECT_DIR$/src/common/new/styles/main.sass" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.pug" afterPath="$PROJECT_DIR$/src/index.pug" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mortgage-list.pug" afterPath="$PROJECT_DIR$/src/mortgage-list.pug" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mortgage.pug" afterPath="$PROJECT_DIR$/src/mortgage.pug" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/order-done.pug" afterPath="$PROJECT_DIR$/src/order-done.pug" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/order.pug" afterPath="$PROJECT_DIR$/src/order.pug" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -188,30 +63,14 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dist/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.pug" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/index.pug">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="17" lean-forward="true" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-              <folding>
-                <marker date="1496314833000" expanded="true" signature="17:28" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -225,6 +84,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/index.pug" />
+        <option value="$PROJECT_DIR$/src/common/new/scripts/promo-app.js" />
       </list>
     </option>
   </component>
@@ -278,78 +138,10 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Raiffeisen-Bank-aic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Raiffeisen-Bank-aic" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Raiffeisen-Bank-aic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Raiffeisen-Bank-aic" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Raiffeisen-Bank-aic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Raiffeisen-Bank-aic" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="new" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Raiffeisen-Bank-aic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Raiffeisen-Bank-aic" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dist" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -463,7 +255,9 @@
       <workItem from="1495440427743" duration="239000" />
       <workItem from="1495536081935" duration="1001000" />
       <workItem from="1495541040669" duration="656000" />
-      <workItem from="1496314775878" duration="287000" />
+      <workItem from="1496314775878" duration="1590000" />
+      <workItem from="1496320844418" duration="317000" />
+      <workItem from="1496391039207" duration="116000" />
     </task>
     <task id="LOCAL-00001" summary="mobile fix">
       <created>1495108353858</created>
@@ -500,11 +294,18 @@
       <option name="project" value="LOCAL" />
       <updated>1495541094948</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="index page&#10;order page">
+      <created>1496315247597</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1496315247597</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4581000" />
+    <option name="totallyTimeSpent" value="6317000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -518,7 +319,7 @@
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="810" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26752505" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2746781" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -546,7 +347,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="mobile fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="mobile fix" />
+    <MESSAGE value="index page&#10;order page" />
+    <option name="LAST_COMMIT_MESSAGE" value="index page&#10;order page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -563,11 +365,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.pug">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/new/scripts/promo-app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.pug">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="38" lean-forward="false" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
-          <folding>
-            <marker date="1496314833000" expanded="true" signature="17:28" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -583,9 +407,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="38" lean-forward="true" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
-          <folding>
-            <marker date="1496314833000" expanded="true" signature="17:28" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -599,11 +421,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.pug">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="17" lean-forward="true" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding>
-            <marker date="1496314833000" expanded="true" signature="17:28" ph="..." />
-          </folding>
+        <state relative-caret-position="165">
+          <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/new/scripts/promo-app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

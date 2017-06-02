@@ -184,11 +184,11 @@ $('.conditions .load-more').on('click', function(){
     $('.conditions__row--hide').toggleClass('conditions__row--hide conditions__row--show');
 });
 
-$('.documents__item').on('click', function(){
-    event.preventDefault();
-    $('body').toggleClass('show-popup1');
-    $('.scroll-header').toggleClass('showHeader');
-});
+// $('.documents__item').on('click', function(){
+//     event.preventDefault();
+//     $('body').toggleClass('show-popup1');
+//     $('.scroll-header').toggleClass('showHeader');
+// });
 
 $('.popup-tarif, .popup-tarif__close-svg').on('click', function(e){
     if (e.target !== this)
@@ -566,11 +566,11 @@ if ($("input[data-jq='datepicker']").length) {
 }
 
 
-$('.open-popup-new').on('click', function(){
-    event.preventDefault();
-    $('body').toggleClass('show-popup1');
-    $('.scroll-header').toggleClass('showHeader');
-});
+// $('.open-popup-new').on('click', function(){
+//     event.preventDefault();
+//     $('body').toggleClass('show-popup1');
+//     $('.scroll-header').toggleClass('showHeader');
+// });
 
 // $('.popup-tarif, .popup-tarif__close-svg').on('click', function(e){
 //     if (e.target !== this)

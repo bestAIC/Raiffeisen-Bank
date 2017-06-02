@@ -13,7 +13,7 @@ block content
     include common/new/elements/popup-links
     include common/new/elements/popup-numbers
 
-    .popup-tarif#popup-1.popup
+    .popup-tarif#popup-1.popup(data-popupid='1')
         .popup-tarif__content
             span.popup-tarif__close-svg
             .popup-tarif__container
@@ -144,7 +144,7 @@ block content
                                 .order-input-row
                                     .order-input-block
                                         +checkbox-tip('check-1', 'order_ch-1')
-                                            a.open-popup-new()(href='#').link-times Я соглашаюсь с условиями обработки персональных данных
+                                            a.open-popup-new(href='#' data-popupid='1').link-times Я соглашаюсь с условиями обработки персональных данных
                                 .order-input-row
                                     .order-input-block
                                         +checkbox-tip('check-2', 'order_ch-2')
@@ -198,7 +198,7 @@ block content
                                 .order-input-row
                                     .order-input-block
                                         +checkbox-tip('check-3', 'order_ch-3')
-                                            a.open-popup-new()(href='#').link-times Я соглашаюсь с условиями обработки персональных данных
+                                            a.open-popup-new(href='#').link-times Я соглашаюсь с условиями обработки персональных данных
 
                                 .order-input-row
                                     .order-input-block.order-input-block--captcha
